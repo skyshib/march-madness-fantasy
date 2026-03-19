@@ -2,10 +2,10 @@ name: Update Tournament Scores
 
 on:
   schedule:
-    # Every 10 minutes, noon-11pm ET (UTC-4 during March), March-April
+    # Every 2 minutes, noon-11pm ET (UTC-4 during March), March-April
     # 16:00-03:00 UTC covers noon-11pm ET
-    - cron: '*/10 16-23 * 3-4 *'
-    - cron: '*/10 0-3 * 3-4 *'
+    - cron: '*/2 16-23 * 3-4 *'
+    - cron: '*/2 0-3 * 3-4 *'
   workflow_dispatch: {}  # Manual trigger
 
 permissions:
