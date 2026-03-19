@@ -389,14 +389,20 @@ const Scoreboard = (() => {
         const t0 = game.teams[0];
         const t1 = game.teams[1];
         // Match: check if any of our teams match ESPN full name
-        const t0match = [...myTeams].some(pt => {
-          const et = t0.fullName;
-          return et.startsWith(pt) && (et.length === pt.length || et[pt.length] === ' ');
-        });
-        const t1match = [...myTeams].some(pt => {
-          const et = t1.fullName;
-          return et.startsWith(pt) && (et.length === pt.length || et[pt.length] === ' ');
-        });
+        function teamMatchLocal(pickTeam, espnFull) {
+          if (!pickTeam || !espnFull) return false;
+          if (pickTeam === espnFull) return true;
+          const words = espnFull.split(' ');
+          const school = words.slice(0, -1).join(' ');
+          if (pickTeam === school) return true;
+          if (words.length > 3) {
+            const school2 = words.slice(0, -2).join(' ');
+            if (pickTeam === school2) return true;
+          }
+          return false;
+        }
+        const t0match = [...myTeams].some(pt => teamMatchLocal(pt, t0.fullName));
+        const t1match = [...myTeams].some(pt => teamMatchLocal(pt, t1.fullName));
         if (t0match && !t1match) {
           rooting.push(`(${t0.seed}) ${t0.name} over (${t1.seed}) ${t1.name}`);
         } else if (t1match && !t0match) {
