@@ -106,8 +106,8 @@ const ESPN = (() => {
 
         for (const comp of event.competitions || []) {
           const state = comp.status?.type?.state;
-          // Include in-progress AND recently completed games
-          if (state === 'in' || state === 'post') {
+          // Only in-progress games — completed games are handled by stats.json
+          if (state === 'in') {
             active.push(event.id);
           }
         }
