@@ -1,11 +1,158 @@
 {
-  "last_updated": "2026-03-19T20:52:43.782247+00:00",
+  "last_updated": "2026-03-19T21:29:02.289989+00:00",
   "players": {
+    "damari-wheeler-thomas": {
+      "name": "Damari Wheeler-Thomas",
+      "team": "North Dakota State Bison",
+      "seed": 14,
+      "eliminated": false,
+      "stats": {
+        "pts": 0,
+        "reb": 2,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 2,
+          "ast": 1,
+          "game_id": "401856483",
+          "opponent": "Michigan State Spartans"
+        }
+      ]
+    },
+    "jeremy-fears-jr": {
+      "name": "Jeremy Fears Jr.",
+      "team": "Michigan State Spartans",
+      "seed": 3,
+      "eliminated": false,
+      "stats": {
+        "pts": 2,
+        "reb": 2,
+        "ast": 9
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 2,
+          "reb": 2,
+          "ast": 9,
+          "game_id": "401856483",
+          "opponent": "North Dakota State Bison"
+        }
+      ]
+    },
+    "isaac-johnson": {
+      "name": "Isaac Johnson",
+      "team": "Hawai'i Rainbow Warriors",
+      "seed": 13,
+      "eliminated": false,
+      "stats": {
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 8,
+          "reb": 3,
+          "ast": 0,
+          "game_id": "401856481",
+          "opponent": "Arkansas Razorbacks"
+        }
+      ]
+    },
+    "darius-acuff-jr": {
+      "name": "Darius Acuff Jr.",
+      "team": "Arkansas Razorbacks",
+      "seed": 4,
+      "eliminated": false,
+      "stats": {
+        "pts": 13,
+        "reb": 0,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 13,
+          "reb": 0,
+          "ast": 4,
+          "game_id": "401856481",
+          "opponent": "Hawai'i Rainbow Warriors"
+        }
+      ]
+    },
+    "larry-johnson": {
+      "name": "Larry Johnson",
+      "team": "McNeese Cowboys",
+      "seed": 12,
+      "eliminated": true,
+      "stats": {
+        "pts": 15,
+        "reb": 5,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 15,
+          "reb": 5,
+          "ast": 0,
+          "game_id": "401856488",
+          "opponent": "Vanderbilt Commodores"
+        }
+      ]
+    },
+    "tyler-tanner": {
+      "name": "Tyler Tanner",
+      "team": "Vanderbilt Commodores",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 26,
+        "reb": 7,
+        "ast": 5
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 26,
+          "reb": 7,
+          "ast": 5,
+          "game_id": "401856488",
+          "opponent": "McNeese Cowboys"
+        }
+      ]
+    },
+    "duke-miles": {
+      "name": "Duke Miles",
+      "team": "Vanderbilt Commodores",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 13,
+        "reb": 1,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 13,
+          "reb": 1,
+          "ast": 3,
+          "game_id": "401856488",
+          "opponent": "McNeese Cowboys"
+        }
+      ]
+    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
       "seed": 16,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
         "pts": 21,
         "reb": 4,
@@ -28,165 +175,18 @@
       "seed": 1,
       "eliminated": false,
       "stats": {
-        "pts": 18,
-        "reb": 12,
+        "pts": 22,
+        "reb": 13,
         "ast": 3
       },
       "games": [
         {
           "round": "R64",
-          "pts": 18,
-          "reb": 12,
+          "pts": 22,
+          "reb": 13,
           "ast": 3,
           "game_id": "401856478",
           "opponent": "Siena Saints"
-        }
-      ]
-    },
-    "damari-wheeler-thomas": {
-      "name": "Damari Wheeler-Thomas",
-      "team": "North Dakota State Bison",
-      "seed": 14,
-      "eliminated": false,
-      "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 0,
-          "reb": 0,
-          "ast": 0,
-          "game_id": "401856483",
-          "opponent": "Michigan State Spartans"
-        }
-      ]
-    },
-    "jeremy-fears-jr": {
-      "name": "Jeremy Fears Jr.",
-      "team": "Michigan State Spartans",
-      "seed": 3,
-      "eliminated": false,
-      "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 6
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 0,
-          "reb": 0,
-          "ast": 6,
-          "game_id": "401856483",
-          "opponent": "North Dakota State Bison"
-        }
-      ]
-    },
-    "isaac-johnson": {
-      "name": "Isaac Johnson",
-      "team": "Hawai'i Rainbow Warriors",
-      "seed": 13,
-      "eliminated": false,
-      "stats": {
-        "pts": 2,
-        "reb": 3,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 2,
-          "reb": 3,
-          "ast": 0,
-          "game_id": "401856481",
-          "opponent": "Arkansas Razorbacks"
-        }
-      ]
-    },
-    "darius-acuff-jr": {
-      "name": "Darius Acuff Jr.",
-      "team": "Arkansas Razorbacks",
-      "seed": 4,
-      "eliminated": false,
-      "stats": {
-        "pts": 9,
-        "reb": 0,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 9,
-          "reb": 0,
-          "ast": 2,
-          "game_id": "401856481",
-          "opponent": "Hawai'i Rainbow Warriors"
-        }
-      ]
-    },
-    "larry-johnson": {
-      "name": "Larry Johnson",
-      "team": "McNeese Cowboys",
-      "seed": 12,
-      "eliminated": false,
-      "stats": {
-        "pts": 15,
-        "reb": 4,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 15,
-          "reb": 4,
-          "ast": 0,
-          "game_id": "401856488",
-          "opponent": "Vanderbilt Commodores"
-        }
-      ]
-    },
-    "tyler-tanner": {
-      "name": "Tyler Tanner",
-      "team": "Vanderbilt Commodores",
-      "seed": 5,
-      "eliminated": false,
-      "stats": {
-        "pts": 14,
-        "reb": 3,
-        "ast": 5
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 14,
-          "reb": 3,
-          "ast": 5,
-          "game_id": "401856488",
-          "opponent": "McNeese Cowboys"
-        }
-      ]
-    },
-    "duke-miles": {
-      "name": "Duke Miles",
-      "team": "Vanderbilt Commodores",
-      "seed": 5,
-      "eliminated": false,
-      "stats": {
-        "pts": 7,
-        "reb": 1,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 7,
-          "reb": 1,
-          "ast": 2,
-          "game_id": "401856488",
-          "opponent": "McNeese Cowboys"
         }
       ]
     },
@@ -423,9 +423,7 @@
     }
   },
   "active_games": [
-    "401856478",
     "401856483",
-    "401856481",
-    "401856488"
+    "401856481"
   ]
 }
