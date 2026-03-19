@@ -3,7 +3,8 @@
  */
 (async function () {
   const REFRESH_STATIC_MS = 300000; // 5 min: re-check stats.json from GitHub
-  const REFRESH_LIVE_MS = 30000;    // 30 sec: poll ESPN for live game stats
+  const REFRESH_LIVE_MS = 60000;    // 60 sec: poll ESPN for live game stats
+  let liveBackoff = 0;              // increases on ESPN errors
   let currentYear = null;
   let refreshTimer = null;
   let liveTimer = null;
@@ -247,8 +248,10 @@
           console.warn('Elimination banner failed:', e);
         }
       }
+      liveBackoff = 0; // success, reset backoff
     } catch (e) {
       console.warn('Live refresh failed:', e);
+      liveBackoff = Math.min(liveBackoff + 1, 5); // max 5 retries of backoff
     }
 
     updateIndicator();
@@ -698,11 +701,15 @@
       if (currentYear) loadYear(currentYear);
     }, REFRESH_STATIC_MS);
 
-    // Fast timer: poll ESPN live data
+    // Fast timer: poll ESPN live data with exponential backoff on errors
     if (liveTimer) clearInterval(liveTimer);
-    liveTimer = setInterval(() => {
-      if (currentYear) refreshLive();
-    }, REFRESH_LIVE_MS);
+    function scheduleLivePoll() {
+      const delay = REFRESH_LIVE_MS * Math.pow(2, liveBackoff);
+      liveTimer = setTimeout(() => {
+        if (currentYear) refreshLive().finally(scheduleLivePoll);
+      }, delay);
+    }
+    scheduleLivePoll();
 
     // Also update the indicator text every 10s
     setInterval(updateIndicator, 10000);

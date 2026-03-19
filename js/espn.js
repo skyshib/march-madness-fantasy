@@ -6,9 +6,15 @@ const ESPN = (() => {
   const BASE = 'https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball';
 
   async function fetchJSON(url) {
-    const resp = await fetch(url);
-    if (!resp.ok) throw new Error(`ESPN API ${resp.status}: ${url}`);
-    return resp.json();
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000);
+    try {
+      const resp = await fetch(url, { signal: controller.signal });
+      if (!resp.ok) throw new Error(`ESPN API ${resp.status}`);
+      return resp.json();
+    } finally {
+      clearTimeout(timeout);
+    }
   }
 
   /**
