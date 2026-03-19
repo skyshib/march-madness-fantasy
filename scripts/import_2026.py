@@ -98,9 +98,9 @@ NAME_OVERRIDES = {
 # ── Known team associations for players only mentioned without teams ─────────
 # (e.g., Zack Duffy's entries have no teams)
 PLAYER_TEAMS = {
-    "JT Toppin": "Vanderbilt",
+    "JT Toppin": "Texas Tech",
     "Augustas Marciulionis": "Saint Mary's",
-    "David Punch": "Utah State",
+    "David Punch": "TCU",
     "Wade Taylor IV": "Texas A&M",
     "Chris Youngblood": "Texas",
     "Trey Campbell": "McNeese",
