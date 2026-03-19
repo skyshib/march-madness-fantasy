@@ -1,11 +1,242 @@
 {
-  "last_updated": "2026-03-19T18:37:15.162576+00:00",
+  "last_updated": "2026-03-19T19:31:30.816822+00:00",
   "players": {
+    "gavin-doty": {
+      "name": "Gavin Doty",
+      "team": "Siena Saints",
+      "seed": 16,
+      "eliminated": false,
+      "stats": {
+        "pts": 8,
+        "reb": 2,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 8,
+          "reb": 2,
+          "ast": 1,
+          "game_id": "401856478",
+          "opponent": "Duke Blue Devils"
+        }
+      ]
+    },
+    "cameron-boozer": {
+      "name": "Cameron Boozer",
+      "team": "Duke Blue Devils",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 9,
+          "reb": 2,
+          "ast": 1,
+          "game_id": "401856478",
+          "opponent": "Siena Saints"
+        }
+      ]
+    },
+    "terry-anderson": {
+      "name": "Terry Anderson",
+      "team": "High Point Panthers",
+      "seed": 12,
+      "eliminated": false,
+      "stats": {
+        "pts": 10,
+        "reb": 11,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 10,
+          "reb": 11,
+          "ast": 0,
+          "game_id": "401856480",
+          "opponent": "Wisconsin Badgers"
+        }
+      ]
+    },
+    "john-blackwell": {
+      "name": "John Blackwell",
+      "team": "Wisconsin Badgers",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 22,
+        "reb": 8,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 22,
+          "reb": 8,
+          "ast": 2,
+          "game_id": "401856480",
+          "opponent": "High Point Panthers"
+        }
+      ]
+    },
+    "nick-boyd": {
+      "name": "Nick Boyd",
+      "team": "Wisconsin Badgers",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 17,
+        "reb": 4,
+        "ast": 6
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 17,
+          "reb": 4,
+          "ast": 6,
+          "game_id": "401856480",
+          "opponent": "High Point Panthers"
+        }
+      ]
+    },
+    "larry-johnson": {
+      "name": "Larry Johnson",
+      "team": "McNeese Cowboys",
+      "seed": 12,
+      "eliminated": false,
+      "stats": {
+        "pts": 5,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 5,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "401856488",
+          "opponent": "Vanderbilt Commodores"
+        }
+      ]
+    },
+    "tyler-tanner": {
+      "name": "Tyler Tanner",
+      "team": "Vanderbilt Commodores",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 3,
+        "reb": 1,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 3,
+          "reb": 1,
+          "ast": 0,
+          "game_id": "401856488",
+          "opponent": "McNeese Cowboys"
+        }
+      ]
+    },
+    "duke-miles": {
+      "name": "Duke Miles",
+      "team": "Vanderbilt Commodores",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 0,
+          "ast": 1,
+          "game_id": "401856488",
+          "opponent": "McNeese Cowboys"
+        }
+      ]
+    },
+    "izaiyah-nelson": {
+      "name": "Izaiyah Nelson",
+      "team": "South Florida Bulls",
+      "seed": 11,
+      "eliminated": false,
+      "stats": {
+        "pts": 20,
+        "reb": 7,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 20,
+          "reb": 7,
+          "ast": 1,
+          "game_id": "401856482",
+          "opponent": "Louisville Cardinals"
+        }
+      ]
+    },
+    "wes-enis": {
+      "name": "Wes Enis",
+      "team": "South Florida Bulls",
+      "seed": 11,
+      "eliminated": false,
+      "stats": {
+        "pts": 4,
+        "reb": 1,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 4,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856482",
+          "opponent": "Louisville Cardinals"
+        }
+      ]
+    },
+    "ryan-conwell": {
+      "name": "Ryan Conwell",
+      "team": "Louisville Cardinals",
+      "seed": 6,
+      "eliminated": false,
+      "stats": {
+        "pts": 16,
+        "reb": 4,
+        "ast": 5
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 4,
+          "ast": 5,
+          "game_id": "401856482",
+          "opponent": "South Florida Bulls"
+        }
+      ]
+    },
     "victor-valdes": {
       "name": "Victor Valdes",
       "team": "Troy Trojans",
       "seed": 13,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
         "pts": 14,
         "reb": 2,
@@ -26,7 +257,7 @@
       "name": "Thomas Dowd",
       "team": "Troy Trojans",
       "seed": 13,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
         "pts": 4,
         "reb": 9,
@@ -61,132 +292,6 @@
           "ast": 2,
           "game_id": "401856489",
           "opponent": "Troy Trojans"
-        }
-      ]
-    },
-    "terry-anderson": {
-      "name": "Terry Anderson",
-      "team": "High Point Panthers",
-      "seed": 12,
-      "eliminated": false,
-      "stats": {
-        "pts": 4,
-        "reb": 8,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 4,
-          "reb": 8,
-          "ast": 0,
-          "game_id": "401856480",
-          "opponent": "Wisconsin Badgers"
-        }
-      ]
-    },
-    "john-blackwell": {
-      "name": "John Blackwell",
-      "team": "Wisconsin Badgers",
-      "seed": 5,
-      "eliminated": false,
-      "stats": {
-        "pts": 20,
-        "reb": 6,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 20,
-          "reb": 6,
-          "ast": 1,
-          "game_id": "401856480",
-          "opponent": "High Point Panthers"
-        }
-      ]
-    },
-    "nick-boyd": {
-      "name": "Nick Boyd",
-      "team": "Wisconsin Badgers",
-      "seed": 5,
-      "eliminated": false,
-      "stats": {
-        "pts": 7,
-        "reb": 3,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 7,
-          "reb": 3,
-          "ast": 3,
-          "game_id": "401856480",
-          "opponent": "High Point Panthers"
-        }
-      ]
-    },
-    "izaiyah-nelson": {
-      "name": "Izaiyah Nelson",
-      "team": "South Florida Bulls",
-      "seed": 11,
-      "eliminated": false,
-      "stats": {
-        "pts": 7,
-        "reb": 2,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 7,
-          "reb": 2,
-          "ast": 0,
-          "game_id": "401856482",
-          "opponent": "Louisville Cardinals"
-        }
-      ]
-    },
-    "wes-enis": {
-      "name": "Wes Enis",
-      "team": "South Florida Bulls",
-      "seed": 11,
-      "eliminated": false,
-      "stats": {
-        "pts": 2,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 2,
-          "reb": 0,
-          "ast": 0,
-          "game_id": "401856482",
-          "opponent": "Louisville Cardinals"
-        }
-      ]
-    },
-    "ryan-conwell": {
-      "name": "Ryan Conwell",
-      "team": "Louisville Cardinals",
-      "seed": 6,
-      "eliminated": false,
-      "stats": {
-        "pts": 5,
-        "reb": 4,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 5,
-          "reb": 4,
-          "ast": 1,
-          "game_id": "401856482",
-          "opponent": "South Florida Bulls"
         }
       ]
     },
@@ -234,8 +339,9 @@
     }
   },
   "active_games": [
-    "401856489",
+    "401856478",
     "401856480",
+    "401856488",
     "401856482"
   ]
 }
