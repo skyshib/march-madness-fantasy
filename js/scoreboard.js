@@ -596,5 +596,22 @@ const Scoreboard = (() => {
     return liveOverrides[slug] || null;
   }
 
-  return { setData, setLiveGames, setLiveOverrides, getLiveOverride, render, rankAll, hideDetail, scoreEntrant, toggleCompact };
+  /**
+   * Mark players as eliminated in the stats data (called from live poll).
+   * Creates stub entries if they don't exist yet in stats.
+   */
+  function markEliminated(slugs) {
+    if (!statsData) return;
+    if (!statsData.players) statsData.players = {};
+    for (const slug of slugs) {
+      if (statsData.players[slug]) {
+        statsData.players[slug].eliminated = true;
+      } else {
+        statsData.players[slug] = { name: '', team: '', seed: 0, eliminated: true, stats: { pts: 0, reb: 0, ast: 0 }, games: [] };
+      }
+    }
+    render();
+  }
+
+  return { setData, setLiveGames, setLiveOverrides, getLiveOverride, markEliminated, render, rankAll, hideDetail, scoreEntrant, toggleCompact };
 })();

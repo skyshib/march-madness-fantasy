@@ -35,12 +35,11 @@
     const espnSchool = espnWords.slice(0, -1).join(' ');
     if (pt === espnSchool) return true;
     // Handle two-word mascots: "North Carolina Tar Heels" -> "North Carolina"
-    if (espnWords.length > 2) {
+    // Only if stripping 2 words still leaves at least 2 words (avoids "Michigan State Spartans" -> "Michigan")
+    if (espnWords.length > 3) {
       const espnSchool2 = espnWords.slice(0, -2).join(' ');
       if (pt === espnSchool2) return true;
     }
-    // Handle ESPN abbreviations or picks using full name
-    if (et.startsWith(pt + ' ') && !espnSchool.startsWith(pt + ' ')) return true;
     return false;
   }
 
@@ -203,6 +202,11 @@
         }
       }
 
+      // Mark newly eliminated players in the scoreboard stats
+      if (newEliminations.length > 0) {
+        Scoreboard.markEliminated(newEliminations.map(e => e.slug));
+      }
+
       hasActiveGames = activeIds.length > 0;
 
       if (activeIds.length > 0) {
@@ -345,7 +349,10 @@
         for (const ent of currentPicks?.entrants || []) {
           for (const [s, pick] of Object.entries(ent.picks || {})) {
             if (teamsMatch(pick.team, teamName)) {
-              pickedPlayers.push({ player: pick.name, owner: ent.name, slug: pick.player_id });
+              let captain = '';
+              if (ent.scorer_captain?.player_id === pick.player_id) captain = '👑';
+              else if (ent.playmaker_captain?.player_id === pick.player_id) captain = '⛹️';
+              pickedPlayers.push({ player: pick.name, owner: ent.name, slug: pick.player_id, captain });
             }
           }
         }
@@ -411,14 +418,14 @@
           const byPlayer = {};
           for (const pp of s.pickedPlayers) {
             if (!byPlayer[pp.player]) byPlayer[pp.player] = { owners: [], slug: pp.slug };
-            byPlayer[pp.player].owners.push(pp.owner);
+            byPlayer[pp.player].owners.push({ name: pp.owner, captain: pp.captain });
           }
           const align = i === 0 ? 'left' : 'right';
           html += `<div class="live-game-side-picks ${align}">`;
           for (const [player, data] of Object.entries(byPlayer)) {
-            data.owners.sort((a, b) => a.localeCompare(b));
+            data.owners.sort((a, b) => a.name.localeCompare(b.name));
             const count = data.owners.length;
-            const ownerList = data.owners.join(', ');
+            const ownerList = data.owners.map(o => (o.captain ? o.captain + ' ' : '') + o.name).join(', ');
             // Get live pts from Scoreboard overrides
             const liveData = Scoreboard.getLiveOverride?.(data.slug);
             const ptsHtml = liveData ? ` <span class="live-game-pts">${liveData.pts}</span>` : '';
@@ -444,7 +451,7 @@
         const owners = el.dataset.owners;
         if (!owners) return;
         const playerName = el.textContent.replace(/^\d+x\s*/, '').replace(/\s*\d+$/, '').trim();
-        const ownerLines = owners.split(', ').map(o => `<div>${o}</div>`).join('');
+        const ownerLines = owners.split(', ').map(o => `<div style="padding:0.1rem 0">${o}</div>`).join('');
         const tip = document.createElement('div');
         tip.id = 'player-tooltip';
         tip.className = 'player-tooltip';
