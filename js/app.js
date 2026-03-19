@@ -521,25 +521,15 @@
       }
     }
 
-    // Check localStorage for recent elimination (within 5 minutes) to show on refresh
+    // On page load, show banner only if localStorage has a recent elimination (within 2 minutes)
     try {
       const stored = JSON.parse(localStorage.getItem('lastElimination') || 'null');
-      if (stored && (Date.now() - stored.time) < 300000 && stored.data?.length > 0) {
+      if (stored && (Date.now() - stored.time) < 120000 && stored.data?.length > 0) {
         showEliminationBanner(stored.data);
+        localStorage.removeItem('lastElimination'); // only show once per refresh
         return;
       }
-    } catch (e) {}
-
-    // Fallback: show banner for new eliminations from stats.json if recent
-    const recentUpdate = stats.last_updated &&
-      (Date.now() - new Date(stats.last_updated).getTime()) < 300000;
-
-    if (newlyEliminated.length > 0 && recentUpdate) {
-      try {
-        showEliminationBanner(newlyEliminated);
-      } catch (e) {
-        console.warn('Elimination banner failed:', e);
-      }
+    } catch (e) {
     }
   }
 
