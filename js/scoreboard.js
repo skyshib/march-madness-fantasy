@@ -335,7 +335,32 @@ const Scoreboard = (() => {
     nameEl.textContent = ranked.name;
 
     const uRank = uniquenessRanks?.[ranked.name] || '?';
+
+    // Find most similar entrant (most overlapping picks)
+    const myPicks = new Set();
+    for (let s = 1; s <= 16; s++) {
+      const p = ranked.seedBreakdown[s]?.pick;
+      if (p) myPicks.add(p.player_id);
+    }
+
+    let bestMatch = null;
+    let bestOverlap = -1;
+    for (const ent of picksData?.entrants || []) {
+      if (ent.name === ranked.name) continue;
+      let overlap = 0;
+      for (const [seed, pick] of Object.entries(ent.picks || {})) {
+        if (myPicks.has(pick.player_id)) overlap++;
+      }
+      if (overlap > bestOverlap) {
+        bestOverlap = overlap;
+        bestMatch = ent.name;
+      }
+    }
+
     let html = `<div class="detail-uniqueness">Uniqueness: #${uRank} of ${totalEntrants}</div>`;
+    if (bestMatch) {
+      html += `<div class="detail-uniqueness">Most similar: ${bestMatch} (${bestOverlap}/16 picks in common)</div>`;
+    }
 
     html += '<table class="detail-table"><thead><tr>';
     html += '<th>Seed</th><th>Player</th><th>Team</th><th>Picked</th><th>PTS</th>';
