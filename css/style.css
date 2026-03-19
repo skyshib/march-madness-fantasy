@@ -799,6 +799,117 @@ footer {
   100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
 }
 
+/* === Live Games Tracker === */
+.live-games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.live-game-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--live-green);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.8rem;
+  min-width: 220px;
+  max-width: 280px;
+  flex: 1 1 220px;
+}
+
+.live-game-status {
+  font-size: 0.65rem;
+  color: var(--live-green);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.live-game-status::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--live-green);
+  border-radius: 50%;
+  margin-right: 5px;
+  animation: pulse 2s infinite;
+}
+
+.live-game-matchup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.live-game-vs {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.live-game-team {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0.6;
+}
+
+.live-game-team.winning {
+  opacity: 1;
+}
+
+.live-game-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.live-game-team-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.live-game-team-name {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.live-game-score {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--text-primary);
+}
+
+.live-game-team.winning .live-game-score {
+  color: var(--live-green);
+}
+
+.live-game-players {
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.5rem;
+}
+
+.live-game-pick {
+  font-size: 0.6rem;
+  color: var(--text-secondary);
+}
+
+.live-game-owner {
+  color: var(--text-muted);
+  font-size: 0.55rem;
+}
+
 /* === Responsive === */
 @media (max-width: 900px) {
   h1 { font-size: 1.1rem; }

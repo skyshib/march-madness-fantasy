@@ -115,6 +115,7 @@
     try {
       const data = await ESPN.getTournamentScoreboard();
       const activeIds = [];
+      const gameStatusByTeam = {}; // lowercase team prefix -> status string
       const newEliminations = [];
 
       for (const event of data.events || []) {
@@ -128,6 +129,11 @@
 
         if (state === 'in') {
           activeIds.push(event.id);
+          const statusDetail = comp.status?.type?.shortDetail || '';
+          for (const team of comp.competitors || []) {
+            const tn = team.team?.displayName?.toLowerCase() || '';
+            gameStatusByTeam[tn] = statusDetail;
+          }
         }
 
         // Detect newly completed games
@@ -178,6 +184,16 @@
         const espnLiveStats = await ESPN.getLivePlayerStats(activeIds);
         if (Object.keys(espnLiveStats).length > 0) {
           const translated = translateLiveStats(espnLiveStats);
+          // Attach game clock to each live player
+          for (const [slug, stats] of Object.entries(translated)) {
+            const teamLower = (stats.team || '').toLowerCase();
+            for (const [tn, status] of Object.entries(gameStatusByTeam)) {
+              if (tn.startsWith(teamLower.split(' ')[0]) || teamLower.startsWith(tn.split(' ')[0])) {
+                stats.gameStatus = status;
+                break;
+              }
+            }
+          }
           Scoreboard.setLiveOverrides(translated);
           Scoreboard.render();
         }
@@ -186,6 +202,8 @@
         Scoreboard.setLiveOverrides({});
         Scoreboard.render();
       }
+
+      renderLiveGames(data);
 
       // Show elimination banner for newly completed games
       if (newEliminations.length > 0) {
@@ -265,6 +283,103 @@
     });
 
     return config.year;
+  }
+
+  /**
+   * Render live games tracker above the scoreboard.
+   */
+  function renderLiveGames(espnData) {
+    const container = document.getElementById('live-games-container');
+    if (!container) return;
+
+    const games = [];
+    for (const event of espnData.events || []) {
+      const comp = event.competitions?.[0];
+      const state = comp?.status?.type?.state;
+      if (state !== 'in') continue;
+
+      // Skip First Four
+      const notes = comp.notes || [];
+      if (notes.some(n => (n.headline || '').toLowerCase().includes('first four'))) continue;
+
+      const statusDetail = comp.status?.type?.shortDetail || '';
+      const teams = comp.competitors || [];
+
+      const gameInfo = { id: event.id, status: statusDetail, sides: [] };
+
+      for (const team of teams) {
+        const teamName = team.team?.displayName || '';
+        const teamShort = team.team?.abbreviation || '';
+        const seed = team.curatedRank?.current || team.seed || '';
+        const score = team.score || '0';
+        const logoId = team.team?.id;
+        const logoUrl = logoId ? `https://a.espncdn.com/i/teamlogos/ncaa/500/${logoId}.png` : '';
+
+        // Find picked players on this team
+        const pickedPlayers = [];
+        for (const ent of currentPicks?.entrants || []) {
+          for (const [s, pick] of Object.entries(ent.picks || {})) {
+            const pt = pick.team?.toLowerCase() || '';
+            if (teamName.toLowerCase().startsWith(pt) ||
+                pt.startsWith(teamName.toLowerCase().split(' ')[0])) {
+              pickedPlayers.push({ player: pick.name, owner: ent.name });
+            }
+          }
+        }
+
+        gameInfo.sides.push({ teamName, teamShort, seed, score, logoUrl, pickedPlayers });
+      }
+
+      games.push(gameInfo);
+    }
+
+    if (games.length === 0) {
+      container.innerHTML = '';
+      return;
+    }
+
+    let html = '<div class="live-games">';
+    for (const game of games) {
+      html += '<div class="live-game-card">';
+      html += `<div class="live-game-status">${game.status}</div>`;
+      html += '<div class="live-game-matchup">';
+
+      for (let i = 0; i < game.sides.length; i++) {
+        const s = game.sides[i];
+        const isWinning = i === 0
+          ? parseInt(s.score) >= parseInt(game.sides[1]?.score || 0)
+          : parseInt(s.score) > parseInt(game.sides[0]?.score || 0);
+
+        html += `<div class="live-game-team ${isWinning ? 'winning' : ''}">`;
+        html += `<img class="live-game-logo" src="${s.logoUrl}" alt="" onerror="this.style.display='none'">`;
+        html += `<div class="live-game-team-info">`;
+        html += `<span class="live-game-team-name">(${s.seed}) ${s.teamShort}</span>`;
+        html += `<span class="live-game-score">${s.score}</span>`;
+        html += '</div></div>';
+
+        if (i === 0) html += '<div class="live-game-vs">vs</div>';
+      }
+      html += '</div>';
+
+      // Players at stake
+      const allPicked = game.sides.flatMap(s => s.pickedPlayers);
+      if (allPicked.length > 0) {
+        html += '<div class="live-game-players">';
+        for (const s of game.sides) {
+          if (s.pickedPlayers.length > 0) {
+            for (const pp of s.pickedPlayers) {
+              html += `<span class="live-game-pick">${pp.player} <span class="live-game-owner">(${pp.owner})</span></span>`;
+            }
+          }
+        }
+        html += '</div>';
+      }
+
+      html += '</div>';
+    }
+    html += '</div>';
+
+    container.innerHTML = html;
   }
 
   /**

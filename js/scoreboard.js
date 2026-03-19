@@ -459,9 +459,11 @@ const Scoreboard = (() => {
 
     const isPlaymaker = info.captain === 'playmaker';
 
-    // Show live game indicator if player is in an active game
+    // Show live game indicator with clock
     if (info.live) {
-      html += '<div class="tt-live-game">In active game</div>';
+      const liveData = liveOverrides[info.pick.player_id];
+      const clock = liveData?.gameStatus || '';
+      html += `<div class="tt-live-game">LIVE${clock ? ' \u2022 ' + clock : ''}</div>`;
     }
 
     const activeGameIds = statsData?.active_games || [];
