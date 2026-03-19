@@ -362,17 +362,24 @@
       html += '</div>';
 
       // Players at stake
-      // Group picks by player name, list owners
-      const allPicked = game.sides.flatMap(s => s.pickedPlayers);
-      if (allPicked.length > 0) {
-        const byPlayer = {};
-        for (const pp of allPicked) {
-          if (!byPlayer[pp.player]) byPlayer[pp.player] = [];
-          byPlayer[pp.player].push(pp.owner);
-        }
-        html += '<div class="live-game-players">';
-        for (const [player, owners] of Object.entries(byPlayer)) {
-          html += `<span class="live-game-pick">${player} <span class="live-game-owner">(${owners.join(', ')})</span></span>`;
+      // Players grouped by side
+      const hasPicks = game.sides.some(s => s.pickedPlayers.length > 0);
+      if (hasPicks) {
+        html += '<div class="live-game-players-row">';
+        for (let i = 0; i < game.sides.length; i++) {
+          const s = game.sides[i];
+          const byPlayer = {};
+          for (const pp of s.pickedPlayers) {
+            if (!byPlayer[pp.player]) byPlayer[pp.player] = [];
+            byPlayer[pp.player].push(pp.owner);
+          }
+          const align = i === 0 ? 'left' : 'right';
+          html += `<div class="live-game-side-picks ${align}">`;
+          for (const [player, owners] of Object.entries(byPlayer)) {
+            html += `<div class="live-game-pick">${player} <span class="live-game-owner">(${owners.join(', ')})</span></div>`;
+          }
+          html += '</div>';
+          if (i === 0) html += '<div class="live-game-picks-divider"></div>';
         }
         html += '</div>';
       }
