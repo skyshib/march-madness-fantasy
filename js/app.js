@@ -374,13 +374,6 @@
     });
 
     document.body.appendChild(banner);
-
-    setTimeout(() => {
-      if (banner.parentNode) {
-        banner.classList.add('banner-exit');
-        setTimeout(() => banner.remove(), 500);
-      }
-    }, 10000);
   }
 
   // --- Auto-refresh ---
