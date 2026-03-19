@@ -1,9 +1,283 @@
 {
-  "last_updated": "2026-03-19T17:36:50.072455+00:00",
-  "players": {},
+  "last_updated": "2026-03-19T17:39:54.321792+00:00",
+  "players": {
+    "victor-valdes": {
+      "name": "Victor Valdes",
+      "team": "Troy Trojans",
+      "seed": 13,
+      "eliminated": false,
+      "stats": {
+        "pts": 8,
+        "reb": 0,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 8,
+          "reb": 0,
+          "ast": 1,
+          "game_id": "401856489",
+          "opponent": "Nebraska Cornhuskers"
+        }
+      ]
+    },
+    "thomas-dowd": {
+      "name": "Thomas Dowd",
+      "team": "Troy Trojans",
+      "seed": 13,
+      "eliminated": false,
+      "stats": {
+        "pts": 2,
+        "reb": 4,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 2,
+          "reb": 4,
+          "ast": 0,
+          "game_id": "401856489",
+          "opponent": "Nebraska Cornhuskers"
+        }
+      ]
+    },
+    "pryce-sandfort": {
+      "name": "Pryce Sandfort",
+      "team": "Nebraska Cornhuskers",
+      "seed": 4,
+      "eliminated": false,
+      "stats": {
+        "pts": 17,
+        "reb": 4,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 17,
+          "reb": 4,
+          "ast": 0,
+          "game_id": "401856489",
+          "opponent": "Troy Trojans"
+        }
+      ]
+    },
+    "izaiyah-nelson": {
+      "name": "Izaiyah Nelson",
+      "team": "South Florida Bulls",
+      "seed": 11,
+      "eliminated": false,
+      "stats": {
+        "pts": 0,
+        "reb": 1,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 1,
+          "ast": 0,
+          "game_id": "401856482",
+          "opponent": "Louisville Cardinals"
+        }
+      ]
+    },
+    "wes-enis": {
+      "name": "Wes Enis",
+      "team": "South Florida Bulls",
+      "seed": 11,
+      "eliminated": false,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "401856482",
+          "opponent": "Louisville Cardinals"
+        }
+      ]
+    },
+    "ryan-conwell": {
+      "name": "Ryan Conwell",
+      "team": "Louisville Cardinals",
+      "seed": 6,
+      "eliminated": false,
+      "stats": {
+        "pts": 0,
+        "reb": 1,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856482",
+          "opponent": "South Florida Bulls"
+        }
+      ]
+    },
+    "david-punch": {
+      "name": "David Punch",
+      "team": "TCU Horned Frogs",
+      "seed": 9,
+      "eliminated": false,
+      "stats": {
+        "pts": 5,
+        "reb": 10,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 5,
+          "reb": 10,
+          "ast": 0,
+          "game_id": "401856479",
+          "opponent": "Ohio State Buckeyes"
+        }
+      ]
+    },
+    "bruce-thornton": {
+      "name": "Bruce Thornton",
+      "team": "Ohio State Buckeyes",
+      "seed": 8,
+      "eliminated": false,
+      "stats": {
+        "pts": 5,
+        "reb": 3,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 5,
+          "reb": 3,
+          "ast": 2,
+          "game_id": "401856479",
+          "opponent": "TCU Horned Frogs"
+        }
+      ]
+    },
+    "dailyn-swain": {
+      "name": "Dailyn Swain",
+      "team": "Texas Longhorns",
+      "seed": 11,
+      "eliminated": false,
+      "stats": {
+        "pts": 13,
+        "reb": 8,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "First Four",
+          "pts": 13,
+          "reb": 8,
+          "ast": 4,
+          "game_id": "401856434",
+          "opponent": "NC State Wolfpack"
+        }
+      ]
+    },
+    "bryce-harris": {
+      "name": "Bryce Harris",
+      "team": "Howard Bison",
+      "seed": 16,
+      "eliminated": false,
+      "stats": {
+        "pts": 19,
+        "reb": 14,
+        "ast": 5
+      },
+      "games": [
+        {
+          "round": "First Four",
+          "pts": 19,
+          "reb": 14,
+          "ast": 5,
+          "game_id": "401856435",
+          "opponent": "UMBC Retrievers"
+        }
+      ]
+    },
+    "brant-byers": {
+      "name": "Brant Byers",
+      "team": "Miami (OH) RedHawks",
+      "seed": 11,
+      "eliminated": false,
+      "stats": {
+        "pts": 19,
+        "reb": 4,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "First Four",
+          "pts": 19,
+          "reb": 4,
+          "ast": 1,
+          "game_id": "401856436",
+          "opponent": "SMU Mustangs"
+        }
+      ]
+    },
+    "boopie-miller": {
+      "name": "Boopie Miller",
+      "team": "SMU Mustangs",
+      "seed": 11,
+      "eliminated": true,
+      "stats": {
+        "pts": 15,
+        "reb": 1,
+        "ast": 5
+      },
+      "games": [
+        {
+          "round": "First Four",
+          "pts": 15,
+          "reb": 1,
+          "ast": 5,
+          "game_id": "401856436",
+          "opponent": "Miami (OH) RedHawks"
+        }
+      ]
+    },
+    "dontae-horne": {
+      "name": "Dontae Horne",
+      "team": "Prairie View A&M Panthers",
+      "seed": 16,
+      "eliminated": false,
+      "stats": {
+        "pts": 25,
+        "reb": 7,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "First Four",
+          "pts": 25,
+          "reb": 7,
+          "ast": 0,
+          "game_id": "401856437",
+          "opponent": "Lehigh Mountain Hawks"
+        }
+      ]
+    }
+  },
   "active_games": [
     "401856489",
-    "401856479",
-    "401856482"
+    "401856482",
+    "401856479"
   ]
 }
