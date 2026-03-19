@@ -21,16 +21,26 @@
 
   /**
    * Check if a picks.json team name matches an ESPN full team name.
-   * e.g. "North Carolina" matches "North Carolina Tar Heels" but NOT "North Dakota State Bison"
+   * ESPN uses "Michigan Wolverines", "Michigan State Spartans", etc.
+   * We strip the last word (mascot) from ESPN name and compare.
    */
   function teamsMatch(pickTeam, espnTeam) {
     if (!pickTeam || !espnTeam) return false;
     const pt = pickTeam.toLowerCase().trim();
     const et = espnTeam.toLowerCase().trim();
-    // ESPN name starts with our short name AND next char is space or end
-    if (et.startsWith(pt) && (et.length === pt.length || et[pt.length] === ' ')) return true;
-    // Our name starts with ESPN short name
-    if (pt.startsWith(et) && (pt.length === et.length || pt[et.length] === ' ')) return true;
+    // Exact match
+    if (pt === et) return true;
+    // Strip last word (mascot) from ESPN name: "Michigan State Spartans" -> "Michigan State"
+    const espnWords = et.split(' ');
+    const espnSchool = espnWords.slice(0, -1).join(' ');
+    if (pt === espnSchool) return true;
+    // Handle two-word mascots: "North Carolina Tar Heels" -> "North Carolina"
+    if (espnWords.length > 2) {
+      const espnSchool2 = espnWords.slice(0, -2).join(' ');
+      if (pt === espnSchool2) return true;
+    }
+    // Handle ESPN abbreviations or picks using full name
+    if (et.startsWith(pt + ' ') && !espnSchool.startsWith(pt + ' ')) return true;
     return false;
   }
 
@@ -411,8 +421,8 @@
             // Get live pts from Scoreboard overrides
             const liveData = Scoreboard.getLiveOverride?.(data.slug);
             const ptsHtml = liveData ? ` <span class="live-game-pts">${liveData.pts}</span>` : '';
-            const safeOwners = ownerList.replace(/"/g, '&quot;');
-            html += `<div class="live-game-pick" data-owners="${safeOwners}">${count}x ${player}${ptsHtml}</div>`;
+            const safeOwners = ownerList.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+            html += `<div class="live-game-pick" title="${safeOwners}">${count}x ${player}${ptsHtml}</div>`;
           }
           html += '</div>';
           if (i === 0) html += '<div class="live-game-picks-divider"></div>';
