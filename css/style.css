@@ -197,33 +197,37 @@ main {
 .compact-mode .seed-cell {
   min-width: unset;
   font-size: 0.65rem;
-  padding: 0.15rem 0.1rem;
+  padding: 0.1rem 0.1rem;
   white-space: nowrap;
   vertical-align: middle;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 .compact-mode .seed-cell .compact-name {
   display: block;
-  font-size: 0.55rem;
+  font-size: 0.5rem;
   color: var(--text-secondary);
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 3.5rem;
+  line-height: 1;
+  margin-bottom: 1px;
 }
 
 .compact-mode .seed-cell .compact-pts {
   font-weight: 700;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
+  line-height: 1;
 }
 
 .compact-mode thead th {
-  padding: 0.25rem 0.1rem;
+  padding: 0.15rem 0.1rem;
   font-size: 0.55rem;
 }
 
 .compact-mode tbody td {
-  padding: 0.2rem 0.15rem;
+  padding: 0.1rem 0.1rem;
+  line-height: 1.1;
 }
 
 .compact-mode tbody td.col-name {
