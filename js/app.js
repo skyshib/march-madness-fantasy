@@ -217,13 +217,17 @@
       }
     }
 
-    // Also add all currently eliminated to known set (first load)
+    // On first load, only show banner if stats were updated within 2 minutes
+    const isFirstLoad = knownEliminated.size === 0;
+    const recentUpdate = stats.last_updated &&
+      (Date.now() - new Date(stats.last_updated).getTime()) < 120000;
+
+    // Add all currently eliminated to known set
     for (const [slug, player] of Object.entries(stats.players || {})) {
       if (player.eliminated) knownEliminated.add(slug);
     }
 
-    if (newlyEliminated.length > 0 && knownEliminated.size > newlyEliminated.length) {
-      // Only show banner if this isn't the first load (where everything is already eliminated)
+    if (newlyEliminated.length > 0 && (!isFirstLoad || recentUpdate)) {
       showEliminationBanner(newlyEliminated);
     }
   }
