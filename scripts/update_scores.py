@@ -188,6 +188,7 @@ def main():
     team_seeds = get_team_seeds(events)
     eliminated_teams = get_eliminated_teams(events)
     active_games = []
+    live_games = []   # live game scoreboard data for frontend
 
     # slug -> aggregated stats
     player_stats = {}
@@ -210,6 +211,23 @@ def main():
 
         if state == "in":
             active_games.append(event_id)
+            # Collect live game display data
+            status_detail = status.get("shortDetail", "")
+            game_teams = []
+            for team_entry in comp.get("competitors", []):
+                game_teams.append({
+                    "name": team_entry.get("team", {}).get("displayName", ""),
+                    "abbrev": team_entry.get("team", {}).get("abbreviation", ""),
+                    "seed": team_entry.get("curatedRank", {}).get("current") or team_entry.get("seed") or "",
+                    "score": team_entry.get("score", "0"),
+                    "logo": f"https://a.espncdn.com/i/teamlogos/ncaa/500/{team_entry.get('team', {}).get('id', '')}.png",
+                    "winner": team_entry.get("winner"),
+                })
+            live_games.append({
+                "id": event_id,
+                "status": status_detail,
+                "teams": game_teams,
+            })
 
         try:
             summary = fetch_game_boxscore(event_id)
@@ -297,6 +315,7 @@ def main():
         "last_updated": datetime.now(timezone.utc).isoformat(),
         "players": player_stats,
         "active_games": active_games,
+        "live_games": live_games,
     }
 
     stats_path = data_dir / "stats.json"

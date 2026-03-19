@@ -2,41 +2,28 @@
  * App initialization, data loading, auto-refresh, and year routing.
  */
 (async function () {
-  const REFRESH_STATIC_MS = 300000; // 5 min: re-check stats.json from GitHub
-  const REFRESH_LIVE_MS = 60000;    // 60 sec: poll ESPN for live game stats
-  let liveBackoff = 0;              // increases on ESPN errors
+  const REFRESH_MS = 60000; // 1 min: re-fetch stats.json
   let currentYear = null;
   let refreshTimer = null;
-  let liveTimer = null;
-  let lastLiveFetch = null;
   let currentPicks = null;
   let currentStats = null;
-  let espnIdToSlug = {};   // ESPN athlete ID -> our slug
-  let nameToSlug = {};     // normalized name -> our slug
-  let hasActiveGames = false;
-  let knownEliminated = new Set(); // track eliminated player slugs to detect new ones
   let currentHeadshots = {};
   let currentTeamLogos = {};
+  let knownEliminated = new Set();
 
   // --- Helpers ---
 
   /**
    * Check if a picks.json team name matches an ESPN full team name.
-   * ESPN uses "Michigan Wolverines", "Michigan State Spartans", etc.
-   * We strip the last word (mascot) from ESPN name and compare.
    */
   function teamsMatch(pickTeam, espnTeam) {
     if (!pickTeam || !espnTeam) return false;
     const pt = pickTeam.toLowerCase().trim();
     const et = espnTeam.toLowerCase().trim();
-    // Exact match
     if (pt === et) return true;
-    // Strip last word (mascot) from ESPN name: "Michigan State Spartans" -> "Michigan State"
     const espnWords = et.split(' ');
     const espnSchool = espnWords.slice(0, -1).join(' ');
     if (pt === espnSchool) return true;
-    // Handle two-word mascots: "North Carolina Tar Heels" -> "North Carolina"
-    // Only if stripping 2 words still leaves at least 2 words (avoids "Michigan State Spartans" -> "Michigan")
     if (espnWords.length > 3) {
       const espnSchool2 = espnWords.slice(0, -2).join(' ');
       if (pt === espnSchool2) return true;
@@ -48,14 +35,6 @@
     const resp = await fetch(path + '?t=' + Date.now());
     if (!resp.ok) throw new Error(`Failed to load ${path}: ${resp.status}`);
     return resp.json();
-  }
-
-  function normalizeName(name) {
-    return name.toLowerCase()
-      .replace(/['\.\-\u2019]/g, '')
-      .replace(/\s+(jr|sr|iii|ii|iv|v)$/i, '')
-      .replace(/\s+/g, ' ')
-      .trim();
   }
 
   function timeAgo(isoStr) {
@@ -73,8 +52,9 @@
 
   function updateIndicator() {
     const el = document.getElementById('update-indicator');
-    if (hasActiveGames && lastLiveFetch) {
-      el.textContent = `Live \u2022 ${timeAgo(lastLiveFetch.toISOString())}`;
+    const hasLive = currentStats?.live_games?.length > 0;
+    if (hasLive && currentStats?.last_updated) {
+      el.textContent = `Live \u2022 ${timeAgo(currentStats.last_updated)}`;
       el.className = 'update-indicator live';
     } else if (currentStats?.last_updated) {
       el.textContent = `Updated ${timeAgo(currentStats.last_updated)}`;
@@ -83,178 +63,6 @@
       el.textContent = 'No data yet';
       el.className = 'update-indicator';
     }
-  }
-
-  /**
-   * Build mappings from ESPN athlete ID and name -> our slug.
-   * Uses headshots.json (contains ESPN IDs in URLs) and picks.json.
-   */
-  function buildPlayerMappings(picks, headshots) {
-    espnIdToSlug = {};
-    nameToSlug = {};
-
-    // Extract ESPN IDs from headshot URLs: .../full/{ID}.png
-    for (const [slug, url] of Object.entries(headshots || {})) {
-      const match = url.match(/\/full\/(\d+)\.png/);
-      if (match) {
-        espnIdToSlug[match[1]] = slug;
-      }
-    }
-
-    // Build name -> slug from picks
-    for (const entrant of picks.entrants || []) {
-      for (const [seed, pick] of Object.entries(entrant.picks || {})) {
-        const norm = normalizeName(pick.name);
-        nameToSlug[norm] = pick.player_id;
-      }
-    }
-  }
-
-  /**
-   * Translate ESPN live stats (keyed by ESPN athlete ID) to slug-keyed stats.
-   */
-  function translateLiveStats(espnStats) {
-    const translated = {};
-    for (const [espnId, stats] of Object.entries(espnStats)) {
-      // Try ESPN ID mapping first
-      let slug = espnIdToSlug[espnId];
-      // Fallback to name matching
-      if (!slug && stats.name) {
-        slug = nameToSlug[normalizeName(stats.name)];
-      }
-      if (slug) {
-        translated[slug] = stats;
-      }
-    }
-    return translated;
-  }
-
-  let knownCompletedGames = new Set(); // track game IDs we've already processed
-
-  /**
-   * Fetch live ESPN data for active games and update the scoreboard.
-   * Also detect newly completed games for elimination banners.
-   */
-  async function refreshLive() {
-    if (!currentYear || !currentPicks) return;
-
-    try {
-      const data = await ESPN.getTournamentScoreboard();
-      const activeIds = [];
-      const gameStatusByTeam = {}; // lowercase team prefix -> status string
-      const newEliminations = [];
-
-      for (const event of data.events || []) {
-        // Skip First Four
-        const notes = event.competitions?.[0]?.notes || [];
-        const isFirstFour = notes.some(n => (n.headline || '').toLowerCase().includes('first four'));
-        if (isFirstFour) continue;
-
-        const comp = event.competitions?.[0];
-        const state = comp?.status?.type?.state;
-
-        if (state === 'in') {
-          activeIds.push(event.id);
-          const statusDetail = comp.status?.type?.shortDetail || '';
-          for (const team of comp.competitors || []) {
-            const tn = team.team?.displayName?.toLowerCase() || '';
-            gameStatusByTeam[tn] = statusDetail;
-          }
-        }
-
-        // Detect newly completed games
-        if (state === 'post' && !knownCompletedGames.has(event.id)) {
-          knownCompletedGames.add(event.id);
-
-          // Find the losing team
-          for (const team of comp.competitors || []) {
-            if (team.winner === false) {
-              const losingTeam = team.team?.displayName || '';
-              const losingSeed = team.curatedRank?.current || team.seed || '';
-              const winnerTeam = comp.competitors.find(t => t.winner === true);
-              const winnerName = winnerTeam?.team?.displayName || '';
-              const winnerSeed = winnerTeam?.curatedRank?.current || winnerTeam?.seed || '';
-
-              // Find players from this team in our picks
-              for (const ent of currentPicks.entrants || []) {
-                for (const [seed, pick] of Object.entries(ent.picks || {})) {
-                  const playerTeam = pick.team?.toLowerCase() || '';
-                  if (teamsMatch(pick.team, losingTeam)) {
-                    // This entrant had a player on the losing team
-                    const existing = newEliminations.find(e => e.slug === pick.player_id);
-                    if (existing) {
-                      if (!existing.owners.includes(ent.name)) existing.owners.push(ent.name);
-                    } else {
-                      newEliminations.push({
-                        slug: pick.player_id,
-                        name: pick.name,
-                        team: losingTeam,
-                        seed: losingSeed,
-                        owners: [ent.name],
-                        opponent: winnerName,
-                        opponentSeed: winnerSeed,
-                      });
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
-      // Mark newly eliminated players in the scoreboard stats
-      if (newEliminations.length > 0) {
-        Scoreboard.markEliminated(newEliminations.map(e => e.slug));
-      }
-
-      hasActiveGames = activeIds.length > 0;
-
-      if (activeIds.length > 0) {
-        const espnLiveStats = await ESPN.getLivePlayerStats(activeIds);
-        if (Object.keys(espnLiveStats).length > 0) {
-          const translated = translateLiveStats(espnLiveStats);
-          // Attach game clock to each live player
-          for (const [slug, stats] of Object.entries(translated)) {
-            const teamLower = (stats.team || '').toLowerCase();
-            for (const [tn, status] of Object.entries(gameStatusByTeam)) {
-              if (tn.startsWith(teamLower.split(' ')[0]) || teamLower.startsWith(tn.split(' ')[0])) {
-                stats.gameStatus = status;
-                break;
-              }
-            }
-          }
-          Scoreboard.setLiveOverrides(translated);
-          Scoreboard.render();
-        }
-        lastLiveFetch = new Date();
-      } else {
-        Scoreboard.setLiveOverrides({});
-        Scoreboard.render();
-      }
-
-      renderLiveGames(data);
-
-      // Show elimination banner for newly completed games
-      if (newEliminations.length > 0) {
-        // Store elimination time in localStorage for the 5-min refresh window
-        localStorage.setItem('lastElimination', JSON.stringify({
-          time: Date.now(),
-          data: newEliminations,
-        }));
-        try {
-          showEliminationBanner(newEliminations);
-        } catch (e) {
-          console.warn('Elimination banner failed:', e);
-        }
-      }
-      liveBackoff = 0; // success, reset backoff
-    } catch (e) {
-      console.warn('Live refresh failed:', e);
-      liveBackoff = Math.min(liveBackoff + 1, 5); // max 5 retries of backoff
-    }
-
-    updateIndicator();
   }
 
   // --- Data loading ---
@@ -276,22 +84,27 @@
     currentHeadshots = headshots;
     currentTeamLogos = teamLogos;
 
-    // Build ID mappings for live overlay
-    buildPlayerMappings(picks, headshots);
-
     Scoreboard.setData(picks, stats, headshots, teamLogos);
     Scoreboard.setLiveOverrides({});
+
+    // Pass live game info for rooting-for feature
+    const liveGamesForScoreboard = (stats.live_games || []).map(g => ({
+      teams: (g.teams || []).map(t => ({
+        name: t.abbrev || t.name,
+        fullName: (t.name || '').toLowerCase(),
+        seed: t.seed,
+      })),
+    }));
+    Scoreboard.setLiveGames(liveGamesForScoreboard);
     Scoreboard.render();
 
-    // Detect newly eliminated players
+    // Detect eliminations
     if (isCurrentYear) {
       checkForEliminations(picks, stats);
     }
 
-    // If current year, immediately try live fetch
-    if (isCurrentYear) {
-      await refreshLive();
-    }
+    // Render live games tracker
+    renderLiveGames(stats);
 
     updateIndicator();
   }
@@ -318,126 +131,83 @@
   }
 
   /**
-   * Render live games tracker above the scoreboard.
+   * Render live games tracker from stats.json live_games data.
    */
-  function renderLiveGames(espnData) {
+  function renderLiveGames(stats) {
     const container = document.getElementById('live-games-container');
     if (!container) return;
 
-    const games = [];
-    for (const event of espnData.events || []) {
-      const comp = event.competitions?.[0];
-      const state = comp?.status?.type?.state;
-      if (state !== 'in') continue;
+    const liveGames = stats.live_games || [];
 
-      // Skip First Four
-      const notes = comp.notes || [];
-      if (notes.some(n => (n.headline || '').toLowerCase().includes('first four'))) continue;
-
-      const statusDetail = comp.status?.type?.shortDetail || '';
-      const teams = comp.competitors || [];
-
-      const gameInfo = { id: event.id, status: statusDetail, sides: [] };
-
-      for (const team of teams) {
-        const teamName = team.team?.displayName || '';
-        const teamShort = team.team?.abbreviation || '';
-        const seed = team.curatedRank?.current || team.seed || '';
-        const score = team.score || '0';
-        const logoId = team.team?.id;
-        const logoUrl = logoId ? `https://a.espncdn.com/i/teamlogos/ncaa/500/${logoId}.png` : '';
-
-        // Find picked players on this team
-        const pickedPlayers = [];
-        for (const ent of currentPicks?.entrants || []) {
-          for (const [s, pick] of Object.entries(ent.picks || {})) {
-            if (teamsMatch(pick.team, teamName)) {
-              let captain = '';
-              if (ent.scorer_captain?.player_id === pick.player_id) captain = '👑';
-              else if (ent.playmaker_captain?.player_id === pick.player_id) captain = '⛹️';
-              pickedPlayers.push({ player: pick.name, owner: ent.name, slug: pick.player_id, captain });
-            }
-          }
-        }
-
-        gameInfo.sides.push({ teamName, teamShort, seed, score, logoUrl, pickedPlayers });
-      }
-
-      games.push(gameInfo);
-    }
-
-    // Pass game info to Scoreboard for name hover tooltips
-    const liveGamesForScoreboard = games.map(g => ({
-      teams: g.sides.map(s => ({
-        name: s.teamShort,
-        fullName: s.teamName.toLowerCase(),
-        seed: s.seed,
-      })),
-    }));
-    Scoreboard.setLiveGames(liveGamesForScoreboard);
-
-    if (games.length === 0) {
+    if (liveGames.length === 0) {
       container.innerHTML = '';
       return;
     }
 
     let html = '<div class="live-games">';
-    for (const game of games) {
+    for (const game of liveGames) {
       html += '<div class="live-game-card">';
-      html += `<div class="live-game-status">${game.status}</div>`;
+      html += `<div class="live-game-status">${game.status || 'Live'}</div>`;
       html += '<div class="live-game-matchup">';
 
-      for (let i = 0; i < game.sides.length; i++) {
-        const s = game.sides[i];
-        const isWinning = i === 0
-          ? parseInt(s.score) >= parseInt(game.sides[1]?.score || 0)
-          : parseInt(s.score) > parseInt(game.sides[0]?.score || 0);
+      const teams = game.teams || [];
+      for (let i = 0; i < teams.length; i++) {
+        const t = teams[i];
+        const otherScore = parseInt(teams[1 - i]?.score || 0);
+        const myScore = parseInt(t.score || 0);
+        const isWinning = myScore >= otherScore && (i === 0 || myScore > otherScore);
 
         html += `<div class="live-game-team ${isWinning ? 'winning' : ''}">`;
-        html += `<img class="live-game-logo" src="${s.logoUrl}" alt="" onerror="this.style.display='none'">`;
-        html += `<div class="live-game-team-info">`;
-        html += `<span class="live-game-team-name">(${s.seed}) ${s.teamShort}</span>`;
-        html += `<span class="live-game-score">${s.score}</span>`;
+        html += `<img class="live-game-logo" src="${t.logo}" alt="" onerror="this.style.display='none'">`;
+        html += '<div class="live-game-team-info">';
+        html += `<span class="live-game-team-name">(${t.seed}) ${t.abbrev || t.name}</span>`;
+        html += `<span class="live-game-score">${t.score}</span>`;
         html += '</div></div>';
 
         if (i === 0) html += '<div class="live-game-vs">vs</div>';
       }
       html += '</div>';
 
-      // Players at stake
-      // Players grouped by side — show (count) Name pts
-      const hasPicks = game.sides.some(s => s.pickedPlayers.length > 0);
-      if (hasPicks) {
-        // Get live box score stats for this game
-        const gameStats = {};
-        try {
-          // Use already-fetched live data from Scoreboard overrides
-          // Match players by name to get their current pts
-        } catch (e) {}
+      // Players grouped by side
+      const hasPicks = teams.some(t => {
+        for (const ent of currentPicks?.entrants || []) {
+          for (const [s, pick] of Object.entries(ent.picks || {})) {
+            if (teamsMatch(pick.team, t.name)) return true;
+          }
+        }
+        return false;
+      });
 
+      if (hasPicks) {
         html += '<div class="live-game-players-row">';
-        for (let i = 0; i < game.sides.length; i++) {
-          const s = game.sides[i];
+        for (let i = 0; i < teams.length; i++) {
+          const t = teams[i];
           const byPlayer = {};
-          for (const pp of s.pickedPlayers) {
-            if (!byPlayer[pp.player]) byPlayer[pp.player] = { owners: [], slug: pp.slug };
-            byPlayer[pp.player].owners.push({ name: pp.owner, captain: pp.captain });
+          for (const ent of currentPicks?.entrants || []) {
+            for (const [s, pick] of Object.entries(ent.picks || {})) {
+              if (teamsMatch(pick.team, t.name)) {
+                if (!byPlayer[pick.name]) byPlayer[pick.name] = { owners: [], slug: pick.player_id };
+                let captain = '';
+                if (ent.scorer_captain?.player_id === pick.player_id) captain = '👑';
+                else if (ent.playmaker_captain?.player_id === pick.player_id) captain = '⛹️';
+                byPlayer[pick.name].owners.push({ name: ent.name, captain });
+              }
+            }
           }
           const align = i === 0 ? 'left' : 'right';
           html += `<div class="live-game-side-picks ${align}">`;
           for (const [player, data] of Object.entries(byPlayer)) {
             data.owners.sort((a, b) => {
-              // Captains first, then alphabetical
               if (a.captain && !b.captain) return -1;
               if (!a.captain && b.captain) return 1;
               return a.name.localeCompare(b.name);
             });
             const count = data.owners.length;
             const ownerList = data.owners.map(o => (o.captain ? o.captain + ' ' : '') + o.name).join(', ');
-            // Get live pts from Scoreboard overrides
-            const liveData = Scoreboard.getLiveOverride?.(data.slug);
-            const ptsHtml = liveData ? ` <span class="live-game-pts">${liveData.pts}</span>` : '';
             const safeOwners = ownerList.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+            const playerStats = stats.players?.[data.slug];
+            const pts = playerStats?.stats?.pts || 0;
+            const ptsHtml = pts > 0 ? ` <span class="live-game-pts">${pts}</span>` : '';
             html += `<div class="live-game-pick" data-owners="${safeOwners}">${count}x ${player}${ptsHtml}</div>`;
           }
           html += '</div>';
@@ -452,7 +222,7 @@
 
     container.innerHTML = html;
 
-    // Attach custom hover tooltips to live game player picks
+    // Attach hover tooltips
     container.querySelectorAll('.live-game-pick[data-owners]').forEach(el => {
       el.addEventListener('mouseenter', (e) => {
         document.getElementById('player-tooltip')?.remove();
@@ -498,7 +268,6 @@
             }
           }
         }
-        // Get opponent from last game
         const lastGame = player.games?.[player.games.length - 1];
         const opponent = lastGame?.opponent || '';
 
@@ -518,10 +287,7 @@
 
     // Add all currently eliminated to known set
     for (const [slug, player] of Object.entries(stats.players || {})) {
-      if (player.eliminated) {
-        knownEliminated.add(slug);
-        knownCompletedGames.add(player.games?.[player.games.length - 1]?.game_id);
-      }
+      if (player.eliminated) knownEliminated.add(slug);
     }
 
     // On page load, show banner only if localStorage has a recent elimination (within 2 minutes)
@@ -529,10 +295,22 @@
       const stored = JSON.parse(localStorage.getItem('lastElimination') || 'null');
       if (stored && (Date.now() - stored.time) < 120000 && stored.data?.length > 0) {
         showEliminationBanner(stored.data);
-        localStorage.removeItem('lastElimination'); // only show once per refresh
+        localStorage.removeItem('lastElimination');
         return;
       }
-    } catch (e) {
+    } catch (e) {}
+
+    // Show banner for new eliminations detected from stats.json
+    if (newlyEliminated.length > 0) {
+      localStorage.setItem('lastElimination', JSON.stringify({
+        time: Date.now(),
+        data: newlyEliminated,
+      }));
+      try {
+        showEliminationBanner(newlyEliminated);
+      } catch (e) {
+        console.warn('Elimination banner failed:', e);
+      }
     }
   }
 
@@ -552,7 +330,6 @@
       if (audioCtx.state === 'suspended') audioCtx.resume();
       const t = audioCtx.currentTime;
 
-      // Deep boom
       const osc1 = audioCtx.createOscillator();
       const gain1 = audioCtx.createGain();
       osc1.type = 'sine';
@@ -563,7 +340,6 @@
       osc1.connect(gain1).connect(audioCtx.destination);
       osc1.start(t); osc1.stop(t + 1.5);
 
-      // Buzzer
       const osc2 = audioCtx.createOscillator();
       const gain2 = audioCtx.createGain();
       osc2.type = 'sawtooth';
@@ -574,7 +350,6 @@
       osc2.connect(gain2).connect(audioCtx.destination);
       osc2.start(t); osc2.stop(t + 0.8);
 
-      // Second hit
       const osc3 = audioCtx.createOscillator();
       const gain3 = audioCtx.createGain();
       osc3.type = 'sine';
@@ -585,9 +360,7 @@
       gain3.gain.exponentialRampToValueAtTime(0.001, t + 2);
       osc3.connect(gain3).connect(audioCtx.destination);
       osc3.start(t); osc3.stop(t + 2);
-    } catch (e) {
-      // Audio not available
-    }
+    } catch (e) {}
   }
 
   function showEliminationBanner(eliminated) {
@@ -598,7 +371,6 @@
     banner.id = 'elimination-banner';
     banner.className = 'elimination-banner';
 
-    // Skull rain
     for (let i = 0; i < 20; i++) {
       const skull = document.createElement('span');
       skull.className = 'falling-skull';
@@ -612,7 +384,6 @@
     const content = document.createElement('div');
     content.className = 'elimination-content';
 
-    // Group eliminated players by team
     const byTeam = {};
     for (const p of eliminated) {
       const teamKey = p.team || 'Unknown';
@@ -622,7 +393,6 @@
       byTeam[teamKey].players.push(p);
     }
 
-    // Helper: find team logo by partial match (stats has "Ohio State Buckeyes", logos has "Ohio State")
     function findLogo(teamFullName) {
       if (currentTeamLogos[teamFullName]) return currentTeamLogos[teamFullName];
       for (const [key, url] of Object.entries(currentTeamLogos)) {
@@ -636,17 +406,13 @@
 
     for (const [teamName, group] of Object.entries(byTeam)) {
       const logoUrl = findLogo(teamName);
-      const logoHtml = logoUrl
-        ? `<img class="elim-team-logo" src="${logoUrl}" alt="">`
-        : '';
-
+      const logoHtml = logoUrl ? `<img class="elim-team-logo" src="${logoUrl}" alt="">` : '';
       const seedLabel = group.seed ? `(${group.seed})` : '';
 
       html += '<div class="elim-team-block">';
       html += `<div class="elim-team-header">${logoHtml}<span class="elim-team-name">${seedLabel} ${teamName}</span></div>`;
 
       if (group.opponent) {
-        // Find opponent seed by looking up any player on that team
         let oppSeed = '';
         for (const [, pl] of Object.entries(currentStats?.players || {})) {
           if (pl.team === group.opponent && pl.seed) {
@@ -657,19 +423,16 @@
         html += `<div class="elim-lost-to">Eliminated by ${oppSeed}${group.opponent}</div>`;
       }
 
-      // Player cards
       html += '<div class="elim-players">';
       for (const p of group.players) {
         const hsUrl = currentHeadshots[p.slug] || '';
-        const hsHtml = hsUrl
-          ? `<img class="elim-headshot" src="${hsUrl}" alt="">`
-          : '';
+        const hsHtml = hsUrl ? `<img class="elim-headshot" src="${hsUrl}" alt="">` : '';
         const ownerLines = p.owners.map(o => `<span class="owner-line">☠️ ${o}</span>`).join('');
+        const playerStats = currentStats?.players?.[p.slug];
+        const totalPts = playerStats?.stats?.pts || 0;
         html += '<div class="elim-player-card">';
         html += hsHtml;
         html += '<div class="elim-player-info">';
-        const playerStats = currentStats?.players?.[p.slug];
-        const totalPts = playerStats?.stats?.pts || 0;
         html += `<div class="elim-player-name">${p.name}</div>`;
         html += `<div class="elim-player-dates">He scored ${totalPts} points.<br>May he rest in peace.</div>`;
         html += '<div class="elim-player-divider"></div>';
@@ -679,7 +442,7 @@
       html += '</div></div>';
     }
 
-    html += '</div>'; // close elim-teams-grid
+    html += '</div>';
     html += '<div class="elim-dismiss">tap to dismiss</div>';
 
     content.innerHTML = html;
@@ -695,23 +458,11 @@
 
   // --- Auto-refresh ---
   function startTimers() {
-    // Slow timer: re-fetch stats.json (picks up cron-committed changes)
     if (refreshTimer) clearInterval(refreshTimer);
     refreshTimer = setInterval(() => {
       if (currentYear) loadYear(currentYear);
-    }, REFRESH_STATIC_MS);
+    }, REFRESH_MS);
 
-    // Fast timer: poll ESPN live data with exponential backoff on errors
-    if (liveTimer) clearInterval(liveTimer);
-    function scheduleLivePoll() {
-      const delay = REFRESH_LIVE_MS * Math.pow(2, liveBackoff);
-      liveTimer = setTimeout(() => {
-        if (currentYear) refreshLive().finally(scheduleLivePoll);
-      }, delay);
-    }
-    scheduleLivePoll();
-
-    // Also update the indicator text every 10s
     setInterval(updateIndicator, 10000);
   }
 
