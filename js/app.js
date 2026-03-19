@@ -174,7 +174,7 @@
   /**
    * Render live games tracker from stats.json live_games data.
    */
-  function renderLiveGames(stats) {
+  function renderLiveGames(stats, livePlayerStats) {
     const container = document.getElementById('live-games-container');
     if (!container) return;
 
@@ -246,8 +246,10 @@
             const count = data.owners.length;
             const ownerList = data.owners.map(o => (o.captain ? o.captain + ' ' : '') + o.name).join(', ');
             const safeOwners = ownerList.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-            const playerStats = stats.players?.[data.slug];
-            const pts = playerStats?.stats?.pts || 0;
+            // Prefer live ESPN pts, fall back to cron stats
+            const livePts = livePlayerStats?.[data.slug]?.pts;
+            const cronPts = stats.players?.[data.slug]?.stats?.pts || 0;
+            const pts = livePts !== undefined ? livePts : cronPts;
             const ptsHtml = pts > 0 ? ` <span class="live-game-pts">${pts}</span>` : '';
             html += `<div class="live-game-pick" data-owners="${safeOwners}">${count}x ${player}${ptsHtml}</div>`;
           }
@@ -367,10 +369,12 @@
       }
 
       // Merge live player stats
+      let translatedLive = {};
       if (activeIds.length > 0) {
         const espnLive = await ESPN.getLivePlayerStats(activeIds);
         if (Object.keys(espnLive).length > 0) {
-          Scoreboard.setLiveOverrides(translateLiveStats(espnLive));
+          translatedLive = translateLiveStats(espnLive);
+          Scoreboard.setLiveOverrides(translatedLive);
           Scoreboard.render();
         }
       } else {
@@ -384,8 +388,8 @@
       }));
       Scoreboard.setLiveGames(liveForScoreboard);
 
-      // Render live games from ESPN data (fresher than stats.json)
-      renderLiveGames({ live_games: liveGames, players: currentStats?.players });
+      // Render live games with fresh ESPN player stats
+      renderLiveGames({ live_games: liveGames, players: currentStats?.players }, translatedLive);
 
       updateIndicator();
     } catch (e) {
