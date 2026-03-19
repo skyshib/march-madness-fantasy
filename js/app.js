@@ -322,7 +322,7 @@
             const pt = pick.team?.toLowerCase() || '';
             if (teamName.toLowerCase().startsWith(pt) ||
                 pt.startsWith(teamName.toLowerCase().split(' ')[0])) {
-              pickedPlayers.push({ player: pick.name, owner: ent.name });
+              pickedPlayers.push({ player: pick.name, owner: ent.name, slug: pick.player_id });
             }
           }
         }
@@ -362,21 +362,30 @@
       html += '</div>';
 
       // Players at stake
-      // Players grouped by side
+      // Players grouped by side — show (count) Name pts
       const hasPicks = game.sides.some(s => s.pickedPlayers.length > 0);
       if (hasPicks) {
+        // Get live box score stats for this game
+        const gameStats = {};
+        try {
+          // Use already-fetched live data from Scoreboard overrides
+          // Match players by name to get their current pts
+        } catch (e) {}
+
         html += '<div class="live-game-players-row">';
         for (let i = 0; i < game.sides.length; i++) {
           const s = game.sides[i];
           const byPlayer = {};
           for (const pp of s.pickedPlayers) {
-            if (!byPlayer[pp.player]) byPlayer[pp.player] = [];
-            byPlayer[pp.player].push(pp.owner);
+            if (!byPlayer[pp.player]) byPlayer[pp.player] = { owners: [], slug: pp.slug };
+            byPlayer[pp.player].owners.push(pp.owner);
           }
           const align = i === 0 ? 'left' : 'right';
           html += `<div class="live-game-side-picks ${align}">`;
-          for (const [player, owners] of Object.entries(byPlayer)) {
-            html += `<div class="live-game-pick">${player} <span class="live-game-owner">(${owners.join(', ')})</span></div>`;
+          for (const [player, data] of Object.entries(byPlayer)) {
+            const count = data.owners.length;
+            const ownerList = data.owners.join(', ');
+            html += `<div class="live-game-pick" title="${ownerList}">(${count}) ${player}</div>`;
           }
           html += '</div>';
           if (i === 0) html += '<div class="live-game-picks-divider"></div>';
