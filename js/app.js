@@ -675,8 +675,10 @@
         html += '<div class="elim-player-card">';
         html += hsHtml;
         html += '<div class="elim-player-info">';
+        const playerStats = currentStats?.players?.[p.slug];
+        const totalPts = playerStats?.stats?.pts || 0;
         html += `<div class="elim-player-name">${p.name}</div>`;
-        html += `<div class="elim-player-dates">R.I.P.</div>`;
+        html += `<div class="elim-player-dates">He scored ${totalPts} points.<br>May he rest in peace.</div>`;
         html += '<div class="elim-player-divider"></div>';
         html += `<div class="elim-player-owners">${ownerLines}</div>`;
         html += '</div></div>';
