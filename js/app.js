@@ -232,9 +232,53 @@
     }
   }
 
+  function playEliminationSound() {
+    try {
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+
+      // Deep boom
+      const osc1 = ctx.createOscillator();
+      const gain1 = ctx.createGain();
+      osc1.type = 'sine';
+      osc1.frequency.setValueAtTime(80, ctx.currentTime);
+      osc1.frequency.exponentialRampToValueAtTime(30, ctx.currentTime + 1.5);
+      gain1.gain.setValueAtTime(0.6, ctx.currentTime);
+      gain1.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.5);
+      osc1.connect(gain1).connect(ctx.destination);
+      osc1.start(); osc1.stop(ctx.currentTime + 1.5);
+
+      // Buzzer
+      const osc2 = ctx.createOscillator();
+      const gain2 = ctx.createGain();
+      osc2.type = 'sawtooth';
+      osc2.frequency.setValueAtTime(150, ctx.currentTime);
+      osc2.frequency.exponentialRampToValueAtTime(50, ctx.currentTime + 0.8);
+      gain2.gain.setValueAtTime(0.3, ctx.currentTime);
+      gain2.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.8);
+      osc2.connect(gain2).connect(ctx.destination);
+      osc2.start(); osc2.stop(ctx.currentTime + 0.8);
+
+      // Second hit
+      const osc3 = ctx.createOscillator();
+      const gain3 = ctx.createGain();
+      osc3.type = 'sine';
+      osc3.frequency.setValueAtTime(60, ctx.currentTime + 0.3);
+      osc3.frequency.exponentialRampToValueAtTime(20, ctx.currentTime + 2);
+      gain3.gain.setValueAtTime(0, ctx.currentTime);
+      gain3.gain.setValueAtTime(0.4, ctx.currentTime + 0.3);
+      gain3.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 2);
+      osc3.connect(gain3).connect(ctx.destination);
+      osc3.start(); osc3.stop(ctx.currentTime + 2);
+    } catch (e) {
+      // Audio not available, that's fine
+    }
+  }
+
   function showEliminationBanner(eliminated) {
     // Remove existing banner
     document.getElementById('elimination-banner')?.remove();
+
+    playEliminationSound();
 
     const banner = document.createElement('div');
     banner.id = 'elimination-banner';
