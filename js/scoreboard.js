@@ -181,6 +181,17 @@ const Scoreboard = (() => {
           if (info.eliminated) td.classList.add('eliminated');
           if (info.live) td.classList.add('live');
 
+          // Headshot
+          const hsUrl = headshotsData[info.pick.player_id];
+          if (hsUrl) {
+            const img = document.createElement('img');
+            img.className = 'seed-headshot';
+            img.src = hsUrl;
+            img.alt = '';
+            img.onerror = function() { this.style.display = 'none'; };
+            td.appendChild(img);
+          }
+
           // Player last name
           const nameSpan = document.createElement('span');
           nameSpan.className = 'seed-player-name';
@@ -308,16 +319,8 @@ const Scoreboard = (() => {
     if (info.captain === 'scorer') captainLabel = ' <span class="captain-badge scorer">1.5x PTS</span>';
     else if (info.captain === 'playmaker') captainLabel = ' <span class="captain-badge playmaker">PTS+REB+AST</span>';
 
-    const headshotUrl = headshotsData[info.pick.player_id];
-    let html = '';
-    if (headshotUrl) {
-      html += `<div class="tt-top"><img class="tt-headshot" src="${headshotUrl}" alt="" onerror="this.style.display='none'"><div>`;
-    } else {
-      html += '<div class="tt-top"><div>';
-    }
-    html += `<div class="tt-header">${info.pick.name}${captainLabel}</div>`;
+    let html = `<div class="tt-header">${info.pick.name}${captainLabel}</div>`;
     html += `<div class="tt-team">${info.pick.team}</div>`;
-    html += '</div></div>';
 
     const isPlaymaker = info.captain === 'playmaker';
 
