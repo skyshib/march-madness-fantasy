@@ -103,19 +103,78 @@
     return translated;
   }
 
+  let knownCompletedGames = new Set(); // track game IDs we've already processed
+
   /**
    * Fetch live ESPN data for active games and update the scoreboard.
+   * Also detect newly completed games for elimination banners.
    */
   async function refreshLive() {
     if (!currentYear || !currentPicks) return;
 
     try {
-      // Check what games are active right now
-      const activeIds = await ESPN.getActiveGameIds();
+      const data = await ESPN.getTournamentScoreboard();
+      const activeIds = [];
+      const newEliminations = [];
+
+      for (const event of data.events || []) {
+        // Skip First Four
+        const notes = event.competitions?.[0]?.notes || [];
+        const isFirstFour = notes.some(n => (n.headline || '').toLowerCase().includes('first four'));
+        if (isFirstFour) continue;
+
+        const comp = event.competitions?.[0];
+        const state = comp?.status?.type?.state;
+
+        if (state === 'in') {
+          activeIds.push(event.id);
+        }
+
+        // Detect newly completed games
+        if (state === 'post' && !knownCompletedGames.has(event.id)) {
+          knownCompletedGames.add(event.id);
+
+          // Find the losing team
+          for (const team of comp.competitors || []) {
+            if (team.winner === false) {
+              const losingTeam = team.team?.displayName || '';
+              const losingSeed = team.curatedRank?.current || team.seed || '';
+              const winnerTeam = comp.competitors.find(t => t.winner === true);
+              const winnerName = winnerTeam?.team?.displayName || '';
+              const winnerSeed = winnerTeam?.curatedRank?.current || winnerTeam?.seed || '';
+
+              // Find players from this team in our picks
+              for (const ent of currentPicks.entrants || []) {
+                for (const [seed, pick] of Object.entries(ent.picks || {})) {
+                  const playerTeam = pick.team?.toLowerCase() || '';
+                  if (losingTeam.toLowerCase().startsWith(playerTeam) ||
+                      playerTeam.startsWith(losingTeam.toLowerCase().split(' ')[0])) {
+                    // This entrant had a player on the losing team
+                    const existing = newEliminations.find(e => e.slug === pick.player_id);
+                    if (existing) {
+                      if (!existing.owners.includes(ent.name)) existing.owners.push(ent.name);
+                    } else {
+                      newEliminations.push({
+                        slug: pick.player_id,
+                        name: pick.name,
+                        team: losingTeam,
+                        seed: losingSeed,
+                        owners: [ent.name],
+                        opponent: winnerName,
+                        opponentSeed: winnerSeed,
+                      });
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
       hasActiveGames = activeIds.length > 0;
 
-      if (hasActiveGames) {
-        // Fetch box scores for all active games
+      if (activeIds.length > 0) {
         const espnLiveStats = await ESPN.getLivePlayerStats(activeIds);
         if (Object.keys(espnLiveStats).length > 0) {
           const translated = translateLiveStats(espnLiveStats);
@@ -124,9 +183,22 @@
         }
         lastLiveFetch = new Date();
       } else {
-        // No active games, clear overrides
         Scoreboard.setLiveOverrides({});
         Scoreboard.render();
+      }
+
+      // Show elimination banner for newly completed games
+      if (newEliminations.length > 0) {
+        // Store elimination time in localStorage for the 5-min refresh window
+        localStorage.setItem('lastElimination', JSON.stringify({
+          time: Date.now(),
+          data: newEliminations,
+        }));
+        try {
+          showEliminationBanner(newEliminations);
+        } catch (e) {
+          console.warn('Elimination banner failed:', e);
+        }
       }
     } catch (e) {
       console.warn('Live refresh failed:', e);
@@ -229,15 +301,28 @@
       }
     }
 
-    const isFirstLoad = knownEliminated.size === 0;
-    const recentUpdate = stats.last_updated &&
-      (Date.now() - new Date(stats.last_updated).getTime()) < 120000;
-
+    // Add all currently eliminated to known set
     for (const [slug, player] of Object.entries(stats.players || {})) {
-      if (player.eliminated) knownEliminated.add(slug);
+      if (player.eliminated) {
+        knownEliminated.add(slug);
+        knownCompletedGames.add(player.games?.[player.games.length - 1]?.game_id);
+      }
     }
 
-    if (newlyEliminated.length > 0 && (!isFirstLoad || recentUpdate)) {
+    // Check localStorage for recent elimination (within 5 minutes) to show on refresh
+    try {
+      const stored = JSON.parse(localStorage.getItem('lastElimination') || 'null');
+      if (stored && (Date.now() - stored.time) < 300000 && stored.data?.length > 0) {
+        showEliminationBanner(stored.data);
+        return;
+      }
+    } catch (e) {}
+
+    // Fallback: show banner for new eliminations from stats.json if recent
+    const recentUpdate = stats.last_updated &&
+      (Date.now() - new Date(stats.last_updated).getTime()) < 300000;
+
+    if (newlyEliminated.length > 0 && recentUpdate) {
       try {
         showEliminationBanner(newlyEliminated);
       } catch (e) {
