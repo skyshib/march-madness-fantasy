@@ -207,7 +207,7 @@
   document.getElementById('view-toggle')?.addEventListener('click', () => {
     const btn = document.getElementById('view-toggle');
     const isCompact = Scoreboard.toggleCompact();
-    btn.textContent = isCompact ? 'Full' : 'Compact';
+    btn.textContent = isCompact ? 'Full Mode' : 'Compact Mode';
   });
 
   // --- Detail panel close ---

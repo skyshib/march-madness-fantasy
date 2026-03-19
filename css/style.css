@@ -196,49 +196,49 @@ main {
 /* === Compact Mode === */
 .compact-mode .seed-cell {
   min-width: unset;
-  font-size: 0.65rem;
-  padding: 0.1rem 0.1rem;
+  font-size: 0.6rem;
+  padding: 0.05rem 0.1rem;
   white-space: nowrap;
   vertical-align: middle;
   line-height: 1;
 }
 
 .compact-mode .seed-cell .compact-name {
-  display: block;
-  font-size: 0.5rem;
+  display: inline;
+  font-size: 0.55rem;
   color: var(--text-secondary);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 3.5rem;
-  line-height: 1;
-  margin-bottom: 1px;
+  margin-right: 2px;
 }
 
 .compact-mode .seed-cell .compact-pts {
+  display: inline;
   font-weight: 700;
   font-size: 0.65rem;
-  line-height: 1;
 }
 
 .compact-mode thead th {
-  padding: 0.15rem 0.1rem;
+  padding: 0.1rem 0.1rem;
   font-size: 0.55rem;
 }
 
 .compact-mode tbody td {
-  padding: 0.1rem 0.1rem;
-  line-height: 1.1;
+  padding: 0.05rem 0.1rem;
+  line-height: 1;
 }
 
 .compact-mode tbody td.col-name {
-  font-size: 0.75rem;
-  max-width: 6rem;
+  font-size: 0.7rem;
+  max-width: 5rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .compact-mode tbody td.col-total {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+}
+
+.compact-mode tbody td.col-rank {
+  font-size: 0.75rem;
 }
 
 /* Compact conditional formatting — gradient applied inline by JS */
