@@ -316,9 +316,12 @@ td.col-remaining {
 }
 
 .seed-cell.eliminated .seed-headshot-wrap {
+  position: relative;
+}
+
+.seed-cell.eliminated .seed-headshot-wrap > * {
   filter: grayscale(100%);
   opacity: 0.5;
-  position: relative;
 }
 
 .seed-cell.eliminated .seed-headshot-wrap::after {
