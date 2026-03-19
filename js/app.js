@@ -422,7 +422,7 @@
             const liveData = Scoreboard.getLiveOverride?.(data.slug);
             const ptsHtml = liveData ? ` <span class="live-game-pts">${liveData.pts}</span>` : '';
             const safeOwners = ownerList.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-            html += `<div class="live-game-pick" title="${safeOwners}">${count}x ${player}${ptsHtml}</div>`;
+            html += `<div class="live-game-pick" data-owners="${safeOwners}">${count}x ${player}${ptsHtml}</div>`;
           }
           html += '</div>';
           if (i === 0) html += '<div class="live-game-picks-divider"></div>';
@@ -435,6 +435,33 @@
     html += '</div>';
 
     container.innerHTML = html;
+
+    // Attach custom hover tooltips to live game player picks
+    container.querySelectorAll('.live-game-pick[data-owners]').forEach(el => {
+      el.addEventListener('mouseenter', (e) => {
+        document.getElementById('player-tooltip')?.remove();
+        const owners = el.dataset.owners;
+        if (!owners) return;
+        const tip = document.createElement('div');
+        tip.id = 'player-tooltip';
+        tip.className = 'player-tooltip';
+        tip.innerHTML = `<div class="tt-header">Picked by</div><div style="font-size:0.8rem;color:var(--text-secondary)">${owners}</div>`;
+        document.body.appendChild(tip);
+        const rect = el.getBoundingClientRect();
+        const tipRect = tip.getBoundingClientRect();
+        let left = rect.left + rect.width / 2 - tipRect.width / 2;
+        let top = rect.top - tipRect.height - 6;
+        if (left < 4) left = 4;
+        if (left + tipRect.width > window.innerWidth - 4) left = window.innerWidth - tipRect.width - 4;
+        if (top < 4) top = rect.bottom + 6;
+        tip.style.left = left + 'px';
+        tip.style.top = top + 'px';
+        tip.classList.add('visible');
+      });
+      el.addEventListener('mouseleave', () => {
+        document.getElementById('player-tooltip')?.remove();
+      });
+    });
   }
 
   /**
