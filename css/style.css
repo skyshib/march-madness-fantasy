@@ -607,6 +607,92 @@ footer {
   font-size: 0.75rem;
 }
 
+/* === Elimination Banner === */
+.elimination-banner {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: bannerIn 0.4s ease;
+  overflow: hidden;
+}
+
+.elimination-banner.banner-exit {
+  animation: bannerOut 0.5s ease forwards;
+}
+
+@keyframes bannerIn {
+  from { opacity: 0; transform: scale(1.1); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bannerOut {
+  from { opacity: 1; }
+  to { opacity: 0; transform: scale(0.9); }
+}
+
+.elimination-content {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.elimination-title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ef4444;
+  text-shadow: 0 0 40px rgba(239, 68, 68, 0.5), 0 0 80px rgba(239, 68, 68, 0.3);
+  margin-bottom: 1.5rem;
+  animation: titleShake 0.5s ease;
+}
+
+@keyframes titleShake {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-8px) rotate(-1deg); }
+  30% { transform: translateX(8px) rotate(1deg); }
+  45% { transform: translateX(-5px); }
+  60% { transform: translateX(5px); }
+}
+
+.elimination-player {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 1rem;
+}
+
+.elimination-team {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.elimination-owners {
+  font-size: 1rem;
+  color: var(--accent-orange);
+  margin-bottom: 0.5rem;
+}
+
+.falling-skull {
+  position: absolute;
+  top: -40px;
+  font-size: 2rem;
+  animation: skullFall linear forwards;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+@keyframes skullFall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
+
 /* === Responsive === */
 @media (max-width: 900px) {
   h1 { font-size: 1.1rem; }

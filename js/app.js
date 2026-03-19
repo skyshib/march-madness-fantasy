@@ -13,6 +13,7 @@
   let espnIdToSlug = {};   // ESPN athlete ID -> our slug
   let nameToSlug = {};     // normalized name -> our slug
   let hasActiveGames = false;
+  let knownEliminated = new Set(); // track eliminated player slugs to detect new ones
 
   // --- Helpers ---
   async function loadJSON(path) {
@@ -156,6 +157,11 @@
     Scoreboard.setLiveOverrides({});
     Scoreboard.render();
 
+    // Detect newly eliminated players
+    if (isCurrentYear) {
+      checkForEliminations(picks, stats);
+    }
+
     // If current year, immediately try live fetch
     if (isCurrentYear) {
       await refreshLive();
@@ -187,6 +193,89 @@
 
   // --- Auto-refresh ---
   function startTimers() {
+  /**
+   * Detect newly eliminated players and show dramatic banner.
+   */
+  function checkForEliminations(picks, stats) {
+    const newlyEliminated = [];
+
+    for (const [slug, player] of Object.entries(stats.players || {})) {
+      if (player.eliminated && !knownEliminated.has(slug)) {
+        // Find which entrants had this player
+        const owners = [];
+        for (const ent of picks.entrants || []) {
+          for (const [seed, pick] of Object.entries(ent.picks || {})) {
+            if (pick.player_id === slug) {
+              owners.push(ent.name);
+            }
+          }
+        }
+        if (owners.length > 0) {
+          newlyEliminated.push({ name: player.name, team: player.team, owners });
+        }
+        knownEliminated.add(slug);
+      }
+    }
+
+    // Also add all currently eliminated to known set (first load)
+    for (const [slug, player] of Object.entries(stats.players || {})) {
+      if (player.eliminated) knownEliminated.add(slug);
+    }
+
+    if (newlyEliminated.length > 0 && knownEliminated.size > newlyEliminated.length) {
+      // Only show banner if this isn't the first load (where everything is already eliminated)
+      showEliminationBanner(newlyEliminated);
+    }
+  }
+
+  function showEliminationBanner(eliminated) {
+    // Remove existing banner
+    document.getElementById('elimination-banner')?.remove();
+
+    const banner = document.createElement('div');
+    banner.id = 'elimination-banner';
+    banner.className = 'elimination-banner';
+
+    // Skull rain
+    for (let i = 0; i < 20; i++) {
+      const skull = document.createElement('span');
+      skull.className = 'falling-skull';
+      skull.textContent = '💀';
+      skull.style.left = Math.random() * 100 + '%';
+      skull.style.animationDelay = Math.random() * 2 + 's';
+      skull.style.animationDuration = (2 + Math.random() * 3) + 's';
+      banner.appendChild(skull);
+    }
+
+    const content = document.createElement('div');
+    content.className = 'elimination-content';
+
+    let html = '<div class="elimination-title">💀 DOWN GOES... 💀</div>';
+    for (const p of eliminated) {
+      html += `<div class="elimination-player">${p.name} <span class="elimination-team">(${p.team})</span></div>`;
+      html += `<div class="elimination-owners">☠️ ${p.owners.join(', ')}</div>`;
+    }
+
+    content.innerHTML = html;
+    banner.appendChild(content);
+
+    // Close on click
+    banner.addEventListener('click', () => {
+      banner.classList.add('banner-exit');
+      setTimeout(() => banner.remove(), 500);
+    });
+
+    document.body.appendChild(banner);
+
+    // Auto-dismiss after 8 seconds
+    setTimeout(() => {
+      if (banner.parentNode) {
+        banner.classList.add('banner-exit');
+        setTimeout(() => banner.remove(), 500);
+      }
+    }, 8000);
+  }
+
     // Slow timer: re-fetch stats.json (picks up cron-committed changes)
     if (refreshTimer) clearInterval(refreshTimer);
     refreshTimer = setInterval(() => {
