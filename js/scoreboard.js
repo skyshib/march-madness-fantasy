@@ -151,6 +151,20 @@ const Scoreboard = (() => {
       }
     }
 
+    // Compute min/max fantasy pts across all seed cells for gradient
+    let minPts = Infinity, maxPts = -Infinity;
+    for (const r of ranked) {
+      for (let seed = 1; seed <= 16; seed++) {
+        const info = r.seedBreakdown[seed];
+        if (info.pick) {
+          if (info.pts < minPts) minPts = info.pts;
+          if (info.pts > maxPts) maxPts = info.pts;
+        }
+      }
+    }
+    if (!isFinite(minPts)) minPts = 0;
+    if (!isFinite(maxPts)) maxPts = 0;
+
     for (let i = 0; i < ranked.length; i++) {
       const r = ranked[i];
       const tr = document.createElement('tr');
@@ -195,13 +209,34 @@ const Scoreboard = (() => {
           if (info.live) td.classList.add('live');
 
           if (compactMode) {
-            // Compact: short name on top, pts below
+            // Compact: short name on top, pts below, gradient bg
             const fullName = info.pick.name;
             const parts = fullName.replace(/\s+(Jr\.?|Sr\.?|III|II|IV|V)$/i, '').trim().split(' ');
             const lastName = parts[parts.length - 1];
             let prefix = '';
             if (info.captain === 'scorer') prefix = '👑';
             else if (info.captain === 'playmaker') prefix = '🅿';
+
+            // Red-white-green gradient based on pts
+            if (maxPts > minPts) {
+              const mid = (minPts + maxPts) / 2;
+              const pts = info.pts;
+              let r, g, b;
+              if (pts <= mid) {
+                // Red (220,50,50) -> White (255,255,255)
+                const t = (pts - minPts) / (mid - minPts || 1);
+                r = Math.round(220 + (255 - 220) * t);
+                g = Math.round(50 + (255 - 50) * t);
+                b = Math.round(50 + (255 - 50) * t);
+              } else {
+                // White (255,255,255) -> Green (50,180,50)
+                const t = (pts - mid) / (maxPts - mid || 1);
+                r = Math.round(255 + (50 - 255) * t);
+                g = Math.round(255 + (180 - 255) * t);
+                b = Math.round(255 + (50 - 255) * t);
+              }
+              td.style.backgroundColor = `rgba(${r},${g},${b},0.2)`;
+            }
 
             const nameEl = document.createElement('span');
             nameEl.className = 'compact-name';
