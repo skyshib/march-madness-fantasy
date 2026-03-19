@@ -228,7 +228,11 @@
     }
 
     if (newlyEliminated.length > 0 && (!isFirstLoad || recentUpdate)) {
-      showEliminationBanner(newlyEliminated);
+      try {
+        showEliminationBanner(newlyEliminated);
+      } catch (e) {
+        console.warn('Elimination banner failed:', e);
+      }
     }
   }
 
