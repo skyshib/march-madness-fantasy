@@ -329,7 +329,7 @@
       return null;
     }
 
-    let html = '';
+    let html = '<div class="elimination-title">💀 DOWN GO THE 💀</div>';
 
     for (const [teamName, group] of Object.entries(byTeam)) {
       const logoUrl = findLogo(teamName);
@@ -340,7 +340,6 @@
       const seedLabel = group.seed ? `(${group.seed})` : '';
 
       html += '<div class="elim-team-block">';
-      html += '<div class="elimination-title">💀 DOWN GO THE 💀</div>';
       html += `<div class="elim-team-header">${logoHtml}<span class="elim-team-name">${seedLabel} ${teamName}</span></div>`;
 
       if (group.opponent) {
