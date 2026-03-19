@@ -396,8 +396,10 @@ const Scoreboard = (() => {
 
       // PTS column: show "pts+reb+ast" breakdown for playmaker, just pts otherwise
       let ptsDisplay;
-      if (info.captain === 'playmaker') {
-        ptsDisplay = `${stats.pts}+${stats.reb}+${stats.ast}`;
+      if (info.captain === 'scorer') {
+        ptsDisplay = `${stats.pts} × 1.5 = ${Math.round(stats.pts * 1.5 * 10) / 10}`;
+      } else if (info.captain === 'playmaker') {
+        ptsDisplay = `${stats.pts}+${stats.reb}+${stats.ast} = ${stats.pts + stats.reb + stats.ast}`;
       } else {
         ptsDisplay = `${stats.pts}`;
       }
