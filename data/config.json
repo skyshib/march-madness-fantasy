@@ -1,0 +1,7 @@
+{
+  "year": 2025,
+  "years_available": [2025],
+  "tournament_name": "March Madness Fantasy",
+  "refresh_interval_ms": 120000,
+  "cron_interval_ms": 600000
+}
