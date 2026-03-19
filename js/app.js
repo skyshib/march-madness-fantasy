@@ -354,10 +354,13 @@
         const hsHtml = hsUrl
           ? `<img class="elim-headshot" src="${hsUrl}" alt="">`
           : '';
+        const ownerLines = p.owners.map(o => `<span class="owner-line">☠️ ${o}</span>`).join('');
         html += '<div class="elim-player-card">';
-        html += `${hsHtml}<div class="elim-player-info">`;
+        html += hsHtml;
+        html += '<div class="elim-player-info">';
         html += `<div class="elim-player-name">${p.name}</div>`;
-        html += `<div class="elim-player-owners">☠️ ${p.owners.join(', ')}</div>`;
+        html += `<div class="elim-player-dates">R.I.P.</div>`;
+        html += `<div class="elim-player-owners">${ownerLines}</div>`;
         html += '</div></div>';
       }
       html += '</div></div>';

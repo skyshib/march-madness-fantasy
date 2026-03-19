@@ -697,41 +697,82 @@ footer {
 .elim-players {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1.2rem;
   justify-content: center;
+  margin-top: 0.5rem;
 }
 
 .elim-player-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  border-radius: 8px;
-  padding: 0.5rem 0.75rem;
+  width: 140px;
+  background: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 40%, #1a1a1a 100%);
+  border: 2px solid #555;
+  border-radius: 12px 12px 4px 4px;
+  padding: 0;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+.elim-player-card::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 12px;
+  background: #555;
+  border-radius: 6px 6px 0 0;
 }
 
 .elim-headshot {
-  width: 48px;
-  height: 36px;
+  width: 64px;
+  height: 48px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 8px;
   filter: grayscale(100%);
+  margin-top: 1rem;
+  border: 2px solid #666;
 }
 
 .elim-player-info {
-  text-align: left;
+  text-align: center;
+  padding: 0.5rem 0.6rem;
+  width: 100%;
 }
 
 .elim-player-name {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.4rem;
+}
+
+.elim-player-dates {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  font-style: italic;
 }
 
 .elim-player-owners {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--accent-orange);
+  line-height: 1.4;
+}
+
+.elim-player-owners .owner-line {
+  display: block;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.elim-player-owners .owner-line:last-child {
+  border-bottom: none;
 }
 
 .elim-dismiss {
