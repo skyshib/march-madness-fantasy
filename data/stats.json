@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-19T17:39:54.321792+00:00",
+  "last_updated": "2026-03-19T17:43:23.177648+00:00",
   "players": {
     "victor-valdes": {
       "name": "Victor Valdes",
@@ -156,121 +156,16 @@
       "stats": {
         "pts": 5,
         "reb": 3,
-        "ast": 2
+        "ast": 3
       },
       "games": [
         {
           "round": "R64",
           "pts": 5,
           "reb": 3,
-          "ast": 2,
+          "ast": 3,
           "game_id": "401856479",
           "opponent": "TCU Horned Frogs"
-        }
-      ]
-    },
-    "dailyn-swain": {
-      "name": "Dailyn Swain",
-      "team": "Texas Longhorns",
-      "seed": 11,
-      "eliminated": false,
-      "stats": {
-        "pts": 13,
-        "reb": 8,
-        "ast": 4
-      },
-      "games": [
-        {
-          "round": "First Four",
-          "pts": 13,
-          "reb": 8,
-          "ast": 4,
-          "game_id": "401856434",
-          "opponent": "NC State Wolfpack"
-        }
-      ]
-    },
-    "bryce-harris": {
-      "name": "Bryce Harris",
-      "team": "Howard Bison",
-      "seed": 16,
-      "eliminated": false,
-      "stats": {
-        "pts": 19,
-        "reb": 14,
-        "ast": 5
-      },
-      "games": [
-        {
-          "round": "First Four",
-          "pts": 19,
-          "reb": 14,
-          "ast": 5,
-          "game_id": "401856435",
-          "opponent": "UMBC Retrievers"
-        }
-      ]
-    },
-    "brant-byers": {
-      "name": "Brant Byers",
-      "team": "Miami (OH) RedHawks",
-      "seed": 11,
-      "eliminated": false,
-      "stats": {
-        "pts": 19,
-        "reb": 4,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "First Four",
-          "pts": 19,
-          "reb": 4,
-          "ast": 1,
-          "game_id": "401856436",
-          "opponent": "SMU Mustangs"
-        }
-      ]
-    },
-    "boopie-miller": {
-      "name": "Boopie Miller",
-      "team": "SMU Mustangs",
-      "seed": 11,
-      "eliminated": true,
-      "stats": {
-        "pts": 15,
-        "reb": 1,
-        "ast": 5
-      },
-      "games": [
-        {
-          "round": "First Four",
-          "pts": 15,
-          "reb": 1,
-          "ast": 5,
-          "game_id": "401856436",
-          "opponent": "Miami (OH) RedHawks"
-        }
-      ]
-    },
-    "dontae-horne": {
-      "name": "Dontae Horne",
-      "team": "Prairie View A&M Panthers",
-      "seed": 16,
-      "eliminated": false,
-      "stats": {
-        "pts": 25,
-        "reb": 7,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "First Four",
-          "pts": 25,
-          "reb": 7,
-          "ast": 0,
-          "game_id": "401856437",
-          "opponent": "Lehigh Mountain Hawks"
         }
       ]
     }
