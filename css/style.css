@@ -191,19 +191,49 @@ main {
 /* === Compact Mode === */
 .compact-mode .seed-cell {
   min-width: unset;
-  font-size: 0.7rem;
-  padding: 0.3rem 0.2rem;
+  font-size: 0.65rem;
+  padding: 0.15rem 0.1rem;
   white-space: nowrap;
   vertical-align: middle;
+  line-height: 1.1;
+}
+
+.compact-mode .seed-cell .compact-name {
+  display: block;
+  font-size: 0.55rem;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 3.5rem;
+}
+
+.compact-mode .seed-cell .compact-pts {
+  font-weight: 700;
+  font-size: 0.7rem;
 }
 
 .compact-mode thead th {
-  padding: 0.4rem 0.2rem;
-  font-size: 0.6rem;
+  padding: 0.25rem 0.1rem;
+  font-size: 0.55rem;
 }
 
 .compact-mode tbody td {
-  padding: 0.3rem 0.3rem;
+  padding: 0.2rem 0.15rem;
+}
+
+.compact-mode tbody td.col-name {
+  font-size: 0.75rem;
+  max-width: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.compact-mode tbody td.col-total {
+  font-size: 0.8rem;
+}
+
+.compact-mode tbody td.col-remaining {
+  font-size: 0.7rem;
 }
 
 #scoreboard tbody td.col-name {

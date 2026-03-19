@@ -183,14 +183,23 @@ const Scoreboard = (() => {
           if (info.live) td.classList.add('live');
 
           if (compactMode) {
-            // Compact: just "LastName pts" with captain marker
+            // Compact: short name on top, pts below
             const fullName = info.pick.name;
             const parts = fullName.replace(/\s+(Jr\.?|Sr\.?|III|II|IV|V)$/i, '').trim().split(' ');
             const lastName = parts[parts.length - 1];
             let prefix = '';
             if (info.captain === 'scorer') prefix = '👑';
             else if (info.captain === 'playmaker') prefix = '🅿';
-            td.textContent = `${prefix}${lastName} ${info.pts}`;
+
+            const nameEl = document.createElement('span');
+            nameEl.className = 'compact-name';
+            nameEl.textContent = prefix + lastName;
+            td.appendChild(nameEl);
+
+            const ptsEl = document.createElement('span');
+            ptsEl.className = 'compact-pts';
+            ptsEl.textContent = info.pts;
+            td.appendChild(ptsEl);
           } else {
             // Full mode with headshots
             if (info.captain) {
