@@ -91,7 +91,14 @@ def parse_individual_scores(ws):
                     pass
 
         if is_pm:
-            playmaker_totals[slug] = total
+            playmaker_totals[slug] = playmaker_totals.get(slug, 0) + total
+        elif slug in players:
+            # Duplicate entry for same player — accumulate points and rounds
+            players[slug]["pts"] += total
+            if eliminated:
+                players[slug]["eliminated"] = True
+            for rname, rpts in rounds.items():
+                players[slug]["rounds"][rname] = players[slug]["rounds"].get(rname, 0) + rpts
         else:
             players[slug] = {
                 "name": name,

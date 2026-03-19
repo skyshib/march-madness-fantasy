@@ -276,6 +276,12 @@ const Scoreboard = (() => {
               td.appendChild(icon);
             }
 
+            // Seed number
+            const seedLabel = document.createElement('span');
+            seedLabel.className = 'seed-number';
+            seedLabel.textContent = seed;
+            td.appendChild(seedLabel);
+
             const hsUrl = headshotsData[info.pick.player_id];
             const logoUrl = teamLogosData[info.pick.team];
             if (hsUrl || logoUrl) {

@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "years_available": [2026, 2025],
+  "years_available": [2026, 2025, 2024, 2023, 2022],
   "tournament_name": "March Madness Fantasy",
   "refresh_interval_ms": 120000,
   "cron_interval_ms": 600000

@@ -1,0 +1,2333 @@
+{
+  "year": 2022,
+  "entrants": [
+    {
+      "name": "Noah Luskus",
+      "scorer_captain": {
+        "seed": 12,
+        "player_id": "jordan-walker",
+        "name": "Jordan Walker",
+        "team": "UAB"
+      },
+      "playmaker_captain": {
+        "seed": 8,
+        "player_id": "armando-bacot",
+        "name": "Armando Bacot",
+        "team": "UNC"
+      },
+      "picks": {
+        "1": {
+          "player_id": "ochai-agbaji",
+          "name": "Ochai Agbaji",
+          "team": "Kansas"
+        },
+        "2": {
+          "player_id": "jabari-smith",
+          "name": "Jabari Smith",
+          "team": "Auburn"
+        },
+        "3": {
+          "player_id": "santiago-vescovi",
+          "name": "Santiago Vescovi",
+          "team": "Tennessee"
+        },
+        "4": {
+          "player_id": "kofi-cockburn",
+          "name": "Kofi Cockburn",
+          "team": "Illinois"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "david-roddy",
+          "name": "David Roddy",
+          "team": "Colorado State"
+        },
+        "7": {
+          "player_id": "kj-williams",
+          "name": "KJ Williams",
+          "team": "Murray State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "mike-miles",
+          "name": "Mike Miles",
+          "team": "TCU"
+        },
+        "10": {
+          "player_id": "kameron-mcgusty",
+          "name": "Kameron McGusty",
+          "team": "Miami"
+        },
+        "11": {
+          "player_id": "izaiah-brockington",
+          "name": "Izaiah Brockington",
+          "team": "Iowa State"
+        },
+        "12": {
+          "player_id": "jordan-walker",
+          "name": "Jordan Walker",
+          "team": "UAB"
+        },
+        "13": {
+          "player_id": "baylor-scheierman",
+          "name": "Baylor Scheierman",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "darian-adams",
+          "name": "Darian Adams",
+          "team": "Jacksonville State"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Vinny Bonta",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "kyler-edwards",
+        "name": "Kyler Edwards",
+        "team": "Houston"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "keve-aluma",
+        "name": "Keve Aluma",
+        "team": "Virginia Tech"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "colin-gillespie",
+          "name": "Colin Gillespie",
+          "team": "Villanova"
+        },
+        "3": {
+          "player_id": "bryson-williams",
+          "name": "Bryson Williams",
+          "team": "Texas Tech"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "kyler-edwards",
+          "name": "Kyler Edwards",
+          "team": "Houston"
+        },
+        "6": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "LSU"
+        },
+        "7": {
+          "player_id": "kj-williams",
+          "name": "KJ Williams",
+          "team": "Murray State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "mike-miles",
+          "name": "Mike Miles",
+          "team": "TCU"
+        },
+        "10": {
+          "player_id": "foster-loyer",
+          "name": "Foster Loyer",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "keve-aluma",
+          "name": "Keve Aluma",
+          "team": "Virginia Tech"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "ryan-davis",
+          "name": "Ryan Davis",
+          "team": "Vermont"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "ej-anosike",
+          "name": "E.J. Anosike",
+          "team": "Cal State Fullerton"
+        },
+        "16": {
+          "player_id": "joe-bryant-jr",
+          "name": "Joe Bryant Jr.",
+          "team": "Norfolk State"
+        }
+      }
+    },
+    {
+      "name": "Devon Mitchell",
+      "scorer_captain": {
+        "seed": 11,
+        "player_id": "hunter-dickinson",
+        "name": "Hunter Dickinson",
+        "team": "Michigan"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "jabari-smith",
+          "name": "Jabari Smith",
+          "team": "Auburn"
+        },
+        "3": {
+          "player_id": "jaden-ivey",
+          "name": "Jaden Ivey",
+          "team": "Purdue"
+        },
+        "4": {
+          "player_id": "jaime-jaquez",
+          "name": "Jaime Jaquez",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "LSU"
+        },
+        "7": {
+          "player_id": "ej-liddell",
+          "name": "E.J. Liddell",
+          "team": "Ohio State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "justin-lewis",
+          "name": "Justin Lewis",
+          "team": "Marquette"
+        },
+        "10": {
+          "player_id": "kameron-mcgusty",
+          "name": "Kameron McGusty",
+          "team": "Miami"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "jordan-walker",
+          "name": "Jordan Walker",
+          "team": "UAB"
+        },
+        "13": {
+          "player_id": "douglas-wilson",
+          "name": "Douglas Wilson",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "ej-anosike",
+          "name": "E.J. Anosike",
+          "team": "Cal State Fullerton"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Ian Golembeski",
+      "scorer_captain": {
+        "seed": 12,
+        "player_id": "teddy-allen",
+        "name": "Teddy Allen",
+        "team": "New Mexico State"
+      },
+      "playmaker_captain": {
+        "seed": 6,
+        "player_id": "david-roddy",
+        "name": "David Roddy",
+        "team": "Colorado State"
+      },
+      "picks": {
+        "1": {
+          "player_id": "chet-holmgren",
+          "name": "Chet Holmgren",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "jabari-smith",
+          "name": "Jabari Smith",
+          "team": "Auburn"
+        },
+        "3": {
+          "player_id": "jaden-ivey",
+          "name": "Jaden Ivey",
+          "team": "Purdue"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "kyler-edwards",
+          "name": "Kyler Edwards",
+          "team": "Houston"
+        },
+        "6": {
+          "player_id": "david-roddy",
+          "name": "David Roddy",
+          "team": "Colorado State"
+        },
+        "7": {
+          "player_id": "tevin-brown",
+          "name": "Tevin Brown",
+          "team": "Murray State"
+        },
+        "8": {
+          "player_id": "brady-manek",
+          "name": "Brady Manek",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "mike-miles",
+          "name": "Mike Miles",
+          "team": "TCU"
+        },
+        "10": {
+          "player_id": "lucas-williamson",
+          "name": "Lucas Williamson",
+          "team": "Loyola Chicago"
+        },
+        "11": {
+          "player_id": "izaiah-brockington",
+          "name": "Izaiah Brockington",
+          "team": "Iowa State"
+        },
+        "12": {
+          "player_id": "teddy-allen",
+          "name": "Teddy Allen",
+          "team": "New Mexico State"
+        },
+        "13": {
+          "player_id": "ben-shungu",
+          "name": "Ben Shungu",
+          "team": "Vermont"
+        },
+        "14": {
+          "player_id": "nelly-cummings",
+          "name": "Nelly Cummings",
+          "team": "Colgate"
+        },
+        "15": {
+          "player_id": "darian-adams",
+          "name": "Darian Adams",
+          "team": "Jacksonville State"
+        },
+        "16": {
+          "player_id": "grant-basile",
+          "name": "Grant Basile",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Clark Marshall",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "playmaker_captain": {
+        "seed": 12,
+        "player_id": "jordan-walker",
+        "name": "Jordan Walker",
+        "team": "UAB"
+      },
+      "picks": {
+        "1": {
+          "player_id": "james-akinjo-baylor",
+          "name": "James Akinjo- Baylor",
+          "team": ""
+        },
+        "2": {
+          "player_id": "paolo-banchero",
+          "name": "Paolo Banchero",
+          "team": "Duke"
+        },
+        "3": {
+          "player_id": "johnny-davis",
+          "name": "Johnny Davis",
+          "team": "Wisconsin"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "david-roddy",
+          "name": "David Roddy",
+          "team": "Colorado State"
+        },
+        "7": {
+          "player_id": "ej-liddell",
+          "name": "E.J. Liddell",
+          "team": "Ohio State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "jalen-duren",
+          "name": "Jalen Duren",
+          "team": "Memphis"
+        },
+        "10": {
+          "player_id": "kameron-mcgusty",
+          "name": "Kameron McGusty",
+          "team": "Miami"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "jordan-walker",
+          "name": "Jordan Walker",
+          "team": "UAB"
+        },
+        "13": {
+          "player_id": "malachi-smith",
+          "name": "Malachi Smith",
+          "team": "Chattanooga"
+        },
+        "14": {
+          "player_id": "xavier-bishop",
+          "name": "Xavier Bishop",
+          "team": "Montana State"
+        },
+        "15": {
+          "player_id": "jameer-nelson-jr",
+          "name": "Jameer Nelson Jr.",
+          "team": "Delaware"
+        },
+        "16": {
+          "player_id": "corey-allen",
+          "name": "Corey Allen",
+          "team": "Georgia State"
+        }
+      }
+    },
+    {
+      "name": "Skylar Shibayama",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "hunter-dickinson",
+        "name": "Hunter Dickinson",
+        "team": "Michigan"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "zach-edey",
+          "name": "Zach Edey",
+          "team": "Purdue"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "jaden-shackelford",
+          "name": "Jaden Shackelford",
+          "team": "Alabama"
+        },
+        "7": {
+          "player_id": "ej-liddell",
+          "name": "E.J. Liddell",
+          "team": "Ohio State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "mike-miles",
+          "name": "Mike Miles",
+          "team": "TCU"
+        },
+        "10": {
+          "player_id": "lucas-williamson",
+          "name": "Lucas Williamson",
+          "team": "Loyola Chicago"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "douglas-wilson",
+          "name": "Douglas Wilson",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "darian-adams",
+          "name": "Darian Adams",
+          "team": "Jacksonville State"
+        },
+        "16": {
+          "player_id": "grant-basile",
+          "name": "Grant Basile",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Zach Zimmerman",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "playmaker_captain": {
+        "seed": 12,
+        "player_id": "trayce-jacksondavis",
+        "name": "Trayce Jackson-Davis",
+        "team": "Indiana"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "paolo-banchero",
+          "name": "Paolo Banchero",
+          "team": "Duke"
+        },
+        "3": {
+          "player_id": "jaden-ivey",
+          "name": "Jaden Ivey",
+          "team": "Purdue"
+        },
+        "4": {
+          "player_id": "jaime-jaquez",
+          "name": "Jaime Jaquez",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "jaden-shackelford",
+          "name": "Jaden Shackelford",
+          "team": "Alabama"
+        },
+        "7": {
+          "player_id": "boogie-ellis",
+          "name": "Boogie Ellis",
+          "team": "USC"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "mike-miles",
+          "name": "Mike Miles",
+          "team": "TCU"
+        },
+        "10": {
+          "player_id": "hyunjung-lee",
+          "name": "Hyunjung Lee",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "izaiah-brockington",
+          "name": "Izaiah Brockington",
+          "team": "Iowa State"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "malachi-smith",
+          "name": "Malachi Smith",
+          "team": "Chattanooga"
+        },
+        "14": {
+          "player_id": "nelly-cummings",
+          "name": "Nelly Cummings",
+          "team": "Colgate"
+        },
+        "15": {
+          "player_id": "darian-adams",
+          "name": "Darian Adams",
+          "team": "Jacksonville State"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Kasey Shibayama",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "hunter-dickinson",
+        "name": "Hunter Dickinson",
+        "team": "Michigan"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "santiago-vescovi",
+          "name": "Santiago Vescovi",
+          "team": "Tennessee"
+        },
+        "4": {
+          "player_id": "jaime-jaquez",
+          "name": "Jaime Jaquez",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "LSU"
+        },
+        "7": {
+          "player_id": "ej-liddell",
+          "name": "E.J. Liddell",
+          "team": "Ohio State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "lester-quinones",
+          "name": "Lester Quinones",
+          "team": "Memphis"
+        },
+        "10": {
+          "player_id": "lucas-williamson",
+          "name": "Lucas Williamson",
+          "team": "Loyola Chicago"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "douglas-wilson",
+          "name": "Douglas Wilson",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "nelly-cummings",
+          "name": "Nelly Cummings",
+          "team": "Colgate"
+        },
+        "15": {
+          "player_id": "kc-ndefo",
+          "name": "KC Ndefo",
+          "team": "Saint Peter's"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Chris Bradley",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "hunter-dickinson",
+        "name": "Hunter Dickinson",
+        "team": "Michigan"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "johnny-davis",
+          "name": "Johnny Davis",
+          "team": "Wisconsin"
+        },
+        "4": {
+          "player_id": "jaime-jaquez",
+          "name": "Jaime Jaquez",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "LSU"
+        },
+        "7": {
+          "player_id": "isaiah-mobley",
+          "name": "Isaiah Mobley",
+          "team": "USC"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "ryan-kalkbrenner",
+          "name": "Ryan Kalkbrenner",
+          "team": "Creighton"
+        },
+        "10": {
+          "player_id": "jamaree-bouyea",
+          "name": "Jamaree Bouyea",
+          "team": "San Francisco"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "douglas-wilson",
+          "name": "Douglas Wilson",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "ej-anosike",
+          "name": "E.J. Anosike",
+          "team": "Cal State Fullerton"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Austin Rawlings",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "hunter-dickinson",
+        "name": "Hunter Dickinson",
+        "team": "Michigan"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "jaden-ivey",
+          "name": "Jaden Ivey",
+          "team": "Purdue"
+        },
+        "4": {
+          "player_id": "jd-notae",
+          "name": "JD Notae",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "jaden-shackelford",
+          "name": "Jaden Shackelford",
+          "team": "Alabama"
+        },
+        "7": {
+          "player_id": "isaiah-mobley",
+          "name": "Isaiah Mobley",
+          "team": "USC"
+        },
+        "8": {
+          "player_id": "matt-bradley",
+          "name": "Matt Bradley",
+          "team": "San Diego State"
+        },
+        "9": {
+          "player_id": "mike-miles",
+          "name": "Mike Miles",
+          "team": "TCU"
+        },
+        "10": {
+          "player_id": "foster-loyer",
+          "name": "Foster Loyer",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "teddy-allen",
+          "name": "Teddy Allen",
+          "team": "New Mexico State"
+        },
+        "13": {
+          "player_id": "malachi-smith",
+          "name": "Malachi Smith",
+          "team": "Chattanooga"
+        },
+        "14": {
+          "player_id": "nelly-cummings",
+          "name": "Nelly Cummings",
+          "team": "Colgate"
+        },
+        "15": {
+          "player_id": "darian-adams",
+          "name": "Darian Adams",
+          "team": "Jacksonville State"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Mitchell Steiner",
+      "scorer_captain": {
+        "seed": 12,
+        "player_id": "jordan-walker",
+        "name": "Jordan Walker",
+        "team": "UAB"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "picks": {
+        "1": {
+          "player_id": "ochai-agbaji",
+          "name": "Ochai Agbaji",
+          "team": "Kansas"
+        },
+        "2": {
+          "player_id": "jabari-smith",
+          "name": "Jabari Smith",
+          "team": "Auburn"
+        },
+        "3": {
+          "player_id": "jaden-ivey",
+          "name": "Jaden Ivey",
+          "team": "Purdue"
+        },
+        "4": {
+          "player_id": "jd-notae",
+          "name": "JD Notae",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "LSU"
+        },
+        "7": {
+          "player_id": "ej-liddell",
+          "name": "E.J. Liddell",
+          "team": "Ohio State"
+        },
+        "8": {
+          "player_id": "matt-bradley",
+          "name": "Matt Bradley",
+          "team": "San Diego State"
+        },
+        "9": {
+          "player_id": "justin-lewis",
+          "name": "Justin Lewis",
+          "team": "Marquette"
+        },
+        "10": {
+          "player_id": "kameron-mcgusty",
+          "name": "Kameron McGusty",
+          "team": "Miami"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "jordan-walker",
+          "name": "Jordan Walker",
+          "team": "UAB"
+        },
+        "13": {
+          "player_id": "malachi-smith",
+          "name": "Malachi Smith",
+          "team": "Chattanooga"
+        },
+        "14": {
+          "player_id": "xavier-bishop",
+          "name": "Xavier Bishop",
+          "team": "Montana State"
+        },
+        "15": {
+          "player_id": "jyare-davis",
+          "name": "Jyare Davis",
+          "team": "Delaware"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Kevin Texeira",
+      "scorer_captain": {
+        "seed": 11,
+        "player_id": "hunter-dickinson",
+        "name": "Hunter Dickinson",
+        "team": "Michigan"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "picks": {
+        "1": {
+          "player_id": "ochai-agbaji",
+          "name": "Ochai Agbaji",
+          "team": "Kansas"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "johnny-davis",
+          "name": "Johnny Davis",
+          "team": "Wisconsin"
+        },
+        "4": {
+          "player_id": "kofi-cockburn",
+          "name": "Kofi Cockburn",
+          "team": "Illinois"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "jaden-shackelford",
+          "name": "Jaden Shackelford",
+          "team": "Alabama"
+        },
+        "7": {
+          "player_id": "kj-williams",
+          "name": "KJ Williams",
+          "team": "Murray State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "jalen-duren",
+          "name": "Jalen Duren",
+          "team": "Memphis"
+        },
+        "10": {
+          "player_id": "foster-loyer",
+          "name": "Foster Loyer",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "baylor-scheierman",
+          "name": "Baylor Scheierman",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "darian-adams",
+          "name": "Darian Adams",
+          "team": "Jacksonville State"
+        },
+        "16": {
+          "player_id": "joe-bryant-jr",
+          "name": "Joe Bryant Jr.",
+          "team": "Norfolk State"
+        }
+      }
+    },
+    {
+      "name": "Caleb Heck",
+      "scorer_captain": {
+        "seed": 11,
+        "player_id": "izaiah-brockington",
+        "name": "Izaiah Brockington",
+        "team": "Iowa State"
+      },
+      "playmaker_captain": {
+        "seed": 7,
+        "player_id": "ej-liddell",
+        "name": "E.J. Liddell",
+        "team": "Ohio State"
+      },
+      "picks": {
+        "1": {
+          "player_id": "benedict-mathurin",
+          "name": "Benedict Mathurin",
+          "team": "Arizona"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "johnny-davis",
+          "name": "Johnny Davis",
+          "team": "Wisconsin"
+        },
+        "4": {
+          "player_id": "kofi-cockburn",
+          "name": "Kofi Cockburn",
+          "team": "Illinois"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "andrew-jones",
+          "name": "Andrew Jones",
+          "team": "Texas"
+        },
+        "7": {
+          "player_id": "ej-liddell",
+          "name": "E.J. Liddell",
+          "team": "Ohio State"
+        },
+        "8": {
+          "player_id": "jared-rhoden",
+          "name": "Jared Rhoden",
+          "team": "Seton Hall"
+        },
+        "9": {
+          "player_id": "justin-lewis",
+          "name": "Justin Lewis",
+          "team": "Marquette"
+        },
+        "10": {
+          "player_id": "kameron-mcgusty",
+          "name": "Kameron McGusty",
+          "team": "Miami"
+        },
+        "11": {
+          "player_id": "izaiah-brockington",
+          "name": "Izaiah Brockington",
+          "team": "Iowa State"
+        },
+        "12": {
+          "player_id": "teddy-allen",
+          "name": "Teddy Allen",
+          "team": "New Mexico State"
+        },
+        "13": {
+          "player_id": "malachi-smith",
+          "name": "Malachi Smith",
+          "team": "Chattanooga"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "jameer-nelson-jr",
+          "name": "Jameer Nelson Jr.",
+          "team": "Delaware"
+        },
+        "16": {
+          "player_id": "joe-bryant-jr",
+          "name": "Joe Bryant Jr.",
+          "team": "Norfolk State"
+        }
+      }
+    },
+    {
+      "name": "Chris Rossi",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "playmaker_captain": {
+        "seed": 12,
+        "player_id": "jordan-walker",
+        "name": "Jordan Walker",
+        "team": "UAB"
+      },
+      "picks": {
+        "1": {
+          "player_id": "ochai-agbaji",
+          "name": "Ochai Agbaji",
+          "team": "Kansas"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "kennedy-chandler",
+          "name": "Kennedy Chandler",
+          "team": "Tennessee"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "LSU"
+        },
+        "7": {
+          "player_id": "ej-liddell",
+          "name": "E.J. Liddell",
+          "team": "Ohio State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "justin-lewis",
+          "name": "Justin Lewis",
+          "team": "Marquette"
+        },
+        "10": {
+          "player_id": "foster-loyer",
+          "name": "Foster Loyer",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "jordan-walker",
+          "name": "Jordan Walker",
+          "team": "UAB"
+        },
+        "13": {
+          "player_id": "douglas-wilson",
+          "name": "Douglas Wilson",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "nelly-cummings",
+          "name": "Nelly Cummings",
+          "team": "Colgate"
+        },
+        "15": {
+          "player_id": "jameer-nelson-jr",
+          "name": "Jameer Nelson Jr.",
+          "team": "Delaware"
+        },
+        "16": {
+          "player_id": "corey-allen",
+          "name": "Corey Allen",
+          "team": "Georgia State"
+        }
+      }
+    },
+    {
+      "name": "David Thornton",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "hunter-dickinson",
+        "name": "Hunter Dickinson",
+        "team": "Michigan"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "jabari-smith",
+          "name": "Jabari Smith",
+          "team": "Auburn"
+        },
+        "3": {
+          "player_id": "jaden-ivey",
+          "name": "Jaden Ivey",
+          "team": "Purdue"
+        },
+        "4": {
+          "player_id": "jaime-jaquez",
+          "name": "Jaime Jaquez",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "LSU"
+        },
+        "7": {
+          "player_id": "kj-williams",
+          "name": "KJ Williams",
+          "team": "Murray State"
+        },
+        "8": {
+          "player_id": "matt-bradley",
+          "name": "Matt Bradley",
+          "team": "San Diego State"
+        },
+        "9": {
+          "player_id": "mike-miles",
+          "name": "Mike Miles",
+          "team": "TCU"
+        },
+        "10": {
+          "player_id": "lucas-williamson",
+          "name": "Lucas Williamson",
+          "team": "Loyola Chicago"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "douglas-wilson",
+          "name": "Douglas Wilson",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "nelly-cummings",
+          "name": "Nelly Cummings",
+          "team": "Colgate"
+        },
+        "15": {
+          "player_id": "ej-anosike",
+          "name": "E.J. Anosike",
+          "team": "Cal State Fullerton"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Cory Vest",
+      "scorer_captain": {
+        "seed": 12,
+        "player_id": "trayce-jacksondavis",
+        "name": "Trayce Jackson-Davis",
+        "team": "Indiana"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "picks": {
+        "1": {
+          "player_id": "benedict-mathurin",
+          "name": "Benedict Mathurin",
+          "team": "Arizona"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "jaden-ivey",
+          "name": "Jaden Ivey",
+          "team": "Purdue"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "david-roddy",
+          "name": "David Roddy",
+          "team": "Colorado State"
+        },
+        "7": {
+          "player_id": "kj-williams",
+          "name": "KJ Williams",
+          "team": "Murray State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "mike-miles",
+          "name": "Mike Miles",
+          "team": "TCU"
+        },
+        "10": {
+          "player_id": "foster-loyer",
+          "name": "Foster Loyer",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "izaiah-brockington",
+          "name": "Izaiah Brockington",
+          "team": "Iowa State"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "douglas-wilson",
+          "name": "Douglas Wilson",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "jameer-nelson-jr",
+          "name": "Jameer Nelson Jr.",
+          "team": "Delaware"
+        },
+        "16": {
+          "player_id": "joe-bryant-jr",
+          "name": "Joe Bryant Jr.",
+          "team": "Norfolk State"
+        }
+      }
+    },
+    {
+      "name": "Cory Eavenson",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "keve-aluma",
+        "name": "Keve Aluma",
+        "team": "Virginia Tech"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "johnny-davis",
+          "name": "Johnny Davis",
+          "team": "Wisconsin"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "david-roddy",
+          "name": "David Roddy",
+          "team": "Colorado State"
+        },
+        "7": {
+          "player_id": "ej-liddell",
+          "name": "E.J. Liddell",
+          "team": "Ohio State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "mike-miles",
+          "name": "Mike Miles",
+          "team": "TCU"
+        },
+        "10": {
+          "player_id": "foster-loyer",
+          "name": "Foster Loyer",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "keve-aluma",
+          "name": "Keve Aluma",
+          "team": "Virginia Tech"
+        },
+        "12": {
+          "player_id": "jordan-walker",
+          "name": "Jordan Walker",
+          "team": "UAB"
+        },
+        "13": {
+          "player_id": "malachi-smith",
+          "name": "Malachi Smith",
+          "team": "Chattanooga"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "darian-adams",
+          "name": "Darian Adams",
+          "team": "Jacksonville State"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Christopher Holmquist",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "playmaker_captain": {
+        "seed": 13,
+        "player_id": "ryan-davis",
+        "name": "Ryan Davis",
+        "team": "Vermont"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "johnny-davis",
+          "name": "Johnny Davis",
+          "team": "Wisconsin"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "david-roddy",
+          "name": "David Roddy",
+          "team": "Colorado State"
+        },
+        "7": {
+          "player_id": "kj-williams",
+          "name": "KJ Williams",
+          "team": "Murray State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "ryan-hawkins",
+          "name": "Ryan Hawkins",
+          "team": "Creighton"
+        },
+        "10": {
+          "player_id": "lucas-williamson",
+          "name": "Lucas Williamson",
+          "team": "Loyola Chicago"
+        },
+        "11": {
+          "player_id": "izaiah-brockington",
+          "name": "Izaiah Brockington",
+          "team": "Iowa State"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "ryan-davis",
+          "name": "Ryan Davis",
+          "team": "Vermont"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "ej-anosike",
+          "name": "E.J. Anosike",
+          "team": "Cal State Fullerton"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Andrew Card",
+      "scorer_captain": {
+        "seed": 13,
+        "player_id": "malachi-smith",
+        "name": "Malachi Smith",
+        "team": "Chattanooga"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "johnny-davis",
+          "name": "Johnny Davis",
+          "team": "Wisconsin"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "david-roddy",
+          "name": "David Roddy",
+          "team": "Colorado State"
+        },
+        "7": {
+          "player_id": "kj-williams",
+          "name": "KJ Williams",
+          "team": "Murray State"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "ryan-hawkins",
+          "name": "Ryan Hawkins",
+          "team": "Creighton"
+        },
+        "10": {
+          "player_id": "foster-loyer",
+          "name": "Foster Loyer",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "keve-aluma",
+          "name": "Keve Aluma",
+          "team": "Virginia Tech"
+        },
+        "12": {
+          "player_id": "jordan-walker",
+          "name": "Jordan Walker",
+          "team": "UAB"
+        },
+        "13": {
+          "player_id": "malachi-smith",
+          "name": "Malachi Smith",
+          "team": "Chattanooga"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "ej-anosike",
+          "name": "E.J. Anosike",
+          "team": "Cal State Fullerton"
+        },
+        "16": {
+          "player_id": "joe-bryant-jr",
+          "name": "Joe Bryant Jr.",
+          "team": "Norfolk State"
+        }
+      }
+    },
+    {
+      "name": "Kyle Heck and Max Gehman",
+      "scorer_captain": {
+        "seed": 13,
+        "player_id": "ryan-davis",
+        "name": "Ryan Davis",
+        "team": "Vermont"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "picks": {
+        "1": {
+          "player_id": "benedict-mathurin",
+          "name": "Benedict Mathurin",
+          "team": "Arizona"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "johnny-davis",
+          "name": "Johnny Davis",
+          "team": "Wisconsin"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "david-roddy",
+          "name": "David Roddy",
+          "team": "Colorado State"
+        },
+        "7": {
+          "player_id": "isaiah-mobley",
+          "name": "Isaiah Mobley",
+          "team": "USC"
+        },
+        "8": {
+          "player_id": "armando-bacot",
+          "name": "Armando Bacot",
+          "team": "UNC"
+        },
+        "9": {
+          "player_id": "jalen-duren",
+          "name": "Jalen Duren",
+          "team": "Memphis"
+        },
+        "10": {
+          "player_id": "foster-loyer",
+          "name": "Foster Loyer",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "keve-aluma",
+          "name": "Keve Aluma",
+          "team": "Virginia Tech"
+        },
+        "12": {
+          "player_id": "teddy-allen",
+          "name": "Teddy Allen",
+          "team": "New Mexico State"
+        },
+        "13": {
+          "player_id": "ryan-davis",
+          "name": "Ryan Davis",
+          "team": "Vermont"
+        },
+        "14": {
+          "player_id": "azar-swain",
+          "name": "Azar Swain",
+          "team": "Yale"
+        },
+        "15": {
+          "player_id": "darian-adams",
+          "name": "Darian Adams",
+          "team": "Jacksonville State"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Trevor high and Dylan shertzer",
+      "scorer_captain": {
+        "seed": 12,
+        "player_id": "trayce-jacksondavis",
+        "name": "Trayce Jackson-Davis",
+        "team": "Indiana"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "picks": {
+        "1": {
+          "player_id": "chet-holmgren",
+          "name": "Chet Holmgren",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "johnny-davis",
+          "name": "Johnny Davis",
+          "team": "Wisconsin"
+        },
+        "4": {
+          "player_id": "kofi-cockburn",
+          "name": "Kofi Cockburn",
+          "team": "Illinois"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "jaden-shackelford",
+          "name": "Jaden Shackelford",
+          "team": "Alabama"
+        },
+        "7": {
+          "player_id": "ej-liddell",
+          "name": "E.J. Liddell",
+          "team": "Ohio State"
+        },
+        "8": {
+          "player_id": "jared-rhoden",
+          "name": "Jared Rhoden",
+          "team": "Seton Hall"
+        },
+        "9": {
+          "player_id": "justin-lewis",
+          "name": "Justin Lewis",
+          "team": "Marquette"
+        },
+        "10": {
+          "player_id": "kameron-mcgusty",
+          "name": "Kameron McGusty",
+          "team": "Miami"
+        },
+        "11": {
+          "player_id": "hunter-dickinson",
+          "name": "Hunter Dickinson",
+          "team": "Michigan"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "douglas-wilson",
+          "name": "Douglas Wilson",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "xavier-bishop",
+          "name": "Xavier Bishop",
+          "team": "Montana State"
+        },
+        "15": {
+          "player_id": "jameer-nelson-jr",
+          "name": "Jameer Nelson Jr.",
+          "team": "Delaware"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Nate Long",
+      "scorer_captain": {
+        "seed": 12,
+        "player_id": "trayce-jacksondavis",
+        "name": "Trayce Jackson-Davis",
+        "team": "Indiana"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "kennedy-chandler",
+          "name": "Kennedy Chandler",
+          "team": "Tennessee"
+        },
+        "4": {
+          "player_id": "jaime-jaquez",
+          "name": "Jaime Jaquez",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "LSU"
+        },
+        "7": {
+          "player_id": "aj-hoggard",
+          "name": "A.J Hoggard",
+          "team": "Michigan State"
+        },
+        "8": {
+          "player_id": "jared-rhoden",
+          "name": "Jared Rhoden",
+          "team": "Seton Hall"
+        },
+        "9": {
+          "player_id": "ryan-hawkins",
+          "name": "Ryan Hawkins",
+          "team": "Creighton"
+        },
+        "10": {
+          "player_id": "jamaree-bouyea",
+          "name": "Jamaree Bouyea",
+          "team": "San Francisco"
+        },
+        "11": {
+          "player_id": "keve-aluma",
+          "name": "Keve Aluma",
+          "team": "Virginia Tech"
+        },
+        "12": {
+          "player_id": "trayce-jacksondavis",
+          "name": "Trayce Jackson-Davis",
+          "team": "Indiana"
+        },
+        "13": {
+          "player_id": "malachi-smith",
+          "name": "Malachi Smith",
+          "team": "Chattanooga"
+        },
+        "14": {
+          "player_id": "nelly-cummings",
+          "name": "Nelly Cummings",
+          "team": "Colgate"
+        },
+        "15": {
+          "player_id": "ej-anosike",
+          "name": "E.J. Anosike",
+          "team": "Cal State Fullerton"
+        },
+        "16": {
+          "player_id": "joe-bryant-jr",
+          "name": "Joe Bryant Jr.",
+          "team": "Norfolk State"
+        }
+      }
+    },
+    {
+      "name": "Trey Postlethwait",
+      "scorer_captain": {
+        "seed": 13,
+        "player_id": "baylor-scheierman",
+        "name": "Baylor Scheierman",
+        "team": "South Dakota State"
+      },
+      "playmaker_captain": {
+        "seed": 7,
+        "player_id": "kj-williams",
+        "name": "KJ Williams",
+        "team": "Murray State"
+      },
+      "picks": {
+        "1": {
+          "player_id": "drew-timme",
+          "name": "Drew Timme",
+          "team": "Gonzaga"
+        },
+        "2": {
+          "player_id": "jabari-smith",
+          "name": "Jabari Smith",
+          "team": "Auburn"
+        },
+        "3": {
+          "player_id": "kennedy-chandler",
+          "name": "Kennedy Chandler",
+          "team": "Tennessee"
+        },
+        "4": {
+          "player_id": "kofi-cockburn",
+          "name": "Kofi Cockburn",
+          "team": "Illinois"
+        },
+        "5": {
+          "player_id": "rj-cole",
+          "name": "RJ Cole",
+          "team": "UConn"
+        },
+        "6": {
+          "player_id": "david-roddy",
+          "name": "David Roddy",
+          "team": "Colorado State"
+        },
+        "7": {
+          "player_id": "kj-williams",
+          "name": "KJ Williams",
+          "team": "Murray State"
+        },
+        "8": {
+          "player_id": "matt-bradley",
+          "name": "Matt Bradley",
+          "team": "San Diego State"
+        },
+        "9": {
+          "player_id": "justin-lewis",
+          "name": "Justin Lewis",
+          "team": "Marquette"
+        },
+        "10": {
+          "player_id": "hyunjung-lee",
+          "name": "Hyunjung Lee",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "izaiah-brockington",
+          "name": "Izaiah Brockington",
+          "team": "Iowa State"
+        },
+        "12": {
+          "player_id": "jordan-walker",
+          "name": "Jordan Walker",
+          "team": "UAB"
+        },
+        "13": {
+          "player_id": "baylor-scheierman",
+          "name": "Baylor Scheierman",
+          "team": "South Dakota State"
+        },
+        "14": {
+          "player_id": "jack-ferguson",
+          "name": "Jack Ferguson",
+          "team": "Colgate"
+        },
+        "15": {
+          "player_id": "damari-milstead",
+          "name": "Damari Milstead",
+          "team": "Cal State Fullerton"
+        },
+        "16": {
+          "player_id": "tanner-holden",
+          "name": "Tanner Holden",
+          "team": "Wright State"
+        }
+      }
+    },
+    {
+      "name": "Vikram (Air India)",
+      "scorer_captain": {
+        "seed": 12,
+        "player_id": "jordan-walker",
+        "name": "Jordan Walker",
+        "team": "UAB"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "keegan-murray",
+        "name": "Keegan Murray",
+        "team": "Iowa"
+      },
+      "picks": {
+        "1": {
+          "player_id": "ochai-agbaji",
+          "name": "Ochai Agbaji",
+          "team": "Kansas"
+        },
+        "2": {
+          "player_id": "oscar-tshiebwe",
+          "name": "Oscar Tshiebwe",
+          "team": "Kentucky"
+        },
+        "3": {
+          "player_id": "santiago-vescovi",
+          "name": "Santiago Vescovi",
+          "team": "Tennessee"
+        },
+        "4": {
+          "player_id": "johnny-juzang",
+          "name": "Johnny Juzang",
+          "team": "UCLA"
+        },
+        "5": {
+          "player_id": "keegan-murray",
+          "name": "Keegan Murray",
+          "team": "Iowa"
+        },
+        "6": {
+          "player_id": "david-roddy",
+          "name": "David Roddy",
+          "team": "Colorado State"
+        },
+        "7": {
+          "player_id": "kj-williams",
+          "name": "KJ Williams",
+          "team": "Murray State"
+        },
+        "8": {
+          "player_id": "matt-bradley",
+          "name": "Matt Bradley",
+          "team": "San Diego State"
+        },
+        "9": {
+          "player_id": "lester-quinones",
+          "name": "Lester Quinones",
+          "team": "Memphis"
+        },
+        "10": {
+          "player_id": "foster-loyer",
+          "name": "Foster Loyer",
+          "team": "Davidson"
+        },
+        "11": {
+          "player_id": "keve-aluma",
+          "name": "Keve Aluma",
+          "team": "Virginia Tech"
+        },
+        "12": {
+          "player_id": "jordan-walker",
+          "name": "Jordan Walker",
+          "team": "UAB"
+        },
+        "13": {
+          "player_id": "ryan-davis",
+          "name": "Ryan Davis",
+          "team": "Vermont"
+        },
+        "14": {
+          "player_id": "jack-ferguson",
+          "name": "Jack Ferguson",
+          "team": "Colgate"
+        },
+        "15": {
+          "player_id": "jameer-nelson-jr",
+          "name": "Jameer Nelson Jr.",
+          "team": "Delaware"
+        },
+        "16": {
+          "player_id": "corey-allen",
+          "name": "Corey Allen",
+          "team": "Georgia State"
+        }
+      }
+    }
+  ]
+}

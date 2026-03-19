@@ -1,0 +1,2094 @@
+{
+  "last_updated": "2025-04-08T00:00:00Z",
+  "players": {
+    "drew-timme": {
+      "name": "Drew Timme",
+      "team": "Gonzaga",
+      "seed": 1,
+      "eliminated": true,
+      "stats": {
+        "pts": 82,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 32,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Georgia"
+        },
+        {
+          "round": "R32",
+          "pts": 25,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Maryland"
+        },
+        {
+          "round": "S16",
+          "pts": 25,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Houston"
+        }
+      ]
+    },
+    "ochai-agbaji": {
+      "name": "Ochai Agbaji",
+      "team": "Kansas",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 82,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 11,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Arkansas"
+        },
+        {
+          "round": "R32",
+          "pts": 15,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "S16",
+          "pts": 5,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "E8",
+          "pts": 18,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "F4",
+          "pts": 21,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "Championship",
+          "pts": 12,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "chet-holmgren": {
+      "name": "Chet Holmgren",
+      "team": "Gonzaga",
+      "seed": 1,
+      "eliminated": true,
+      "stats": {
+        "pts": 39,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 19,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Georgia"
+        },
+        {
+          "round": "R32",
+          "pts": 9,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Maryland"
+        },
+        {
+          "round": "S16",
+          "pts": 11,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Houston"
+        }
+      ]
+    },
+    "james-akinjo-baylor": {
+      "name": "James Akinjo- Baylor",
+      "team": "",
+      "seed": 1,
+      "eliminated": true,
+      "stats": {
+        "pts": 30,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 10,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "benedict-mathurin": {
+      "name": "Benedict Mathurin",
+      "team": "Arizona",
+      "seed": 1,
+      "eliminated": true,
+      "stats": {
+        "pts": 63,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Akron"
+        },
+        {
+          "round": "R32",
+          "pts": 30,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "UCF"
+        },
+        {
+          "round": "S16",
+          "pts": 15,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Duke"
+        }
+      ]
+    },
+    "oscar-tshiebwe": {
+      "name": "Oscar Tshiebwe",
+      "team": "Kentucky",
+      "seed": 2,
+      "eliminated": true,
+      "stats": {
+        "pts": 30,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 30,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Troy"
+        }
+      ]
+    },
+    "jabari-smith": {
+      "name": "Jabari Smith",
+      "team": "Auburn",
+      "seed": 2,
+      "eliminated": true,
+      "stats": {
+        "pts": 30,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Alabama State"
+        },
+        {
+          "round": "R32",
+          "pts": 10,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Yale"
+        }
+      ]
+    },
+    "paolo-banchero": {
+      "name": "Paolo Banchero",
+      "team": "Duke",
+      "seed": 2,
+      "eliminated": true,
+      "stats": {
+        "pts": 94,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "American"
+        },
+        {
+          "round": "R32",
+          "pts": 19,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Connecticut"
+        },
+        {
+          "round": "S16",
+          "pts": 22,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Arizona"
+        },
+        {
+          "round": "E8",
+          "pts": 16,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Kentucky"
+        },
+        {
+          "round": "F4",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Florida"
+        }
+      ]
+    },
+    "colin-gillespie": {
+      "name": "Colin Gillespie",
+      "team": "Villanova",
+      "seed": 2,
+      "eliminated": true,
+      "stats": {
+        "pts": 69,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "S16",
+          "pts": 12,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "E8",
+          "pts": 6,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "F4",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "johnny-davis": {
+      "name": "Johnny Davis",
+      "team": "Wisconsin",
+      "seed": 3,
+      "eliminated": true,
+      "stats": {
+        "pts": 42,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 25,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Montana"
+        },
+        {
+          "round": "R32",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Iowa State"
+        }
+      ]
+    },
+    "kennedy-chandler": {
+      "name": "Kennedy Chandler",
+      "team": "Tennessee",
+      "seed": 3,
+      "eliminated": true,
+      "stats": {
+        "pts": 32,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 13,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Lipscomb"
+        },
+        {
+          "round": "R32",
+          "pts": 19,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "New Mexico"
+        }
+      ]
+    },
+    "jaden-ivey": {
+      "name": "Jaden Ivey",
+      "team": "Purdue",
+      "seed": 3,
+      "eliminated": true,
+      "stats": {
+        "pts": 49,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 22,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "High Point"
+        },
+        {
+          "round": "R32",
+          "pts": 18,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Drake"
+        },
+        {
+          "round": "S16",
+          "pts": 9,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Texas Tech"
+        }
+      ]
+    },
+    "santiago-vescovi": {
+      "name": "Santiago Vescovi",
+      "team": "Tennessee",
+      "seed": 3,
+      "eliminated": true,
+      "stats": {
+        "pts": 23,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Lipscomb"
+        },
+        {
+          "round": "R32",
+          "pts": 5,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "New Mexico"
+        }
+      ]
+    },
+    "zach-edey": {
+      "name": "Zach Edey",
+      "team": "Purdue",
+      "seed": 3,
+      "eliminated": true,
+      "stats": {
+        "pts": 38,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "High Point"
+        },
+        {
+          "round": "R32",
+          "pts": 11,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Drake"
+        },
+        {
+          "round": "S16",
+          "pts": 11,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Texas Tech"
+        }
+      ]
+    },
+    "bryson-williams": {
+      "name": "Bryson Williams",
+      "team": "Texas Tech",
+      "seed": 3,
+      "eliminated": true,
+      "stats": {
+        "pts": 55,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Montana"
+        },
+        {
+          "round": "R32",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Connecticut"
+        },
+        {
+          "round": "S16",
+          "pts": 21,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Purdue"
+        }
+      ]
+    },
+    "johnny-juzang": {
+      "name": "Johnny Juzang",
+      "team": "UCLA",
+      "seed": 4,
+      "eliminated": true,
+      "stats": {
+        "pts": 37,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 9,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Troy"
+        },
+        {
+          "round": "R32",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Oklahoma"
+        },
+        {
+          "round": "S16",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Michigan State"
+        }
+      ]
+    },
+    "kofi-cockburn": {
+      "name": "Kofi Cockburn",
+      "team": "Illinois",
+      "seed": 4,
+      "eliminated": true,
+      "stats": {
+        "pts": 36,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Montana"
+        },
+        {
+          "round": "R32",
+          "pts": 19,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Missouri"
+        }
+      ]
+    },
+    "jaime-jaquez": {
+      "name": "Jaime Jaquez",
+      "team": "UCLA",
+      "seed": 4,
+      "eliminated": true,
+      "stats": {
+        "pts": 40,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 15,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Troy"
+        },
+        {
+          "round": "R32",
+          "pts": 15,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Oklahoma"
+        },
+        {
+          "round": "S16",
+          "pts": 10,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Michigan State"
+        }
+      ]
+    },
+    "jd-notae": {
+      "name": "JD Notae",
+      "team": "Arkansas",
+      "seed": 4,
+      "eliminated": true,
+      "stats": {
+        "pts": 70,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Kansas"
+        },
+        {
+          "round": "R32",
+          "pts": 18,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Michigan State"
+        },
+        {
+          "round": "S16",
+          "pts": 21,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Michigan"
+        },
+        {
+          "round": "E8",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "keegan-murray": {
+      "name": "Keegan Murray",
+      "team": "Iowa",
+      "seed": 5,
+      "eliminated": true,
+      "stats": {
+        "pts": 21,
+        "reb": 11,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 21,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "rj-cole": {
+      "name": "RJ Cole",
+      "team": "UConn",
+      "seed": 5,
+      "eliminated": true,
+      "stats": {
+        "pts": 20,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "kyler-edwards": {
+      "name": "Kyler Edwards",
+      "team": "Houston",
+      "seed": 5,
+      "eliminated": true,
+      "stats": {
+        "pts": 63,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 25,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "SIU-Edwardsville"
+        },
+        {
+          "round": "R32",
+          "pts": 15,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Robert Morris"
+        },
+        {
+          "round": "S16",
+          "pts": 19,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Gonzaga"
+        },
+        {
+          "round": "E8",
+          "pts": 4,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Purdue"
+        }
+      ]
+    },
+    "david-roddy": {
+      "name": "David Roddy",
+      "team": "Colorado State",
+      "seed": 6,
+      "eliminated": true,
+      "stats": {
+        "pts": 13,
+        "reb": 10,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 13,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Memphis"
+        }
+      ]
+    },
+    "tari-eason": {
+      "name": "Tari Eason",
+      "team": "LSU",
+      "seed": 6,
+      "eliminated": true,
+      "stats": {
+        "pts": 18,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "jaden-shackelford": {
+      "name": "Jaden Shackelford",
+      "team": "Alabama",
+      "seed": 6,
+      "eliminated": true,
+      "stats": {
+        "pts": 13,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 13,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Robert Morris"
+        }
+      ]
+    },
+    "andrew-jones": {
+      "name": "Andrew Jones",
+      "team": "Texas",
+      "seed": 6,
+      "eliminated": true,
+      "stats": {
+        "pts": 38,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 21,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "kj-williams": {
+      "name": "KJ Williams",
+      "team": "Murray State",
+      "seed": 7,
+      "eliminated": true,
+      "stats": {
+        "pts": 30,
+        "reb": 12,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 12,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "ej-liddell": {
+      "name": "E.J. Liddell",
+      "team": "Ohio State",
+      "seed": 7,
+      "eliminated": true,
+      "stats": {
+        "pts": 33,
+        "reb": 20,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "tevin-brown": {
+      "name": "Tevin Brown",
+      "team": "Murray State",
+      "seed": 7,
+      "eliminated": true,
+      "stats": {
+        "pts": 31,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "isaiah-mobley": {
+      "name": "Isaiah Mobley",
+      "team": "USC",
+      "seed": 7,
+      "eliminated": true,
+      "stats": {
+        "pts": 11,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 11,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "boogie-ellis": {
+      "name": "Boogie Ellis",
+      "team": "USC",
+      "seed": 7,
+      "eliminated": true,
+      "stats": {
+        "pts": 3,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 3,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "aj-hoggard": {
+      "name": "A.J Hoggard",
+      "team": "Michigan State",
+      "seed": 7,
+      "eliminated": true,
+      "stats": {
+        "pts": 22,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Bryant"
+        },
+        {
+          "round": "R32",
+          "pts": 8,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "UC San Diego"
+        }
+      ]
+    },
+    "armando-bacot": {
+      "name": "Armando Bacot",
+      "team": "UNC",
+      "seed": 8,
+      "eliminated": true,
+      "stats": {
+        "pts": 92,
+        "reb": 111,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 15,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "S16",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "E8",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "F4",
+          "pts": 11,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "Championship",
+          "pts": 15,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "matt-bradley": {
+      "name": "Matt Bradley",
+      "team": "San Diego State",
+      "seed": 8,
+      "eliminated": true,
+      "stats": {
+        "pts": 16,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "brady-manek": {
+      "name": "Brady Manek",
+      "team": "UNC",
+      "seed": 8,
+      "eliminated": true,
+      "stats": {
+        "pts": 113,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 28,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 26,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "S16",
+          "pts": 13,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "E8",
+          "pts": 19,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "F4",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "Championship",
+          "pts": 13,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "jared-rhoden": {
+      "name": "Jared Rhoden",
+      "team": "Seton Hall",
+      "seed": 8,
+      "eliminated": true,
+      "stats": {
+        "pts": 5,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 5,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "ryan-hawkins": {
+      "name": "Ryan Hawkins",
+      "team": "Creighton",
+      "seed": 9,
+      "eliminated": true,
+      "stats": {
+        "pts": 24,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 10,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Louisville"
+        },
+        {
+          "round": "R32",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "BYU"
+        }
+      ]
+    },
+    "justin-lewis": {
+      "name": "Justin Lewis",
+      "team": "Marquette",
+      "seed": 9,
+      "eliminated": true,
+      "stats": {
+        "pts": 6,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 6,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Norfolk State"
+        }
+      ]
+    },
+    "mike-miles": {
+      "name": "Mike Miles",
+      "team": "TCU",
+      "seed": 9,
+      "eliminated": true,
+      "stats": {
+        "pts": 41,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 21,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "ryan-kalkbrenner": {
+      "name": "Ryan Kalkbrenner",
+      "team": "Creighton",
+      "seed": 9,
+      "eliminated": true,
+      "stats": {
+        "pts": 16,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Louisville"
+        },
+        {
+          "round": "R32",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "BYU"
+        }
+      ]
+    },
+    "jalen-duren": {
+      "name": "Jalen Duren",
+      "team": "Memphis",
+      "seed": 9,
+      "eliminated": true,
+      "stats": {
+        "pts": 17,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 10,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Colorado State"
+        },
+        {
+          "round": "R32",
+          "pts": 7,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "lester-quinones": {
+      "name": "Lester Quinones",
+      "team": "Memphis",
+      "seed": 9,
+      "eliminated": true,
+      "stats": {
+        "pts": 18,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 8,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Colorado State"
+        },
+        {
+          "round": "R32",
+          "pts": 10,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "foster-loyer": {
+      "name": "Foster Loyer",
+      "team": "Davidson",
+      "seed": 10,
+      "eliminated": true,
+      "stats": {
+        "pts": 12,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 12,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "hyunjung-lee": {
+      "name": "Hyunjung Lee",
+      "team": "Davidson",
+      "seed": 10,
+      "eliminated": true,
+      "stats": {
+        "pts": 11,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 11,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "lucas-williamson": {
+      "name": "Lucas Williamson",
+      "team": "Loyola Chicago",
+      "seed": 10,
+      "eliminated": true,
+      "stats": {
+        "pts": 4,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 4,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "jamaree-bouyea": {
+      "name": "Jamaree Bouyea",
+      "team": "San Francisco",
+      "seed": 10,
+      "eliminated": true,
+      "stats": {
+        "pts": 36,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 36,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "kameron-mcgusty": {
+      "name": "Kameron McGusty",
+      "team": "Miami",
+      "seed": 10,
+      "eliminated": true,
+      "stats": {
+        "pts": 77,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 12,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "S16",
+          "pts": 27,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "E8",
+          "pts": 18,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "keve-aluma": {
+      "name": "Keve Aluma",
+      "team": "Virginia Tech",
+      "seed": 11,
+      "eliminated": true,
+      "stats": {
+        "pts": 15,
+        "reb": 7,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 15,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "hunter-dickinson": {
+      "name": "Hunter Dickinson",
+      "team": "Michigan",
+      "seed": 11,
+      "eliminated": true,
+      "stats": {
+        "pts": 63,
+        "reb": 40,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 21,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "UC San Diego"
+        },
+        {
+          "round": "R32",
+          "pts": 27,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Texas A&M"
+        },
+        {
+          "round": "S16",
+          "pts": 15,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Auburn"
+        }
+      ]
+    },
+    "izaiah-brockington": {
+      "name": "Izaiah Brockington",
+      "team": "Iowa State",
+      "seed": 11,
+      "eliminated": true,
+      "stats": {
+        "pts": 40,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 19,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Lipscomb"
+        },
+        {
+          "round": "R32",
+          "pts": 10,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Wisconsin"
+        },
+        {
+          "round": "S16",
+          "pts": 11,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "jordan-walker": {
+      "name": "Jordan Walker",
+      "team": "UAB",
+      "seed": 12,
+      "eliminated": true,
+      "stats": {
+        "pts": 17,
+        "reb": 6,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "teddy-allen": {
+      "name": "Teddy Allen",
+      "team": "New Mexico State",
+      "seed": 12,
+      "eliminated": true,
+      "stats": {
+        "pts": 49,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 37,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 12,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "trayce-jacksondavis": {
+      "name": "Trayce Jackson-Davis",
+      "team": "Indiana",
+      "seed": 12,
+      "eliminated": true,
+      "stats": {
+        "pts": 12,
+        "reb": 8,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 12,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "malachi-smith": {
+      "name": "Malachi Smith",
+      "team": "Chattanooga",
+      "seed": 13,
+      "eliminated": true,
+      "stats": {
+        "pts": 14,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 14,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "douglas-wilson": {
+      "name": "Douglas Wilson",
+      "team": "South Dakota State",
+      "seed": 13,
+      "eliminated": true,
+      "stats": {
+        "pts": 13,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 13,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "baylor-scheierman": {
+      "name": "Baylor Scheierman",
+      "team": "South Dakota State",
+      "seed": 13,
+      "eliminated": true,
+      "stats": {
+        "pts": 18,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "ben-shungu": {
+      "name": "Ben Shungu",
+      "team": "Vermont",
+      "seed": 13,
+      "eliminated": true,
+      "stats": {
+        "pts": 20,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "ryan-davis": {
+      "name": "Ryan Davis",
+      "team": "Vermont",
+      "seed": 13,
+      "eliminated": true,
+      "stats": {
+        "pts": 20,
+        "reb": 3,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "azar-swain": {
+      "name": "Azar Swain",
+      "team": "Yale",
+      "seed": 14,
+      "eliminated": true,
+      "stats": {
+        "pts": 18,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Auburn"
+        }
+      ]
+    },
+    "nelly-cummings": {
+      "name": "Nelly Cummings",
+      "team": "Colgate",
+      "seed": 14,
+      "eliminated": true,
+      "stats": {
+        "pts": 20,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 20,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "jack-ferguson": {
+      "name": "Jack Ferguson",
+      "team": "Colgate",
+      "seed": 14,
+      "eliminated": true,
+      "stats": {
+        "pts": 3,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 3,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "xavier-bishop": {
+      "name": "Xavier Bishop",
+      "team": "Montana State",
+      "seed": 14,
+      "eliminated": true,
+      "stats": {
+        "pts": 12,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 12,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "ej-anosike": {
+      "name": "E.J. Anosike",
+      "team": "Cal State Fullerton",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 10,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 10,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "jameer-nelson-jr": {
+      "name": "Jameer Nelson Jr.",
+      "team": "Delaware",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 8,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 8,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "damari-milstead": {
+      "name": "Damari Milstead",
+      "team": "Cal State Fullerton",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 12,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 12,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "darian-adams": {
+      "name": "Darian Adams",
+      "team": "Jacksonville State",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 8,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 8,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "kc-ndefo": {
+      "name": "KC Ndefo",
+      "team": "Saint Peter's",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 38,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 7,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "R32",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "S16",
+          "pts": 4,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        },
+        {
+          "round": "E8",
+          "pts": 10,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "jyare-davis": {
+      "name": "Jyare Davis",
+      "team": "Delaware",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 17,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 17,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "joe-bryant-jr": {
+      "name": "Joe Bryant Jr.",
+      "team": "Norfolk State",
+      "seed": 16,
+      "eliminated": true,
+      "stats": {
+        "pts": 15,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 15,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "Florida"
+        }
+      ]
+    },
+    "corey-allen": {
+      "name": "Corey Allen",
+      "team": "Georgia State",
+      "seed": 16,
+      "eliminated": true,
+      "stats": {
+        "pts": 16,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "tanner-holden": {
+      "name": "Tanner Holden",
+      "team": "Wright State",
+      "seed": 16,
+      "eliminated": true,
+      "stats": {
+        "pts": 12,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 12,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    },
+    "grant-basile": {
+      "name": "Grant Basile",
+      "team": "Wright State",
+      "seed": 16,
+      "eliminated": true,
+      "stats": {
+        "pts": 21,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 21,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": ""
+        }
+      ]
+    }
+  },
+  "active_games": []
+}

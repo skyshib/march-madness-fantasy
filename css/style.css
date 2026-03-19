@@ -290,6 +290,14 @@ td.col-remaining {
   line-height: 1.2;
 }
 
+.seed-number {
+  display: block;
+  font-size: 0.55rem;
+  color: var(--text-muted);
+  line-height: 1;
+  margin-bottom: 1px;
+}
+
 .seed-player-name {
   display: block;
   font-size: 0.65rem;
