@@ -191,8 +191,6 @@
     return config.year;
   }
 
-  // --- Auto-refresh ---
-  function startTimers() {
   /**
    * Detect newly eliminated players and show dramatic banner.
    */
@@ -328,6 +326,8 @@
     }, 8000);
   }
 
+  // --- Auto-refresh ---
+  function startTimers() {
     // Slow timer: re-fetch stats.json (picks up cron-committed changes)
     if (refreshTimer) clearInterval(refreshTimer);
     refreshTimer = setInterval(() => {
