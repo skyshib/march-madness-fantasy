@@ -142,8 +142,18 @@
     // Render live games tracker from cron data
     renderLiveGames(stats);
 
-    // Immediately supplement with fresh ESPN data
+    // Seed knownCompletedGames from ESPN before first poll
+    // so we don't treat existing completed games as new eliminations
     if (isCurrentYear) {
+      try {
+        const scoreboard = await ESPN.getTournamentScoreboard();
+        for (const event of scoreboard.events || []) {
+          const comp = event.competitions?.[0];
+          if (comp?.status?.type?.state === 'post') {
+            knownCompletedGames.add(event.id);
+          }
+        }
+      } catch (e) {}
       refreshFromESPN();
     }
 
