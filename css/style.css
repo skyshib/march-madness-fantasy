@@ -315,6 +315,24 @@ td.col-remaining {
   font-weight: 700;
 }
 
+.seed-cell.eliminated .seed-headshot-wrap {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  position: relative;
+}
+
+.seed-cell.eliminated .seed-headshot-wrap::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(239, 68, 68, 0.8);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
 .seed-cell.eliminated {
   color: var(--eliminated);
   text-decoration: line-through;
