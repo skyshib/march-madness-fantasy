@@ -237,6 +237,34 @@ main {
   font-size: 0.8rem;
 }
 
+/* Compact conditional formatting (spreadsheet-style) */
+.compact-mode .seed-cell:not(.eliminated):not(.live) {
+  background: rgba(34, 197, 94, 0.08);
+}
+
+.compact-mode .seed-cell.eliminated {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--eliminated);
+  text-decoration: none;
+}
+
+.compact-mode .seed-cell.eliminated .compact-name {
+  text-decoration: line-through;
+  color: var(--eliminated);
+}
+
+.compact-mode .seed-cell.eliminated .compact-pts {
+  color: var(--eliminated);
+}
+
+.compact-mode .seed-cell.live {
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.compact-mode .seed-cell.live .compact-pts {
+  color: var(--live-green);
+}
+
 .compact-mode tbody td.col-remaining {
   font-size: 0.7rem;
 }
