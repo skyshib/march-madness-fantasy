@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-19T17:50:00.333783+00:00",
+  "last_updated": "2026-03-19T18:37:15.162576+00:00",
   "players": {
     "victor-valdes": {
       "name": "Victor Valdes",
@@ -7,16 +7,16 @@
       "seed": 13,
       "eliminated": false,
       "stats": {
-        "pts": 8,
-        "reb": 0,
-        "ast": 1
+        "pts": 14,
+        "reb": 2,
+        "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 8,
-          "reb": 0,
-          "ast": 1,
+          "pts": 14,
+          "reb": 2,
+          "ast": 2,
           "game_id": "401856489",
           "opponent": "Nebraska Cornhuskers"
         }
@@ -28,16 +28,16 @@
       "seed": 13,
       "eliminated": false,
       "stats": {
-        "pts": 2,
-        "reb": 4,
-        "ast": 0
+        "pts": 4,
+        "reb": 9,
+        "ast": 1
       },
       "games": [
         {
           "round": "R64",
-          "pts": 2,
-          "reb": 4,
-          "ast": 0,
+          "pts": 4,
+          "reb": 9,
+          "ast": 1,
           "game_id": "401856489",
           "opponent": "Nebraska Cornhuskers"
         }
@@ -49,18 +49,81 @@
       "seed": 4,
       "eliminated": false,
       "stats": {
-        "pts": 17,
-        "reb": 4,
+        "pts": 23,
+        "reb": 5,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 23,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856489",
+          "opponent": "Troy Trojans"
+        }
+      ]
+    },
+    "terry-anderson": {
+      "name": "Terry Anderson",
+      "team": "High Point Panthers",
+      "seed": 12,
+      "eliminated": false,
+      "stats": {
+        "pts": 4,
+        "reb": 8,
         "ast": 0
       },
       "games": [
         {
           "round": "R64",
-          "pts": 17,
-          "reb": 4,
+          "pts": 4,
+          "reb": 8,
           "ast": 0,
-          "game_id": "401856489",
-          "opponent": "Troy Trojans"
+          "game_id": "401856480",
+          "opponent": "Wisconsin Badgers"
+        }
+      ]
+    },
+    "john-blackwell": {
+      "name": "John Blackwell",
+      "team": "Wisconsin Badgers",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 20,
+        "reb": 6,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 20,
+          "reb": 6,
+          "ast": 1,
+          "game_id": "401856480",
+          "opponent": "High Point Panthers"
+        }
+      ]
+    },
+    "nick-boyd": {
+      "name": "Nick Boyd",
+      "team": "Wisconsin Badgers",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 7,
+        "reb": 3,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 7,
+          "reb": 3,
+          "ast": 3,
+          "game_id": "401856480",
+          "opponent": "High Point Panthers"
         }
       ]
     },
@@ -70,15 +133,15 @@
       "seed": 11,
       "eliminated": false,
       "stats": {
-        "pts": 0,
-        "reb": 1,
+        "pts": 7,
+        "reb": 2,
         "ast": 0
       },
       "games": [
         {
           "round": "R64",
-          "pts": 0,
-          "reb": 1,
+          "pts": 7,
+          "reb": 2,
           "ast": 0,
           "game_id": "401856482",
           "opponent": "Louisville Cardinals"
@@ -112,15 +175,15 @@
       "seed": 6,
       "eliminated": false,
       "stats": {
-        "pts": 1,
-        "reb": 2,
+        "pts": 5,
+        "reb": 4,
         "ast": 1
       },
       "games": [
         {
           "round": "R64",
-          "pts": 1,
-          "reb": 2,
+          "pts": 5,
+          "reb": 4,
           "ast": 1,
           "game_id": "401856482",
           "opponent": "South Florida Bulls"
@@ -133,16 +196,16 @@
       "seed": 9,
       "eliminated": false,
       "stats": {
-        "pts": 5,
-        "reb": 10,
-        "ast": 0
+        "pts": 16,
+        "reb": 13,
+        "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 5,
-          "reb": 10,
-          "ast": 0,
+          "pts": 16,
+          "reb": 13,
+          "ast": 2,
           "game_id": "401856479",
           "opponent": "Ohio State Buckeyes"
         }
@@ -152,18 +215,18 @@
       "name": "Bruce Thornton",
       "team": "Ohio State Buckeyes",
       "seed": 8,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
-        "pts": 5,
-        "reb": 3,
-        "ast": 3
+        "pts": 10,
+        "reb": 4,
+        "ast": 4
       },
       "games": [
         {
           "round": "R64",
-          "pts": 5,
-          "reb": 3,
-          "ast": 3,
+          "pts": 10,
+          "reb": 4,
+          "ast": 4,
           "game_id": "401856479",
           "opponent": "TCU Horned Frogs"
         }
@@ -172,7 +235,7 @@
   },
   "active_games": [
     "401856489",
-    "401856482",
-    "401856479"
+    "401856480",
+    "401856482"
   ]
 }
