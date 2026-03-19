@@ -298,6 +298,8 @@ td.col-remaining {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 5rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .seed-pts {
