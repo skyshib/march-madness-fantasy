@@ -243,19 +243,19 @@ const Scoreboard = (() => {
               const pts = info.pts;
               let r, g, b;
               if (pts <= mid) {
-                // Red (220,50,50) -> White (255,255,255)
+                // Red -> neutral
                 const t = (pts - minPts) / (mid - minPts || 1);
-                r = Math.round(220 + (255 - 220) * t);
-                g = Math.round(50 + (255 - 50) * t);
-                b = Math.round(50 + (255 - 50) * t);
+                r = Math.round(180 + (60 - 180) * t);
+                g = Math.round(40 + (60 - 40) * t);
+                b = Math.round(40 + (60 - 40) * t);
               } else {
-                // White (255,255,255) -> Green (50,180,50)
+                // Neutral -> Green
                 const t = (pts - mid) / (maxPts - mid || 1);
-                r = Math.round(255 + (50 - 255) * t);
-                g = Math.round(255 + (180 - 255) * t);
-                b = Math.round(255 + (50 - 255) * t);
+                r = Math.round(60 + (30 - 60) * t);
+                g = Math.round(60 + (140 - 60) * t);
+                b = Math.round(60 + (30 - 60) * t);
               }
-              td.style.backgroundColor = `rgba(${r},${g},${b},0.2)`;
+              td.style.backgroundColor = `rgb(${r},${g},${b})`;
             }
 
             const nameEl = document.createElement('span');
