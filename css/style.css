@@ -926,6 +926,31 @@ footer {
   font-size: 0.55rem;
 }
 
+.live-game-pts {
+  color: var(--live-green);
+  font-weight: 700;
+}
+
+/* === Detail Rooting === */
+.detail-rooting {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.detail-rooting-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.detail-rooting-line {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 0.15rem 0;
+}
+
 /* === Responsive === */
 @media (max-width: 900px) {
   h1 { font-size: 1.1rem; }

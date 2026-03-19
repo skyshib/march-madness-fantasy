@@ -333,6 +333,16 @@
       games.push(gameInfo);
     }
 
+    // Pass game info to Scoreboard for name hover tooltips
+    const liveGamesForScoreboard = games.map(g => ({
+      teams: g.sides.map(s => ({
+        name: s.teamShort,
+        nameLower: s.teamName.toLowerCase().split(' ')[0],
+        seed: s.seed,
+      })),
+    }));
+    Scoreboard.setLiveGames(liveGamesForScoreboard);
+
     if (games.length === 0) {
       container.innerHTML = '';
       return;
@@ -385,7 +395,10 @@
           for (const [player, data] of Object.entries(byPlayer)) {
             const count = data.owners.length;
             const ownerList = data.owners.join(', ');
-            html += `<div class="live-game-pick" title="${ownerList}">(${count}) ${player}</div>`;
+            // Get live pts from Scoreboard overrides
+            const liveData = Scoreboard.getLiveOverride?.(data.slug);
+            const ptsHtml = liveData ? ` <span class="live-game-pts">${liveData.pts}</span>` : '';
+            html += `<div class="live-game-pick" title="${ownerList}">${count}x ${player}${ptsHtml}</div>`;
           }
           html += '</div>';
           if (i === 0) html += '<div class="live-game-picks-divider"></div>';
