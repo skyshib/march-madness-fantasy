@@ -276,6 +276,10 @@ main {
 #scoreboard tbody td.col-name {
   text-align: left;
   font-weight: 600;
+  max-width: 5.5rem;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.2;
 }
 
 #scoreboard tbody td.col-rank {
