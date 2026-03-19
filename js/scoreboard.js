@@ -338,13 +338,13 @@ const Scoreboard = (() => {
     let html = `<div class="detail-uniqueness">Uniqueness: #${uRank} of ${totalEntrants}</div>`;
 
     html += '<table class="detail-table"><thead><tr>';
-    html += '<th>Seed</th><th>Player</th><th>Team</th><th>Picked</th><th>PTS</th><th>Fantasy</th>';
+    html += '<th>Seed</th><th>Player</th><th>Team</th><th>Picked</th><th>PTS</th>';
     html += '</tr></thead><tbody>';
 
     for (let seed = 1; seed <= 16; seed++) {
       const info = ranked.seedBreakdown[seed];
       if (!info.pick) {
-        html += `<tr><td>${seed}</td><td colspan="5" style="color:var(--text-muted)">No pick</td></tr>`;
+        html += `<tr><td>${seed}</td><td colspan="4" style="color:var(--text-muted)">No pick</td></tr>`;
         continue;
       }
 
@@ -380,8 +380,7 @@ const Scoreboard = (() => {
       const pCount = pickCounts?.[info.pick.player_id] || 0;
       html += `<td>${info.pick.team || ''}</td>`;
       html += `<td style="color:var(--text-muted)">${pCount}/${totalEntrants}</td>`;
-      html += `<td>${ptsDisplay}</td>`;
-      html += `<td style="font-weight:700">${info.pts}</td>`;
+      html += `<td style="font-weight:700">${ptsDisplay}</td>`;
       html += '</tr>';
     }
 
@@ -475,7 +474,7 @@ const Scoreboard = (() => {
       html += '<div class="tt-no-games">No games played yet</div>';
     }
 
-    html += `<div class="tt-total">Fantasy: ${info.pts}</div>`;
+    html += `<div class="tt-total">Total: ${info.pts}</div>`;
 
     tip.innerHTML = html;
     document.body.appendChild(tip);
