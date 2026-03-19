@@ -181,6 +181,14 @@ const Scoreboard = (() => {
           if (info.eliminated) td.classList.add('eliminated');
           if (info.live) td.classList.add('live');
 
+          // Captain icon on top
+          if (info.captain) {
+            const icon = document.createElement('span');
+            icon.className = `captain-icon ${info.captain}`;
+            icon.textContent = info.captain === 'scorer' ? '👑' : '🅿';
+            td.appendChild(icon);
+          }
+
           // Headshot
           const hsUrl = headshotsData[info.pick.player_id];
           if (hsUrl) {
@@ -206,13 +214,6 @@ const Scoreboard = (() => {
           ptsSpan.className = 'seed-pts';
           ptsSpan.textContent = info.pts;
           td.appendChild(ptsSpan);
-
-          if (info.captain) {
-            const icon = document.createElement('span');
-            icon.className = `captain-icon ${info.captain}`;
-            icon.textContent = info.captain === 'scorer' ? '👑' : '🅿';
-            td.appendChild(icon);
-          }
 
           // Hover tooltip with per-game breakdown
           td.addEventListener('mouseenter', (e) => showPlayerTooltip(e, info));
