@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-19T21:29:02.289989+00:00",
+  "last_updated": "2026-03-19T21:58:01.106334+00:00",
   "players": {
     "damari-wheeler-thomas": {
       "name": "Damari Wheeler-Thomas",
@@ -7,16 +7,16 @@
       "seed": 14,
       "eliminated": false,
       "stats": {
-        "pts": 0,
+        "pts": 7,
         "reb": 2,
-        "ast": 1
+        "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 0,
+          "pts": 7,
           "reb": 2,
-          "ast": 1,
+          "ast": 2,
           "game_id": "401856483",
           "opponent": "Michigan State Spartans"
         }
@@ -28,16 +28,16 @@
       "seed": 3,
       "eliminated": false,
       "stats": {
-        "pts": 2,
+        "pts": 7,
         "reb": 2,
-        "ast": 9
+        "ast": 11
       },
       "games": [
         {
           "round": "R64",
-          "pts": 2,
+          "pts": 7,
           "reb": 2,
-          "ast": 9,
+          "ast": 11,
           "game_id": "401856483",
           "opponent": "North Dakota State Bison"
         }
@@ -49,14 +49,14 @@
       "seed": 13,
       "eliminated": false,
       "stats": {
-        "pts": 8,
+        "pts": 13,
         "reb": 3,
         "ast": 0
       },
       "games": [
         {
           "round": "R64",
-          "pts": 8,
+          "pts": 13,
           "reb": 3,
           "ast": 0,
           "game_id": "401856481",
@@ -70,81 +70,18 @@
       "seed": 4,
       "eliminated": false,
       "stats": {
-        "pts": 13,
+        "pts": 19,
         "reb": 0,
         "ast": 4
       },
       "games": [
         {
           "round": "R64",
-          "pts": 13,
+          "pts": 19,
           "reb": 0,
           "ast": 4,
           "game_id": "401856481",
           "opponent": "Hawai'i Rainbow Warriors"
-        }
-      ]
-    },
-    "larry-johnson": {
-      "name": "Larry Johnson",
-      "team": "McNeese Cowboys",
-      "seed": 12,
-      "eliminated": true,
-      "stats": {
-        "pts": 15,
-        "reb": 5,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 15,
-          "reb": 5,
-          "ast": 0,
-          "game_id": "401856488",
-          "opponent": "Vanderbilt Commodores"
-        }
-      ]
-    },
-    "tyler-tanner": {
-      "name": "Tyler Tanner",
-      "team": "Vanderbilt Commodores",
-      "seed": 5,
-      "eliminated": false,
-      "stats": {
-        "pts": 26,
-        "reb": 7,
-        "ast": 5
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 26,
-          "reb": 7,
-          "ast": 5,
-          "game_id": "401856488",
-          "opponent": "McNeese Cowboys"
-        }
-      ]
-    },
-    "duke-miles": {
-      "name": "Duke Miles",
-      "team": "Vanderbilt Commodores",
-      "seed": 5,
-      "eliminated": false,
-      "stats": {
-        "pts": 13,
-        "reb": 1,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 13,
-          "reb": 1,
-          "ast": 3,
-          "game_id": "401856488",
-          "opponent": "McNeese Cowboys"
         }
       ]
     },
@@ -313,6 +250,69 @@
           "ast": 6,
           "game_id": "401856480",
           "opponent": "High Point Panthers"
+        }
+      ]
+    },
+    "larry-johnson": {
+      "name": "Larry Johnson",
+      "team": "McNeese Cowboys",
+      "seed": 12,
+      "eliminated": true,
+      "stats": {
+        "pts": 15,
+        "reb": 5,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 15,
+          "reb": 5,
+          "ast": 0,
+          "game_id": "401856488",
+          "opponent": "Vanderbilt Commodores"
+        }
+      ]
+    },
+    "tyler-tanner": {
+      "name": "Tyler Tanner",
+      "team": "Vanderbilt Commodores",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 26,
+        "reb": 7,
+        "ast": 5
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 26,
+          "reb": 7,
+          "ast": 5,
+          "game_id": "401856488",
+          "opponent": "McNeese Cowboys"
+        }
+      ]
+    },
+    "duke-miles": {
+      "name": "Duke Miles",
+      "team": "Vanderbilt Commodores",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 13,
+        "reb": 1,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 13,
+          "reb": 1,
+          "ast": 3,
+          "game_id": "401856488",
+          "opponent": "McNeese Cowboys"
         }
       ]
     },
