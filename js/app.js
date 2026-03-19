@@ -16,6 +16,7 @@
   let knownEliminated = new Set();
   let knownCompletedGames = new Set();
   let isFirstLoad = true;
+  let lastESPNRefresh = null;
 
   // --- Helpers ---
 
@@ -86,9 +87,8 @@
 
   function updateIndicator() {
     const el = document.getElementById('update-indicator');
-    const hasLive = currentStats?.live_games?.length > 0;
-    if (hasLive && currentStats?.last_updated) {
-      el.textContent = `Live \u2022 ${timeAgo(currentStats.last_updated)}`;
+    if (lastESPNRefresh) {
+      el.textContent = `Live \u2022 ${timeAgo(lastESPNRefresh.toISOString())}`;
       el.className = 'update-indicator live';
     } else if (currentStats?.last_updated) {
       el.textContent = `Updated ${timeAgo(currentStats.last_updated)}`;
@@ -401,6 +401,7 @@
       // Render live games with fresh ESPN player stats
       renderLiveGames({ live_games: liveGames, players: currentStats?.players }, translatedLive);
 
+      lastESPNRefresh = new Date();
       updateIndicator();
     } catch (e) {
       console.warn('ESPN refresh failed:', e);
