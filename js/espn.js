@@ -35,8 +35,13 @@ const ESPN = (() => {
     const boxScore = summary.boxscore;
     if (!boxScore || !boxScore.players) return stats;
 
+    // Build team -> opponent mapping
+    const teamNames = (boxScore.players || []).map(tb => tb.team?.displayName || '');
+    const getOpponent = (team) => teamNames.find(t => t !== team) || '';
+
     for (const teamBox of boxScore.players) {
       const teamName = teamBox.team?.displayName || '';
+      const opponent = getOpponent(teamName);
       for (const statGroup of teamBox.statistics || []) {
         const labels = (statGroup.labels || []).map(l => l.toLowerCase());
         const ptsIdx = labels.indexOf('pts');
@@ -50,6 +55,7 @@ const ESPN = (() => {
           stats[id] = {
             name: athlete.athlete?.displayName || '',
             team: teamName,
+            opponent,
             pts: ptsIdx >= 0 ? parseInt(row[ptsIdx]) || 0 : 0,
             reb: rebIdx >= 0 ? parseInt(row[rebIdx]) || 0 : 0,
             ast: astIdx >= 0 ? parseInt(row[astIdx]) || 0 : 0,

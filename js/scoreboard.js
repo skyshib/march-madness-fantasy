@@ -402,10 +402,11 @@ const Scoreboard = (() => {
       // If live but no committed game for this active game yet, add a row
       if (info.live && !games.some(g => activeGameIds.includes(g.game_id))) {
         const ls = liveStats || { pts: 0, reb: 0, ast: 0 };
+        const opp = ls.opponent || '—';
         if (isPlaymaker) {
-          html += `<tr style="color:var(--live-green)"><td>Live \u25cf</td><td>—</td><td>${ls.pts}</td><td>${ls.reb}</td><td>${ls.ast}</td></tr>`;
+          html += `<tr style="color:var(--live-green)"><td>Live \u25cf</td><td>${opp}</td><td>${ls.pts}</td><td>${ls.reb}</td><td>${ls.ast}</td></tr>`;
         } else {
-          html += `<tr style="color:var(--live-green)"><td>Live \u25cf</td><td>—</td><td>${ls.pts}</td></tr>`;
+          html += `<tr style="color:var(--live-green)"><td>Live \u25cf</td><td>${opp}</td><td>${ls.pts}</td></tr>`;
         }
       }
 
