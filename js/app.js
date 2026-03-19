@@ -423,7 +423,12 @@
           const align = i === 0 ? 'left' : 'right';
           html += `<div class="live-game-side-picks ${align}">`;
           for (const [player, data] of Object.entries(byPlayer)) {
-            data.owners.sort((a, b) => a.name.localeCompare(b.name));
+            data.owners.sort((a, b) => {
+              // Captains first, then alphabetical
+              if (a.captain && !b.captain) return -1;
+              if (!a.captain && b.captain) return 1;
+              return a.name.localeCompare(b.name);
+            });
             const count = data.owners.length;
             const ownerList = data.owners.map(o => (o.captain ? o.captain + ' ' : '') + o.name).join(', ');
             // Get live pts from Scoreboard overrides
