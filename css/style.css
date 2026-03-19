@@ -500,7 +500,7 @@ td.col-remaining {
   position: fixed;
   right: 0;
   top: 0;
-  width: 400px;
+  width: 550px;
   max-width: 90vw;
   height: 100vh;
   background: var(--bg-secondary);
