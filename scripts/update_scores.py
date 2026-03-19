@@ -201,10 +201,15 @@ def main():
 
         if state == "pre":
             continue
-        if state == "in":
-            active_games.append(event_id)
 
         game_round = classify_round(event)
+
+        # Skip First Four games — they don't count for scoring
+        if game_round == "First Four":
+            continue
+
+        if state == "in":
+            active_games.append(event_id)
 
         try:
             summary = fetch_game_boxscore(event_id)

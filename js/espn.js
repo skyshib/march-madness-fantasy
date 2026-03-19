@@ -99,6 +99,11 @@ const ESPN = (() => {
       const data = await getTournamentScoreboard();
       const active = [];
       for (const event of data.events || []) {
+        // Skip First Four games
+        const notes = event.competitions?.[0]?.notes || [];
+        const isFirstFour = notes.some(n => (n.headline || '').toLowerCase().includes('first four'));
+        if (isFirstFour) continue;
+
         for (const comp of event.competitions || []) {
           const state = comp.status?.type?.state;
           // Include in-progress AND recently completed games
