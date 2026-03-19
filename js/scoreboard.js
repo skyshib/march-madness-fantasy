@@ -235,7 +235,7 @@ const Scoreboard = (() => {
             const lastName = parts[parts.length - 1];
             let prefix = '';
             if (info.captain === 'scorer') prefix = '👑';
-            else if (info.captain === 'playmaker') prefix = '🅿';
+            else if (info.captain === 'playmaker') prefix = '⛹️';
 
             // Red-white-green gradient based on pts
             if (maxPts > minPts) {
@@ -272,7 +272,7 @@ const Scoreboard = (() => {
             if (info.captain) {
               const icon = document.createElement('span');
               icon.className = `captain-icon ${info.captain}`;
-              icon.textContent = info.captain === 'scorer' ? '👑' : '🅿';
+              icon.textContent = info.captain === 'scorer' ? '👑' : '⛹️';
               td.appendChild(icon);
             }
 
