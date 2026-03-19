@@ -159,9 +159,9 @@ main {
 }
 
 #scoreboard thead th.col-name { text-align: left; }
-#scoreboard thead th.col-rank { width: 3rem; }
-#scoreboard thead th.col-total { width: 5rem; }
-#scoreboard thead th.col-remaining { width: 4rem; }
+#scoreboard thead th.col-rank { width: 1.5rem; }
+#scoreboard thead th.col-total { width: 3rem; }
+#scoreboard thead th.col-remaining { width: 2.5rem; }
 
 #scoreboard tbody tr {
   background: var(--bg-row);
@@ -173,11 +173,16 @@ main {
 #scoreboard tbody tr:hover { background: var(--bg-hover); }
 
 #scoreboard tbody td {
-  padding: 0.6rem 0.5rem;
+  padding: 0.6rem 0.4rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
-  white-space: nowrap;
   vertical-align: middle;
+}
+
+#scoreboard tbody td.col-rank,
+#scoreboard tbody td.col-total,
+#scoreboard tbody td.col-remaining {
+  white-space: nowrap;
 }
 
 #scoreboard tbody td.seed-cell {
