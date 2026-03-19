@@ -1,90 +1,6 @@
 {
-  "last_updated": "2026-03-19T21:58:01.106334+00:00",
+  "last_updated": "2026-03-19T22:48:03.364267+00:00",
   "players": {
-    "damari-wheeler-thomas": {
-      "name": "Damari Wheeler-Thomas",
-      "team": "North Dakota State Bison",
-      "seed": 14,
-      "eliminated": false,
-      "stats": {
-        "pts": 7,
-        "reb": 2,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 7,
-          "reb": 2,
-          "ast": 2,
-          "game_id": "401856483",
-          "opponent": "Michigan State Spartans"
-        }
-      ]
-    },
-    "jeremy-fears-jr": {
-      "name": "Jeremy Fears Jr.",
-      "team": "Michigan State Spartans",
-      "seed": 3,
-      "eliminated": false,
-      "stats": {
-        "pts": 7,
-        "reb": 2,
-        "ast": 11
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 7,
-          "reb": 2,
-          "ast": 11,
-          "game_id": "401856483",
-          "opponent": "North Dakota State Bison"
-        }
-      ]
-    },
-    "isaac-johnson": {
-      "name": "Isaac Johnson",
-      "team": "Hawai'i Rainbow Warriors",
-      "seed": 13,
-      "eliminated": false,
-      "stats": {
-        "pts": 13,
-        "reb": 3,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 13,
-          "reb": 3,
-          "ast": 0,
-          "game_id": "401856481",
-          "opponent": "Arkansas Razorbacks"
-        }
-      ]
-    },
-    "darius-acuff-jr": {
-      "name": "Darius Acuff Jr.",
-      "team": "Arkansas Razorbacks",
-      "seed": 4,
-      "eliminated": false,
-      "stats": {
-        "pts": 19,
-        "reb": 0,
-        "ast": 4
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 19,
-          "reb": 0,
-          "ast": 4,
-          "game_id": "401856481",
-          "opponent": "Hawai'i Rainbow Warriors"
-        }
-      ]
-    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
@@ -124,6 +40,48 @@
           "ast": 3,
           "game_id": "401856478",
           "opponent": "Siena Saints"
+        }
+      ]
+    },
+    "damari-wheeler-thomas": {
+      "name": "Damari Wheeler-Thomas",
+      "team": "North Dakota State Bison",
+      "seed": 14,
+      "eliminated": true,
+      "stats": {
+        "pts": 16,
+        "reb": 3,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 3,
+          "ast": 2,
+          "game_id": "401856483",
+          "opponent": "Michigan State Spartans"
+        }
+      ]
+    },
+    "jeremy-fears-jr": {
+      "name": "Jeremy Fears Jr.",
+      "team": "Michigan State Spartans",
+      "seed": 3,
+      "eliminated": false,
+      "stats": {
+        "pts": 7,
+        "reb": 2,
+        "ast": 11
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 7,
+          "reb": 2,
+          "ast": 11,
+          "game_id": "401856483",
+          "opponent": "North Dakota State Bison"
         }
       ]
     },
@@ -187,6 +145,48 @@
           "ast": 2,
           "game_id": "401856489",
           "opponent": "Troy Trojans"
+        }
+      ]
+    },
+    "isaac-johnson": {
+      "name": "Isaac Johnson",
+      "team": "Hawai'i Rainbow Warriors",
+      "seed": 13,
+      "eliminated": true,
+      "stats": {
+        "pts": 15,
+        "reb": 5,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 15,
+          "reb": 5,
+          "ast": 0,
+          "game_id": "401856481",
+          "opponent": "Arkansas Razorbacks"
+        }
+      ]
+    },
+    "darius-acuff-jr": {
+      "name": "Darius Acuff Jr.",
+      "team": "Arkansas Razorbacks",
+      "seed": 4,
+      "eliminated": false,
+      "stats": {
+        "pts": 24,
+        "reb": 3,
+        "ast": 7
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 24,
+          "reb": 3,
+          "ast": 7,
+          "game_id": "401856481",
+          "opponent": "Hawai'i Rainbow Warriors"
         }
       ]
     },
@@ -422,8 +422,6 @@
       ]
     }
   },
-  "active_games": [
-    "401856483",
-    "401856481"
-  ]
+  "active_games": [],
+  "live_games": []
 }
