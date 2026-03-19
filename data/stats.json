@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-19T17:43:23.177648+00:00",
+  "last_updated": "2026-03-19T17:50:00.333783+00:00",
   "players": {
     "victor-valdes": {
       "name": "Victor Valdes",
@@ -91,14 +91,14 @@
       "seed": 11,
       "eliminated": false,
       "stats": {
-        "pts": 0,
+        "pts": 2,
         "reb": 0,
         "ast": 0
       },
       "games": [
         {
           "round": "R64",
-          "pts": 0,
+          "pts": 2,
           "reb": 0,
           "ast": 0,
           "game_id": "401856482",
@@ -112,15 +112,15 @@
       "seed": 6,
       "eliminated": false,
       "stats": {
-        "pts": 0,
-        "reb": 1,
+        "pts": 1,
+        "reb": 2,
         "ast": 1
       },
       "games": [
         {
           "round": "R64",
-          "pts": 0,
-          "reb": 1,
+          "pts": 1,
+          "reb": 2,
           "ast": 1,
           "game_id": "401856482",
           "opponent": "South Florida Bulls"
