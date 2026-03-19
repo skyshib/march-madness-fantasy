@@ -193,7 +193,7 @@ const Scoreboard = (() => {
       const rankTd = document.createElement('td');
       rankTd.className = 'col-rank';
       const badges = ['🥇', '🥈', '🥉', '💲', '💲'];
-      rankTd.textContent = i < 5 ? badges[i] : i + 1;
+      rankTd.textContent = i < 5 ? `${i + 1} ${badges[i]}` : i + 1;
       tr.appendChild(rankTd);
 
       // Name
