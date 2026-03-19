@@ -362,15 +362,17 @@
       html += '</div>';
 
       // Players at stake
+      // Group picks by player name, list owners
       const allPicked = game.sides.flatMap(s => s.pickedPlayers);
       if (allPicked.length > 0) {
+        const byPlayer = {};
+        for (const pp of allPicked) {
+          if (!byPlayer[pp.player]) byPlayer[pp.player] = [];
+          byPlayer[pp.player].push(pp.owner);
+        }
         html += '<div class="live-game-players">';
-        for (const s of game.sides) {
-          if (s.pickedPlayers.length > 0) {
-            for (const pp of s.pickedPlayers) {
-              html += `<span class="live-game-pick">${pp.player} <span class="live-game-owner">(${pp.owner})</span></span>`;
-            }
-          }
+        for (const [player, owners] of Object.entries(byPlayer)) {
+          html += `<span class="live-game-pick">${player} <span class="live-game-owner">(${owners.join(', ')})</span></span>`;
         }
         html += '</div>';
       }
