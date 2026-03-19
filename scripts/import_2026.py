@@ -108,7 +108,7 @@ PLAYER_TEAMS = {
     "Marcus Foster": "Queens",
     "LJ Cryer": "Houston",
     "Caleb Wilson": "BYU",
-    "Jackson Rasmussen": "Siena",
+    "Jackson Rasmussen": "Idaho",
 }
 
 # ── Team name normalization ──────────────────────────────────────────────────

@@ -373,6 +373,48 @@ const Scoreboard = (() => {
       html += `<div class="detail-uniqueness">Most similar: ${bestMatch} (${bestOverlap}/16 picks in common)</div>`;
     }
 
+    // Rooting for section (live games only) — at the top
+    if (liveGamesInfo.length > 0) {
+      const myTeams = new Set();
+      for (let s = 1; s <= 16; s++) {
+        const info = ranked.seedBreakdown[s];
+        if (info.pick && !info.eliminated) {
+          myTeams.add(info.pick.team?.toLowerCase());
+        }
+      }
+
+      const rooting = [];
+      for (const game of liveGamesInfo) {
+        if (game.teams.length < 2) continue;
+        const t0 = game.teams[0];
+        const t1 = game.teams[1];
+        // Match: check if any of our teams match ESPN full name
+        const t0match = [...myTeams].some(pt => {
+          const et = t0.fullName;
+          return et.startsWith(pt) && (et.length === pt.length || et[pt.length] === ' ');
+        });
+        const t1match = [...myTeams].some(pt => {
+          const et = t1.fullName;
+          return et.startsWith(pt) && (et.length === pt.length || et[pt.length] === ' ');
+        });
+        if (t0match && !t1match) {
+          rooting.push(`(${t0.seed}) ${t0.name} over (${t1.seed}) ${t1.name}`);
+        } else if (t1match && !t0match) {
+          rooting.push(`(${t1.seed}) ${t1.name} over (${t0.seed}) ${t0.name}`);
+        } else if (t0match && t1match) {
+          rooting.push(`(${t0.seed}) ${t0.name} vs (${t1.seed}) ${t1.name} — conflicted!`);
+        }
+      }
+
+      if (rooting.length > 0) {
+        html += '<div class="detail-rooting"><div class="detail-rooting-title">🏀 Rooting for...</div>';
+        for (const line of rooting) {
+          html += `<div class="detail-rooting-line">${line}</div>`;
+        }
+        html += '</div>';
+      }
+    }
+
     html += '<table class="detail-table"><thead><tr>';
     html += '<th>Seed</th><th>Player</th><th>Team</th><th>Picked</th><th>PTS</th>';
     html += '</tr></thead><tbody>';
@@ -430,41 +472,6 @@ const Scoreboard = (() => {
     html += '<span class="legend-item"><span class="captain-badge scorer">1.5x</span> Scorer Captain</span>';
     html += '<span class="legend-item"><span class="captain-badge playmaker">P+R+A</span> Playmaker Captain</span>';
     html += '</div>';
-
-    // Rooting for section (live games only)
-    if (liveGamesInfo.length > 0) {
-      const myTeams = new Set();
-      for (let s = 1; s <= 16; s++) {
-        const info = ranked.seedBreakdown[s];
-        if (info.pick && !info.eliminated) {
-          myTeams.add(info.pick.team?.toLowerCase());
-        }
-      }
-
-      const rooting = [];
-      for (const game of liveGamesInfo) {
-        if (game.teams.length < 2) continue;
-        const t0 = game.teams[0];
-        const t1 = game.teams[1];
-        const t0match = myTeams.has(t0.nameLower);
-        const t1match = myTeams.has(t1.nameLower);
-        if (t0match && !t1match) {
-          rooting.push(`(${t0.seed}) ${t0.name} over (${t1.seed}) ${t1.name}`);
-        } else if (t1match && !t0match) {
-          rooting.push(`(${t1.seed}) ${t1.name} over (${t0.seed}) ${t0.name}`);
-        } else if (t0match && t1match) {
-          rooting.push(`(${t0.seed}) ${t0.name} vs (${t1.seed}) ${t1.name} — conflicted!`);
-        }
-      }
-
-      if (rooting.length > 0) {
-        html += '<div class="detail-rooting"><div class="detail-rooting-title">🏀 Rooting for...</div>';
-        for (const line of rooting) {
-          html += `<div class="detail-rooting-line">${line}</div>`;
-        }
-        html += '</div>';
-      }
-    }
 
     contentEl.innerHTML = html;
     panel.classList.remove('hidden');

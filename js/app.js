@@ -18,6 +18,22 @@
   let currentTeamLogos = {};
 
   // --- Helpers ---
+
+  /**
+   * Check if a picks.json team name matches an ESPN full team name.
+   * e.g. "North Carolina" matches "North Carolina Tar Heels" but NOT "North Dakota State Bison"
+   */
+  function teamsMatch(pickTeam, espnTeam) {
+    if (!pickTeam || !espnTeam) return false;
+    const pt = pickTeam.toLowerCase().trim();
+    const et = espnTeam.toLowerCase().trim();
+    // ESPN name starts with our short name AND next char is space or end
+    if (et.startsWith(pt) && (et.length === pt.length || et[pt.length] === ' ')) return true;
+    // Our name starts with ESPN short name
+    if (pt.startsWith(et) && (pt.length === et.length || pt[et.length] === ' ')) return true;
+    return false;
+  }
+
   async function loadJSON(path) {
     const resp = await fetch(path + '?t=' + Date.now());
     if (!resp.ok) throw new Error(`Failed to load ${path}: ${resp.status}`);
@@ -153,8 +169,7 @@
               for (const ent of currentPicks.entrants || []) {
                 for (const [seed, pick] of Object.entries(ent.picks || {})) {
                   const playerTeam = pick.team?.toLowerCase() || '';
-                  if (losingTeam.toLowerCase().startsWith(playerTeam) ||
-                      playerTeam.startsWith(losingTeam.toLowerCase().split(' ')[0])) {
+                  if (teamsMatch(pick.team, losingTeam)) {
                     // This entrant had a player on the losing team
                     const existing = newEliminations.find(e => e.slug === pick.player_id);
                     if (existing) {
@@ -319,9 +334,7 @@
         const pickedPlayers = [];
         for (const ent of currentPicks?.entrants || []) {
           for (const [s, pick] of Object.entries(ent.picks || {})) {
-            const pt = pick.team?.toLowerCase() || '';
-            if (teamName.toLowerCase().startsWith(pt) ||
-                pt.startsWith(teamName.toLowerCase().split(' ')[0])) {
+            if (teamsMatch(pick.team, teamName)) {
               pickedPlayers.push({ player: pick.name, owner: ent.name, slug: pick.player_id });
             }
           }
@@ -337,7 +350,7 @@
     const liveGamesForScoreboard = games.map(g => ({
       teams: g.sides.map(s => ({
         name: s.teamShort,
-        nameLower: s.teamName.toLowerCase().split(' ')[0],
+        fullName: s.teamName.toLowerCase(),
         seed: s.seed,
       })),
     }));
@@ -398,7 +411,8 @@
             // Get live pts from Scoreboard overrides
             const liveData = Scoreboard.getLiveOverride?.(data.slug);
             const ptsHtml = liveData ? ` <span class="live-game-pts">${liveData.pts}</span>` : '';
-            html += `<div class="live-game-pick" title="${ownerList}">${count}x ${player}${ptsHtml}</div>`;
+            const safeOwners = ownerList.replace(/"/g, '&quot;');
+            html += `<div class="live-game-pick" data-owners="${safeOwners}">${count}x ${player}${ptsHtml}</div>`;
           }
           html += '</div>';
           if (i === 0) html += '<div class="live-game-picks-divider"></div>';
