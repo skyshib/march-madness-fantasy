@@ -367,37 +367,51 @@ const Scoreboard = (() => {
 
     const isPlaymaker = info.captain === 'playmaker';
 
-    if (games.length > 0) {
-      if (isPlaymaker) {
-        html += '<table class="tt-games"><thead><tr><th>Round</th><th>Opp</th><th>PTS</th><th>REB</th><th>AST</th></tr></thead><tbody>';
-        for (const g of games) {
-          const opp = g.opponent || '—';
-          html += `<tr><td>${g.round}</td><td>${opp}</td><td>${g.pts}</td><td>${g.reb}</td><td>${g.ast}</td></tr>`;
-        }
-        html += '</tbody></table>';
-      } else {
-        html += '<table class="tt-games"><thead><tr><th>Round</th><th>Opp</th><th>PTS</th></tr></thead><tbody>';
-        for (const g of games) {
-          const opp = g.opponent || '—';
-          html += `<tr><td>${g.round}</td><td>${opp}</td><td>${g.pts}</td></tr>`;
-        }
-        html += '</tbody></table>';
-      }
-    } else {
-      const totalStats = player?.stats || { pts: 0, reb: 0, ast: 0 };
-      if (totalStats.pts > 0 || totalStats.reb > 0 || totalStats.ast > 0) {
-        // Has aggregate stats but no per-game breakdown
-        html += '<div class="tt-no-games">Per-game breakdown unavailable</div>';
+    // Show live game indicator if player is in an active game
+    if (info.live) {
+      html += '<div class="tt-live-game">In active game</div>';
+    }
+
+    const activeGameIds = statsData?.active_games || [];
+
+    if (games.length > 0 || info.live) {
+      const liveStats = info.live ? liveOverrides[info.pick.player_id] : null;
+      const cols = isPlaymaker
+        ? '<th>Round</th><th>Opp</th><th>PTS</th><th>REB</th><th>AST</th>'
+        : '<th>Round</th><th>Opp</th><th>PTS</th>';
+      html += `<table class="tt-games"><thead><tr>${cols}</tr></thead><tbody>`;
+
+      for (const g of games) {
+        const opp = g.opponent || '—';
+        const isActiveRow = g.game_id && activeGameIds.includes(g.game_id);
+        const rowStyle = isActiveRow ? ' style="color:var(--live-green)"' : '';
+
+        // For active game rows, show live stats instead of committed
+        const pts = (isActiveRow && liveStats) ? liveStats.pts : g.pts;
+        const reb = (isActiveRow && liveStats) ? liveStats.reb : g.reb;
+        const ast = (isActiveRow && liveStats) ? liveStats.ast : g.ast;
+        const liveTag = isActiveRow ? ' \u25cf' : '';
+
         if (isPlaymaker) {
-          html += `<div style="font-size:0.75rem;color:var(--text-secondary)">Totals: ${totalStats.pts} pts, ${totalStats.reb} reb, ${totalStats.ast} ast</div>`;
+          html += `<tr${rowStyle}><td>${g.round}${liveTag}</td><td>${opp}</td><td>${pts}</td><td>${reb}</td><td>${ast}</td></tr>`;
+        } else {
+          html += `<tr${rowStyle}><td>${g.round}${liveTag}</td><td>${opp}</td><td>${pts}</td></tr>`;
         }
-      } else if (info.live) {
-        const liveStats = info.rawStats || { pts: 0, reb: 0, ast: 0 };
-        html += '<div class="tt-live-game">In active game</div>';
-        html += `<div style="font-size:0.75rem;color:var(--text-secondary)">${liveStats.pts} pts, ${liveStats.reb} reb, ${liveStats.ast} ast</div>`;
-      } else {
-        html += '<div class="tt-no-games">No games played yet</div>';
       }
+
+      // If live but no committed game for this active game yet, add a row
+      if (info.live && !games.some(g => activeGameIds.includes(g.game_id))) {
+        const ls = liveStats || { pts: 0, reb: 0, ast: 0 };
+        if (isPlaymaker) {
+          html += `<tr style="color:var(--live-green)"><td>Live \u25cf</td><td>—</td><td>${ls.pts}</td><td>${ls.reb}</td><td>${ls.ast}</td></tr>`;
+        } else {
+          html += `<tr style="color:var(--live-green)"><td>Live \u25cf</td><td>—</td><td>${ls.pts}</td></tr>`;
+        }
+      }
+
+      html += '</tbody></table>';
+    } else {
+      html += '<div class="tt-no-games">No games played yet</div>';
     }
 
     html += `<div class="tt-total">Fantasy: ${info.pts}</div>`;
