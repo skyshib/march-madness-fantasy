@@ -1659,10 +1659,10 @@
         "team": "VCU"
       },
       "playmaker_captain": {
-        "seed": 1,
-        "player_id": "cameron-boozer",
-        "name": "Cameron Boozer",
-        "team": "Duke"
+        "seed": 5,
+        "player_id": "jt-toppin",
+        "name": "JT Toppin",
+        "team": "Texas Tech"
       },
       "picks": {
         "1": {
