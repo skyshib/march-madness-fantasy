@@ -220,6 +220,7 @@
             slug,
             name: player.name,
             team: player.team,
+            seed: player.seed,
             owners,
             opponent,
           });
@@ -314,25 +315,36 @@
     for (const p of eliminated) {
       const teamKey = p.team || 'Unknown';
       if (!byTeam[teamKey]) {
-        byTeam[teamKey] = { team: teamKey, opponent: p.opponent, players: [] };
+        byTeam[teamKey] = { team: teamKey, opponent: p.opponent, seed: p.seed, players: [] };
       }
       byTeam[teamKey].players.push(p);
     }
 
-    let html = '<div class="elimination-title">💀 DOWN GOES... 💀</div>';
+    // Helper: find team logo by partial match (stats has "Ohio State Buckeyes", logos has "Ohio State")
+    function findLogo(teamFullName) {
+      if (currentTeamLogos[teamFullName]) return currentTeamLogos[teamFullName];
+      for (const [key, url] of Object.entries(currentTeamLogos)) {
+        if (teamFullName.toLowerCase().startsWith(key.toLowerCase())) return url;
+      }
+      return null;
+    }
+
+    let html = '';
 
     for (const [teamName, group] of Object.entries(byTeam)) {
-      // Team logo
-      const logoUrl = currentTeamLogos[teamName];
+      const logoUrl = findLogo(teamName);
       const logoHtml = logoUrl
         ? `<img class="elim-team-logo" src="${logoUrl}" alt="">`
         : '';
 
+      const seedLabel = group.seed ? `(${group.seed})` : '';
+
       html += '<div class="elim-team-block">';
-      html += `<div class="elim-team-header">${logoHtml}<span class="elim-team-name">${teamName}</span></div>`;
+      html += '<div class="elimination-title">💀 DOWN GO THE 💀</div>';
+      html += `<div class="elim-team-header">${logoHtml}<span class="elim-team-name">${seedLabel} ${teamName}</span></div>`;
 
       if (group.opponent) {
-        html += `<div class="elim-lost-to">Lost to ${group.opponent}</div>`;
+        html += `<div class="elim-lost-to">Eliminated by ${group.opponent}</div>`;
       }
 
       // Player cards
