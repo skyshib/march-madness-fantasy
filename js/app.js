@@ -14,6 +14,8 @@
   let nameToSlug = {};     // normalized name -> our slug
   let hasActiveGames = false;
   let knownEliminated = new Set(); // track eliminated player slugs to detect new ones
+  let currentHeadshots = {};
+  let currentTeamLogos = {};
 
   // --- Helpers ---
   async function loadJSON(path) {
@@ -149,6 +151,8 @@
 
     currentPicks = picks;
     currentStats = stats;
+    currentHeadshots = headshots;
+    currentTeamLogos = teamLogos;
 
     // Build ID mappings for live overlay
     buildPlayerMappings(picks, headshots);
@@ -199,7 +203,6 @@
 
     for (const [slug, player] of Object.entries(stats.players || {})) {
       if (player.eliminated && !knownEliminated.has(slug)) {
-        // Find which entrants had this player
         const owners = [];
         for (const ent of picks.entrants || []) {
           for (const [seed, pick] of Object.entries(ent.picks || {})) {
@@ -208,19 +211,27 @@
             }
           }
         }
+        // Get opponent from last game
+        const lastGame = player.games?.[player.games.length - 1];
+        const opponent = lastGame?.opponent || '';
+
         if (owners.length > 0) {
-          newlyEliminated.push({ name: player.name, team: player.team, owners });
+          newlyEliminated.push({
+            slug,
+            name: player.name,
+            team: player.team,
+            owners,
+            opponent,
+          });
         }
         knownEliminated.add(slug);
       }
     }
 
-    // On first load, only show banner if stats were updated within 2 minutes
     const isFirstLoad = knownEliminated.size === 0;
     const recentUpdate = stats.last_updated &&
       (Date.now() - new Date(stats.last_updated).getTime()) < 120000;
 
-    // Add all currently eliminated to known set
     for (const [slug, player] of Object.entries(stats.players || {})) {
       if (player.eliminated) knownEliminated.add(slug);
     }
@@ -277,9 +288,7 @@
   }
 
   function showEliminationBanner(eliminated) {
-    // Remove existing banner
     document.getElementById('elimination-banner')?.remove();
-
     playEliminationSound();
 
     const banner = document.createElement('div');
@@ -300,16 +309,53 @@
     const content = document.createElement('div');
     content.className = 'elimination-content';
 
-    let html = '<div class="elimination-title">💀 DOWN GOES... 💀</div>';
+    // Group eliminated players by team
+    const byTeam = {};
     for (const p of eliminated) {
-      html += `<div class="elimination-player">${p.name} <span class="elimination-team">(${p.team})</span></div>`;
-      html += `<div class="elimination-owners">☠️ ${p.owners.join(', ')}</div>`;
+      const teamKey = p.team || 'Unknown';
+      if (!byTeam[teamKey]) {
+        byTeam[teamKey] = { team: teamKey, opponent: p.opponent, players: [] };
+      }
+      byTeam[teamKey].players.push(p);
     }
+
+    let html = '<div class="elimination-title">💀 DOWN GOES... 💀</div>';
+
+    for (const [teamName, group] of Object.entries(byTeam)) {
+      // Team logo
+      const logoUrl = currentTeamLogos[teamName];
+      const logoHtml = logoUrl
+        ? `<img class="elim-team-logo" src="${logoUrl}" alt="">`
+        : '';
+
+      html += '<div class="elim-team-block">';
+      html += `<div class="elim-team-header">${logoHtml}<span class="elim-team-name">${teamName}</span></div>`;
+
+      if (group.opponent) {
+        html += `<div class="elim-lost-to">Lost to ${group.opponent}</div>`;
+      }
+
+      // Player cards
+      html += '<div class="elim-players">';
+      for (const p of group.players) {
+        const hsUrl = currentHeadshots[p.slug] || '';
+        const hsHtml = hsUrl
+          ? `<img class="elim-headshot" src="${hsUrl}" alt="">`
+          : '';
+        html += '<div class="elim-player-card">';
+        html += `${hsHtml}<div class="elim-player-info">`;
+        html += `<div class="elim-player-name">${p.name}</div>`;
+        html += `<div class="elim-player-owners">☠️ ${p.owners.join(', ')}</div>`;
+        html += '</div></div>';
+      }
+      html += '</div></div>';
+    }
+
+    html += '<div class="elim-dismiss">tap to dismiss</div>';
 
     content.innerHTML = html;
     banner.appendChild(content);
 
-    // Close on click
     banner.addEventListener('click', () => {
       banner.classList.add('banner-exit');
       setTimeout(() => banner.remove(), 500);
@@ -317,13 +363,12 @@
 
     document.body.appendChild(banner);
 
-    // Auto-dismiss after 8 seconds
     setTimeout(() => {
       if (banner.parentNode) {
         banner.classList.add('banner-exit');
         setTimeout(() => banner.remove(), 500);
       }
-    }, 8000);
+    }, 10000);
   }
 
   // --- Auto-refresh ---

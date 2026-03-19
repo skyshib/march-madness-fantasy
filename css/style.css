@@ -660,23 +660,86 @@ footer {
   60% { transform: translateX(5px); }
 }
 
-.elimination-player {
-  font-size: 1.8rem;
+.elim-team-block {
+  margin-bottom: 1.5rem;
+}
+
+.elim-team-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.elim-team-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(239, 68, 68, 0.4));
+}
+
+.elim-team-name {
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+.elim-lost-to {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.elim-players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.elim-player-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+}
+
+.elim-headshot {
+  width: 48px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: grayscale(100%);
+}
+
+.elim-player-info {
+  text-align: left;
+}
+
+.elim-player-name {
+  font-size: 1rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-top: 1rem;
 }
 
-.elimination-team {
-  font-size: 1.2rem;
-  color: var(--text-muted);
-  font-weight: 400;
-}
-
-.elimination-owners {
-  font-size: 1rem;
+.elim-player-owners {
+  font-size: 0.8rem;
   color: var(--accent-orange);
-  margin-bottom: 0.5rem;
+}
+
+.elim-dismiss {
+  margin-top: 1.5rem;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .falling-skull {
