@@ -1653,10 +1653,10 @@
     {
       "name": "Zack Duffy",
       "scorer_captain": {
-        "seed": 6,
-        "player_id": "aj-dybantsa",
-        "name": "AJ Dybantsa",
-        "team": "BYU"
+        "seed": 11,
+        "player_id": "terrance-hill",
+        "name": "Terrence Hill Jr.",
+        "team": "VCU"
       },
       "playmaker_captain": {
         "seed": 1,
@@ -1726,9 +1726,9 @@
           "team": "McNeese"
         },
         "13": {
-          "player_id": "taran-armstrong",
-          "name": "Taran Armstrong",
-          "team": "Troy"
+          "player_id": "dominique-daniels-jr",
+          "name": "Dominique Daniels Jr.",
+          "team": "Cal Baptist"
         },
         "14": {
           "player_id": "tj-power",
@@ -1736,9 +1736,9 @@
           "team": "Penn"
         },
         "15": {
-          "player_id": "marcus-foster",
-          "name": "Marcus Foster",
-          "team": "Queens"
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
         },
         "16": {
           "player_id": "dontae-horne",
@@ -2047,10 +2047,10 @@
         "team": "BYU"
       },
       "playmaker_captain": {
-        "seed": 10,
-        "player_id": "mark-mitchell",
-        "name": "Mark Mitchell",
-        "team": "Missouri"
+        "seed": 11,
+        "player_id": "brant-byers",
+        "name": "Brant Byers",
+        "team": "Miami (OH)"
       },
       "picks": {
         "1": {
@@ -2372,7 +2372,7 @@
         "6": {
           "player_id": "caleb-wilson",
           "name": "Caleb Wilson",
-          "team": "BYU"
+          "team": "North Carolina"
         },
         "7": {
           "player_id": "paulius-murauskas",
