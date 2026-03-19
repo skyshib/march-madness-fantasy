@@ -317,25 +317,22 @@ td.col-remaining {
 
 .seed-cell.eliminated .seed-headshot-wrap {
   position: relative;
-}
-
-.seed-cell.eliminated .seed-headshot-wrap > * {
   filter: grayscale(100%);
 }
 
-.seed-cell.eliminated .seed-headshot-wrap::after {
+.seed-cell.eliminated::after {
   content: '';
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
+  left: 10%;
+  right: 10%;
   height: 2px;
   background: rgba(239, 68, 68, 0.8);
-  transform: translateY(-50%);
   z-index: 2;
 }
 
 .seed-cell.eliminated {
+  position: relative;
   color: var(--eliminated);
   text-decoration: line-through;
 }
