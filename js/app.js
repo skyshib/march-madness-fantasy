@@ -10,6 +10,7 @@
   let currentHeadshots = {};
   let currentTeamLogos = {};
   let knownEliminated = new Set();
+  let isFirstLoad = true;
 
   // --- Helpers ---
 
@@ -300,8 +301,9 @@
       }
     } catch (e) {}
 
-    // Show banner for new eliminations detected from stats.json
-    if (newlyEliminated.length > 0) {
+    // Show banner for new eliminations — but not on first page load
+    // (first load sees all historical eliminations as "new")
+    if (newlyEliminated.length > 0 && !isFirstLoad) {
       localStorage.setItem('lastElimination', JSON.stringify({
         time: Date.now(),
         data: newlyEliminated,
@@ -312,6 +314,7 @@
         console.warn('Elimination banner failed:', e);
       }
     }
+    isFirstLoad = false;
   }
 
   // Pre-warm audio context on first user interaction
