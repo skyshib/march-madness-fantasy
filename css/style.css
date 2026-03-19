@@ -232,6 +232,78 @@ td.col-remaining {
 .captain-icon.scorer { color: var(--scorer-color); }
 .captain-icon.playmaker { color: var(--playmaker-color); }
 
+/* === Player Tooltip === */
+.player-tooltip {
+  position: fixed;
+  z-index: 1000;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s;
+  min-width: 180px;
+  max-width: 260px;
+}
+
+.player-tooltip.visible { opacity: 1; }
+
+.tt-header {
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+
+.tt-team {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.tt-games {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.tt-games th {
+  text-align: left;
+  color: var(--text-muted);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.tt-games td {
+  padding: 0.2rem 0.3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.tt-games td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
+
+.tt-no-games {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+
+.tt-total {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  padding-top: 0.3rem;
+  border-top: 1px solid var(--border);
+}
+
 /* === Detail Panel === */
 .detail-panel {
   position: fixed;

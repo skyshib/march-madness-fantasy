@@ -105,6 +105,74 @@ def parse_individual_scores(ws):
     return players, playmaker_totals
 
 
+
+# 2025 tournament matchups: team -> { round: opponent }
+MATCHUPS_2025 = {
+    "Florida": {"R64": "Norfolk State", "R32": "UNC Wilmington", "S16": "Marquette", "E8": "Texas Tech", "F4": "Duke", "Championship": "Houston"},
+    "Auburn": {"R64": "Alabama State", "R32": "Yale", "S16": "Michigan", "E8": "Michigan State", "F4": "Houston"},
+    "Duke": {"R64": "American", "R32": "Connecticut", "S16": "Arizona", "E8": "Kentucky", "F4": "Florida"},
+    "Houston": {"R64": "SIU-Edwardsville", "R32": "Robert Morris", "S16": "Gonzaga", "E8": "Purdue", "F4": "Auburn", "Championship": "Florida"},
+    "Alabama": {"R64": "Robert Morris", "R32": "Clemson", "S16": "Illinois", "E8": "Duke"},
+    "Tennessee": {"R64": "Lipscomb", "R32": "New Mexico", "S16": "Oregon", "E8": "Florida"},
+    "St. John's": {"R64": "Omaha", "R32": "Baylor"},
+    "Michigan State": {"R64": "Bryant", "R32": "UC San Diego", "S16": "UCLA", "E8": "Auburn"},
+    "Texas Tech": {"R64": "Montana", "R32": "Connecticut", "S16": "Purdue", "E8": "Florida"},
+    "Iowa State": {"R64": "Lipscomb", "R32": "Wisconsin"},
+    "Wisconsin": {"R64": "Montana", "R32": "Iowa State"},
+    "Kentucky": {"R64": "Troy", "R32": "Georgia", "S16": "Marquette", "E8": "Duke"},
+    "Arizona": {"R64": "Akron", "R32": "UCF", "S16": "Duke"},
+    "Texas A&M": {"R64": "Yale", "R32": "Michigan"},
+    "Purdue": {"R64": "High Point", "R32": "Drake", "S16": "Texas Tech", "E8": "Houston"},
+    "Maryland": {"R64": "Grand Canyon", "R32": "Gonzaga", "S16": "Tennessee"},
+    "Oregon": {"R64": "Liberty", "R32": "Drake", "S16": "Tennessee"},
+    "Memphis": {"R64": "Colorado State"},
+    "Clemson": {"R64": "McNeese", "R32": "Alabama"},
+    "Illinois": {"R64": "Montana", "R32": "Missouri", "S16": "Alabama"},
+    "BYU": {"R64": "VCU", "R32": "Creighton", "S16": "Houston"},
+    "Marquette": {"R64": "Norfolk State", "R32": "New Mexico", "S16": "Kentucky"},
+    "Kansas": {"R64": "Arkansas"},
+    "UCLA": {"R64": "Troy", "R32": "Oklahoma", "S16": "Michigan State"},
+    "Saint Mary's": {"R64": "Vanderbilt", "R32": "UConn"},
+    "Gonzaga": {"R64": "Georgia", "R32": "Maryland", "S16": "Houston"},
+    "Louisville": {"R64": "Wofford"},
+    "Connecticut": {"R64": "Oklahoma", "R32": "Texas Tech"},
+    "Baylor": {"R64": "Mississippi State", "R32": "St. John's"},
+    "Creighton": {"R64": "Louisville", "R32": "BYU"},
+    "Oklahoma": {"R64": "Connecticut"},
+    "Georgia": {"R64": "Gonzaga"},
+    "New Mexico": {"R64": "Utah State", "R32": "Marquette"},
+    "Arkansas": {"R64": "Kansas", "R32": "Michigan State", "S16": "Michigan"},
+    "Vanderbilt": {"R64": "Saint Mary's"},
+    "Utah State": {"R64": "New Mexico"},
+    "North Carolina": {"R64": "San Diego State"},
+    "VCU": {"R64": "BYU"},
+    "Drake": {"R64": "Purdue", "R32": "Oregon"},
+    "Xavier": {"R64": "Texas"},
+    "UC San Diego": {"R64": "Michigan State"},
+    "Colorado State": {"R64": "Memphis", "R32": "Tennessee"},
+    "Liberty": {"R64": "Oregon"},
+    "Yale": {"R64": "Auburn"},
+    "Grand Canyon": {"R64": "Maryland"},
+    "High Point": {"R64": "Purdue"},
+    "Akron": {"R64": "Arizona"},
+    "Lipscomb": {"R64": "Tennessee"},
+    "Montana": {"R64": "Wisconsin"},
+    "Troy": {"R64": "UCLA"},
+    "UNC Wilmington": {"R64": "Florida"},
+    "Bryant": {"R64": "Michigan State"},
+    "Robert Morris": {"R64": "Houston"},
+    "Omaha": {"R64": "St. John's"},
+    "Wofford": {"R64": "Louisville"},
+    "SIU-Edwardsville": {"R64": "Houston"},
+    "Norfolk State": {"R64": "Florida"},
+    "American": {"R64": "Duke"},
+    "Alabama State": {"R64": "Auburn"},
+    "Mount St. Mary's": {"R64": "Auburn"},
+    "Michigan": {"R64": "UC San Diego", "R32": "Texas A&M", "S16": "Auburn"},
+    "Mississippi State": {"R64": "Baylor"},
+}
+
+
 def build_stats_json(players, playmaker_totals):
     """Build stats.json from parsed player data."""
     stats_players = {}
@@ -115,9 +183,13 @@ def build_stats_json(players, playmaker_totals):
         if slug in playmaker_totals:
             reb_ast = playmaker_totals[slug] - p["pts"]
 
+        team = p["team"]
+        team_matchups = MATCHUPS_2025.get(team, {})
+
         games = []
         for rname, pts in p["rounds"].items():
-            games.append({"round": rname, "pts": pts, "reb": 0, "ast": 0, "game_id": ""})
+            opponent = team_matchups.get(rname, "")
+            games.append({"round": rname, "pts": pts, "reb": 0, "ast": 0, "game_id": "", "opponent": opponent})
 
         stats_players[slug] = {
             "name": p["name"],

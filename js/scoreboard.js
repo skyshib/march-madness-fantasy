@@ -198,11 +198,12 @@ const Scoreboard = (() => {
             const icon = document.createElement('span');
             icon.className = `captain-icon ${info.captain}`;
             icon.textContent = info.captain === 'scorer' ? '👑' : '🅿';
-            icon.title = info.captain === 'scorer' ? 'Scorer Captain (1.5x PTS)' : 'Playmaker Captain (PTS+REB+AST)';
             td.appendChild(icon);
           }
 
-          td.title = `${info.pick.name} (${info.pick.team})`;
+          // Hover tooltip with per-game breakdown
+          td.addEventListener('mouseenter', (e) => showPlayerTooltip(e, info));
+          td.addEventListener('mouseleave', hidePlayerTooltip);
         }
 
         tr.appendChild(td);
@@ -278,6 +279,65 @@ const Scoreboard = (() => {
     const panel = document.getElementById('player-detail');
     panel.classList.remove('visible');
     panel.classList.add('hidden');
+  }
+
+  /**
+   * Show a tooltip with per-game stats on seed cell hover.
+   */
+  function showPlayerTooltip(e, info) {
+    hidePlayerTooltip();
+    const player = statsData?.players?.[info.pick.player_id];
+    const games = player?.games || [];
+
+    const tip = document.createElement('div');
+    tip.id = 'player-tooltip';
+    tip.className = 'player-tooltip';
+
+    let captainLabel = '';
+    if (info.captain === 'scorer') captainLabel = ' <span class="captain-badge scorer">1.5x PTS</span>';
+    else if (info.captain === 'playmaker') captainLabel = ' <span class="captain-badge playmaker">PTS+REB+AST</span>';
+
+    let html = `<div class="tt-header">${info.pick.name}${captainLabel}</div>`;
+    html += `<div class="tt-team">${info.pick.team}</div>`;
+
+    if (games.length > 0) {
+      html += '<table class="tt-games"><thead><tr><th>Round</th><th>Opp</th><th>PTS</th></tr></thead><tbody>';
+      for (const g of games) {
+        const opp = g.opponent || '—';
+        html += `<tr><td>${g.round}</td><td>${opp}</td><td>${g.pts}</td></tr>`;
+      }
+      html += '</tbody></table>';
+    } else {
+      html += '<div class="tt-no-games">No games played</div>';
+    }
+
+    html += `<div class="tt-total">Fantasy: ${info.pts}</div>`;
+
+    tip.innerHTML = html;
+    document.body.appendChild(tip);
+
+    // Position near the cell
+    const rect = e.currentTarget.getBoundingClientRect();
+    const tipRect = tip.getBoundingClientRect();
+
+    let left = rect.left + rect.width / 2 - tipRect.width / 2;
+    let top = rect.top - tipRect.height - 8;
+
+    // Keep within viewport
+    if (left < 8) left = 8;
+    if (left + tipRect.width > window.innerWidth - 8) left = window.innerWidth - tipRect.width - 8;
+    if (top < 8) {
+      top = rect.bottom + 8; // show below instead
+    }
+
+    tip.style.left = left + 'px';
+    tip.style.top = top + 'px';
+    tip.classList.add('visible');
+  }
+
+  function hidePlayerTooltip() {
+    const existing = document.getElementById('player-tooltip');
+    if (existing) existing.remove();
   }
 
   return { setData, setLiveOverrides, render, rankAll, hideDetail, scoreEntrant };
