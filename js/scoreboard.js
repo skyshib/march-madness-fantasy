@@ -21,35 +21,22 @@ const Scoreboard = (() => {
 
   /**
    * Get stats for a player, merging committed stats with live overrides.
-   * For live games, the live override replaces the current game's stats.
+   * Live overrides contain current-day game stats fetched from ESPN.
+   * We add them on top of committed stats (which cover prior days).
    */
   function getPlayerStats(playerId) {
     const committed = statsData?.players?.[playerId];
     const base = committed ? { ...committed.stats } : { pts: 0, reb: 0, ast: 0 };
     const live = liveOverrides[playerId];
 
-    if (live && committed) {
-      // The committed stats include all completed games.
-      // The live override is the current in-progress game's stats.
-      // If the player's last game in committed data matches an active game,
-      // we replace it; otherwise we add it.
-      const activeGames = statsData.active_games || [];
-      const lastGame = committed.games?.[committed.games.length - 1];
-      if (lastGame && activeGames.includes(lastGame.game_id)) {
-        // Replace the last game's stats with live data
-        return {
-          pts: base.pts - lastGame.pts + live.pts,
-          reb: base.reb - lastGame.reb + live.reb,
-          ast: base.ast - lastGame.ast + live.ast,
-        };
-      } else {
-        // Add live stats on top
-        return {
-          pts: base.pts + live.pts,
-          reb: base.reb + live.reb,
-          ast: base.ast + live.ast,
-        };
-      }
+    if (live) {
+      // Live data covers today's games. Committed stats cover prior games.
+      // Simply add live on top of committed base.
+      return {
+        pts: base.pts + live.pts,
+        reb: base.reb + live.reb,
+        ast: base.ast + live.ast,
+      };
     }
 
     return base;

@@ -1,6 +1,6 @@
 /**
  * ESPN API client for live game data overlay.
- * Fetches box scores client-side to fill the gap between GitHub Actions cron runs.
+ * Fetches box scores client-side for real-time scoring updates.
  */
 const ESPN = (() => {
   const BASE = 'https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball';
@@ -12,13 +12,11 @@ const ESPN = (() => {
   }
 
   /**
-   * Fetch the NCAA tournament scoreboard for a given date or today.
+   * Fetch the NCAA tournament scoreboard.
    * groups=100 filters to NCAA tournament games.
    */
-  async function getTournamentScoreboard(dateStr) {
-    let url = `${BASE}/scoreboard?groups=100&limit=100`;
-    if (dateStr) url += `&dates=${dateStr}`;
-    return fetchJSON(url);
+  async function getTournamentScoreboard() {
+    return fetchJSON(`${BASE}/scoreboard?groups=100&limit=100`);
   }
 
   /**
@@ -30,7 +28,7 @@ const ESPN = (() => {
 
   /**
    * Extract player stats from a game summary response.
-   * Returns map of athleteId -> { pts, reb, ast, name, team }.
+   * Returns map of ESPN athleteId -> { pts, reb, ast, name, team }.
    */
   function extractPlayerStats(summary) {
     const stats = {};
@@ -40,7 +38,6 @@ const ESPN = (() => {
     for (const teamBox of boxScore.players) {
       const teamName = teamBox.team?.displayName || '';
       for (const statGroup of teamBox.statistics || []) {
-        // Find column indices for pts, reb, ast
         const labels = (statGroup.labels || []).map(l => l.toLowerCase());
         const ptsIdx = labels.indexOf('pts');
         const rebIdx = labels.indexOf('reb');
@@ -64,14 +61,14 @@ const ESPN = (() => {
   }
 
   /**
-   * Fetch live stats for all active tournament games.
-   * Returns a merged map of athleteId -> { pts, reb, ast } for in-progress games only.
+   * Fetch live stats for given game IDs.
+   * Returns merged map of ESPN athleteId -> { pts, reb, ast, name, team }.
    */
-  async function getLivePlayerStats(activeGameIds) {
-    if (!activeGameIds || activeGameIds.length === 0) return {};
+  async function getLivePlayerStats(gameIds) {
+    if (!gameIds || gameIds.length === 0) return {};
 
     const results = await Promise.allSettled(
-      activeGameIds.map(id => getGameSummary(id))
+      gameIds.map(id => getGameSummary(id))
     );
 
     const merged = {};
@@ -79,14 +76,23 @@ const ESPN = (() => {
       if (result.status !== 'fulfilled') continue;
       const gameStats = extractPlayerStats(result.value);
       for (const [athleteId, s] of Object.entries(gameStats)) {
-        merged[athleteId] = s;
+        // If player appears in multiple games (shouldn't happen live),
+        // sum their stats
+        if (merged[athleteId]) {
+          merged[athleteId].pts += s.pts;
+          merged[athleteId].reb += s.reb;
+          merged[athleteId].ast += s.ast;
+        } else {
+          merged[athleteId] = { ...s };
+        }
       }
     }
     return merged;
   }
 
   /**
-   * Check the scoreboard and return IDs of games currently in progress.
+   * Check the scoreboard and return IDs of games currently in progress
+   * AND games completed today (so recently-finished games update immediately).
    */
   async function getActiveGameIds() {
     try {
@@ -95,7 +101,8 @@ const ESPN = (() => {
       for (const event of data.events || []) {
         for (const comp of event.competitions || []) {
           const state = comp.status?.type?.state;
-          if (state === 'in') {
+          // Include in-progress AND recently completed games
+          if (state === 'in' || state === 'post') {
             active.push(event.id);
           }
         }
@@ -107,11 +114,29 @@ const ESPN = (() => {
     }
   }
 
+  /**
+   * Check if any games are currently in progress (not just completed).
+   */
+  async function hasGamesInProgress() {
+    try {
+      const data = await getTournamentScoreboard();
+      for (const event of data.events || []) {
+        for (const comp of event.competitions || []) {
+          if (comp.status?.type?.state === 'in') return true;
+        }
+      }
+      return false;
+    } catch (e) {
+      return false;
+    }
+  }
+
   return {
     getTournamentScoreboard,
     getGameSummary,
     extractPlayerStats,
     getLivePlayerStats,
     getActiveGameIds,
+    hasGamesInProgress,
   };
 })();
