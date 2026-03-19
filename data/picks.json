@@ -731,19 +731,19 @@
           "team": "Saint Mary's"
         },
         "8": {
-          "player_id": "solo-ball",
-          "name": "Solo Ball",
-          "team": "UConn"
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
         },
         "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
           "player_id": "mark-mitchell",
           "name": "Mark Mitchell",
           "team": "Missouri"
-        },
-        "10": {
-          "player_id": "keisei-tominaga",
-          "name": "Keisei Tominaga",
-          "team": "Nebraska"
         },
         "11": {
           "player_id": "izaiyah-nelson",
@@ -761,9 +761,9 @@
           "team": "Hawaii"
         },
         "14": {
-          "player_id": "tavari-johnson",
-          "name": "Tavari Johnson",
-          "team": "Akron"
+          "player_id": "michael-cooper",
+          "name": "Michael Cooper",
+          "team": "Wright State"
         },
         "15": {
           "player_id": "nasir-mann",
@@ -1688,7 +1688,7 @@
         "5": {
           "player_id": "jt-toppin",
           "name": "JT Toppin",
-          "team": "Texas Tech"
+          "team": "Vanderbilt"
         },
         "6": {
           "player_id": "aj-dybantsa",
@@ -1696,9 +1696,9 @@
           "team": "BYU"
         },
         "7": {
-          "player_id": "augustas-marciulionis",
-          "name": "Augustas Marciulionis",
-          "team": "Saint Mary's"
+          "player_id": "otega-oweh",
+          "name": "Otega Oweh",
+          "team": "Kentucky"
         },
         "8": {
           "player_id": "bruce-thornton",
@@ -1711,14 +1711,14 @@
           "team": "Utah State"
         },
         "10": {
-          "player_id": "wade-taylor-iv",
-          "name": "Wade Taylor IV",
-          "team": "Texas A&M"
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
         },
         "11": {
-          "player_id": "chris-youngblood",
-          "name": "Chris Youngblood",
-          "team": "Texas"
+          "player_id": "terrance-hill",
+          "name": "Terrance Hill",
+          "team": "Unknown"
         },
         "12": {
           "player_id": "trey-campbell",
@@ -2372,7 +2372,7 @@
         "6": {
           "player_id": "caleb-wilson",
           "name": "Caleb Wilson",
-          "team": "North Carolina"
+          "team": "BYU"
         },
         "7": {
           "player_id": "paulius-murauskas",
