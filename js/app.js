@@ -246,45 +246,57 @@
     }
   }
 
+  // Pre-warm audio context on first user interaction
+  let audioCtx = null;
+  document.addEventListener('click', () => {
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+  }, { once: true });
+
   function playEliminationSound() {
     try {
-      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const t = audioCtx.currentTime;
 
       // Deep boom
-      const osc1 = ctx.createOscillator();
-      const gain1 = ctx.createGain();
+      const osc1 = audioCtx.createOscillator();
+      const gain1 = audioCtx.createGain();
       osc1.type = 'sine';
-      osc1.frequency.setValueAtTime(80, ctx.currentTime);
-      osc1.frequency.exponentialRampToValueAtTime(30, ctx.currentTime + 1.5);
-      gain1.gain.setValueAtTime(0.6, ctx.currentTime);
-      gain1.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.5);
-      osc1.connect(gain1).connect(ctx.destination);
-      osc1.start(); osc1.stop(ctx.currentTime + 1.5);
+      osc1.frequency.setValueAtTime(80, t);
+      osc1.frequency.exponentialRampToValueAtTime(30, t + 1.5);
+      gain1.gain.setValueAtTime(0.6, t);
+      gain1.gain.exponentialRampToValueAtTime(0.001, t + 1.5);
+      osc1.connect(gain1).connect(audioCtx.destination);
+      osc1.start(t); osc1.stop(t + 1.5);
 
       // Buzzer
-      const osc2 = ctx.createOscillator();
-      const gain2 = ctx.createGain();
+      const osc2 = audioCtx.createOscillator();
+      const gain2 = audioCtx.createGain();
       osc2.type = 'sawtooth';
-      osc2.frequency.setValueAtTime(150, ctx.currentTime);
-      osc2.frequency.exponentialRampToValueAtTime(50, ctx.currentTime + 0.8);
-      gain2.gain.setValueAtTime(0.3, ctx.currentTime);
-      gain2.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.8);
-      osc2.connect(gain2).connect(ctx.destination);
-      osc2.start(); osc2.stop(ctx.currentTime + 0.8);
+      osc2.frequency.setValueAtTime(150, t);
+      osc2.frequency.exponentialRampToValueAtTime(50, t + 0.8);
+      gain2.gain.setValueAtTime(0.3, t);
+      gain2.gain.exponentialRampToValueAtTime(0.001, t + 0.8);
+      osc2.connect(gain2).connect(audioCtx.destination);
+      osc2.start(t); osc2.stop(t + 0.8);
 
       // Second hit
-      const osc3 = ctx.createOscillator();
-      const gain3 = ctx.createGain();
+      const osc3 = audioCtx.createOscillator();
+      const gain3 = audioCtx.createGain();
       osc3.type = 'sine';
-      osc3.frequency.setValueAtTime(60, ctx.currentTime + 0.3);
-      osc3.frequency.exponentialRampToValueAtTime(20, ctx.currentTime + 2);
-      gain3.gain.setValueAtTime(0, ctx.currentTime);
-      gain3.gain.setValueAtTime(0.4, ctx.currentTime + 0.3);
-      gain3.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 2);
-      osc3.connect(gain3).connect(ctx.destination);
-      osc3.start(); osc3.stop(ctx.currentTime + 2);
+      osc3.frequency.setValueAtTime(60, t + 0.3);
+      osc3.frequency.exponentialRampToValueAtTime(20, t + 2);
+      gain3.gain.setValueAtTime(0, t);
+      gain3.gain.setValueAtTime(0.4, t + 0.3);
+      gain3.gain.exponentialRampToValueAtTime(0.001, t + 2);
+      osc3.connect(gain3).connect(audioCtx.destination);
+      osc3.start(t); osc3.stop(t + 2);
     } catch (e) {
-      // Audio not available, that's fine
+      // Audio not available
     }
   }
 
@@ -330,6 +342,7 @@
     }
 
     let html = '<div class="elimination-title">💀 DOWN GO THE 💀</div>';
+    html += '<div class="elim-teams-grid">';
 
     for (const [teamName, group] of Object.entries(byTeam)) {
       const logoUrl = findLogo(teamName);
@@ -374,6 +387,7 @@
       html += '</div></div>';
     }
 
+    html += '</div>'; // close elim-teams-grid
     html += '<div class="elim-dismiss">tap to dismiss</div>';
 
     content.innerHTML = html;

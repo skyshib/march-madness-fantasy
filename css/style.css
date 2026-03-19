@@ -639,6 +639,17 @@ footer {
   text-align: center;
   z-index: 2;
   position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.elim-teams-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
 .elimination-title {
@@ -661,26 +672,27 @@ footer {
 }
 
 .elim-team-block {
-  margin-bottom: 1.5rem;
+  max-width: 500px;
+  flex: 1 1 300px;
 }
 
 .elim-team-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.75rem;
   margin-bottom: 0.3rem;
 }
 
 .elim-team-logo {
-  width: 80px;
-  height: 80px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
-  filter: drop-shadow(0 0 20px rgba(239, 68, 68, 0.4));
+  filter: drop-shadow(0 0 16px rgba(239, 68, 68, 0.4));
 }
 
 .elim-team-name {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -688,9 +700,9 @@ footer {
 }
 
 .elim-lost-to {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   font-style: italic;
 }
 
