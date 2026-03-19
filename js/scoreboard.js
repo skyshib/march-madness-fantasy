@@ -151,6 +151,25 @@ const Scoreboard = (() => {
       }
     }
 
+    // Compute uniqueness score per entrant
+    // Lower average pick count = more unique selections
+    const uniquenessScores = ranked.map(r => {
+      let totalPickCount = 0;
+      let numPicks = 0;
+      for (let seed = 1; seed <= 16; seed++) {
+        const info = r.seedBreakdown[seed];
+        if (info.pick) {
+          totalPickCount += pickCounts[info.pick.player_id] || 0;
+          numPicks++;
+        }
+      }
+      return { name: r.name, avgPopularity: numPicks > 0 ? totalPickCount / numPicks : 0 };
+    });
+    // Sort by avg popularity ascending (most unique first)
+    const sorted = [...uniquenessScores].sort((a, b) => a.avgPopularity - b.avgPopularity);
+    const uniquenessRanks = {};
+    sorted.forEach((entry, idx) => { uniquenessRanks[entry.name] = idx + 1; });
+
     // Compute min/max fantasy pts across all seed cells for gradient
     let minPts = Infinity, maxPts = -Infinity;
     for (const r of ranked) {
@@ -300,7 +319,7 @@ const Scoreboard = (() => {
         tr.appendChild(td);
       }
 
-      tr.addEventListener('click', () => showDetail(r));
+      tr.addEventListener('click', () => showDetail(r, pickCounts, totalEntrants, uniquenessRanks));
       tbody.appendChild(tr);
     }
   }
@@ -308,21 +327,24 @@ const Scoreboard = (() => {
   /**
    * Show detail panel for an entrant.
    */
-  function showDetail(ranked) {
+  function showDetail(ranked, pickCounts, totalEntrants, uniquenessRanks) {
     const panel = document.getElementById('player-detail');
     const nameEl = document.getElementById('detail-name');
     const contentEl = document.getElementById('detail-content');
 
     nameEl.textContent = ranked.name;
 
-    let html = '<table class="detail-table"><thead><tr>';
-    html += '<th>Seed</th><th>Player</th><th>Team</th><th>PTS</th><th>Fantasy</th>';
+    const uRank = uniquenessRanks?.[ranked.name] || '?';
+    let html = `<div class="detail-uniqueness">Uniqueness: #${uRank} of ${totalEntrants}</div>`;
+
+    html += '<table class="detail-table"><thead><tr>';
+    html += '<th>Seed</th><th>Player</th><th>Team</th><th>Picked</th><th>PTS</th><th>Fantasy</th>';
     html += '</tr></thead><tbody>';
 
     for (let seed = 1; seed <= 16; seed++) {
       const info = ranked.seedBreakdown[seed];
       if (!info.pick) {
-        html += `<tr><td>${seed}</td><td colspan="4" style="color:var(--text-muted)">No pick</td></tr>`;
+        html += `<tr><td>${seed}</td><td colspan="5" style="color:var(--text-muted)">No pick</td></tr>`;
         continue;
       }
 
@@ -355,7 +377,9 @@ const Scoreboard = (() => {
       html += `<tr class="${rowClass}" ${elimClass}>`;
       html += `<td>${seed}</td>`;
       html += `<td ${liveClass}><span class="detail-player-cell">${hsImg}${info.pick.name}${captainBadge}</span></td>`;
+      const pCount = pickCounts?.[info.pick.player_id] || 0;
       html += `<td>${info.pick.team || ''}</td>`;
+      html += `<td style="color:var(--text-muted)">${pCount}/${totalEntrants}</td>`;
       html += `<td>${ptsDisplay}</td>`;
       html += `<td style="font-weight:700">${info.pts}</td>`;
       html += '</tr>';

@@ -318,10 +318,16 @@ td.col-remaining {
 }
 
 .seed-cell .captain-icon {
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: block;
   line-height: 1;
   margin-bottom: 2px;
+}
+
+.compact-mode .seed-cell .captain-icon {
+  font-size: 0.9rem;
+  display: inline;
+  margin-right: 1px;
 }
 
 .captain-icon.scorer { color: var(--scorer-color); }
@@ -348,6 +354,12 @@ td.col-remaining {
   position: relative;
   z-index: 1;
   display: block;
+}
+
+.detail-uniqueness {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
 }
 
 .detail-player-cell {
