@@ -343,7 +343,15 @@
       html += `<div class="elim-team-header">${logoHtml}<span class="elim-team-name">${seedLabel} ${teamName}</span></div>`;
 
       if (group.opponent) {
-        html += `<div class="elim-lost-to">Eliminated by ${group.opponent}</div>`;
+        // Find opponent seed by looking up any player on that team
+        let oppSeed = '';
+        for (const [, pl] of Object.entries(currentStats?.players || {})) {
+          if (pl.team === group.opponent && pl.seed) {
+            oppSeed = `(${pl.seed}) `;
+            break;
+          }
+        }
+        html += `<div class="elim-lost-to">Eliminated by ${oppSeed}${group.opponent}</div>`;
       }
 
       // Player cards
