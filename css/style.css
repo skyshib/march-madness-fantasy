@@ -321,7 +321,6 @@ td.col-remaining {
 
 .seed-cell.eliminated .seed-headshot-wrap > * {
   filter: grayscale(100%);
-  opacity: 0.5;
 }
 
 .seed-cell.eliminated .seed-headshot-wrap::after {
