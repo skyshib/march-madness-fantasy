@@ -416,6 +416,7 @@
           const align = i === 0 ? 'left' : 'right';
           html += `<div class="live-game-side-picks ${align}">`;
           for (const [player, data] of Object.entries(byPlayer)) {
+            data.owners.sort((a, b) => a.localeCompare(b));
             const count = data.owners.length;
             const ownerList = data.owners.join(', ');
             // Get live pts from Scoreboard overrides
