@@ -443,10 +443,11 @@
         document.getElementById('player-tooltip')?.remove();
         const owners = el.dataset.owners;
         if (!owners) return;
+        const ownerLines = owners.split(', ').map(o => `<div>${o}</div>`).join('');
         const tip = document.createElement('div');
         tip.id = 'player-tooltip';
         tip.className = 'player-tooltip';
-        tip.innerHTML = `<div class="tt-header">Picked by</div><div style="font-size:0.8rem;color:var(--text-secondary)">${owners}</div>`;
+        tip.innerHTML = `<div class="tt-header">Picked by</div><div style="font-size:0.8rem;color:var(--text-secondary)">${ownerLines}</div>`;
         document.body.appendChild(tip);
         const rect = el.getBoundingClientRect();
         const tipRect = tip.getBoundingClientRect();
