@@ -193,7 +193,23 @@ td.col-remaining {
 /* === Seed cells === */
 .seed-cell {
   font-size: 0.8rem;
-  min-width: 2.5rem;
+  min-width: 3.5rem;
+  line-height: 1.2;
+}
+
+.seed-player-name {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 5rem;
+}
+
+.seed-pts {
+  display: block;
+  font-weight: 700;
 }
 
 .seed-cell.eliminated {

@@ -176,9 +176,23 @@ const Scoreboard = (() => {
           td.textContent = '-';
           td.classList.add('eliminated');
         } else {
-          td.textContent = info.pts;
           if (info.eliminated) td.classList.add('eliminated');
           if (info.live) td.classList.add('live');
+
+          // Player last name
+          const nameSpan = document.createElement('span');
+          nameSpan.className = 'seed-player-name';
+          const fullName = info.pick.name;
+          // Show last name (or last word), handling "Jr.", "III", etc.
+          const parts = fullName.replace(/\s+(Jr\.?|Sr\.?|III|II|IV|V)$/i, '').trim().split(' ');
+          nameSpan.textContent = parts[parts.length - 1];
+          td.appendChild(nameSpan);
+
+          // Points
+          const ptsSpan = document.createElement('span');
+          ptsSpan.className = 'seed-pts';
+          ptsSpan.textContent = info.pts;
+          td.appendChild(ptsSpan);
 
           if (info.captain) {
             const icon = document.createElement('span');
