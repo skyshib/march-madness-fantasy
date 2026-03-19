@@ -729,8 +729,8 @@ footer {
 }
 
 .elim-headshot {
-  width: 70px;
-  height: 52px;
+  width: 84px;
+  height: 62px;
   object-fit: cover;
   border-radius: 50%;
   filter: grayscale(100%);
