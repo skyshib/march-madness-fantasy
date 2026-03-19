@@ -234,13 +234,26 @@ td.col-remaining {
 .captain-icon.playmaker { color: var(--playmaker-color); }
 
 /* === Headshots === */
-.seed-headshot {
-  width: 32px;
-  height: 24px;
-  object-fit: cover;
-  border-radius: 3px;
-  display: block;
+.seed-headshot-wrap {
+  width: 36px;
+  height: 28px;
   margin: 0 auto 2px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3px;
+  overflow: hidden;
+  opacity: 0.95;
+}
+
+.seed-headshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  display: block;
 }
 
 .detail-player-cell {

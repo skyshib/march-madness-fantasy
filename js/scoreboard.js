@@ -5,12 +5,14 @@ const Scoreboard = (() => {
   let picksData = null;
   let statsData = null;
   let headshotsData = {};
+  let teamLogosData = {};
   let liveOverrides = {};  // athleteId -> { pts, reb, ast } from live ESPN fetch
 
-  function setData(picks, stats, headshots) {
+  function setData(picks, stats, headshots, teamLogos) {
     picksData = picks;
     statsData = stats;
     headshotsData = headshots || {};
+    teamLogosData = teamLogos || {};
   }
 
   function setLiveOverrides(overrides) {
@@ -189,15 +191,24 @@ const Scoreboard = (() => {
             td.appendChild(icon);
           }
 
-          // Headshot
+          // Headshot with team logo background
           const hsUrl = headshotsData[info.pick.player_id];
-          if (hsUrl) {
-            const img = document.createElement('img');
-            img.className = 'seed-headshot';
-            img.src = hsUrl;
-            img.alt = '';
-            img.onerror = function() { this.style.display = 'none'; };
-            td.appendChild(img);
+          const logoUrl = teamLogosData[info.pick.team];
+          if (hsUrl || logoUrl) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'seed-headshot-wrap';
+            if (logoUrl) {
+              wrapper.style.backgroundImage = `url(${logoUrl})`;
+            }
+            if (hsUrl) {
+              const img = document.createElement('img');
+              img.className = 'seed-headshot';
+              img.src = hsUrl;
+              img.alt = '';
+              img.onerror = function() { this.style.display = 'none'; };
+              wrapper.appendChild(img);
+            }
+            td.appendChild(wrapper);
           }
 
           // Player last name
