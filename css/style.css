@@ -163,7 +163,15 @@ main {
   text-align: center;
   border-bottom: 1px solid var(--border);
   white-space: nowrap;
+  vertical-align: middle;
+}
+
+#scoreboard tbody td.seed-cell {
   vertical-align: bottom;
+}
+
+.seed-divider-right {
+  border-right: 2px solid var(--accent-orange) !important;
 }
 
 #scoreboard tbody td.col-name {
@@ -235,8 +243,8 @@ td.col-remaining {
 
 /* === Headshots === */
 .seed-headshot-wrap {
-  width: 36px;
-  height: 28px;
+  width: 45px;
+  height: 35px;
   margin: 0 auto 2px;
   position: relative;
   background-size: contain;

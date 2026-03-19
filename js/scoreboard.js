@@ -141,6 +141,16 @@ const Scoreboard = (() => {
     const ranked = rankAll();
     tbody.innerHTML = '';
 
+    // Count how many entrants picked each player
+    const pickCounts = {};
+    const totalEntrants = picksData?.entrants?.length || 0;
+    for (const ent of picksData?.entrants || []) {
+      for (const [seed, pick] of Object.entries(ent.picks || {})) {
+        const pid = pick.player_id;
+        pickCounts[pid] = (pickCounts[pid] || 0) + 1;
+      }
+    }
+
     for (let i = 0; i < ranked.length; i++) {
       const r = ranked[i];
       const tr = document.createElement('tr');
@@ -227,8 +237,13 @@ const Scoreboard = (() => {
           td.appendChild(ptsSpan);
 
           // Hover tooltip with per-game breakdown
-          td.addEventListener('mouseenter', (e) => showPlayerTooltip(e, info));
+          td.addEventListener('mouseenter', (e) => showPlayerTooltip(e, info, pickCounts, totalEntrants));
           td.addEventListener('mouseleave', hidePlayerTooltip);
+        }
+
+        // Add divider after seeds 4 and 10
+        if (seed === 4 || seed === 10) {
+          td.classList.add('seed-divider-right');
         }
 
         tr.appendChild(td);
@@ -318,10 +333,11 @@ const Scoreboard = (() => {
   /**
    * Show a tooltip with per-game stats on seed cell hover.
    */
-  function showPlayerTooltip(e, info) {
+  function showPlayerTooltip(e, info, pickCounts, totalEntrants) {
     hidePlayerTooltip();
     const player = statsData?.players?.[info.pick.player_id];
     const games = player?.games || [];
+    const count = pickCounts?.[info.pick.player_id] || 0;
 
     const tip = document.createElement('div');
     tip.id = 'player-tooltip';
@@ -332,7 +348,7 @@ const Scoreboard = (() => {
     else if (info.captain === 'playmaker') captainLabel = ' <span class="captain-badge playmaker">PTS+REB+AST</span>';
 
     let html = `<div class="tt-header">${info.pick.name}${captainLabel}</div>`;
-    html += `<div class="tt-team">${info.pick.team}</div>`;
+    html += `<div class="tt-team">${info.pick.team} &middot; Picked by ${count}/${totalEntrants}</div>`;
 
     const isPlaymaker = info.captain === 'playmaker';
 
