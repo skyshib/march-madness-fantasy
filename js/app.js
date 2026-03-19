@@ -2,14 +2,19 @@
  * App initialization, data loading, auto-refresh, and year routing.
  */
 (async function () {
-  const REFRESH_MS = 60000; // 1 min: re-fetch stats.json
+  const REFRESH_STATIC_MS = 300000; // 5 min: re-fetch stats.json from GitHub
+  const REFRESH_LIVE_MS = 60000;   // 60 sec: poll ESPN for live data
   let currentYear = null;
   let refreshTimer = null;
+  let liveTimer = null;
   let currentPicks = null;
   let currentStats = null;
   let currentHeadshots = {};
   let currentTeamLogos = {};
+  let espnIdToSlug = {};
+  let nameToSlug = {};
   let knownEliminated = new Set();
+  let knownCompletedGames = new Set();
   let isFirstLoad = true;
 
   // --- Helpers ---
@@ -30,6 +35,34 @@
       if (pt === espnSchool2) return true;
     }
     return false;
+  }
+
+  function normalizeName(name) {
+    return name.toLowerCase().replace(/['\.\-\u2019]/g, '').replace(/\s+(jr|sr|iii|ii|iv|v)$/i, '').replace(/\s+/g, ' ').trim();
+  }
+
+  function buildPlayerMappings(picks, headshots) {
+    espnIdToSlug = {};
+    nameToSlug = {};
+    for (const [slug, url] of Object.entries(headshots || {})) {
+      const match = url.match(/\/full\/(\d+)\.png/);
+      if (match) espnIdToSlug[match[1]] = slug;
+    }
+    for (const entrant of picks.entrants || []) {
+      for (const [seed, pick] of Object.entries(entrant.picks || {})) {
+        nameToSlug[normalizeName(pick.name)] = pick.player_id;
+      }
+    }
+  }
+
+  function translateLiveStats(espnStats) {
+    const translated = {};
+    for (const [espnId, stats] of Object.entries(espnStats)) {
+      let slug = espnIdToSlug[espnId];
+      if (!slug && stats.name) slug = nameToSlug[normalizeName(stats.name)];
+      if (slug) translated[slug] = stats;
+    }
+    return translated;
   }
 
   async function loadJSON(path) {
@@ -85,6 +118,8 @@
     currentHeadshots = headshots;
     currentTeamLogos = teamLogos;
 
+    buildPlayerMappings(picks, headshots);
+
     Scoreboard.setData(picks, stats, headshots, teamLogos);
     Scoreboard.setLiveOverrides({});
 
@@ -104,8 +139,13 @@
       checkForEliminations(picks, stats);
     }
 
-    // Render live games tracker
+    // Render live games tracker from cron data
     renderLiveGames(stats);
+
+    // Immediately supplement with fresh ESPN data
+    if (isCurrentYear) {
+      refreshFromESPN();
+    }
 
     updateIndicator();
   }
@@ -256,6 +296,103 @@
   /**
    * Detect newly eliminated players and show dramatic banner.
    */
+  /**
+   * Poll ESPN directly for live game data (supplements cron).
+   */
+  async function refreshFromESPN() {
+    if (!currentYear || !currentPicks) return;
+    try {
+      const data = await ESPN.getTournamentScoreboard();
+      const activeIds = [];
+      const liveGames = [];
+      const newEliminations = [];
+
+      for (const event of data.events || []) {
+        const notes = event.competitions?.[0]?.notes || [];
+        const isFirstFour = notes.some(n => (n.headline || '').toLowerCase().includes('first four'));
+        if (isFirstFour) continue;
+
+        const comp = event.competitions?.[0];
+        const state = comp?.status?.type?.state;
+
+        if (state === 'in') {
+          activeIds.push(event.id);
+          const statusDetail = comp.status?.type?.shortDetail || '';
+          const teams = (comp.competitors || []).map(t => ({
+            name: t.team?.displayName || '',
+            abbrev: t.team?.abbreviation || '',
+            seed: t.curatedRank?.current || t.seed || '',
+            score: t.score || '0',
+            logo: `https://a.espncdn.com/i/teamlogos/ncaa/500/${t.team?.id || ''}.png`,
+          }));
+          liveGames.push({ id: event.id, status: statusDetail, teams });
+        }
+
+        // Detect newly completed games
+        if (state === 'post' && !knownCompletedGames.has(event.id)) {
+          knownCompletedGames.add(event.id);
+          for (const team of comp.competitors || []) {
+            if (team.winner === false) {
+              const losingTeam = team.team?.displayName || '';
+              const losingSeed = team.curatedRank?.current || team.seed || '';
+              const winner = comp.competitors.find(t => t.winner === true);
+              const winnerName = winner?.team?.displayName || '';
+
+              for (const ent of currentPicks.entrants || []) {
+                for (const [seed, pick] of Object.entries(ent.picks || {})) {
+                  if (teamsMatch(pick.team, losingTeam)) {
+                    const existing = newEliminations.find(e => e.slug === pick.player_id);
+                    if (existing) {
+                      if (!existing.owners.includes(ent.name)) existing.owners.push(ent.name);
+                    } else {
+                      newEliminations.push({
+                        slug: pick.player_id, name: pick.name,
+                        team: losingTeam, seed: losingSeed,
+                        owners: [ent.name], opponent: winnerName,
+                      });
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Mark eliminations
+      if (newEliminations.length > 0) {
+        Scoreboard.markEliminated(newEliminations.map(e => e.slug));
+        localStorage.setItem('lastElimination', JSON.stringify({ time: Date.now(), data: newEliminations }));
+        try { showEliminationBanner(newEliminations); } catch (e) {}
+      }
+
+      // Merge live player stats
+      if (activeIds.length > 0) {
+        const espnLive = await ESPN.getLivePlayerStats(activeIds);
+        if (Object.keys(espnLive).length > 0) {
+          Scoreboard.setLiveOverrides(translateLiveStats(espnLive));
+          Scoreboard.render();
+        }
+      } else {
+        Scoreboard.setLiveOverrides({});
+        Scoreboard.render();
+      }
+
+      // Update live game tracker + rooting-for
+      const liveForScoreboard = liveGames.map(g => ({
+        teams: g.teams.map(t => ({ name: t.abbrev, fullName: t.name.toLowerCase(), seed: t.seed })),
+      }));
+      Scoreboard.setLiveGames(liveForScoreboard);
+
+      // Render live games from ESPN data (fresher than stats.json)
+      renderLiveGames({ live_games: liveGames, players: currentStats?.players });
+
+      updateIndicator();
+    } catch (e) {
+      console.warn('ESPN refresh failed:', e);
+    }
+  }
+
   function checkForEliminations(picks, stats) {
     const newlyEliminated = [];
 
@@ -461,10 +598,17 @@
 
   // --- Auto-refresh ---
   function startTimers() {
+    // Slow: re-fetch stats.json (picks up cron commits)
     if (refreshTimer) clearInterval(refreshTimer);
     refreshTimer = setInterval(() => {
       if (currentYear) loadYear(currentYear);
-    }, REFRESH_MS);
+    }, REFRESH_STATIC_MS);
+
+    // Fast: poll ESPN directly every 60s
+    if (liveTimer) clearInterval(liveTimer);
+    liveTimer = setInterval(() => {
+      if (currentYear) refreshFromESPN();
+    }, REFRESH_LIVE_MS);
 
     setInterval(updateIndicator, 10000);
   }
