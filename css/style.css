@@ -336,6 +336,24 @@ td.col-remaining {
   font-weight: 600;
 }
 
+.tt-live-game {
+  font-size: 0.75rem;
+  color: var(--live-green);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.tt-live-game::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--live-green);
+  border-radius: 50%;
+  margin-right: 5px;
+  animation: pulse 2s infinite;
+}
+
 .tt-no-games {
   font-size: 0.75rem;
   color: var(--text-muted);

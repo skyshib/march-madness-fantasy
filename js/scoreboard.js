@@ -363,6 +363,10 @@ const Scoreboard = (() => {
         if (isPlaymaker) {
           html += `<div style="font-size:0.75rem;color:var(--text-secondary)">Totals: ${totalStats.pts} pts, ${totalStats.reb} reb, ${totalStats.ast} ast</div>`;
         }
+      } else if (info.live) {
+        const liveStats = info.rawStats || { pts: 0, reb: 0, ast: 0 };
+        html += '<div class="tt-live-game">In active game</div>';
+        html += `<div style="font-size:0.75rem;color:var(--text-secondary)">${liveStats.pts} pts, ${liveStats.reb} reb, ${liveStats.ast} ast</div>`;
       } else {
         html += '<div class="tt-no-games">No games played yet</div>';
       }
