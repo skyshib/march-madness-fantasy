@@ -39,7 +39,7 @@ header {
 }
 
 .header-content {
-  max-width: 1400px;
+  max-width: 1800px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -125,7 +125,7 @@ h1 {
 
 /* === Main === */
 main {
-  max-width: 1400px;
+  max-width: 1800px;
   margin: 1.5rem auto;
   padding: 0 1rem;
 }
