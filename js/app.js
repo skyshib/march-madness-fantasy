@@ -367,6 +367,7 @@
         html += '<div class="elim-player-info">';
         html += `<div class="elim-player-name">${p.name}</div>`;
         html += `<div class="elim-player-dates">R.I.P.</div>`;
+        html += '<div class="elim-player-divider"></div>';
         html += `<div class="elim-player-owners">${ownerLines}</div>`;
         html += '</div></div>';
       }

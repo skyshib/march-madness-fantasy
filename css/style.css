@@ -699,6 +699,7 @@ footer {
   flex-wrap: wrap;
   gap: 1.2rem;
   justify-content: center;
+  align-items: flex-start;
   margin-top: 0.5rem;
 }
 
@@ -706,73 +707,62 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 140px;
-  background: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 40%, #1a1a1a 100%);
-  border: 2px solid #555;
-  border-radius: 12px 12px 4px 4px;
+  width: 150px;
+  background: linear-gradient(180deg, #4a4a4a 0%, #3a3a3a 20%, #2a2a2a 50%, #1a1a1a 100%);
+  border: 2px solid #666;
+  border-radius: 50% 50% 6px 6px / 30% 30% 0 0;
   padding: 0;
-  position: relative;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
-}
-
-.elim-player-card::before {
-  content: '';
-  position: absolute;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 12px;
-  background: #555;
-  border-radius: 6px 6px 0 0;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);
+  overflow: hidden;
 }
 
 .elim-headshot {
-  width: 64px;
-  height: 48px;
+  width: 56px;
+  height: 42px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 50%;
   filter: grayscale(100%);
-  margin-top: 1rem;
-  border: 2px solid #666;
+  margin-top: 1.2rem;
+  border: 2px solid #777;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 .elim-player-info {
   text-align: center;
-  padding: 0.5rem 0.6rem;
+  padding: 0.4rem 0.6rem 0.6rem;
   width: 100%;
 }
 
 .elim-player-name {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.4rem;
-  border-bottom: 1px solid #444;
-  padding-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
 .elim-player-dates {
-  font-size: 0.65rem;
-  color: var(--text-muted);
-  margin-bottom: 0.4rem;
+  font-size: 0.6rem;
+  color: #888;
+  margin-bottom: 0.3rem;
   font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+.elim-player-divider {
+  width: 40px;
+  height: 1px;
+  background: #555;
+  margin: 0.3rem auto;
 }
 
 .elim-player-owners {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--accent-orange);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .elim-player-owners .owner-line {
   display: block;
-  padding: 0.15rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-}
-
-.elim-player-owners .owner-line:last-child {
-  border-bottom: none;
 }
 
 .elim-dismiss {
