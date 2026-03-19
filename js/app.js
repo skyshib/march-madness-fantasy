@@ -203,6 +203,13 @@
     setInterval(updateIndicator, 10000);
   }
 
+  // --- View toggle ---
+  document.getElementById('view-toggle')?.addEventListener('click', () => {
+    const btn = document.getElementById('view-toggle');
+    const isCompact = Scoreboard.toggleCompact();
+    btn.textContent = isCompact ? 'Full' : 'Compact';
+  });
+
   // --- Detail panel close ---
   document.getElementById('close-detail')?.addEventListener('click', () => {
     Scoreboard.hideDetail();

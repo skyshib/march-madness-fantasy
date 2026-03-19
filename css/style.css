@@ -67,6 +67,20 @@ h1 {
   background-clip: text;
 }
 
+.view-toggle {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.view-toggle:hover { background: var(--bg-hover); }
+
 .controls {
   display: flex;
   align-items: center;
@@ -172,6 +186,24 @@ main {
 
 .seed-divider-right {
   border-right: 2px solid var(--accent-orange) !important;
+}
+
+/* === Compact Mode === */
+.compact-mode .seed-cell {
+  min-width: unset;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.2rem;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.compact-mode thead th {
+  padding: 0.4rem 0.2rem;
+  font-size: 0.6rem;
+}
+
+.compact-mode tbody td {
+  padding: 0.3rem 0.3rem;
 }
 
 #scoreboard tbody td.col-name {

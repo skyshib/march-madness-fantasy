@@ -7,6 +7,7 @@ const Scoreboard = (() => {
   let headshotsData = {};
   let teamLogosData = {};
   let liveOverrides = {};  // athleteId -> { pts, reb, ast } from live ESPN fetch
+  let compactMode = false;
 
   function setData(picks, stats, headshots, teamLogos) {
     picksData = picks;
@@ -171,6 +172,7 @@ const Scoreboard = (() => {
       for (let seed = 1; seed <= 16; seed++) {
         const td = document.createElement('td');
         td.className = 'seed-cell';
+        if (compactMode) td.classList.add('compact');
         const info = r.seedBreakdown[seed];
 
         if (!info.pick) {
@@ -180,55 +182,60 @@ const Scoreboard = (() => {
           if (info.eliminated) td.classList.add('eliminated');
           if (info.live) td.classList.add('live');
 
-          // Captain icon on top
-          if (info.captain) {
-            const icon = document.createElement('span');
-            icon.className = `captain-icon ${info.captain}`;
-            icon.textContent = info.captain === 'scorer' ? '👑' : '🅿';
-            td.appendChild(icon);
+          if (compactMode) {
+            // Compact: just "LastName pts" with captain marker
+            const fullName = info.pick.name;
+            const parts = fullName.replace(/\s+(Jr\.?|Sr\.?|III|II|IV|V)$/i, '').trim().split(' ');
+            const lastName = parts[parts.length - 1];
+            let prefix = '';
+            if (info.captain === 'scorer') prefix = '👑';
+            else if (info.captain === 'playmaker') prefix = '🅿';
+            td.textContent = `${prefix}${lastName} ${info.pts}`;
+          } else {
+            // Full mode with headshots
+            if (info.captain) {
+              const icon = document.createElement('span');
+              icon.className = `captain-icon ${info.captain}`;
+              icon.textContent = info.captain === 'scorer' ? '👑' : '🅿';
+              td.appendChild(icon);
+            }
+
+            const hsUrl = headshotsData[info.pick.player_id];
+            const logoUrl = teamLogosData[info.pick.team];
+            if (hsUrl || logoUrl) {
+              const wrapper = document.createElement('div');
+              wrapper.className = 'seed-headshot-wrap';
+              if (logoUrl) {
+                wrapper.style.backgroundImage = `url(${logoUrl})`;
+              }
+              if (hsUrl) {
+                const img = document.createElement('img');
+                img.className = 'seed-headshot';
+                img.src = hsUrl;
+                img.alt = '';
+                img.onerror = function() { this.style.display = 'none'; };
+                wrapper.appendChild(img);
+              }
+              td.appendChild(wrapper);
+            }
+
+            const nameSpan = document.createElement('span');
+            nameSpan.className = 'seed-player-name';
+            const fullName = info.pick.name;
+            const parts = fullName.replace(/\s+(Jr\.?|Sr\.?|III|II|IV|V)$/i, '').trim().split(' ');
+            nameSpan.textContent = parts[parts.length - 1];
+            td.appendChild(nameSpan);
+
+            const ptsSpan = document.createElement('span');
+            ptsSpan.className = 'seed-pts';
+            ptsSpan.textContent = info.pts;
+            td.appendChild(ptsSpan);
           }
 
-          // Headshot with team logo background
-          const hsUrl = headshotsData[info.pick.player_id];
-          const logoUrl = teamLogosData[info.pick.team];
-          if (hsUrl || logoUrl) {
-            const wrapper = document.createElement('div');
-            wrapper.className = 'seed-headshot-wrap';
-            if (logoUrl) {
-              wrapper.style.backgroundImage = `url(${logoUrl})`;
-            }
-            if (hsUrl) {
-              const img = document.createElement('img');
-              img.className = 'seed-headshot';
-              img.src = hsUrl;
-              img.alt = '';
-              img.onerror = function() { this.style.display = 'none'; };
-              wrapper.appendChild(img);
-            }
-            td.appendChild(wrapper);
-          }
-
-          // Player last name
-          const nameSpan = document.createElement('span');
-          nameSpan.className = 'seed-player-name';
-          const fullName = info.pick.name;
-          // Show last name (or last word), handling "Jr.", "III", etc.
-          const parts = fullName.replace(/\s+(Jr\.?|Sr\.?|III|II|IV|V)$/i, '').trim().split(' ');
-          nameSpan.textContent = parts[parts.length - 1];
-          td.appendChild(nameSpan);
-
-          // Points
-          const ptsSpan = document.createElement('span');
-          ptsSpan.className = 'seed-pts';
-          ptsSpan.textContent = info.pts;
-          td.appendChild(ptsSpan);
-
-          // Hover tooltip with per-game breakdown
           td.addEventListener('mouseenter', (e) => showPlayerTooltip(e, info, pickCounts, totalEntrants));
           td.addEventListener('mouseleave', hidePlayerTooltip);
         }
 
-        // Add divider after seeds 4 and 10
         if (seed === 4 || seed === 10) {
           td.classList.add('seed-divider-right');
         }
@@ -401,5 +408,12 @@ const Scoreboard = (() => {
     if (existing) existing.remove();
   }
 
-  return { setData, setLiveOverrides, render, rankAll, hideDetail, scoreEntrant };
+  function toggleCompact() {
+    compactMode = !compactMode;
+    document.getElementById('scoreboard')?.classList.toggle('compact-mode', compactMode);
+    render();
+    return compactMode;
+  }
+
+  return { setData, setLiveOverrides, render, rankAll, hideDetail, scoreEntrant, toggleCompact };
 })();
