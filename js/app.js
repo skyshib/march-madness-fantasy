@@ -43,12 +43,13 @@
     const isCurrentYear = (year === config.year);
 
     const dataPrefix = isCurrentYear ? 'data' : `data/${year}`;
-    const [picks, stats] = await Promise.all([
+    const [picks, stats, headshots] = await Promise.all([
       loadJSON(`${dataPrefix}/picks.json`),
       loadJSON(`${dataPrefix}/stats.json`),
+      loadJSON('data/headshots.json').catch(() => ({})),
     ]);
 
-    Scoreboard.setData(picks, stats);
+    Scoreboard.setData(picks, stats, headshots);
     Scoreboard.setLiveOverrides({});
     Scoreboard.render();
 

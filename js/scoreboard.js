@@ -4,11 +4,13 @@
 const Scoreboard = (() => {
   let picksData = null;
   let statsData = null;
+  let headshotsData = {};
   let liveOverrides = {};  // athleteId -> { pts, reb, ast } from live ESPN fetch
 
-  function setData(picks, stats) {
+  function setData(picks, stats, headshots) {
     picksData = picks;
     statsData = stats;
+    headshotsData = headshots || {};
   }
 
   function setLiveOverrides(overrides) {
@@ -258,9 +260,12 @@ const Scoreboard = (() => {
         ptsDisplay = `${stats.pts}`;
       }
 
+      const hsUrl = headshotsData[info.pick.player_id];
+      const hsImg = hsUrl ? `<img class="detail-headshot" src="${hsUrl}" alt="" onerror="this.style.display='none'">` : '';
+
       html += `<tr class="${rowClass}" ${elimClass}>`;
       html += `<td>${seed}</td>`;
-      html += `<td ${liveClass}>${info.pick.name}${captainBadge}</td>`;
+      html += `<td ${liveClass}><span class="detail-player-cell">${hsImg}${info.pick.name}${captainBadge}</span></td>`;
       html += `<td>${info.pick.team || ''}</td>`;
       html += `<td>${ptsDisplay}</td>`;
       html += `<td style="font-weight:700">${info.pts}</td>`;
@@ -303,8 +308,16 @@ const Scoreboard = (() => {
     if (info.captain === 'scorer') captainLabel = ' <span class="captain-badge scorer">1.5x PTS</span>';
     else if (info.captain === 'playmaker') captainLabel = ' <span class="captain-badge playmaker">PTS+REB+AST</span>';
 
-    let html = `<div class="tt-header">${info.pick.name}${captainLabel}</div>`;
+    const headshotUrl = headshotsData[info.pick.player_id];
+    let html = '';
+    if (headshotUrl) {
+      html += `<div class="tt-top"><img class="tt-headshot" src="${headshotUrl}" alt="" onerror="this.style.display='none'"><div>`;
+    } else {
+      html += '<div class="tt-top"><div>';
+    }
+    html += `<div class="tt-header">${info.pick.name}${captainLabel}</div>`;
     html += `<div class="tt-team">${info.pick.team}</div>`;
+    html += '</div></div>';
 
     const isPlaymaker = info.captain === 'playmaker';
 

@@ -232,6 +232,38 @@ td.col-remaining {
 .captain-icon.scorer { color: var(--scorer-color); }
 .captain-icon.playmaker { color: var(--playmaker-color); }
 
+/* === Headshots === */
+.tt-top {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.tt-headshot {
+  width: 48px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: var(--bg-row);
+  flex-shrink: 0;
+}
+
+.detail-player-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.detail-headshot {
+  width: 32px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 3px;
+  background: var(--bg-row);
+  flex-shrink: 0;
+}
+
 /* === Player Tooltip === */
 .player-tooltip {
   position: fixed;
