@@ -1,1602 +1,632 @@
 {
-  "year": 2025,
+  "year": 2026,
   "entrants": [
     {
-      "name": "Chris Rossi",
+      "name": "Nevin B",
       "scorer_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
+        "seed": 11,
+        "player_id": "wes-enis",
+        "name": "Wes Enis",
+        "team": "South Florida"
       },
       "playmaker_captain": {
-        "seed": 5,
-        "player_id": "danny-wolf",
-        "name": "Danny Wolf",
-        "team": "Michigan"
-      },
-      "picks": {
-        "1": {
-          "player_id": "walter-clayton-jr",
-          "name": "Walter Clayton Jr.",
-          "team": "Florida"
-        },
-        "2": {
-          "player_id": "chaz-lanier",
-          "name": "Chaz Lanier",
-          "team": "Tennessee"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "caleb-love",
-          "name": "Caleb Love",
-          "team": "Arizona"
-        },
-        "5": {
-          "player_id": "danny-wolf",
-          "name": "Danny Wolf",
-          "team": "Michigan"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "norchad-omier",
-          "name": "Norchad Omier",
-          "team": "Baylor"
-        },
-        "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "kezza-giffa",
-          "name": "Kezza Giffa",
-          "team": "High Point"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
-        },
-        "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
-        }
-      }
-    },
-    {
-      "name": "Chris Bradley",
-      "scorer_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
-      },
-      "playmaker_captain": {
-        "seed": 7,
-        "player_id": "hunter-dickinson",
-        "name": "Hunter Dickinson",
-        "team": "Kansas"
-      },
-      "picks": {
-        "1": {
-          "player_id": "walter-clayton-jr",
-          "name": "Walter Clayton Jr.",
-          "team": "Florida"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "caleb-love",
-          "name": "Caleb Love",
-          "team": "Arizona"
-        },
-        "5": {
-          "player_id": "nate-bittle",
-          "name": "Nate Bittle",
-          "team": "Oregon"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "vj-edgecombe",
-          "name": "VJ Edgecombe",
-          "team": "Baylor"
-        },
-        "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "rafael-pinzon",
-          "name": "Rafael Pinzon",
-          "team": "Bryant"
-        },
-        "16": {
-          "player_id": "raysean-taylor",
-          "name": "Ray'Sean Taylor",
-          "team": "SIU-Edwardsville"
-        }
-      }
-    },
-    {
-      "name": "Skylar",
-      "scorer_captain": {
         "seed": 6,
-        "player_id": "richie-saunders",
-        "name": "Richie Saunders",
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
         "team": "BYU"
       },
-      "playmaker_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
-      },
       "picks": {
         "1": {
-          "player_id": "walter-clayton-jr",
-          "name": "Walter Clayton Jr.",
-          "team": "Florida"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "jakobi-gillespie",
-          "name": "Ja'Kobi Gillespie",
-          "team": "Maryland"
-        },
-        "5": {
-          "player_id": "chase-hunter",
-          "name": "Chase Hunter",
-          "team": "Clemson"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
-        },
-        "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "tayton-conerway",
-          "name": "Tayton Conerway",
-          "team": "Troy"
-        },
-        "15": {
-          "player_id": "rafael-pinzon",
-          "name": "Rafael Pinzon",
-          "team": "Bryant"
-        },
-        "16": {
-          "player_id": "raysean-taylor",
-          "name": "Ray'Sean Taylor",
-          "team": "SIU-Edwardsville"
-        }
-      }
-    },
-    {
-      "name": "Devon Mitchell",
-      "scorer_captain": {
-        "seed": 5,
-        "player_id": "chase-hunter",
-        "name": "Chase Hunter",
-        "team": "Clemson"
-      },
-      "playmaker_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
-      },
-      "picks": {
-        "1": {
-          "player_id": "cooper-flagg",
-          "name": "Cooper Flagg",
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
           "team": "Duke"
         },
         "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
+          "player_id": "milan-momcilovic",
+          "name": "Milan Momcilovic",
+          "team": "Iowa State"
         },
         "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
+          "team": "Illinois"
         },
         "4": {
-          "player_id": "trey-kaufmanrenn",
-          "name": "Trey Kaufman-Renn",
-          "team": "Purdue"
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
         },
         "5": {
-          "player_id": "chase-hunter",
-          "name": "Chase Hunter",
-          "team": "Clemson"
+          "player_id": "duke-miles",
+          "name": "Duke Miles",
+          "team": "Vanderbilt"
         },
         "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
           "team": "BYU"
         },
         "7": {
-          "player_id": "kam-jones",
-          "name": "Kam Jones",
-          "team": "Marquette"
+          "player_id": "tyler-bilodeau",
+          "name": "Tyler Bilodeau",
+          "team": "UCLA"
         },
         "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
         },
         "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
-        },
-        "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
-        },
-        "11": {
           "player_id": "bennett-stirtz",
           "name": "Bennett Stirtz",
-          "team": "Drake"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
-        },
-        "16": {
-          "player_id": "raysean-taylor",
-          "name": "Ray'Sean Taylor",
-          "team": "SIU-Edwardsville"
-        }
-      }
-    },
-    {
-      "name": "Vinny Bonta",
-      "scorer_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
-      },
-      "playmaker_captain": {
-        "seed": 7,
-        "player_id": "kam-jones",
-        "name": "Kam Jones",
-        "team": "Marquette"
-      },
-      "picks": {
-        "1": {
-          "player_id": "walter-clayton-jr",
-          "name": "Walter Clayton Jr.",
-          "team": "Florida"
-        },
-        "2": {
-          "player_id": "chaz-lanier",
-          "name": "Chaz Lanier",
-          "team": "Tennessee"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "caleb-love",
-          "name": "Caleb Love",
-          "team": "Arizona"
-        },
-        "5": {
-          "player_id": "chase-hunter",
-          "name": "Chase Hunter",
-          "team": "Clemson"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "kam-jones",
-          "name": "Kam Jones",
-          "team": "Marquette"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "norchad-omier",
-          "name": "Norchad Omier",
-          "team": "Baylor"
+          "team": "Iowa"
         },
         "10": {
-          "player_id": "ian-martinez",
-          "name": "Ian Martinez",
-          "team": "Utah State"
+          "player_id": "rashaun-agee",
+          "name": "Rashaun Agee",
+          "team": "Texas A&M"
         },
         "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
         },
         "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "kezza-giffa",
-          "name": "Kezza Giffa",
+          "player_id": "terry-anderson",
+          "name": "Terry Anderson",
           "team": "High Point"
         },
-        "14": {
-          "player_id": "tayton-conerway",
-          "name": "Tayton Conerway",
-          "team": "Troy"
-        },
-        "15": {
-          "player_id": "rafael-pinzon",
-          "name": "Rafael Pinzon",
-          "team": "Bryant"
-        },
-        "16": {
-          "player_id": "amarr-knox",
-          "name": "Amarr Knox",
-          "team": "Alabama State"
-        }
-      }
-    },
-    {
-      "name": "Ryan McMahon",
-      "scorer_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
-      },
-      "playmaker_captain": {
-        "seed": 5,
-        "player_id": "vladislav-goldin",
-        "name": "Vladislav Goldin",
-        "team": "Michigan"
-      },
-      "picks": {
-        "1": {
-          "player_id": "walter-clayton-jr",
-          "name": "Walter Clayton Jr.",
-          "team": "Florida"
-        },
-        "2": {
-          "player_id": "rj-luis-jr-st-john\u2019s",
-          "name": "RJ Luis Jr.- St. John\u2019s",
-          "team": ""
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "trey-kaufmanrenn",
-          "name": "Trey Kaufman-Renn",
-          "team": "Purdue"
-        },
-        "5": {
-          "player_id": "vladislav-goldin",
-          "name": "Vladislav Goldin",
-          "team": "Michigan"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "kam-jones",
-          "name": "Kam Jones",
-          "team": "Marquette"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
-        },
-        "10": {
-          "player_id": "adou-theiro",
-          "name": "Adou Theiro",
-          "team": "Arkansas"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
         "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
+          "player_id": "cruz-davis",
+          "name": "Cruz Davis",
+          "team": "Hofstra"
         },
         "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
+          "player_id": "damari-wheeler-thomas",
+          "name": "Damari Wheeler-Thomas",
+          "team": "North Dakota State"
         },
         "15": {
-          "player_id": "kam-woods",
-          "name": "Kam Woods",
-          "team": "Robert Morris"
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
         },
         "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
+          "player_id": "jamal-fuller",
+          "name": "Jamal Fuller",
+          "team": "LIU"
         }
       }
     },
     {
-      "name": "Joseph Heinl",
+      "name": "Will Smith",
       "scorer_captain": {
-        "seed": 11,
-        "player_id": "rj-davis",
-        "name": "RJ Davis",
-        "team": "North Carolina"
-      },
-      "playmaker_captain": {
-        "seed": 5,
-        "player_id": "danny-wolf",
-        "name": "Danny Wolf",
-        "team": "Michigan"
-      },
-      "picks": {
-        "1": {
-          "player_id": "johni-broome",
-          "name": "Johni Broome",
-          "team": "Auburn"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "derick-queen",
-          "name": "Derick Queen",
-          "team": "Maryland"
-        },
-        "5": {
-          "player_id": "danny-wolf",
-          "name": "Danny Wolf",
-          "team": "Michigan"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
-          "player_id": "terrance-edwards-jr",
-          "name": "Terrance Edwards Jr.",
-          "team": "Louisville"
-        },
-        "9": {
-          "player_id": "jeremiah-fears",
-          "name": "Jeremiah Fears",
-          "team": "Oklahoma"
-        },
-        "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
-        },
-        "16": {
-          "player_id": "raysean-taylor",
-          "name": "Ray'Sean Taylor",
-          "team": "SIU-Edwardsville"
-        }
-      }
-    },
-    {
-      "name": "Kyle/Max",
-      "scorer_captain": {
-        "seed": 11,
-        "player_id": "rj-davis",
-        "name": "RJ Davis",
-        "team": "North Carolina"
-      },
-      "playmaker_captain": {
-        "seed": 5,
-        "player_id": "vladislav-goldin",
-        "name": "Vladislav Goldin",
-        "team": "Michigan"
-      },
-      "picks": {
-        "1": {
-          "player_id": "johni-broome",
-          "name": "Johni Broome",
-          "team": "Auburn"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "caleb-love",
-          "name": "Caleb Love",
-          "team": "Arizona"
-        },
-        "5": {
-          "player_id": "vladislav-goldin",
-          "name": "Vladislav Goldin",
-          "team": "Michigan"
-        },
-        "6": {
-          "player_id": "kasparas-jakucionis",
-          "name": "Kasparas Jakucionis",
-          "team": "Illinois"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
-        },
-        "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "kezza-giffa",
-          "name": "Kezza Giffa",
-          "team": "High Point"
-        },
-        "14": {
-          "player_id": "money-williams",
-          "name": "Money Williams",
-          "team": "Montana"
-        },
-        "15": {
-          "player_id": "rafael-pinzon",
-          "name": "Rafael Pinzon",
-          "team": "Bryant"
-        },
-        "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
-        }
-      }
-    },
-    {
-      "name": "Kyle Warren",
-      "scorer_captain": {
-        "seed": 5,
-        "player_id": "chase-hunter",
-        "name": "Chase Hunter",
-        "team": "Clemson"
-      },
-      "playmaker_captain": {
-        "seed": 11,
-        "player_id": "rj-davis",
-        "name": "RJ Davis",
-        "team": "North Carolina"
-      },
-      "picks": {
-        "1": {
-          "player_id": "walter-clayton-jr",
-          "name": "Walter Clayton Jr.",
-          "team": "Florida"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "caleb-love",
-          "name": "Caleb Love",
-          "team": "Arizona"
-        },
-        "5": {
-          "player_id": "chase-hunter",
-          "name": "Chase Hunter",
-          "team": "Clemson"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "kam-jones",
-          "name": "Kam Jones",
-          "team": "Marquette"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "norchad-omier",
-          "name": "Norchad Omier",
-          "team": "Baylor"
-        },
-        "10": {
-          "player_id": "adou-theiro",
-          "name": "Adou Theiro",
-          "team": "Arkansas"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "aniwaniwa-taitjones",
-          "name": "Aniwaniwa Tait-Jones",
-          "team": "UC San Diego"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "tayton-conerway",
-          "name": "Tayton Conerway",
-          "team": "Troy"
-        },
-        "15": {
-          "player_id": "corey-tripp",
-          "name": "Corey Tripp",
-          "team": "Wofford"
-        },
-        "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
-        }
-      }
-    },
-    {
-      "name": "Zach Zimmerman",
-      "scorer_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
-      },
-      "playmaker_captain": {
         "seed": 7,
-        "player_id": "hunter-dickinson",
-        "name": "Hunter Dickinson",
-        "team": "Kansas"
+        "player_id": "mikey-lewis",
+        "name": "Mikey Lewis",
+        "team": "Saint Mary's"
+      },
+      "playmaker_captain": {
+        "seed": 13,
+        "player_id": "isaac-johnson",
+        "name": "Isaac Johnson",
+        "team": "Hawaii"
       },
       "picks": {
         "1": {
-          "player_id": "cooper-flagg",
-          "name": "Cooper Flagg",
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
           "team": "Duke"
         },
         "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
         },
         "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "trey-kaufmanrenn",
-          "name": "Trey Kaufman-Renn",
-          "team": "Purdue"
-        },
-        "5": {
-          "player_id": "chase-hunter",
-          "name": "Chase Hunter",
-          "team": "Clemson"
-        },
-        "6": {
-          "player_id": "kylan-boswell",
-          "name": "Kylan Boswell",
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
           "team": "Illinois"
         },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
+        "4": {
+          "player_id": "darryn-peterson",
+          "name": "Darryn Peterson",
           "team": "Kansas"
         },
-        "8": {
-          "player_id": "solo-ball",
-          "name": "Solo Ball",
-          "team": "Connecticut"
-        },
-        "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
-        },
-        "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
-        },
-        "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
-        }
-      }
-    },
-    {
-      "name": "Christopher Holmquist",
-      "scorer_captain": {
-        "seed": 7,
-        "player_id": "kam-jones",
-        "name": "Kam Jones",
-        "team": "Marquette"
-      },
-      "playmaker_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
-      },
-      "picks": {
-        "1": {
-          "player_id": "walter-clayton-jr",
-          "name": "Walter Clayton Jr.",
-          "team": "Florida"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "derick-queen",
-          "name": "Derick Queen",
-          "team": "Maryland"
-        },
         "5": {
-          "player_id": "chase-hunter",
-          "name": "Chase Hunter",
-          "team": "Clemson"
+          "player_id": "tyler-tanner",
+          "name": "Tyler Tanner",
+          "team": "Vanderbilt"
         },
         "6": {
-          "player_id": "kasparas-jakucionis",
-          "name": "Kasparas Jakucionis",
-          "team": "Illinois"
+          "player_id": "nate-ament",
+          "name": "Nate Ament",
+          "team": "Tennessee"
         },
         "7": {
-          "player_id": "kam-jones",
-          "name": "Kam Jones",
-          "team": "Marquette"
+          "player_id": "mikey-lewis",
+          "name": "Mikey Lewis",
+          "team": "Saint Mary's"
         },
         "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
         },
         "9": {
-          "player_id": "norchad-omier",
-          "name": "Norchad Omier",
-          "team": "Baylor"
+          "player_id": "mason-falslev",
+          "name": "Mason Falslev",
+          "team": "Utah State"
         },
         "10": {
-          "player_id": "adou-theiro",
-          "name": "Adou Theiro",
-          "team": "Arkansas"
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
         },
         "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
+          "player_id": "pete-suder",
+          "name": "Pete Suder",
+          "team": "Miami (OH)"
         },
         "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
+          "player_id": "larry-johnson",
+          "name": "Larry Johnson",
+          "team": "McNeese"
         },
         "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
+          "player_id": "isaac-johnson",
+          "name": "Isaac Johnson",
+          "team": "Hawaii"
         },
         "14": {
-          "player_id": "tayton-conerway",
-          "name": "Tayton Conerway",
-          "team": "Troy"
+          "player_id": "ethan-roberts",
+          "name": "Ethan Roberts",
+          "team": "Penn"
         },
         "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
+          "player_id": "aaron-nkrumah",
+          "name": "Aaron Nkrumah",
+          "team": "Tennessee State"
         },
         "16": {
-          "player_id": "raysean-taylor",
-          "name": "Ray'Sean Taylor",
-          "team": "SIU-Edwardsville"
+          "player_id": "gavin-doty",
+          "name": "Gavin Doty",
+          "team": "Siena"
         }
       }
     },
     {
       "name": "Caleb Heck",
       "scorer_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
+        "seed": 13,
+        "player_id": "cruz-davis",
+        "name": "Cruz Davis",
+        "team": "Hofstra"
       },
       "playmaker_captain": {
-        "seed": 5,
-        "player_id": "pj-haggerty",
-        "name": "PJ Haggerty",
-        "team": "Memphis"
+        "seed": 7,
+        "player_id": "otega-oweh",
+        "name": "Otega Oweh",
+        "team": "Kentucky"
       },
       "picks": {
         "1": {
-          "player_id": "chad-bakermazara",
-          "name": "Chad Baker-Mazara",
-          "team": "Auburn"
-        },
-        "2": {
-          "player_id": "chaz-lanier",
-          "name": "Chaz Lanier",
-          "team": "Tennessee"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "caleb-love",
-          "name": "Caleb Love",
+          "player_id": "jaden-bradley",
+          "name": "Jaden Bradley",
           "team": "Arizona"
         },
+        "2": {
+          "player_id": "milan-momcilovic",
+          "name": "Milan Momcilovic",
+          "team": "Iowa State"
+        },
+        "3": {
+          "player_id": "jeremy-fears-jr",
+          "name": "Jeremy Fears Jr.",
+          "team": "Michigan State"
+        },
+        "4": {
+          "player_id": "pryce-sandfort",
+          "name": "Pryce Sandfort",
+          "team": "Nebraska"
+        },
         "5": {
-          "player_id": "pj-haggerty",
-          "name": "PJ Haggerty",
-          "team": "Memphis"
+          "player_id": "john-blackwell",
+          "name": "John Blackwell",
+          "team": "Wisconsin"
         },
         "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
+          "player_id": "jakobi-gillespie",
+          "name": "Ja'Kobi Gillespie",
+          "team": "Tennessee"
         },
         "7": {
-          "player_id": "tyler-bilodeau",
-          "name": "Tyler Bilodeau",
-          "team": "UCLA"
+          "player_id": "otega-oweh",
+          "name": "Otega Oweh",
+          "team": "Kentucky"
         },
         "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
+          "player_id": "tyler-perkins",
+          "name": "Tyler Perkins",
+          "team": "Villanova"
         },
         "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
         },
         "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
         },
         "11": {
-          "player_id": "max-shulga",
-          "name": "Max Shulga",
+          "player_id": "terrence-hill-jr",
+          "name": "Terrence Hill Jr.",
           "team": "VCU"
         },
         "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
         },
         "13": {
-          "player_id": "jakobe-coles",
-          "name": "JaKobe Coles",
-          "team": "Grand Canyon"
+          "player_id": "cruz-davis",
+          "name": "Cruz Davis",
+          "team": "Hofstra"
         },
         "14": {
-          "player_id": "malik-moore",
-          "name": "Malik Moore",
-          "team": "Montana"
+          "player_id": "michael-cooper",
+          "name": "Michael Cooper",
+          "team": "Wright State"
         },
         "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
+          "player_id": "kolton-mitchell",
+          "name": "Kolton Mitchell",
+          "team": "Idaho"
         },
         "16": {
-          "player_id": "matt-rogers",
-          "name": "Matt Rogers",
-          "team": "American"
+          "player_id": "jamal-fuller",
+          "name": "Jamal Fuller",
+          "team": "LIU"
         }
       }
     },
     {
-      "name": "Cory vest",
+      "name": "Clark Sloyer",
       "scorer_captain": {
         "seed": 11,
-        "player_id": "bennett-stirtz",
-        "name": "Bennett Stirtz",
-        "team": "Drake"
+        "player_id": "wes-enis",
+        "name": "Wes Enis",
+        "team": "South Florida"
       },
       "playmaker_captain": {
-        "seed": 6,
-        "player_id": "kasparas-jakucionis",
-        "name": "Kasparas Jakucionis",
-        "team": "Illinois"
+        "seed": 5,
+        "player_id": "zuby-ejiofor",
+        "name": "Zuby Ejiofor",
+        "team": "St. John's"
       },
       "picks": {
         "1": {
-          "player_id": "lj-cryer",
-          "name": "LJ Cryer",
-          "team": "Houston"
+          "player_id": "yaxel-lendeborg",
+          "name": "Yaxel Lendeborg",
+          "team": "Michigan"
         },
         "2": {
-          "player_id": "jase-richardson",
-          "name": "Jase Richardson",
-          "team": "Michigan State"
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
         },
         "3": {
-          "player_id": "john-tonje",
-          "name": "John Tonje",
-          "team": "Wisconsin"
+          "player_id": "graham-ike",
+          "name": "Graham Ike",
+          "team": "Gonzaga"
         },
         "4": {
-          "player_id": "caleb-love",
-          "name": "Caleb Love",
-          "team": "Arizona"
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
         },
         "5": {
-          "player_id": "nate-bittle",
-          "name": "Nate Bittle",
-          "team": "Oregon"
+          "player_id": "zuby-ejiofor",
+          "name": "Zuby Ejiofor",
+          "team": "St. John's"
         },
         "6": {
-          "player_id": "kasparas-jakucionis",
-          "name": "Kasparas Jakucionis",
-          "team": "Illinois"
+          "player_id": "jakobi-gillespie",
+          "name": "Ja'Kobi Gillespie",
+          "team": "Tennessee"
         },
         "7": {
-          "player_id": "augustus-marciulionis",
-          "name": "Augustus Marciulionis",
-          "team": "Saint Mary\u2019s"
+          "player_id": "malik-reneau",
+          "name": "Malik Reneau",
+          "team": "Miami"
         },
         "8": {
-          "player_id": "liam-mcneeley",
-          "name": "Liam McNeeley",
-          "team": "Connecticut"
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
         },
         "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
+          "team": "Utah State"
         },
         "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
+          "player_id": "christian-hammond",
+          "name": "Christian Hammond",
+          "team": "Santa Clara"
         },
         "11": {
-          "player_id": "bennett-stirtz",
-          "name": "Bennett Stirtz",
-          "team": "Drake"
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
         },
         "12": {
-          "player_id": "aniwaniwa-taitjones",
-          "name": "Aniwaniwa Tait-Jones",
-          "team": "UC San Diego"
+          "player_id": "terry-anderson",
+          "name": "Terry Anderson",
+          "team": "High Point"
         },
         "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
+          "player_id": "thomas-dowd",
+          "name": "Thomas Dowd",
+          "team": "Troy"
         },
         "14": {
-          "player_id": "donovan-newby",
-          "name": "Donovan Newby",
-          "team": "UNC Wilmington"
+          "player_id": "tj-power",
+          "name": "TJ Power",
+          "team": "Penn"
         },
         "15": {
-          "player_id": "kam-woods",
-          "name": "Kam Woods",
-          "team": "Robert Morris"
+          "player_id": "aaron-nkrumah",
+          "name": "Aaron Nkrumah",
+          "team": "Tennessee State"
         },
         "16": {
-          "player_id": "raysean-taylor",
-          "name": "Ray'Sean Taylor",
-          "team": "SIU-Edwardsville"
+          "player_id": "gavin-doty",
+          "name": "Gavin Doty",
+          "team": "Siena"
         }
       }
     },
     {
       "name": "Kevin Texeira",
       "scorer_captain": {
-        "seed": 5,
-        "player_id": "pj-haggerty",
-        "name": "PJ Haggerty",
-        "team": "Memphis"
+        "seed": 12,
+        "player_id": "larry-johnson",
+        "name": "Larry Johnson",
+        "team": "McNeese"
       },
       "playmaker_captain": {
-        "seed": 11,
-        "player_id": "bennett-stirtz",
-        "name": "Bennett Stirtz",
-        "team": "Drake"
+        "seed": 5,
+        "player_id": "zuby-ejiofor",
+        "name": "Zuby Ejiofor",
+        "team": "St. John's"
       },
       "picks": {
         "1": {
-          "player_id": "johni-broome",
-          "name": "Johni Broome",
-          "team": "Auburn"
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
         },
         "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
         },
         "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "jakobi-gillespie",
-          "name": "Ja'Kobi Gillespie",
-          "team": "Maryland"
-        },
-        "5": {
-          "player_id": "pj-haggerty",
-          "name": "PJ Haggerty",
-          "team": "Memphis"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
           "player_id": "graham-ike",
           "name": "Graham Ike",
           "team": "Gonzaga"
         },
-        "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
+        "4": {
+          "player_id": "labaron-philon-jr",
+          "name": "Labaron Philon Jr.",
+          "team": "Alabama"
         },
-        "10": {
-          "player_id": "ian-martinez",
-          "name": "Ian Martinez",
+        "5": {
+          "player_id": "zuby-ejiofor",
+          "name": "Zuby Ejiofor",
+          "team": "St. John's"
+        },
+        "6": {
+          "player_id": "jakobi-gillespie",
+          "name": "Ja'Kobi Gillespie",
+          "team": "Tennessee"
+        },
+        "7": {
+          "player_id": "malik-reneau",
+          "name": "Malik Reneau",
+          "team": "Miami"
+        },
+        "8": {
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
+        },
+        "9": {
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
           "team": "Utah State"
         },
-        "11": {
-          "player_id": "bennett-stirtz",
-          "name": "Bennett Stirtz",
-          "team": "Drake"
-        },
-        "12": {
-          "player_id": "kaden-metheny",
-          "name": "Kaden Metheny",
-          "team": "Liberty"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "alvaro-folgueiras",
-          "name": "Alvaro Folgueiras",
-          "team": "Robert Morris"
-        },
-        "16": {
-          "player_id": "raysean-taylor",
-          "name": "Ray'Sean Taylor",
-          "team": "SIU-Edwardsville"
-        }
-      }
-    },
-    {
-      "name": "Aaron Bluestone",
-      "scorer_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
-      },
-      "playmaker_captain": {
-        "seed": 5,
-        "player_id": "danny-wolf",
-        "name": "Danny Wolf",
-        "team": "Michigan"
-      },
-      "picks": {
-        "1": {
-          "player_id": "cooper-flagg",
-          "name": "Cooper Flagg",
-          "team": "Duke"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "john-tonje",
-          "name": "John Tonje",
-          "team": "Wisconsin"
-        },
-        "4": {
-          "player_id": "braden-smith",
-          "name": "Braden Smith",
-          "team": "Purdue"
-        },
-        "5": {
-          "player_id": "danny-wolf",
-          "name": "Danny Wolf",
-          "team": "Michigan"
-        },
-        "6": {
-          "player_id": "kasparas-jakucionis",
-          "name": "Kasparas Jakucionis",
-          "team": "Illinois"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
-          "player_id": "solo-ball",
-          "name": "Solo Ball",
-          "team": "Connecticut"
-        },
-        "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
-        },
         "10": {
-          "player_id": "adou-theiro",
-          "name": "Adou Theiro",
-          "team": "Arkansas"
+          "player_id": "rashaun-agee",
+          "name": "Rashaun Agee",
+          "team": "Texas A&M"
         },
         "11": {
-          "player_id": "bennett-stirtz",
-          "name": "Bennett Stirtz",
-          "team": "Drake"
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
         },
         "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
+          "player_id": "larry-johnson",
+          "name": "Larry Johnson",
+          "team": "McNeese"
         },
         "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
+          "player_id": "thomas-dowd",
+          "name": "Thomas Dowd",
+          "team": "Troy"
         },
         "14": {
-          "player_id": "donovan-newby",
-          "name": "Donovan Newby",
-          "team": "UNC Wilmington"
+          "player_id": "tj-power",
+          "name": "TJ Power",
+          "team": "Penn"
         },
         "15": {
-          "player_id": "alvaro-folgueiras",
-          "name": "Alvaro Folgueiras",
-          "team": "Robert Morris"
+          "player_id": "travis-harper-ii",
+          "name": "Travis Harper II",
+          "team": "Tennessee State"
         },
         "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
+          "player_id": "gavin-doty",
+          "name": "Gavin Doty",
+          "team": "Siena"
         }
       }
     },
     {
-      "name": "Carson Stickler",
-      "scorer_captain": {
-        "seed": 6,
-        "player_id": "will-riley",
-        "name": "Will Riley",
-        "team": "Illinois"
-      },
-      "playmaker_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
-      },
-      "picks": {
-        "1": {
-          "player_id": "kon-knueppel",
-          "name": "Kon Knueppel",
-          "team": "Duke"
-        },
-        "2": {
-          "player_id": "jase-richardson",
-          "name": "Jase Richardson",
-          "team": "Michigan State"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "jakobi-gillespie",
-          "name": "Ja'Kobi Gillespie",
-          "team": "Maryland"
-        },
-        "5": {
-          "player_id": "ian-schieffelin",
-          "name": "Ian Schieffelin",
-          "team": "Clemson"
-        },
-        "6": {
-          "player_id": "will-riley",
-          "name": "Will Riley",
-          "team": "Illinois"
-        },
-        "7": {
-          "player_id": "augustus-marciulionis",
-          "name": "Augustus Marciulionis",
-          "team": "Saint Mary\u2019s"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
-        },
-        "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
-        },
-        "11": {
-          "player_id": "bennett-stirtz",
-          "name": "Bennett Stirtz",
-          "team": "Drake"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
-        },
-        "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
-        }
-      }
-    },
-    {
-      "name": "Alex Harris",
+      "name": "Air India",
       "scorer_captain": {
         "seed": 11,
-        "player_id": "rj-davis",
-        "name": "RJ Davis",
-        "team": "North Carolina"
+        "player_id": "dailyn-swain",
+        "name": "Dailyn Swain",
+        "team": "Texas"
       },
       "playmaker_captain": {
         "seed": 5,
-        "player_id": "nate-bittle",
-        "name": "Nate Bittle",
-        "team": "Oregon"
+        "player_id": "zuby-ejiofor",
+        "name": "Zuby Ejiofor",
+        "team": "St. John's"
       },
       "picks": {
         "1": {
-          "player_id": "cooper-flagg",
-          "name": "Cooper Flagg",
-          "team": "Duke"
+          "player_id": "brayden-burris",
+          "name": "Brayden Burris",
+          "team": "Arizona"
         },
         "2": {
-          "player_id": "jase-richardson",
-          "name": "Jase Richardson",
-          "team": "Michigan State"
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
         },
         "3": {
-          "player_id": "john-tonje",
-          "name": "John Tonje",
-          "team": "Wisconsin"
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
+          "team": "Illinois"
         },
         "4": {
-          "player_id": "derick-queen",
-          "name": "Derick Queen",
-          "team": "Maryland"
+          "player_id": "darryn-peterson",
+          "name": "Darryn Peterson",
+          "team": "Kansas"
         },
         "5": {
-          "player_id": "nate-bittle",
-          "name": "Nate Bittle",
-          "team": "Oregon"
+          "player_id": "zuby-ejiofor",
+          "name": "Zuby Ejiofor",
+          "team": "St. John's"
         },
         "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
+          "player_id": "jakobi-gillespie",
+          "name": "Ja'Kobi Gillespie",
+          "team": "Tennessee"
+        },
+        "7": {
+          "player_id": "malik-reneau",
+          "name": "Malik Reneau",
+          "team": "Miami"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "riley-kugel",
+          "name": "Riley Kugel",
+          "team": "UCF"
+        },
+        "11": {
+          "player_id": "dailyn-swain",
+          "name": "Dailyn Swain",
+          "team": "Texas"
+        },
+        "12": {
+          "player_id": "terry-anderson",
+          "name": "Terry Anderson",
+          "team": "High Point"
+        },
+        "13": {
+          "player_id": "dominique-daniels-jr",
+          "name": "Dominique Daniels Jr.",
+          "team": "Cal Baptist"
+        },
+        "14": {
+          "player_id": "rj-johnson",
+          "name": "RJ Johnson",
+          "team": "Kennesaw State"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "bryce-harris",
+          "name": "Bryce Harris",
+          "team": "Howard"
+        }
+      }
+    },
+    {
+      "name": "Andrew Card",
+      "scorer_captain": {
+        "seed": 6,
+        "player_id": "jakobi-gillespie",
+        "name": "Ja'Kobi Gillespie",
+        "team": "Tennessee"
+      },
+      "playmaker_captain": {
+        "seed": 13,
+        "player_id": "cruz-davis",
+        "name": "Cruz Davis",
+        "team": "Hofstra"
+      },
+      "picks": {
+        "1": {
+          "player_id": "thomas-haugh",
+          "name": "Thomas Haugh",
+          "team": "Florida"
+        },
+        "2": {
+          "player_id": "trey-kaufman-renn",
+          "name": "Trey Kaufman-Renn",
+          "team": "Purdue"
+        },
+        "3": {
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
+          "team": "Illinois"
+        },
+        "4": {
+          "player_id": "labaron-philon-jr",
+          "name": "Labaron Philon Jr.",
+          "team": "Alabama"
+        },
+        "5": {
+          "player_id": "zuby-ejiofor",
+          "name": "Zuby Ejiofor",
+          "team": "St. John's"
+        },
+        "6": {
+          "player_id": "jakobi-gillespie",
+          "name": "Ja'Kobi Gillespie",
+          "team": "Tennessee"
         },
         "7": {
           "player_id": "tyler-bilodeau",
@@ -1604,825 +634,825 @@
           "team": "UCLA"
         },
         "8": {
-          "player_id": "terrance-edwards-jr",
-          "name": "Terrance Edwards Jr.",
-          "team": "Louisville"
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
         },
         "9": {
-          "player_id": "norchad-omier",
-          "name": "Norchad Omier",
-          "team": "Baylor"
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
+          "team": "Utah State"
         },
         "10": {
-          "player_id": "jason-edwards",
-          "name": "Jason Edwards",
-          "team": "Vanderbilt"
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
         },
         "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
         },
         "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "tayton-conerway",
-          "name": "Tayton Conerway",
-          "team": "Troy"
-        },
-        "15": {
-          "player_id": "kam-woods",
-          "name": "Kam Woods",
-          "team": "Robert Morris"
-        },
-        "16": {
-          "player_id": "dola-adebayo",
-          "name": "Dola Adebayo",
-          "team": "Mount St. Mary's"
-        }
-      }
-    },
-    {
-      "name": "Kasey Shibayama",
-      "scorer_captain": {
-        "seed": 11,
-        "player_id": "zach-freemantle",
-        "name": "Zach Freemantle",
-        "team": "Xavier"
-      },
-      "playmaker_captain": {
-        "seed": 5,
-        "player_id": "vladislav-goldin",
-        "name": "Vladislav Goldin",
-        "team": "Michigan"
-      },
-      "picks": {
-        "1": {
-          "player_id": "johni-broome",
-          "name": "Johni Broome",
-          "team": "Auburn"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "caleb-love",
-          "name": "Caleb Love",
-          "team": "Arizona"
-        },
-        "5": {
-          "player_id": "vladislav-goldin",
-          "name": "Vladislav Goldin",
-          "team": "Michigan"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "augustus-marciulionis",
-          "name": "Augustus Marciulionis",
-          "team": "Saint Mary\u2019s"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "asa-newell",
-          "name": "Asa Newell",
-          "team": "Georgia"
-        },
-        "10": {
-          "player_id": "adou-theiro",
-          "name": "Adou Theiro",
-          "team": "Arkansas"
-        },
-        "11": {
-          "player_id": "zach-freemantle",
-          "name": "Zach Freemantle",
-          "team": "Xavier"
-        },
-        "12": {
-          "player_id": "aniwaniwa-taitjones",
-          "name": "Aniwaniwa Tait-Jones",
-          "team": "UC San Diego"
-        },
-        "13": {
-          "player_id": "jakobe-coles",
-          "name": "JaKobe Coles",
-          "team": "Grand Canyon"
-        },
-        "14": {
-          "player_id": "donovan-newby",
-          "name": "Donovan Newby",
-          "team": "UNC Wilmington"
-        },
-        "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
-        },
-        "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
-        }
-      }
-    },
-    {
-      "name": "Maddy Landon",
-      "scorer_captain": {
-        "seed": 11,
-        "player_id": "rj-davis",
-        "name": "RJ Davis",
-        "team": "North Carolina"
-      },
-      "playmaker_captain": {
-        "seed": 5,
-        "player_id": "chase-hunter",
-        "name": "Chase Hunter",
-        "team": "Clemson"
-      },
-      "picks": {
-        "1": {
-          "player_id": "johni-broome",
-          "name": "Johni Broome",
-          "team": "Auburn"
-        },
-        "2": {
-          "player_id": "chaz-lanier",
-          "name": "Chaz Lanier",
-          "team": "Tennessee"
-        },
-        "3": {
-          "player_id": "john-tonje",
-          "name": "John Tonje",
-          "team": "Wisconsin"
-        },
-        "4": {
-          "player_id": "trey-kaufmanrenn",
-          "name": "Trey Kaufman-Renn",
-          "team": "Purdue"
-        },
-        "5": {
-          "player_id": "chase-hunter",
-          "name": "Chase Hunter",
-          "team": "Clemson"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
-        },
-        "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "aniwaniwa-taitjones",
-          "name": "Aniwaniwa Tait-Jones",
-          "team": "UC San Diego"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
-        },
-        "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
-        }
-      }
-    },
-    {
-      "name": "Andrew Card",
-      "scorer_captain": {
-        "seed": 11,
-        "player_id": "rj-davis",
-        "name": "RJ Davis",
-        "team": "North Carolina"
-      },
-      "playmaker_captain": {
-        "seed": 6,
-        "player_id": "kasparas-jakucionis",
-        "name": "Kasparas Jakucionis",
-        "team": "Illinois"
-      },
-      "picks": {
-        "1": {
-          "player_id": "johni-broome",
-          "name": "Johni Broome",
-          "team": "Auburn"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "trey-kaufmanrenn",
-          "name": "Trey Kaufman-Renn",
-          "team": "Purdue"
-        },
-        "5": {
-          "player_id": "pj-haggerty",
-          "name": "PJ Haggerty",
-          "team": "Memphis"
-        },
-        "6": {
-          "player_id": "kasparas-jakucionis",
-          "name": "Kasparas Jakucionis",
-          "team": "Illinois"
-        },
-        "7": {
-          "player_id": "kam-jones",
-          "name": "Kam Jones",
-          "team": "Marquette"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "ryan-kalkbrenner",
-          "name": "Ryan Kalkbrenner",
-          "team": "Creighton"
-        },
-        "10": {
-          "player_id": "boogie-fland",
-          "name": "Boogie Fland",
-          "team": "Arkansas"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "aniwaniwa-taitjones",
-          "name": "Aniwaniwa Tait-Jones",
-          "team": "UC San Diego"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "rafael-pinzon",
-          "name": "Rafael Pinzon",
-          "team": "Bryant"
-        },
-        "16": {
-          "player_id": "raysean-taylor",
-          "name": "Ray'Sean Taylor",
-          "team": "SIU-Edwardsville"
-        }
-      }
-    },
-    {
-      "name": "Gage Mercer",
-      "scorer_captain": {
-        "seed": 5,
-        "player_id": "pj-haggerty",
-        "name": "PJ Haggerty",
-        "team": "Memphis"
-      },
-      "playmaker_captain": {
-        "seed": 11,
-        "player_id": "rj-davis",
-        "name": "RJ Davis",
-        "team": "North Carolina"
-      },
-      "picks": {
-        "1": {
-          "player_id": "walter-clayton-jr",
-          "name": "Walter Clayton Jr.",
-          "team": "Florida"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "caleb-love",
-          "name": "Caleb Love",
-          "team": "Arizona"
-        },
-        "5": {
-          "player_id": "pj-haggerty",
-          "name": "PJ Haggerty",
-          "team": "Memphis"
-        },
-        "6": {
-          "player_id": "kasparas-jakucionis",
-          "name": "Kasparas Jakucionis",
-          "team": "Illinois"
-        },
-        "7": {
-          "player_id": "kam-jones",
-          "name": "Kam Jones",
-          "team": "Marquette"
-        },
-        "8": {
-          "player_id": "graham-ike",
-          "name": "Graham Ike",
-          "team": "Gonzaga"
-        },
-        "9": {
-          "player_id": "norchad-omier",
-          "name": "Norchad Omier",
-          "team": "Baylor"
-        },
-        "10": {
-          "player_id": "adou-theiro",
-          "name": "Adou Theiro",
-          "team": "Arkansas"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "aniwaniwa-taitjones",
-          "name": "Aniwaniwa Tait-Jones",
-          "team": "UC San Diego"
-        },
-        "13": {
-          "player_id": "jakobe-coles",
-          "name": "JaKobe Coles",
-          "team": "Grand Canyon"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
-        },
-        "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
-        }
-      }
-    },
-    {
-      "name": "Noah Luskus",
-      "scorer_captain": {
-        "seed": 11,
-        "player_id": "rj-davis",
-        "name": "RJ Davis",
-        "team": "North Carolina"
-      },
-      "playmaker_captain": {
-        "seed": 7,
-        "player_id": "kam-jones",
-        "name": "Kam Jones",
-        "team": "Marquette"
-      },
-      "picks": {
-        "1": {
-          "player_id": "cooper-flagg",
-          "name": "Cooper Flagg",
-          "team": "Duke"
-        },
-        "2": {
-          "player_id": "mark-sears",
-          "name": "Mark Sears",
-          "team": "Alabama"
-        },
-        "3": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
-        },
-        "4": {
-          "player_id": "wade-taylor-iv",
-          "name": "Wade Taylor IV",
-          "team": "Texas A&M"
-        },
-        "5": {
-          "player_id": "chase-hunter",
-          "name": "Chase Hunter",
-          "team": "Clemson"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "kam-jones",
-          "name": "Kam Jones",
-          "team": "Marquette"
-        },
-        "8": {
-          "player_id": "josh-hubbard",
-          "name": "Josh Hubbard",
-          "team": "Mississippi St"
-        },
-        "9": {
-          "player_id": "silas-demary-jr",
-          "name": "Silas Demary Jr.",
-          "team": "Georgia"
-        },
-        "10": {
-          "player_id": "jason-edwards",
-          "name": "Jason Edwards",
-          "team": "Vanderbilt"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "aniwaniwa-taitjones",
-          "name": "Aniwaniwa Tait-Jones",
-          "team": "UC San Diego"
-        },
-        "13": {
-          "player_id": "kezza-giffa",
-          "name": "Kezza Giffa",
+          "player_id": "terry-anderson",
+          "name": "Terry Anderson",
           "team": "High Point"
         },
+        "13": {
+          "player_id": "cruz-davis",
+          "name": "Cruz Davis",
+          "team": "Hofstra"
+        },
         "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
+          "player_id": "simeon-cottle",
+          "name": "Simeon Cottle",
+          "team": "Kennesaw State"
         },
         "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
+          "player_id": "kristian-gonzalez",
+          "name": "Kristian Gonzalez",
+          "team": "Idaho"
         },
         "16": {
-          "player_id": "brian-moore-jr",
-          "name": "Brian Moore Jr.",
-          "team": "Norfolk State"
+          "player_id": "bryce-harris",
+          "name": "Bryce Harris",
+          "team": "Howard"
         }
       }
     },
     {
-      "name": "Brandon Dawson",
+      "name": "Cole Model",
       "scorer_captain": {
-        "seed": 11,
-        "player_id": "rj-davis",
-        "name": "RJ Davis",
-        "team": "North Carolina"
+        "seed": 6,
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
+        "team": "BYU"
       },
       "playmaker_captain": {
-        "seed": 7,
-        "player_id": "hunter-dickinson",
-        "name": "Hunter Dickinson",
-        "team": "Kansas"
+        "seed": 11,
+        "player_id": "izaiyah-nelson",
+        "name": "Izaiyah Nelson",
+        "team": "South Florida"
       },
       "picks": {
         "1": {
-          "player_id": "cooper-flagg",
-          "name": "Cooper Flagg",
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
           "team": "Duke"
         },
         "2": {
-          "player_id": "jase-richardson",
-          "name": "Jase Richardson",
-          "team": "Michigan State"
-        },
-        "3": {
-          "player_id": "otega-oweh",
-          "name": "Otega Oweh",
-          "team": "Kentucky"
-        },
-        "4": {
           "player_id": "braden-smith",
           "name": "Braden Smith",
           "team": "Purdue"
         },
-        "5": {
-          "player_id": "nate-bittle",
-          "name": "Nate Bittle",
-          "team": "Oregon"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
-          "player_id": "liam-mcneeley",
-          "name": "Liam McNeeley",
-          "team": "Connecticut"
-        },
-        "9": {
-          "player_id": "asa-newell",
-          "name": "Asa Newell",
-          "team": "Georgia"
-        },
-        "10": {
-          "player_id": "jason-edwards",
-          "name": "Jason Edwards",
-          "team": "Vanderbilt"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "nate-johnson",
-          "name": "Nate Johnson",
-          "team": "Akron"
-        },
-        "14": {
-          "player_id": "donovan-newby",
-          "name": "Donovan Newby",
-          "team": "UNC Wilmington"
-        },
-        "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
-        },
-        "16": {
-          "player_id": "cj-hines",
-          "name": "CJ Hines",
-          "team": "Alabama State"
-        }
-      }
-    },
-    {
-      "name": "Ben Hendrickson",
-      "scorer_captain": {
-        "seed": 8,
-        "player_id": "terrance-edwards-jr",
-        "name": "Terrance Edwards Jr.",
-        "team": "Louisville"
-      },
-      "playmaker_captain": {
-        "seed": 12,
-        "player_id": "aniwaniwa-taitjones",
-        "name": "Aniwaniwa Tait-Jones",
-        "team": "UC San Diego"
-      },
-      "picks": {
-        "1": {
-          "player_id": "walter-clayton-jr",
-          "name": "Walter Clayton Jr.",
-          "team": "Florida"
-        },
-        "2": {
-          "player_id": "rj-luis-jr-st-john\u2019s",
-          "name": "RJ Luis Jr.- St. John\u2019s",
-          "team": ""
-        },
         "3": {
-          "player_id": "john-tonje",
-          "name": "John Tonje",
-          "team": "Wisconsin"
-        },
-        "4": {
-          "player_id": "trey-kaufmanrenn",
-          "name": "Trey Kaufman-Renn",
-          "team": "Purdue"
-        },
-        "5": {
-          "player_id": "ian-schieffelin",
-          "name": "Ian Schieffelin",
-          "team": "Clemson"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
-          "player_id": "terrance-edwards-jr",
-          "name": "Terrance Edwards Jr.",
-          "team": "Louisville"
-        },
-        "9": {
-          "player_id": "jeremiah-fears",
-          "name": "Jeremiah Fears",
-          "team": "Oklahoma"
-        },
-        "10": {
-          "player_id": "donovan-dent",
-          "name": "Donovan Dent",
-          "team": "New Mexico"
-        },
-        "11": {
-          "player_id": "rj-davis",
-          "name": "RJ Davis",
-          "team": "North Carolina"
-        },
-        "12": {
-          "player_id": "aniwaniwa-taitjones",
-          "name": "Aniwaniwa Tait-Jones",
-          "team": "UC San Diego"
-        },
-        "13": {
-          "player_id": "john-poulakidas",
-          "name": "John Poulakidas",
-          "team": "Yale"
-        },
-        "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
-        },
-        "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
-        },
-        "16": {
-          "player_id": "dola-adebayo",
-          "name": "Dola Adebayo",
-          "team": "Mount St. Mary's"
-        }
-      }
-    },
-    {
-      "name": "Blitz",
-      "scorer_captain": {
-        "seed": 5,
-        "player_id": "pj-haggerty",
-        "name": "PJ Haggerty",
-        "team": "Memphis"
-      },
-      "playmaker_captain": {
-        "seed": 11,
-        "player_id": "bennett-stirtz",
-        "name": "Bennett Stirtz",
-        "team": "Drake"
-      },
-      "picks": {
-        "1": {
-          "player_id": "johni-broome",
-          "name": "Johni Broome",
-          "team": "Auburn"
-        },
-        "2": {
-          "player_id": "rj-luis-jr-st-john\u2019s",
-          "name": "RJ Luis Jr.- St. John\u2019s",
-          "team": ""
-        },
-        "3": {
-          "player_id": "otega-oweh",
-          "name": "Otega Oweh",
-          "team": "Kentucky"
-        },
-        "4": {
-          "player_id": "wade-taylor-iv",
-          "name": "Wade Taylor IV",
-          "team": "Texas A&M"
-        },
-        "5": {
-          "player_id": "pj-haggerty",
-          "name": "PJ Haggerty",
-          "team": "Memphis"
-        },
-        "6": {
-          "player_id": "richie-saunders",
-          "name": "Richie Saunders",
-          "team": "BYU"
-        },
-        "7": {
-          "player_id": "hunter-dickinson",
-          "name": "Hunter Dickinson",
-          "team": "Kansas"
-        },
-        "8": {
           "player_id": "graham-ike",
           "name": "Graham Ike",
           "team": "Gonzaga"
         },
+        "4": {
+          "player_id": "labaron-philon-jr",
+          "name": "Labaron Philon Jr.",
+          "team": "Alabama"
+        },
+        "5": {
+          "player_id": "zuby-ejiofor",
+          "name": "Zuby Ejiofor",
+          "team": "St. John's"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "paulius-murauskas",
+          "name": "Paulius Murauskas",
+          "team": "Saint Mary's"
+        },
+        "8": {
+          "player_id": "solo-ball",
+          "name": "Solo Ball",
+          "team": "UConn"
+        },
         "9": {
-          "player_id": "vj-edgecombe",
-          "name": "VJ Edgecombe",
-          "team": "Baylor"
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
         },
         "10": {
-          "player_id": "jason-edwards",
-          "name": "Jason Edwards",
-          "team": "Vanderbilt"
+          "player_id": "keisei-tominaga",
+          "name": "Keisei Tominaga",
+          "team": "Nebraska"
         },
         "11": {
-          "player_id": "bennett-stirtz",
-          "name": "Bennett Stirtz",
-          "team": "Drake"
+          "player_id": "izaiyah-nelson",
+          "name": "Izaiyah Nelson",
+          "team": "South Florida"
         },
         "12": {
-          "player_id": "aniwaniwa-taitjones",
-          "name": "Aniwaniwa Tait-Jones",
-          "team": "UC San Diego"
-        },
-        "13": {
-          "player_id": "kezza-giffa",
-          "name": "Kezza Giffa",
+          "player_id": "terry-anderson",
+          "name": "Terry Anderson",
           "team": "High Point"
         },
+        "13": {
+          "player_id": "isaac-johnson",
+          "name": "Isaac Johnson",
+          "team": "Hawaii"
+        },
         "14": {
-          "player_id": "jacob-ognacevic",
-          "name": "Jacob Ognacevic",
-          "team": "Lipscomb"
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
         },
         "15": {
-          "player_id": "marquel-sutton",
-          "name": "Marquel Sutton",
-          "team": "Omaha"
+          "player_id": "nasir-mann",
+          "name": "Nasir Mann",
+          "team": "Queens"
         },
         "16": {
-          "player_id": "raysean-taylor",
-          "name": "Ray'Sean Taylor",
-          "team": "SIU-Edwardsville"
+          "player_id": "bryce-harris",
+          "name": "Bryce Harris",
+          "team": "Howard"
+        }
+      }
+    },
+    {
+      "name": "Vinny Bonta",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "zuby-ejiofor",
+        "name": "Zuby Ejiofor",
+        "team": "St. John's"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "dailyn-swain",
+        "name": "Dailyn Swain",
+        "team": "Texas"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "milan-momcilovic",
+          "name": "Milan Momcilovic",
+          "team": "Iowa State"
+        },
+        "3": {
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
+          "team": "Illinois"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "zuby-ejiofor",
+          "name": "Zuby Ejiofor",
+          "team": "St. John's"
+        },
+        "6": {
+          "player_id": "jakobi-gillespie",
+          "name": "Ja'Kobi Gillespie",
+          "team": "Tennessee"
+        },
+        "7": {
+          "player_id": "tyler-bilodeau",
+          "name": "Tyler Bilodeau",
+          "team": "UCLA"
+        },
+        "8": {
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
+        },
+        "11": {
+          "player_id": "dailyn-swain",
+          "name": "Dailyn Swain",
+          "team": "Texas"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "cruz-davis",
+          "name": "Cruz Davis",
+          "team": "Hofstra"
+        },
+        "14": {
+          "player_id": "damari-wheeler-thomas",
+          "name": "Damari Wheeler-Thomas",
+          "team": "North Dakota State"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "gavin-doty",
+          "name": "Gavin Doty",
+          "team": "Siena"
+        }
+      }
+    },
+    {
+      "name": "Danny Dohn",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "tyler-tanner",
+        "name": "Tyler Tanner",
+        "team": "Vanderbilt"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "wes-enis",
+        "name": "Wes Enis",
+        "team": "South Florida"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
+        },
+        "3": {
+          "player_id": "jeremy-fears-jr",
+          "name": "Jeremy Fears Jr.",
+          "team": "Michigan State"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "tyler-tanner",
+          "name": "Tyler Tanner",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "jakobi-gillespie",
+          "name": "Ja'Kobi Gillespie",
+          "team": "Tennessee"
+        },
+        "7": {
+          "player_id": "otega-oweh",
+          "name": "Otega Oweh",
+          "team": "Kentucky"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "rashaun-agee",
+          "name": "Rashaun Agee",
+          "team": "Texas A&M"
+        },
+        "11": {
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "cruz-davis",
+          "name": "Cruz Davis",
+          "team": "Hofstra"
+        },
+        "14": {
+          "player_id": "tj-power",
+          "name": "TJ Power",
+          "team": "Penn"
+        },
+        "15": {
+          "player_id": "nasir-mann",
+          "name": "Nasir Mann",
+          "team": "Queens"
+        },
+        "16": {
+          "player_id": "gavin-doty",
+          "name": "Gavin Doty",
+          "team": "Siena"
+        }
+      }
+    },
+    {
+      "name": "Zach Zimmerman",
+      "scorer_captain": {
+        "seed": 6,
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
+        "team": "BYU"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "wes-enis",
+        "name": "Wes Enis",
+        "team": "South Florida"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
+        },
+        "3": {
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
+          "team": "Illinois"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "tyler-tanner",
+          "name": "Tyler Tanner",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "malik-reneau",
+          "name": "Malik Reneau",
+          "team": "Miami"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "rashaun-agee",
+          "name": "Rashaun Agee",
+          "team": "Texas A&M"
+        },
+        "11": {
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "dominique-daniels-jr",
+          "name": "Dominique Daniels Jr.",
+          "team": "Cal Baptist"
+        },
+        "14": {
+          "player_id": "damari-wheeler-thomas",
+          "name": "Damari Wheeler-Thomas",
+          "team": "North Dakota State"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "dontae-horne",
+          "name": "Dontae Horne",
+          "team": "Prairie View A&M"
+        }
+      }
+    },
+    {
+      "name": "Christopher Holmquist",
+      "scorer_captain": {
+        "seed": 6,
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
+        "team": "BYU"
+      },
+      "playmaker_captain": {
+        "seed": 13,
+        "player_id": "cruz-davis",
+        "name": "Cruz Davis",
+        "team": "Hofstra"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "joshua-jefferson",
+          "name": "Joshua Jefferson",
+          "team": "Iowa State"
+        },
+        "3": {
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
+          "team": "Illinois"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "tyler-tanner",
+          "name": "Tyler Tanner",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "paulius-murauskas",
+          "name": "Paulius Murauskas",
+          "team": "Saint Mary's"
+        },
+        "8": {
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
+        },
+        "11": {
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "cruz-davis",
+          "name": "Cruz Davis",
+          "team": "Hofstra"
+        },
+        "14": {
+          "player_id": "tj-power",
+          "name": "TJ Power",
+          "team": "Penn"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "gavin-doty",
+          "name": "Gavin Doty",
+          "team": "Siena"
+        }
+      }
+    },
+    {
+      "name": "Ryan Baillargeon",
+      "scorer_captain": {
+        "seed": 6,
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
+        "team": "BYU"
+      },
+      "playmaker_captain": {
+        "seed": 13,
+        "player_id": "thomas-dowd",
+        "name": "Thomas Dowd",
+        "team": "Troy"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "joshua-jefferson",
+          "name": "Joshua Jefferson",
+          "team": "Iowa State"
+        },
+        "3": {
+          "player_id": "jeremy-fears-jr",
+          "name": "Jeremy Fears Jr.",
+          "team": "Michigan State"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "duke-miles",
+          "name": "Duke Miles",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "otega-oweh",
+          "name": "Otega Oweh",
+          "team": "Kentucky"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
+        },
+        "11": {
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "thomas-dowd",
+          "name": "Thomas Dowd",
+          "team": "Troy"
+        },
+        "14": {
+          "player_id": "tj-power",
+          "name": "TJ Power",
+          "team": "Penn"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "bryce-harris",
+          "name": "Bryce Harris",
+          "team": "Howard"
+        }
+      }
+    },
+    {
+      "name": "Cory Vest",
+      "scorer_captain": {
+        "seed": 12,
+        "player_id": "tavari-johnson",
+        "name": "Tavari Johnson",
+        "team": "Akron"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "duke-miles",
+        "name": "Duke Miles",
+        "team": "Vanderbilt"
+      },
+      "picks": {
+        "1": {
+          "player_id": "brayden-burris",
+          "name": "Brayden Burris",
+          "team": "Arizona"
+        },
+        "2": {
+          "player_id": "tarris-reed-jr",
+          "name": "Tarris Reed Jr.",
+          "team": "UConn"
+        },
+        "3": {
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
+          "team": "Illinois"
+        },
+        "4": {
+          "player_id": "melvin-council-jr",
+          "name": "Melvin Council Jr.",
+          "team": "Kansas"
+        },
+        "5": {
+          "player_id": "duke-miles",
+          "name": "Duke Miles",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "nate-ament",
+          "name": "Nate Ament",
+          "team": "Tennessee"
+        },
+        "7": {
+          "player_id": "otega-oweh",
+          "name": "Otega Oweh",
+          "team": "Kentucky"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "marcus-hill",
+          "name": "Marcus Hill",
+          "team": "Texas A&M"
+        },
+        "11": {
+          "player_id": "lazar-djokovic",
+          "name": "Lazar Djokovic",
+          "team": "VCU"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "thomas-dowd",
+          "name": "Thomas Dowd",
+          "team": "Troy"
+        },
+        "14": {
+          "player_id": "damari-wheeler-thomas",
+          "name": "Damari Wheeler-Thomas",
+          "team": "North Dakota State"
+        },
+        "15": {
+          "player_id": "yoav-berman",
+          "name": "Yoav Berman",
+          "team": "Queens"
+        },
+        "16": {
+          "player_id": "dontae-horne",
+          "name": "Dontae Horne",
+          "team": "Prairie View A&M"
+        }
+      }
+    },
+    {
+      "name": "Chris Rossi",
+      "scorer_captain": {
+        "seed": 11,
+        "player_id": "wes-enis",
+        "name": "Wes Enis",
+        "team": "South Florida"
+      },
+      "playmaker_captain": {
+        "seed": 6,
+        "player_id": "nate-ament",
+        "name": "Nate Ament",
+        "team": "Tennessee"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
+        },
+        "3": {
+          "player_id": "graham-ike",
+          "name": "Graham Ike",
+          "team": "Gonzaga"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "zuby-ejiofor",
+          "name": "Zuby Ejiofor",
+          "team": "St. John's"
+        },
+        "6": {
+          "player_id": "nate-ament",
+          "name": "Nate Ament",
+          "team": "Tennessee"
+        },
+        "7": {
+          "player_id": "donovan-dent",
+          "name": "Donovan Dent",
+          "team": "UCLA"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
+          "team": "Utah State"
+        },
+        "10": {
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
+        },
+        "11": {
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
+        },
+        "12": {
+          "player_id": "terry-anderson",
+          "name": "Terry Anderson",
+          "team": "High Point"
+        },
+        "13": {
+          "player_id": "cruz-davis",
+          "name": "Cruz Davis",
+          "team": "Hofstra"
+        },
+        "14": {
+          "player_id": "rj-johnson",
+          "name": "RJ Johnson",
+          "team": "Kennesaw State"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "dontae-horne",
+          "name": "Dontae Horne",
+          "team": "Prairie View A&M"
         }
       }
     },
@@ -2430,193 +1460,1163 @@
       "name": "Ian Golembeski",
       "scorer_captain": {
         "seed": 5,
-        "player_id": "chase-hunter",
-        "name": "Chase Hunter",
-        "team": "Clemson"
+        "player_id": "john-blackwell",
+        "name": "John Blackwell",
+        "team": "Wisconsin"
       },
       "playmaker_captain": {
-        "seed": 12,
-        "player_id": "nique-clifford",
-        "name": "Nique Clifford",
-        "team": "Colorado State"
+        "seed": 11,
+        "player_id": "dailyn-swain",
+        "name": "Dailyn Swain",
+        "team": "Texas"
       },
       "picks": {
         "1": {
-          "player_id": "alijah-martin",
-          "name": "Alijah Martin",
-          "team": "Florida"
+          "player_id": "jaden-bradley",
+          "name": "Jaden Bradley",
+          "team": "Arizona"
         },
         "2": {
-          "player_id": "chaz-lanier",
-          "name": "Chaz Lanier",
-          "team": "Tennessee"
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
         },
         "3": {
-          "player_id": "otega-oweh",
-          "name": "Otega Oweh",
-          "team": "Kentucky"
-        },
-        "4": {
-          "player_id": "wade-taylor-iv",
-          "name": "Wade Taylor IV",
-          "team": "Texas A&M"
-        },
-        "5": {
-          "player_id": "chase-hunter",
-          "name": "Chase Hunter",
-          "team": "Clemson"
-        },
-        "6": {
-          "player_id": "mark-mitchell",
-          "name": "Mark Mitchell",
-          "team": "Missouri"
-        },
-        "7": {
-          "player_id": "zeke-mayo",
-          "name": "Zeke Mayo",
-          "team": "Kansas"
-        },
-        "8": {
-          "player_id": "chucky-hepburn",
-          "name": "Chucky Hepburn",
-          "team": "Louisville"
-        },
-        "9": {
-          "player_id": "jalon-moore",
-          "name": "Jalon Moore",
-          "team": "Oklahoma"
-        },
-        "10": {
-          "player_id": "jason-edwards",
-          "name": "Jason Edwards",
-          "team": "Vanderbilt"
-        },
-        "11": {
-          "player_id": "joe-bamisile",
-          "name": "Joe Bamisile",
-          "team": "VCU"
-        },
-        "12": {
-          "player_id": "nique-clifford",
-          "name": "Nique Clifford",
-          "team": "Colorado State"
-        },
-        "13": {
-          "player_id": "tyon-grantfoster",
-          "name": "Tyon Grant-Foster",
-          "team": "Grand Canyon"
-        },
-        "14": {
-          "player_id": "money-williams",
-          "name": "Money Williams",
-          "team": "Montana"
-        },
-        "15": {
-          "player_id": "kam-woods",
-          "name": "Kam Woods",
-          "team": "Robert Morris"
-        },
-        "16": {
-          "player_id": "cj-hines",
-          "name": "CJ Hines",
-          "team": "Alabama State"
-        }
-      }
-    },
-    {
-      "name": "Vikram Nayudu",
-      "scorer_captain": {
-        "seed": 12,
-        "player_id": "aniwaniwa-taitjones",
-        "name": "Aniwaniwa Tait-Jones",
-        "team": "UC San Diego"
-      },
-      "playmaker_captain": {
-        "seed": 6,
-        "player_id": "kasparas-jakucionis",
-        "name": "Kasparas Jakucionis",
-        "team": "Illinois"
-      },
-      "picks": {
-        "1": {
-          "player_id": "johni-broome",
-          "name": "Johni Broome",
-          "team": "Auburn"
-        },
-        "2": {
-          "player_id": "rj-luis-jr-st-john\u2019s",
-          "name": "RJ Luis Jr.- St. John\u2019s",
-          "team": ""
-        },
-        "3": {
-          "player_id": "curtis-jones",
-          "name": "Curtis Jones",
-          "team": "Iowa State"
-        },
-        "4": {
-          "player_id": "wade-taylor-iv",
-          "name": "Wade Taylor IV",
-          "team": "Texas A&M"
-        },
-        "5": {
-          "player_id": "chase-hunter",
-          "name": "Chase Hunter",
-          "team": "Clemson"
-        },
-        "6": {
-          "player_id": "kasparas-jakucionis",
-          "name": "Kasparas Jakucionis",
-          "team": "Illinois"
-        },
-        "7": {
-          "player_id": "augustus-marciulionis",
-          "name": "Augustus Marciulionis",
-          "team": "Saint Mary\u2019s"
-        },
-        "8": {
           "player_id": "graham-ike",
           "name": "Graham Ike",
           "team": "Gonzaga"
         },
+        "4": {
+          "player_id": "labaron-philon-jr",
+          "name": "Labaron Philon Jr.",
+          "team": "Alabama"
+        },
+        "5": {
+          "player_id": "john-blackwell",
+          "name": "John Blackwell",
+          "team": "Wisconsin"
+        },
+        "6": {
+          "player_id": "ryan-conwell",
+          "name": "Ryan Conwell",
+          "team": "Louisville"
+        },
+        "7": {
+          "player_id": "donovan-dent",
+          "name": "Donovan Dent",
+          "team": "UCLA"
+        },
+        "8": {
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
+        },
         "9": {
-          "player_id": "vj-edgecombe",
-          "name": "VJ Edgecombe",
-          "team": "Baylor"
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
+          "team": "Utah State"
         },
         "10": {
-          "player_id": "boogie-fland",
-          "name": "Boogie Fland",
-          "team": "Arkansas"
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
         },
         "11": {
-          "player_id": "max-shulga",
-          "name": "Max Shulga",
+          "player_id": "dailyn-swain",
+          "name": "Dailyn Swain",
+          "team": "Texas"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "cruz-davis",
+          "name": "Cruz Davis",
+          "team": "Hofstra"
+        },
+        "14": {
+          "player_id": "rj-johnson",
+          "name": "RJ Johnson",
+          "team": "Kennesaw State"
+        },
+        "15": {
+          "player_id": "travis-harper-ii",
+          "name": "Travis Harper II",
+          "team": "Tennessee State"
+        },
+        "16": {
+          "player_id": "greg-gordon",
+          "name": "Greg Gordon",
+          "team": "LIU"
+        }
+      }
+    },
+    {
+      "name": "Ben Hendrickson",
+      "scorer_captain": {
+        "seed": 11,
+        "player_id": "wes-enis",
+        "name": "Wes Enis",
+        "team": "South Florida"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "zuby-ejiofor",
+        "name": "Zuby Ejiofor",
+        "team": "St. John's"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
+        },
+        "3": {
+          "player_id": "jeremy-fears-jr",
+          "name": "Jeremy Fears Jr.",
+          "team": "Michigan State"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "zuby-ejiofor",
+          "name": "Zuby Ejiofor",
+          "team": "St. John's"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "paulius-murauskas",
+          "name": "Paulius Murauskas",
+          "team": "Saint Mary's"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
+          "team": "Utah State"
+        },
+        "10": {
+          "player_id": "christian-hammond",
+          "name": "Christian Hammond",
+          "team": "Santa Clara"
+        },
+        "11": {
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "victor-valdes",
+          "name": "Victor Valdes",
+          "team": "Troy"
+        },
+        "14": {
+          "player_id": "rj-johnson",
+          "name": "RJ Johnson",
+          "team": "Kennesaw State"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "gavin-doty",
+          "name": "Gavin Doty",
+          "team": "Siena"
+        }
+      }
+    },
+    {
+      "name": "Zack Duffy",
+      "scorer_captain": {
+        "seed": 6,
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
+        "team": "BYU"
+      },
+      "playmaker_captain": {
+        "seed": 1,
+        "player_id": "cameron-boozer",
+        "name": "Cameron Boozer",
+        "team": "Duke"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
+        },
+        "3": {
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
+          "team": "Illinois"
+        },
+        "4": {
+          "player_id": "labaron-philon-jr",
+          "name": "Labaron Philon Jr.",
+          "team": "Alabama"
+        },
+        "5": {
+          "player_id": "jt-toppin",
+          "name": "JT Toppin",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "augustas-marciulionis",
+          "name": "Augustas Marciulionis",
+          "team": "Saint Mary's"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "david-punch",
+          "name": "David Punch",
+          "team": "Utah State"
+        },
+        "10": {
+          "player_id": "wade-taylor-iv",
+          "name": "Wade Taylor IV",
+          "team": "Texas A&M"
+        },
+        "11": {
+          "player_id": "chris-youngblood",
+          "name": "Chris Youngblood",
+          "team": "Texas"
+        },
+        "12": {
+          "player_id": "trey-campbell",
+          "name": "Trey Campbell",
+          "team": "McNeese"
+        },
+        "13": {
+          "player_id": "taran-armstrong",
+          "name": "Taran Armstrong",
+          "team": "Troy"
+        },
+        "14": {
+          "player_id": "tj-power",
+          "name": "TJ Power",
+          "team": "Penn"
+        },
+        "15": {
+          "player_id": "marcus-foster",
+          "name": "Marcus Foster",
+          "team": "Queens"
+        },
+        "16": {
+          "player_id": "dontae-horne",
+          "name": "Dontae Horne",
+          "team": "Prairie View A&M"
+        }
+      }
+    },
+    {
+      "name": "CJ Elger",
+      "scorer_captain": {
+        "seed": 11,
+        "player_id": "wes-enis",
+        "name": "Wes Enis",
+        "team": "South Florida"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "tyler-tanner",
+        "name": "Tyler Tanner",
+        "team": "Vanderbilt"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "milan-momcilovic",
+          "name": "Milan Momcilovic",
+          "team": "Iowa State"
+        },
+        "3": {
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
+          "team": "Illinois"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "tyler-tanner",
+          "name": "Tyler Tanner",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "tyler-bilodeau",
+          "name": "Tyler Bilodeau",
+          "team": "UCLA"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
+        },
+        "11": {
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
+        },
+        "12": {
+          "player_id": "larry-johnson",
+          "name": "Larry Johnson",
+          "team": "McNeese"
+        },
+        "13": {
+          "player_id": "dominique-daniels-jr",
+          "name": "Dominique Daniels Jr.",
+          "team": "Cal Baptist"
+        },
+        "14": {
+          "player_id": "tj-power",
+          "name": "TJ Power",
+          "team": "Penn"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "dontae-horne",
+          "name": "Dontae Horne",
+          "team": "Prairie View A&M"
+        }
+      }
+    },
+    {
+      "name": "John Bertels",
+      "scorer_captain": {
+        "seed": 6,
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
+        "team": "BYU"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "izaiyah-nelson",
+        "name": "Izaiyah Nelson",
+        "team": "South Florida"
+      },
+      "picks": {
+        "1": {
+          "player_id": "yaxel-lendeborg",
+          "name": "Yaxel Lendeborg",
+          "team": "Michigan"
+        },
+        "2": {
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
+        },
+        "3": {
+          "player_id": "graham-ike",
+          "name": "Graham Ike",
+          "team": "Gonzaga"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "nick-boyd",
+          "name": "Nick Boyd",
+          "team": "Wisconsin"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "malik-reneau",
+          "name": "Malik Reneau",
+          "team": "Miami"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
+          "team": "Utah State"
+        },
+        "10": {
+          "player_id": "christian-hammond",
+          "name": "Christian Hammond",
+          "team": "Santa Clara"
+        },
+        "11": {
+          "player_id": "izaiyah-nelson",
+          "name": "Izaiyah Nelson",
+          "team": "South Florida"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "cruz-davis",
+          "name": "Cruz Davis",
+          "team": "Hofstra"
+        },
+        "14": {
+          "player_id": "tj-power",
+          "name": "TJ Power",
+          "team": "Penn"
+        },
+        "15": {
+          "player_id": "travis-harper-ii",
+          "name": "Travis Harper II",
+          "team": "Tennessee State"
+        },
+        "16": {
+          "player_id": "dontae-horne",
+          "name": "Dontae Horne",
+          "team": "Prairie View A&M"
+        }
+      }
+    },
+    {
+      "name": "Kasey Shibayama",
+      "scorer_captain": {
+        "seed": 11,
+        "player_id": "dailyn-swain",
+        "name": "Dailyn Swain",
+        "team": "Texas"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "zuby-ejiofor",
+        "name": "Zuby Ejiofor",
+        "team": "St. John's"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
+        },
+        "3": {
+          "player_id": "graham-ike",
+          "name": "Graham Ike",
+          "team": "Gonzaga"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "zuby-ejiofor",
+          "name": "Zuby Ejiofor",
+          "team": "St. John's"
+        },
+        "6": {
+          "player_id": "ryan-conwell",
+          "name": "Ryan Conwell",
+          "team": "Louisville"
+        },
+        "7": {
+          "player_id": "otega-oweh",
+          "name": "Otega Oweh",
+          "team": "Kentucky"
+        },
+        "8": {
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
+        },
+        "9": {
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
+          "team": "Utah State"
+        },
+        "10": {
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
+        },
+        "11": {
+          "player_id": "dailyn-swain",
+          "name": "Dailyn Swain",
+          "team": "Texas"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "dominique-daniels-jr",
+          "name": "Dominique Daniels Jr.",
+          "team": "Cal Baptist"
+        },
+        "14": {
+          "player_id": "tj-burch",
+          "name": "TJ Burch",
+          "team": "Wright State"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "dontae-horne",
+          "name": "Dontae Horne",
+          "team": "Prairie View A&M"
+        }
+      }
+    },
+    {
+      "name": "Kyle Heck",
+      "scorer_captain": {
+        "seed": 6,
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
+        "team": "BYU"
+      },
+      "playmaker_captain": {
+        "seed": 10,
+        "player_id": "mark-mitchell",
+        "name": "Mark Mitchell",
+        "team": "Missouri"
+      },
+      "picks": {
+        "1": {
+          "player_id": "brayden-burris",
+          "name": "Brayden Burris",
+          "team": "Arizona"
+        },
+        "2": {
+          "player_id": "milan-momcilovic",
+          "name": "Milan Momcilovic",
+          "team": "Iowa State"
+        },
+        "3": {
+          "player_id": "jeremy-fears-jr",
+          "name": "Jeremy Fears Jr.",
+          "team": "Michigan State"
+        },
+        "4": {
+          "player_id": "labaron-philon-jr",
+          "name": "Labaron Philon Jr.",
+          "team": "Alabama"
+        },
+        "5": {
+          "player_id": "tyler-tanner",
+          "name": "Tyler Tanner",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "tyler-bilodeau",
+          "name": "Tyler Bilodeau",
+          "team": "UCLA"
+        },
+        "8": {
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
+        },
+        "11": {
+          "player_id": "brant-byers",
+          "name": "Brant Byers",
+          "team": "Miami (OH)"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "thomas-dowd",
+          "name": "Thomas Dowd",
+          "team": "Troy"
+        },
+        "14": {
+          "player_id": "damari-wheeler-thomas",
+          "name": "Damari Wheeler-Thomas",
+          "team": "North Dakota State"
+        },
+        "15": {
+          "player_id": "aaron-nkrumah",
+          "name": "Aaron Nkrumah",
+          "team": "Tennessee State"
+        },
+        "16": {
+          "player_id": "dontae-horne",
+          "name": "Dontae Horne",
+          "team": "Prairie View A&M"
+        }
+      }
+    },
+    {
+      "name": "Carson Stickler",
+      "scorer_captain": {
+        "seed": 6,
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
+        "team": "BYU"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "wes-enis",
+        "name": "Wes Enis",
+        "team": "South Florida"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
+        },
+        "3": {
+          "player_id": "keaton-wagler",
+          "name": "Keaton Wagler",
+          "team": "Illinois"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "tyler-tanner",
+          "name": "Tyler Tanner",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "paulius-murauskas",
+          "name": "Paulius Murauskas",
+          "team": "Saint Mary's"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
+          "team": "Utah State"
+        },
+        "10": {
+          "player_id": "christian-hammond",
+          "name": "Christian Hammond",
+          "team": "Santa Clara"
+        },
+        "11": {
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "dominique-daniels-jr",
+          "name": "Dominique Daniels Jr.",
+          "team": "Cal Baptist"
+        },
+        "14": {
+          "player_id": "damari-wheeler-thomas",
+          "name": "Damari Wheeler-Thomas",
+          "team": "North Dakota State"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "dontae-horne",
+          "name": "Dontae Horne",
+          "team": "Prairie View A&M"
+        }
+      }
+    },
+    {
+      "name": "Aaron Bluestone",
+      "scorer_captain": {
+        "seed": 6,
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
+        "team": "BYU"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "dailyn-swain",
+        "name": "Dailyn Swain",
+        "team": "Texas"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "kingston-flemings",
+          "name": "Kingston Flemings",
+          "team": "Houston"
+        },
+        "3": {
+          "player_id": "jeremy-fears-jr",
+          "name": "Jeremy Fears Jr.",
+          "team": "Michigan State"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "john-blackwell",
+          "name": "John Blackwell",
+          "team": "Wisconsin"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "otega-oweh",
+          "name": "Otega Oweh",
+          "team": "Kentucky"
+        },
+        "8": {
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
+        },
+        "11": {
+          "player_id": "dailyn-swain",
+          "name": "Dailyn Swain",
+          "team": "Texas"
+        },
+        "12": {
+          "player_id": "larry-johnson",
+          "name": "Larry Johnson",
+          "team": "McNeese"
+        },
+        "13": {
+          "player_id": "dominique-daniels-jr",
+          "name": "Dominique Daniels Jr.",
+          "team": "Cal Baptist"
+        },
+        "14": {
+          "player_id": "damari-wheeler-thomas",
+          "name": "Damari Wheeler-Thomas",
+          "team": "North Dakota State"
+        },
+        "15": {
+          "player_id": "aaron-nkrumah",
+          "name": "Aaron Nkrumah",
+          "team": "Tennessee State"
+        },
+        "16": {
+          "player_id": "dontae-horne",
+          "name": "Dontae Horne",
+          "team": "Prairie View A&M"
+        }
+      }
+    },
+    {
+      "name": "Gage Mercer",
+      "scorer_captain": {
+        "seed": 11,
+        "player_id": "wes-enis",
+        "name": "Wes Enis",
+        "team": "South Florida"
+      },
+      "playmaker_captain": {
+        "seed": 5,
+        "player_id": "nick-boyd",
+        "name": "Nick Boyd",
+        "team": "Wisconsin"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "lj-cryer",
+          "name": "LJ Cryer",
+          "team": "Houston"
+        },
+        "3": {
+          "player_id": "graham-ike",
+          "name": "Graham Ike",
+          "team": "Gonzaga"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "nick-boyd",
+          "name": "Nick Boyd",
+          "team": "Wisconsin"
+        },
+        "6": {
+          "player_id": "caleb-wilson",
+          "name": "Caleb Wilson",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "paulius-murauskas",
+          "name": "Paulius Murauskas",
+          "team": "Saint Mary's"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
+          "team": "Utah State"
+        },
+        "10": {
+          "player_id": "christian-hammond",
+          "name": "Christian Hammond",
+          "team": "Santa Clara"
+        },
+        "11": {
+          "player_id": "wes-enis",
+          "name": "Wes Enis",
+          "team": "South Florida"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "victor-valdes",
+          "name": "Victor Valdes",
+          "team": "Troy"
+        },
+        "14": {
+          "player_id": "tj-power",
+          "name": "TJ Power",
+          "team": "Penn"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "jackson-rasmussen",
+          "name": "Jackson Rasmussen",
+          "team": "Siena"
+        }
+      }
+    },
+    {
+      "name": "Skylar",
+      "scorer_captain": {
+        "seed": 5,
+        "player_id": "tyler-tanner",
+        "name": "Tyler Tanner",
+        "team": "Vanderbilt"
+      },
+      "playmaker_captain": {
+        "seed": 11,
+        "player_id": "dailyn-swain",
+        "name": "Dailyn Swain",
+        "team": "Texas"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "milan-momcilovic",
+          "name": "Milan Momcilovic",
+          "team": "Iowa State"
+        },
+        "3": {
+          "player_id": "jeremy-fears-jr",
+          "name": "Jeremy Fears Jr.",
+          "team": "Michigan State"
+        },
+        "4": {
+          "player_id": "labaron-philon-jr",
+          "name": "Labaron Philon Jr.",
+          "team": "Alabama"
+        },
+        "5": {
+          "player_id": "tyler-tanner",
+          "name": "Tyler Tanner",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "jakobi-gillespie",
+          "name": "Ja'Kobi Gillespie",
+          "team": "Tennessee"
+        },
+        "7": {
+          "player_id": "boopie-miller",
+          "name": "Boopie Miller",
+          "team": "Saint Mary's"
+        },
+        "8": {
+          "player_id": "jeremiah-wilkinson",
+          "name": "Jeremiah Wilkinson",
+          "team": "Georgia"
+        },
+        "9": {
+          "player_id": "mj-collins-jr",
+          "name": "MJ Collins Jr.",
+          "team": "Utah State"
+        },
+        "10": {
+          "player_id": "christian-hammond",
+          "name": "Christian Hammond",
+          "team": "Santa Clara"
+        },
+        "11": {
+          "player_id": "dailyn-swain",
+          "name": "Dailyn Swain",
+          "team": "Texas"
+        },
+        "12": {
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
+        },
+        "13": {
+          "player_id": "dominique-daniels-jr",
+          "name": "Dominique Daniels Jr.",
+          "team": "Cal Baptist"
+        },
+        "14": {
+          "player_id": "rj-johnson",
+          "name": "RJ Johnson",
+          "team": "Kennesaw State"
+        },
+        "15": {
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
+        },
+        "16": {
+          "player_id": "gavin-doty",
+          "name": "Gavin Doty",
+          "team": "Siena"
+        }
+      }
+    },
+    {
+      "name": "Coach Devon",
+      "scorer_captain": {
+        "seed": 13,
+        "player_id": "dominique-daniels-jr",
+        "name": "Dominique Daniels Jr.",
+        "team": "Cal Baptist"
+      },
+      "playmaker_captain": {
+        "seed": 6,
+        "player_id": "aj-dybantsa",
+        "name": "AJ Dybantsa",
+        "team": "BYU"
+      },
+      "picks": {
+        "1": {
+          "player_id": "cameron-boozer",
+          "name": "Cameron Boozer",
+          "team": "Duke"
+        },
+        "2": {
+          "player_id": "milan-momcilovic",
+          "name": "Milan Momcilovic",
+          "team": "Iowa State"
+        },
+        "3": {
+          "player_id": "graham-ike",
+          "name": "Graham Ike",
+          "team": "Gonzaga"
+        },
+        "4": {
+          "player_id": "darius-acuff-jr",
+          "name": "Darius Acuff Jr.",
+          "team": "Arkansas"
+        },
+        "5": {
+          "player_id": "tyler-tanner",
+          "name": "Tyler Tanner",
+          "team": "Vanderbilt"
+        },
+        "6": {
+          "player_id": "aj-dybantsa",
+          "name": "AJ Dybantsa",
+          "team": "BYU"
+        },
+        "7": {
+          "player_id": "otega-oweh",
+          "name": "Otega Oweh",
+          "team": "Kentucky"
+        },
+        "8": {
+          "player_id": "bruce-thornton",
+          "name": "Bruce Thornton",
+          "team": "Ohio State"
+        },
+        "9": {
+          "player_id": "bennett-stirtz",
+          "name": "Bennett Stirtz",
+          "team": "Iowa"
+        },
+        "10": {
+          "player_id": "mark-mitchell",
+          "name": "Mark Mitchell",
+          "team": "Missouri"
+        },
+        "11": {
+          "player_id": "terrence-hill-jr",
+          "name": "Terrence Hill Jr.",
           "team": "VCU"
         },
         "12": {
-          "player_id": "aniwaniwa-taitjones",
-          "name": "Aniwaniwa Tait-Jones",
-          "team": "UC San Diego"
+          "player_id": "tavari-johnson",
+          "name": "Tavari Johnson",
+          "team": "Akron"
         },
         "13": {
-          "player_id": "dmaurian-williams",
-          "name": "D'Maurian Williams",
-          "team": "High Point"
+          "player_id": "dominique-daniels-jr",
+          "name": "Dominique Daniels Jr.",
+          "team": "Cal Baptist"
         },
         "14": {
-          "player_id": "malik-moore",
-          "name": "Malik Moore",
-          "team": "Montana"
+          "player_id": "tj-power",
+          "name": "TJ Power",
+          "team": "Penn"
         },
         "15": {
-          "player_id": "kam-woods",
-          "name": "Kam Woods",
-          "team": "Robert Morris"
+          "player_id": "alex-wilkins",
+          "name": "Alex Wilkins",
+          "team": "Furman"
         },
         "16": {
-          "player_id": "raysean-taylor",
-          "name": "Ray'Sean Taylor",
-          "team": "SIU-Edwardsville"
+          "player_id": "gavin-doty",
+          "name": "Gavin Doty",
+          "team": "Siena"
         }
       }
     }

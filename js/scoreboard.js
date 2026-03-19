@@ -225,13 +225,13 @@ const Scoreboard = (() => {
     nameEl.textContent = ranked.name;
 
     let html = '<table class="detail-table"><thead><tr>';
-    html += '<th>Seed</th><th>Player</th><th>Team</th><th>PTS</th><th>REB</th><th>AST</th><th>Fantasy</th>';
+    html += '<th>Seed</th><th>Player</th><th>Team</th><th>PTS</th><th>Fantasy</th>';
     html += '</tr></thead><tbody>';
 
     for (let seed = 1; seed <= 16; seed++) {
       const info = ranked.seedBreakdown[seed];
       if (!info.pick) {
-        html += `<tr><td>${seed}</td><td colspan="6" style="color:var(--text-muted)">No pick</td></tr>`;
+        html += `<tr><td>${seed}</td><td colspan="4" style="color:var(--text-muted)">No pick</td></tr>`;
         continue;
       }
 
@@ -250,13 +250,19 @@ const Scoreboard = (() => {
         captainBadge = ' <span class="captain-badge playmaker">P+R+A</span>';
       }
 
+      // PTS column: show "pts+reb+ast" breakdown for playmaker, just pts otherwise
+      let ptsDisplay;
+      if (info.captain === 'playmaker') {
+        ptsDisplay = `${stats.pts}+${stats.reb}+${stats.ast}`;
+      } else {
+        ptsDisplay = `${stats.pts}`;
+      }
+
       html += `<tr class="${rowClass}" ${elimClass}>`;
       html += `<td>${seed}</td>`;
       html += `<td ${liveClass}>${info.pick.name}${captainBadge}</td>`;
       html += `<td>${info.pick.team || ''}</td>`;
-      html += `<td>${stats.pts}</td>`;
-      html += `<td>${stats.reb}</td>`;
-      html += `<td>${stats.ast}</td>`;
+      html += `<td>${ptsDisplay}</td>`;
       html += `<td style="font-weight:700">${info.pts}</td>`;
       html += '</tr>';
     }
@@ -300,15 +306,35 @@ const Scoreboard = (() => {
     let html = `<div class="tt-header">${info.pick.name}${captainLabel}</div>`;
     html += `<div class="tt-team">${info.pick.team}</div>`;
 
+    const isPlaymaker = info.captain === 'playmaker';
+
     if (games.length > 0) {
-      html += '<table class="tt-games"><thead><tr><th>Round</th><th>Opp</th><th>PTS</th></tr></thead><tbody>';
-      for (const g of games) {
-        const opp = g.opponent || '—';
-        html += `<tr><td>${g.round}</td><td>${opp}</td><td>${g.pts}</td></tr>`;
+      if (isPlaymaker) {
+        html += '<table class="tt-games"><thead><tr><th>Round</th><th>Opp</th><th>PTS</th><th>REB</th><th>AST</th></tr></thead><tbody>';
+        for (const g of games) {
+          const opp = g.opponent || '—';
+          html += `<tr><td>${g.round}</td><td>${opp}</td><td>${g.pts}</td><td>${g.reb}</td><td>${g.ast}</td></tr>`;
+        }
+        html += '</tbody></table>';
+      } else {
+        html += '<table class="tt-games"><thead><tr><th>Round</th><th>Opp</th><th>PTS</th></tr></thead><tbody>';
+        for (const g of games) {
+          const opp = g.opponent || '—';
+          html += `<tr><td>${g.round}</td><td>${opp}</td><td>${g.pts}</td></tr>`;
+        }
+        html += '</tbody></table>';
       }
-      html += '</tbody></table>';
     } else {
-      html += '<div class="tt-no-games">No games played</div>';
+      const totalStats = player?.stats || { pts: 0, reb: 0, ast: 0 };
+      if (totalStats.pts > 0 || totalStats.reb > 0 || totalStats.ast > 0) {
+        // Has aggregate stats but no per-game breakdown
+        html += '<div class="tt-no-games">Per-game breakdown unavailable</div>';
+        if (isPlaymaker) {
+          html += `<div style="font-size:0.75rem;color:var(--text-secondary)">Totals: ${totalStats.pts} pts, ${totalStats.reb} reb, ${totalStats.ast} ast</div>`;
+        }
+      } else {
+        html += '<div class="tt-no-games">No games played yet</div>';
+      }
     }
 
     html += `<div class="tt-total">Fantasy: ${info.pts}</div>`;
