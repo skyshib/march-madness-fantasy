@@ -1,6 +1,48 @@
 {
-  "last_updated": "2026-03-19T22:48:03.364267+00:00",
+  "last_updated": "2026-03-19T23:17:33.511637+00:00",
   "players": {
+    "lazar-djokovic": {
+      "name": "Lazar Djokovic",
+      "team": "VCU Rams",
+      "seed": 11,
+      "eliminated": false,
+      "stats": {
+        "pts": 8,
+        "reb": 2,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 8,
+          "reb": 2,
+          "ast": 1,
+          "game_id": "401856490",
+          "opponent": "North Carolina Tar Heels"
+        }
+      ]
+    },
+    "terrence-hill-jr": {
+      "name": "Terrence Hill Jr.",
+      "team": "VCU Rams",
+      "seed": 11,
+      "eliminated": false,
+      "stats": {
+        "pts": 6,
+        "reb": 1,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 6,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856490",
+          "opponent": "North Carolina Tar Heels"
+        }
+      ]
+    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
@@ -422,6 +464,31 @@
       ]
     }
   },
-  "active_games": [],
-  "live_games": []
+  "active_games": [
+    "401856490"
+  ],
+  "live_games": [
+    {
+      "id": "401856490",
+      "status": "8:34 - 1st",
+      "teams": [
+        {
+          "name": "North Carolina Tar Heels",
+          "abbrev": "UNC",
+          "seed": 6,
+          "score": "24",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
+          "winner": null
+        },
+        {
+          "name": "VCU Rams",
+          "abbrev": "VCU",
+          "seed": 11,
+          "score": "18",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2670.png",
+          "winner": null
+        }
+      ]
+    }
+  ]
 }
