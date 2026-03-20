@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T21:56:05.674692+00:00",
+  "last_updated": "2026-03-20T22:31:55.712108+00:00",
   "players": {
     "brant-byers": {
       "name": "Brant Byers",
@@ -7,15 +7,15 @@
       "seed": 11,
       "eliminated": false,
       "stats": {
-        "pts": 7,
-        "reb": 5,
+        "pts": 9,
+        "reb": 6,
         "ast": 0
       },
       "games": [
         {
           "round": "R64",
-          "pts": 7,
-          "reb": 5,
+          "pts": 9,
+          "reb": 6,
           "ast": 0,
           "game_id": "401856527",
           "opponent": "Tennessee Volunteers"
@@ -26,7 +26,7 @@
       "name": "Nate Ament",
       "team": "Tennessee Volunteers",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "stats": {
         "pts": 0,
         "reb": 3,
@@ -47,18 +47,18 @@
       "name": "Ja'Kobi Gillespie",
       "team": "Tennessee Volunteers",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "stats": {
-        "pts": 22,
+        "pts": 29,
         "reb": 3,
-        "ast": 5
+        "ast": 9
       },
       "games": [
         {
           "round": "R64",
-          "pts": 22,
+          "pts": 29,
           "reb": 3,
-          "ast": 5,
+          "ast": 9,
           "game_id": "401856527",
           "opponent": "Miami (OH) RedHawks"
         }
@@ -70,16 +70,16 @@
       "seed": 9,
       "eliminated": false,
       "stats": {
-        "pts": 14,
-        "reb": 5,
-        "ast": 2
+        "pts": 22,
+        "reb": 7,
+        "ast": 4
       },
       "games": [
         {
           "round": "R64",
-          "pts": 14,
-          "reb": 5,
-          "ast": 2,
+          "pts": 22,
+          "reb": 7,
+          "ast": 4,
           "game_id": "401856528",
           "opponent": "Villanova Wildcats"
         }
@@ -91,16 +91,16 @@
       "seed": 9,
       "eliminated": false,
       "stats": {
-        "pts": 11,
-        "reb": 3,
-        "ast": 0
+        "pts": 20,
+        "reb": 4,
+        "ast": 1
       },
       "games": [
         {
           "round": "R64",
-          "pts": 11,
-          "reb": 3,
-          "ast": 0,
+          "pts": 20,
+          "reb": 4,
+          "ast": 1,
           "game_id": "401856528",
           "opponent": "Villanova Wildcats"
         }
@@ -110,18 +110,18 @@
       "name": "Tyler Perkins",
       "team": "Villanova Wildcats",
       "seed": 8,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
-        "pts": 12,
-        "reb": 4,
-        "ast": 1
+        "pts": 15,
+        "reb": 5,
+        "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 12,
-          "reb": 4,
-          "ast": 1,
+          "pts": 15,
+          "reb": 5,
+          "ast": 2,
           "game_id": "401856528",
           "opponent": "Utah State Aggies"
         }
@@ -1281,19 +1281,18 @@
     }
   },
   "active_games": [
-    "401856527",
-    "401856528"
+    "401856527"
   ],
   "live_games": [
     {
       "id": "401856527",
-      "status": "Halftime",
+      "status": "0:56 - 2nd",
       "teams": [
         {
           "name": "Tennessee Volunteers",
           "abbrev": "TENN",
           "seed": 6,
-          "score": "51",
+          "score": "78",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
           "winner": null
         },
@@ -1301,30 +1300,8 @@
           "name": "Miami (OH) RedHawks",
           "abbrev": "M-OH",
           "seed": 11,
-          "score": "32",
+          "score": "56",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
-          "winner": null
-        }
-      ]
-    },
-    {
-      "id": "401856528",
-      "status": "14:05 - 2nd",
-      "teams": [
-        {
-          "name": "Villanova Wildcats",
-          "abbrev": "VILL",
-          "seed": 8,
-          "score": "54",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/222.png",
-          "winner": null
-        },
-        {
-          "name": "Utah State Aggies",
-          "abbrev": "USU",
-          "seed": 9,
-          "score": "54",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png",
           "winner": null
         }
       ]
