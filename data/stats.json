@@ -1,6 +1,27 @@
 {
-  "last_updated": "2026-03-20T23:01:08.486720+00:00",
+  "last_updated": "2026-03-20T23:39:01.588994+00:00",
   "players": {
+    "bennett-stirtz": {
+      "name": "Bennett Stirtz",
+      "team": "Iowa Hawkeyes",
+      "seed": 9,
+      "eliminated": false,
+      "stats": {
+        "pts": 8,
+        "reb": 1,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 8,
+          "reb": 1,
+          "ast": 2,
+          "game_id": "401856522",
+          "opponent": "Clemson Tigers"
+        }
+      ]
+    },
     "greg-gordon": {
       "name": "Greg Gordon",
       "team": "Long Island University Sharks",
@@ -421,24 +442,45 @@
         }
       ]
     },
-    "bennett-stirtz": {
-      "name": "Bennett Stirtz",
-      "team": "Iowa Hawkeyes",
-      "seed": 9,
+    "trey-campbell": {
+      "name": "Trey Campbell",
+      "team": "Northern Iowa Panthers",
+      "seed": 12,
       "eliminated": false,
       "stats": {
-        "pts": 3,
+        "pts": 0,
         "reb": 1,
         "ast": 0
       },
       "games": [
         {
           "round": "R64",
-          "pts": 3,
+          "pts": 0,
           "reb": 1,
           "ast": 0,
-          "game_id": "401856522",
-          "opponent": "Clemson Tigers"
+          "game_id": "401856494",
+          "opponent": "St. John's Red Storm"
+        }
+      ]
+    },
+    "zuby-ejiofor": {
+      "name": "Zuby Ejiofor",
+      "team": "St. John's Red Storm",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 0,
+          "ast": 1,
+          "game_id": "401856494",
+          "opponent": "Northern Iowa Panthers"
         }
       ]
     },
@@ -1314,18 +1356,19 @@
     }
   },
   "active_games": [
-    "401856522"
+    "401856522",
+    "401856494"
   ],
   "live_games": [
     {
       "id": "401856522",
-      "status": "15:29 - 1st",
+      "status": "3:32 - 1st",
       "teams": [
         {
           "name": "Clemson Tigers",
           "abbrev": "CLEM",
           "seed": 8,
-          "score": "4",
+          "score": "19",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
           "winner": null
         },
@@ -1333,8 +1376,30 @@
           "name": "Iowa Hawkeyes",
           "abbrev": "IOWA",
           "seed": 9,
-          "score": "8",
+          "score": "26",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "401856494",
+      "status": "17:14 - 1st",
+      "teams": [
+        {
+          "name": "St. John's Red Storm",
+          "abbrev": "SJU",
+          "seed": 5,
+          "score": "10",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2599.png",
+          "winner": null
+        },
+        {
+          "name": "Northern Iowa Panthers",
+          "abbrev": "UNI",
+          "seed": 12,
+          "score": "0",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2460.png",
           "winner": null
         }
       ]
