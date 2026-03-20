@@ -518,7 +518,14 @@
     } catch (e) {}
   }
 
+  let bannerShownForSlugs = new Set();
+
   function showEliminationBanner(eliminated) {
+    // Don't re-show banner for the same players
+    const newSlugs = eliminated.filter(e => !bannerShownForSlugs.has(e.slug));
+    if (newSlugs.length === 0) return;
+    for (const e of eliminated) bannerShownForSlugs.add(e.slug);
+
     document.getElementById('elimination-banner')?.remove();
     playEliminationSound();
 
