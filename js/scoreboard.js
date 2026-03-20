@@ -446,7 +446,7 @@ const Scoreboard = (() => {
     }
 
     html += '<table class="detail-table"><thead><tr>';
-    html += '<th>Seed</th><th>Player</th><th>Team</th><th>Round</th><th>Picked</th><th>PTS</th>';
+    html += '<th>Seed</th><th>Round</th><th>Player</th><th>Team</th><th>Picked</th><th>PTS</th>';
     html += '</tr></thead><tbody>';
 
     for (let seed = 1; seed <= 16; seed++) {
@@ -484,11 +484,7 @@ const Scoreboard = (() => {
       const hsUrl = headshotsData[info.pick.player_id];
       const hsImg = hsUrl ? `<img class="detail-headshot" src="${hsUrl}" alt="" onerror="this.style.display='none'">` : '';
 
-      html += `<tr class="${rowClass}" ${elimClass}>`;
-      html += `<td>${seed}</td>`;
-      html += `<td ${liveClass}><span class="detail-player-cell">${hsImg}${info.pick.name}${captainBadge}</span></td>`;
-      const pCount = pickCounts?.[info.pick.player_id] || 0;
-      // Round column: show current status
+      // Round column
       const player = statsData?.players?.[info.pick.player_id];
       const numGames = player?.games?.length || 0;
       const detailRoundNames = ['R64', 'R32', 'S16', 'E8', 'F4', 'Final'];
@@ -499,11 +495,16 @@ const Scoreboard = (() => {
       } else if (info.live) {
         roundDisplay = `<span style="color:var(--live-green)">● ${detailRoundNames[numGames > 0 ? numGames - 1 : 0]}</span>`;
       } else {
-        roundDisplay = `<span style="color:var(--text-muted)">${detailRoundNames[numGames] || '—'}</span>`;
+        roundDisplay = `<span style="color:var(--text-primary)">${detailRoundNames[numGames] || '—'}</span>`;
       }
 
-      html += `<td>${info.pick.team || ''}</td>`;
+      const liveRowClass = info.live ? ' detail-live-row' : '';
+      html += `<tr class="${rowClass}${liveRowClass}" ${elimClass}>`;
+      html += `<td>${seed}</td>`;
       html += `<td>${roundDisplay}</td>`;
+      html += `<td ${liveClass}><span class="detail-player-cell">${hsImg}${info.pick.name}${captainBadge}</span></td>`;
+      const pCount = pickCounts?.[info.pick.player_id] || 0;
+      html += `<td>${info.pick.team || ''}</td>`;
       html += `<td style="color:var(--text-muted)">${pCount}/${totalEntrants}</td>`;
       html += `<td style="font-weight:700">${ptsDisplay}</td>`;
       html += '</tr>';

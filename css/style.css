@@ -395,6 +395,15 @@ td.col-remaining {
   margin-bottom: 0.75rem;
 }
 
+.detail-live-row {
+  animation: liveRowPulse 2s infinite;
+}
+
+@keyframes liveRowPulse {
+  0%, 100% { background: transparent; }
+  50% { background: rgba(34, 197, 94, 0.08); }
+}
+
 .detail-player-cell {
   display: flex;
   align-items: center;
