@@ -324,32 +324,52 @@ def main():
                         "opponent": opponent,
                     })
 
-    # Mark picked players on eliminated teams even if they had 0 stats / no box score entry
+    # Build set of eliminated team names from completed games
     eliminated_team_names = set()
     for event in events:
         comp = event.get("competitions", [{}])[0]
-        if comp.get("status", {}).get("type", {}).get("completed", False):
-            for team in comp.get("competitors", []):
+        state = comp.get("status", {}).get("type", {}).get("state", "")
+        if state == "post":
+            competitors = comp.get("competitors", [])
+            for team in competitors:
                 if team.get("winner") is False:
                     eliminated_team_names.add(team.get("team", {}).get("displayName", "").lower())
+            # Fallback: lower score loses
+            if not any(t.get("winner") is False for t in competitors) and len(competitors) == 2:
+                scores = [(int(t.get("score", 0)), t) for t in competitors]
+                scores.sort(key=lambda x: x[0])
+                if scores[0][0] < scores[1][0]:
+                    eliminated_team_names.add(scores[0][1].get("team", {}).get("displayName", "").lower())
 
+    def is_team_eliminated(team_name):
+        """Check if a team name matches any eliminated team."""
+        tn = team_name.lower().strip()
+        tn = TEAM_ALIASES.get(tn, tn)
+        for elim in eliminated_team_names:
+            if elim.startswith(tn) and (len(elim) == len(tn) or elim[len(tn)] == ' '):
+                return True, elim
+        return False, None
+
+    # Mark ALL picked players — create entries for 0-stat players, update existing
     for norm_name, mapped in player_mapping.items():
         slug = mapped["slug"]
-        pick_team = mapped.get("team", "").lower()
-        pick_team = TEAM_ALIASES.get(pick_team, pick_team)
-        if slug not in player_stats:
-            # Check if this player's team was eliminated
-            for elim_team in eliminated_team_names:
-                if elim_team.startswith(pick_team) and (len(elim_team) == len(pick_team) or elim_team[len(pick_team)] == ' '):
-                    player_stats[slug] = {
-                        "name": mapped["name"],
-                        "team": elim_team.title(),
-                        "seed": 0,
-                        "eliminated": True,
-                        "stats": {"pts": 0, "reb": 0, "ast": 0},
-                        "games": [],
-                    }
-                    break
+        pick_team = mapped.get("team", "")
+        eliminated, elim_full = is_team_eliminated(pick_team)
+
+        if slug in player_stats:
+            # Update elimination status
+            if eliminated:
+                player_stats[slug]["eliminated"] = True
+        elif eliminated:
+            # Create entry for 0-stat eliminated player
+            player_stats[slug] = {
+                "name": mapped["name"],
+                "team": elim_full.title() if elim_full else pick_team,
+                "seed": 0,
+                "eliminated": True,
+                "stats": {"pts": 0, "reb": 0, "ast": 0},
+                "games": [],
+            }
 
     print(f"\nStats built for {len(player_stats)} players")
     print(f"Active games: {len(active_games)}")
