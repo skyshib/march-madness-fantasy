@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T20:17:33.290685+00:00",
+  "last_updated": "2026-03-20T20:53:35.645448+00:00",
   "players": {
     "travis-harper-ii": {
       "name": "Travis Harper II",
@@ -7,14 +7,14 @@
       "seed": 15,
       "eliminated": false,
       "stats": {
-        "pts": 5,
+        "pts": 9,
         "reb": 0,
         "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 5,
+          "pts": 9,
           "reb": 0,
           "ast": 2,
           "game_id": "401856524",
@@ -28,16 +28,16 @@
       "seed": 15,
       "eliminated": false,
       "stats": {
-        "pts": 13,
-        "reb": 4,
-        "ast": 1
+        "pts": 19,
+        "reb": 5,
+        "ast": 3
       },
       "games": [
         {
           "round": "R64",
-          "pts": 13,
-          "reb": 4,
-          "ast": 1,
+          "pts": 19,
+          "reb": 5,
+          "ast": 3,
           "game_id": "401856524",
           "opponent": "Iowa State Cyclones"
         }
@@ -71,15 +71,15 @@
       "eliminated": false,
       "stats": {
         "pts": 12,
-        "reb": 2,
-        "ast": 0
+        "reb": 3,
+        "ast": 2
       },
       "games": [
         {
           "round": "R64",
           "pts": 12,
-          "reb": 2,
-          "ast": 0,
+          "reb": 3,
+          "ast": 2,
           "game_id": "401856524",
           "opponent": "Tennessee State Tigers"
         }
@@ -91,16 +91,16 @@
       "seed": 13,
       "eliminated": false,
       "stats": {
-        "pts": 9,
+        "pts": 11,
         "reb": 2,
-        "ast": 1
+        "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 9,
+          "pts": 11,
           "reb": 2,
-          "ast": 1,
+          "ast": 2,
           "game_id": "401856521",
           "opponent": "Alabama Crimson Tide"
         }
@@ -112,18 +112,144 @@
       "seed": 4,
       "eliminated": false,
       "stats": {
-        "pts": 8,
-        "reb": 4,
-        "ast": 4
+        "pts": 19,
+        "reb": 6,
+        "ast": 5
       },
       "games": [
         {
           "round": "R64",
-          "pts": 8,
-          "reb": 4,
-          "ast": 4,
+          "pts": 19,
+          "reb": 6,
+          "ast": 5,
           "game_id": "401856521",
           "opponent": "Hofstra Pride"
+        }
+      ]
+    },
+    "brant-byers": {
+      "name": "Brant Byers",
+      "team": "Miami (OH) RedHawks",
+      "seed": 11,
+      "eliminated": false,
+      "stats": {
+        "pts": 5,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 5,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "401856527",
+          "opponent": "Tennessee Volunteers"
+        }
+      ]
+    },
+    "nate-ament": {
+      "name": "Nate Ament",
+      "team": "Tennessee Volunteers",
+      "seed": 6,
+      "eliminated": false,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "401856527",
+          "opponent": "Miami (OH) RedHawks"
+        }
+      ]
+    },
+    "jakobi-gillespie": {
+      "name": "Ja'Kobi Gillespie",
+      "team": "Tennessee Volunteers",
+      "seed": 6,
+      "eliminated": false,
+      "stats": {
+        "pts": 10,
+        "reb": 2,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 10,
+          "reb": 2,
+          "ast": 2,
+          "game_id": "401856527",
+          "opponent": "Miami (OH) RedHawks"
+        }
+      ]
+    },
+    "mason-falslev": {
+      "name": "Mason Falslev",
+      "team": "Utah State Aggies",
+      "seed": 9,
+      "eliminated": false,
+      "stats": {
+        "pts": 6,
+        "reb": 2,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 6,
+          "reb": 2,
+          "ast": 2,
+          "game_id": "401856528",
+          "opponent": "Villanova Wildcats"
+        }
+      ]
+    },
+    "mj-collins-jr": {
+      "name": "MJ Collins Jr.",
+      "team": "Utah State Aggies",
+      "seed": 9,
+      "eliminated": false,
+      "stats": {
+        "pts": 4,
+        "reb": 2,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 4,
+          "reb": 2,
+          "ast": 0,
+          "game_id": "401856528",
+          "opponent": "Villanova Wildcats"
+        }
+      ]
+    },
+    "tyler-perkins": {
+      "name": "Tyler Perkins",
+      "team": "Villanova Wildcats",
+      "seed": 8,
+      "eliminated": false,
+      "stats": {
+        "pts": 2,
+        "reb": 1,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 2,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856528",
+          "opponent": "Utah State Aggies"
         }
       ]
     },
@@ -292,69 +418,6 @@
           "ast": 7,
           "game_id": "401856525",
           "opponent": "Santa Clara Broncos"
-        }
-      ]
-    },
-    "mason-falslev": {
-      "name": "Mason Falslev",
-      "team": "Utah State Aggies",
-      "seed": 9,
-      "eliminated": false,
-      "stats": {
-        "pts": 2,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 2,
-          "reb": 0,
-          "ast": 0,
-          "game_id": "401856528",
-          "opponent": "Villanova Wildcats"
-        }
-      ]
-    },
-    "mj-collins-jr": {
-      "name": "MJ Collins Jr.",
-      "team": "Utah State Aggies",
-      "seed": 9,
-      "eliminated": false,
-      "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 0,
-          "reb": 0,
-          "ast": 0,
-          "game_id": "401856528",
-          "opponent": "Villanova Wildcats"
-        }
-      ]
-    },
-    "tyler-perkins": {
-      "name": "Tyler Perkins",
-      "team": "Villanova Wildcats",
-      "seed": 8,
-      "eliminated": false,
-      "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 0,
-          "reb": 0,
-          "ast": 0,
-          "game_id": "401856528",
-          "opponent": "Utah State Aggies"
         }
       ]
     },
@@ -1220,18 +1283,19 @@
   "active_games": [
     "401856524",
     "401856521",
+    "401856527",
     "401856528"
   ],
   "live_games": [
     {
       "id": "401856524",
-      "status": "Halftime",
+      "status": "11:38 - 2nd",
       "teams": [
         {
           "name": "Iowa State Cyclones",
           "abbrev": "ISU",
           "seed": 2,
-          "score": "55",
+          "score": "79",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
           "winner": null
         },
@@ -1239,7 +1303,7 @@
           "name": "Tennessee State Tigers",
           "abbrev": "TNST",
           "seed": 15,
-          "score": "29",
+          "score": "47",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2634.png",
           "winner": null
         }
@@ -1247,13 +1311,13 @@
     },
     {
       "id": "401856521",
-      "status": "Halftime",
+      "status": "14:35 - 2nd",
       "teams": [
         {
           "name": "Alabama Crimson Tide",
           "abbrev": "ALA",
           "seed": 4,
-          "score": "37",
+          "score": "50",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
           "winner": null
         },
@@ -1261,21 +1325,43 @@
           "name": "Hofstra Pride",
           "abbrev": "HOF",
           "seed": 13,
-          "score": "35",
+          "score": "41",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2275.png",
           "winner": null
         }
       ]
     },
     {
+      "id": "401856527",
+      "status": "14:06 - 1st",
+      "teams": [
+        {
+          "name": "Tennessee Volunteers",
+          "abbrev": "TENN",
+          "seed": 6,
+          "score": "13",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
+          "winner": null
+        },
+        {
+          "name": "Miami (OH) RedHawks",
+          "abbrev": "M-OH",
+          "seed": 11,
+          "score": "13",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
+          "winner": null
+        }
+      ]
+    },
+    {
       "id": "401856528",
-      "status": "19:14 - 1st",
+      "status": "6:38 - 1st",
       "teams": [
         {
           "name": "Villanova Wildcats",
           "abbrev": "VILL",
           "seed": 8,
-          "score": "0",
+          "score": "27",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/222.png",
           "winner": null
         },
@@ -1283,7 +1369,7 @@
           "name": "Utah State Aggies",
           "abbrev": "USU",
           "seed": 9,
-          "score": "2",
+          "score": "31",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png",
           "winner": null
         }
