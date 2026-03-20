@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:57:29.188032+00:00",
+  "last_updated": "2026-03-20T01:27:05.577114+00:00",
   "players": {
     "bryce-harris": {
       "name": "Bryce Harris",
@@ -7,15 +7,15 @@
       "seed": 16,
       "eliminated": false,
       "stats": {
-        "pts": 14,
-        "reb": 0,
+        "pts": 19,
+        "reb": 2,
         "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 14,
-          "reb": 0,
+          "pts": 19,
+          "reb": 2,
           "ast": 2,
           "game_id": "401856486",
           "opponent": "Michigan Wolverines"
@@ -28,16 +28,16 @@
       "seed": 1,
       "eliminated": false,
       "stats": {
-        "pts": 7,
-        "reb": 3,
-        "ast": 2
+        "pts": 9,
+        "reb": 4,
+        "ast": 4
       },
       "games": [
         {
           "round": "R64",
-          "pts": 7,
-          "reb": 3,
-          "ast": 2,
+          "pts": 9,
+          "reb": 4,
+          "ast": 4,
           "game_id": "401856486",
           "opponent": "Howard Bison"
         }
@@ -50,14 +50,14 @@
       "eliminated": false,
       "stats": {
         "pts": 15,
-        "reb": 4,
+        "reb": 5,
         "ast": 2
       },
       "games": [
         {
           "round": "R64",
           "pts": 15,
-          "reb": 4,
+          "reb": 5,
           "ast": 2,
           "game_id": "401856490",
           "opponent": "North Carolina Tar Heels"
@@ -70,15 +70,15 @@
       "seed": 11,
       "eliminated": false,
       "stats": {
-        "pts": 29,
-        "reb": 4,
+        "pts": 34,
+        "reb": 5,
         "ast": 5
       },
       "games": [
         {
           "round": "R64",
-          "pts": 29,
-          "reb": 4,
+          "pts": 34,
+          "reb": 5,
           "ast": 5,
           "game_id": "401856490",
           "opponent": "North Carolina Tar Heels"
@@ -91,15 +91,15 @@
       "seed": 11,
       "eliminated": false,
       "stats": {
-        "pts": 7,
-        "reb": 1,
+        "pts": 14,
+        "reb": 4,
         "ast": 5
       },
       "games": [
         {
           "round": "R64",
-          "pts": 7,
-          "reb": 1,
+          "pts": 14,
+          "reb": 4,
           "ast": 5,
           "game_id": "401856484",
           "opponent": "BYU Cougars"
@@ -112,15 +112,15 @@
       "seed": 6,
       "eliminated": false,
       "stats": {
-        "pts": 20,
-        "reb": 3,
+        "pts": 33,
+        "reb": 5,
         "ast": 0
       },
       "games": [
         {
           "round": "R64",
-          "pts": 20,
-          "reb": 3,
+          "pts": 33,
+          "reb": 5,
           "ast": 0,
           "game_id": "401856484",
           "opponent": "Texas Longhorns"
@@ -133,15 +133,15 @@
       "seed": 10,
       "eliminated": false,
       "stats": {
-        "pts": 13,
-        "reb": 3,
+        "pts": 20,
+        "reb": 7,
         "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 13,
-          "reb": 3,
+          "pts": 20,
+          "reb": 7,
           "ast": 2,
           "game_id": "401856492",
           "opponent": "Saint Mary's Gaels"
@@ -196,14 +196,14 @@
       "seed": 7,
       "eliminated": false,
       "stats": {
-        "pts": 2,
+        "pts": 4,
         "reb": 3,
         "ast": 0
       },
       "games": [
         {
           "round": "R64",
-          "pts": 2,
+          "pts": 4,
           "reb": 3,
           "ast": 0,
           "game_id": "401856492",
@@ -634,20 +634,19 @@
   },
   "active_games": [
     "401856486",
-    "401856490",
     "401856484",
     "401856492"
   ],
   "live_games": [
     {
       "id": "401856486",
-      "status": "14:52 - 2nd",
+      "status": "5:07 - 2nd",
       "teams": [
         {
           "name": "Michigan Wolverines",
           "abbrev": "MICH",
           "seed": 1,
-          "score": "68",
+          "score": "94",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
           "winner": null
         },
@@ -655,43 +654,21 @@
           "name": "Howard Bison",
           "abbrev": "HOW",
           "seed": 16,
-          "score": "58",
+          "score": "65",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/47.png",
           "winner": null
         }
       ]
     },
     {
-      "id": "401856490",
-      "status": "1:15 - 2nd",
-      "teams": [
-        {
-          "name": "North Carolina Tar Heels",
-          "abbrev": "UNC",
-          "seed": 6,
-          "score": "75",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
-          "winner": null
-        },
-        {
-          "name": "VCU Rams",
-          "abbrev": "VCU",
-          "seed": 11,
-          "score": "70",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2670.png",
-          "winner": null
-        }
-      ]
-    },
-    {
       "id": "401856484",
-      "status": "17:31 - 2nd",
+      "status": "6:58 - 2nd",
       "teams": [
         {
           "name": "BYU Cougars",
           "abbrev": "BYU",
           "seed": 6,
-          "score": "44",
+          "score": "59",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
           "winner": null
         },
@@ -699,7 +676,7 @@
           "name": "Texas Longhorns",
           "abbrev": "TEX",
           "seed": 11,
-          "score": "48",
+          "score": "70",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
           "winner": null
         }
@@ -707,13 +684,13 @@
     },
     {
       "id": "401856492",
-      "status": "18:15 - 2nd",
+      "status": "7:01 - 2nd",
       "teams": [
         {
           "name": "Saint Mary's Gaels",
           "abbrev": "SMC",
           "seed": 7,
-          "score": "26",
+          "score": "44",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png",
           "winner": null
         },
@@ -721,7 +698,7 @@
           "name": "Texas A&M Aggies",
           "abbrev": "TA&M",
           "seed": 10,
-          "score": "42",
+          "score": "57",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png",
           "winner": null
         }
