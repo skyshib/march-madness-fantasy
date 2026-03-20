@@ -416,13 +416,14 @@ const Scoreboard = (() => {
         function teamMatchLocal(pickTeam, espnFull) {
           if (!pickTeam || !espnFull) return false;
           if (pickTeam === espnFull) return true;
+          const aliases = {'penn':'pennsylvania','uconn':'connecticut','liu':'long island',"hawaii":"hawai'i"};
+          const mapped = aliases[pickTeam] || pickTeam;
+          if (mapped === espnFull) return true;
+          const espnMap = {'duke':'duke blue devils','alabama':'alabama crimson tide','illinois':'illinois fighting illini','tcu':'tcu horned frogs','uconn':'uconn huskies','hawaii':"hawai'i rainbow warriors"};
+          if (espnMap[pickTeam] === espnFull) return true;
           const words = espnFull.split(' ');
-          const school = words.slice(0, -1).join(' ');
-          if (pickTeam === school) return true;
-          if (words.length > 3) {
-            const school2 = words.slice(0, -2).join(' ');
-            if (pickTeam === school2) return true;
-          }
+          if (mapped === words.slice(0, -1).join(' ')) return true;
+          if (words.length > 3 && mapped === words.slice(0, -2).join(' ')) return true;
           return false;
         }
         const t0match = [...myTeams].some(pt => teamMatchLocal(pt, t0.fullName));

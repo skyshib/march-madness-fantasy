@@ -26,18 +26,33 @@
   const TEAM_ALIASES = {
     'penn': 'pennsylvania',
     'uconn': 'connecticut',
+    'liu': 'long island',
+    'hawaii': "hawai'i",
+  };
+
+  // Teams where simple word-stripping fails (1-word school + 2-word mascot)
+  const TEAM_ESPN_MAP = {
+    'duke': 'duke blue devils',
+    'alabama': 'alabama crimson tide',
+    'illinois': 'illinois fighting illini',
+    'tcu': 'tcu horned frogs',
+    'uconn': 'uconn huskies',
+    'hawaii': "hawai'i rainbow warriors",
   };
 
   function teamsMatch(pickTeam, espnTeam) {
     if (!pickTeam || !espnTeam) return false;
     let pt = pickTeam.toLowerCase().trim();
     const et = espnTeam.toLowerCase().trim();
-    // Apply aliases
     pt = TEAM_ALIASES[pt] || pt;
     if (pt === et) return true;
+    // Direct mapping for tricky names
+    if (TEAM_ESPN_MAP[pt] === et) return true;
+    // Strip 1 word: "Michigan Wolverines" -> "Michigan"
     const espnWords = et.split(' ');
-    const espnSchool = espnWords.slice(0, -1).join(' ');
-    if (pt === espnSchool) return true;
+    const espnSchool1 = espnWords.slice(0, -1).join(' ');
+    if (pt === espnSchool1) return true;
+    // Strip 2 words: "North Carolina Tar Heels" -> "North Carolina"
     if (espnWords.length > 3) {
       const espnSchool2 = espnWords.slice(0, -2).join(' ');
       if (pt === espnSchool2) return true;

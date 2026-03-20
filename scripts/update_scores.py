@@ -30,6 +30,18 @@ ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-colle
 TEAM_ALIASES = {
     "penn": "pennsylvania",
     "uconn": "connecticut",
+    "liu": "long island",
+    "hawaii": "hawai'i",
+}
+
+# Teams where school name is 1 word but mascot is 2+ words
+TEAM_ESPN_MAP = {
+    "duke": "duke blue devils",
+    "alabama": "alabama crimson tide",
+    "illinois": "illinois fighting illini",
+    "tcu": "tcu horned frogs",
+    "uconn": "uconn huskies",
+    "hawaii": "hawai'i rainbow warriors",
 }
 
 
@@ -345,6 +357,10 @@ def main():
         """Check if a team name matches any eliminated team."""
         tn = team_name.lower().strip()
         tn = TEAM_ALIASES.get(tn, tn)
+        # Direct ESPN map check
+        if tn in TEAM_ESPN_MAP:
+            if TEAM_ESPN_MAP[tn] in eliminated_team_names:
+                return True, TEAM_ESPN_MAP[tn]
         for elim in eliminated_team_names:
             if elim.startswith(tn) and (len(elim) == len(tn) or elim[len(tn)] == ' '):
                 return True, elim
