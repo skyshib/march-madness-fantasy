@@ -308,6 +308,32 @@ def main():
                         "opponent": opponent,
                     })
 
+    # Mark picked players on eliminated teams even if they had 0 stats / no box score entry
+    eliminated_team_names = set()
+    for event in events:
+        comp = event.get("competitions", [{}])[0]
+        if comp.get("status", {}).get("type", {}).get("completed", False):
+            for team in comp.get("competitors", []):
+                if team.get("winner") is False:
+                    eliminated_team_names.add(team.get("team", {}).get("displayName", "").lower())
+
+    for norm_name, mapped in player_mapping.items():
+        slug = mapped["slug"]
+        pick_team = mapped.get("team", "").lower()
+        if slug not in player_stats:
+            # Check if this player's team was eliminated
+            for elim_team in eliminated_team_names:
+                if elim_team.startswith(pick_team) and (len(elim_team) == len(pick_team) or elim_team[len(pick_team)] == ' '):
+                    player_stats[slug] = {
+                        "name": mapped["name"],
+                        "team": elim_team.title(),
+                        "seed": 0,
+                        "eliminated": True,
+                        "stats": {"pts": 0, "reb": 0, "ast": 0},
+                        "games": [],
+                    }
+                    break
+
     print(f"\nStats built for {len(player_stats)} players")
     print(f"Active games: {len(active_games)}")
 
