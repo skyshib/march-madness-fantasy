@@ -1,174 +1,6 @@
 {
-  "last_updated": "2026-03-20T03:54:08.225881+00:00",
+  "last_updated": "2026-03-20T05:12:06.973874+00:00",
   "players": {
-    "jackson-rasmussen": {
-      "name": "Jackson Rasmussen",
-      "team": "Idaho Vandals",
-      "seed": 15,
-      "eliminated": false,
-      "stats": {
-        "pts": 5,
-        "reb": 4,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 5,
-          "reb": 4,
-          "ast": 1,
-          "game_id": "401856493",
-          "opponent": "Houston Cougars"
-        }
-      ]
-    },
-    "kolton-mitchell": {
-      "name": "Kolton Mitchell",
-      "team": "Idaho Vandals",
-      "seed": 15,
-      "eliminated": false,
-      "stats": {
-        "pts": 11,
-        "reb": 2,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 11,
-          "reb": 2,
-          "ast": 1,
-          "game_id": "401856493",
-          "opponent": "Houston Cougars"
-        }
-      ]
-    },
-    "kingston-flemings": {
-      "name": "Kingston Flemings",
-      "team": "Houston Cougars",
-      "seed": 2,
-      "eliminated": false,
-      "stats": {
-        "pts": 14,
-        "reb": 6,
-        "ast": 4
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 14,
-          "reb": 6,
-          "ast": 4,
-          "game_id": "401856493",
-          "opponent": "Idaho Vandals"
-        }
-      ]
-    },
-    "tj-power": {
-      "name": "TJ Power",
-      "team": "Pennsylvania Quakers",
-      "seed": 14,
-      "eliminated": false,
-      "stats": {
-        "pts": 6,
-        "reb": 1,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 6,
-          "reb": 1,
-          "ast": 2,
-          "game_id": "401856491",
-          "opponent": "Illinois Fighting Illini"
-        }
-      ]
-    },
-    "keaton-wagler": {
-      "name": "Keaton Wagler",
-      "team": "Illinois Fighting Illini",
-      "seed": 3,
-      "eliminated": false,
-      "stats": {
-        "pts": 18,
-        "reb": 7,
-        "ast": 7
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 18,
-          "reb": 7,
-          "ast": 7,
-          "game_id": "401856491",
-          "opponent": "Pennsylvania Quakers"
-        }
-      ]
-    },
-    "rj-johnson": {
-      "name": "RJ Johnson",
-      "team": "Kennesaw State Owls",
-      "seed": 14,
-      "eliminated": false,
-      "stats": {
-        "pts": 11,
-        "reb": 1,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 11,
-          "reb": 1,
-          "ast": 2,
-          "game_id": "401856485",
-          "opponent": "Gonzaga Bulldogs"
-        }
-      ]
-    },
-    "graham-ike": {
-      "name": "Graham Ike",
-      "team": "Gonzaga Bulldogs",
-      "seed": 3,
-      "eliminated": false,
-      "stats": {
-        "pts": 14,
-        "reb": 6,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 14,
-          "reb": 6,
-          "ast": 0,
-          "game_id": "401856485",
-          "opponent": "Kennesaw State Owls"
-        }
-      ]
-    },
-    "jeremiah-wilkinson": {
-      "name": "Jeremiah Wilkinson",
-      "team": "Georgia Bulldogs",
-      "seed": 8,
-      "eliminated": false,
-      "stats": {
-        "pts": 19,
-        "reb": 0,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 19,
-          "reb": 0,
-          "ast": 1,
-          "game_id": "401856487",
-          "opponent": "Saint Louis Billikens"
-        }
-      ]
-    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
@@ -253,6 +85,69 @@
         }
       ]
     },
+    "jackson-rasmussen": {
+      "name": "Jackson Rasmussen",
+      "team": "Idaho Vandals",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 5,
+        "reb": 4,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 5,
+          "reb": 4,
+          "ast": 1,
+          "game_id": "401856493",
+          "opponent": "Houston Cougars"
+        }
+      ]
+    },
+    "kolton-mitchell": {
+      "name": "Kolton Mitchell",
+      "team": "Idaho Vandals",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 14,
+        "reb": 3,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 14,
+          "reb": 3,
+          "ast": 1,
+          "game_id": "401856493",
+          "opponent": "Houston Cougars"
+        }
+      ]
+    },
+    "kingston-flemings": {
+      "name": "Kingston Flemings",
+      "team": "Houston Cougars",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 18,
+        "reb": 6,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 6,
+          "ast": 4,
+          "game_id": "401856493",
+          "opponent": "Idaho Vandals"
+        }
+      ]
+    },
     "damari-wheeler-thomas": {
       "name": "Damari Wheeler-Thomas",
       "team": "North Dakota State Bison",
@@ -292,6 +187,90 @@
           "ast": 11,
           "game_id": "401856483",
           "opponent": "North Dakota State Bison"
+        }
+      ]
+    },
+    "tj-power": {
+      "name": "TJ Power",
+      "team": "Pennsylvania Quakers",
+      "seed": 14,
+      "eliminated": true,
+      "stats": {
+        "pts": 6,
+        "reb": 1,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 6,
+          "reb": 1,
+          "ast": 2,
+          "game_id": "401856491",
+          "opponent": "Illinois Fighting Illini"
+        }
+      ]
+    },
+    "keaton-wagler": {
+      "name": "Keaton Wagler",
+      "team": "Illinois Fighting Illini",
+      "seed": 3,
+      "eliminated": false,
+      "stats": {
+        "pts": 18,
+        "reb": 7,
+        "ast": 7
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 7,
+          "ast": 7,
+          "game_id": "401856491",
+          "opponent": "Pennsylvania Quakers"
+        }
+      ]
+    },
+    "rj-johnson": {
+      "name": "RJ Johnson",
+      "team": "Kennesaw State Owls",
+      "seed": 14,
+      "eliminated": true,
+      "stats": {
+        "pts": 15,
+        "reb": 2,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 15,
+          "reb": 2,
+          "ast": 4,
+          "game_id": "401856485",
+          "opponent": "Gonzaga Bulldogs"
+        }
+      ]
+    },
+    "graham-ike": {
+      "name": "Graham Ike",
+      "team": "Gonzaga Bulldogs",
+      "seed": 3,
+      "eliminated": false,
+      "stats": {
+        "pts": 19,
+        "reb": 8,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 19,
+          "reb": 8,
+          "ast": 0,
+          "game_id": "401856485",
+          "opponent": "Kennesaw State Owls"
         }
       ]
     },
@@ -799,6 +778,63 @@
         }
       ]
     },
+    "jeremiah-wilkinson": {
+      "name": "Jeremiah Wilkinson",
+      "team": "Georgia Bulldogs",
+      "seed": 8,
+      "eliminated": true,
+      "stats": {
+        "pts": 30,
+        "reb": 2,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 30,
+          "reb": 2,
+          "ast": 1,
+          "game_id": "401856487",
+          "opponent": "Saint Louis Billikens"
+        }
+      ]
+    },
+    "ethan-roberts": {
+      "name": "Ethan Roberts",
+      "team": "Pennsylvania Quakers",
+      "seed": 0,
+      "eliminated": true,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": []
+    },
+    "simeon-cottle": {
+      "name": "Simeon Cottle",
+      "team": "Kennesaw State Owls",
+      "seed": 0,
+      "eliminated": true,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": []
+    },
+    "kristian-gonzalez": {
+      "name": "Kristian Gonzalez",
+      "team": "Idaho Vandals",
+      "seed": 0,
+      "eliminated": true,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": []
+    },
     "caleb-wilson": {
       "name": "Caleb Wilson",
       "team": "North Carolina Tar Heels",
@@ -824,100 +860,6 @@
       "games": []
     }
   },
-  "active_games": [
-    "401856493",
-    "401856491",
-    "401856485",
-    "401856487"
-  ],
-  "live_games": [
-    {
-      "id": "401856493",
-      "status": "12:23 - 2nd",
-      "teams": [
-        {
-          "name": "Houston Cougars",
-          "abbrev": "HOU",
-          "seed": 2,
-          "score": "57",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
-          "winner": null
-        },
-        {
-          "name": "Idaho Vandals",
-          "abbrev": "IDHO",
-          "seed": 15,
-          "score": "33",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/70.png",
-          "winner": null
-        }
-      ]
-    },
-    {
-      "id": "401856491",
-      "status": "0:18 - 2nd",
-      "teams": [
-        {
-          "name": "Illinois Fighting Illini",
-          "abbrev": "ILL",
-          "seed": 3,
-          "score": "105",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
-          "winner": null
-        },
-        {
-          "name": "Pennsylvania Quakers",
-          "abbrev": "PENN",
-          "seed": 14,
-          "score": "67",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/219.png",
-          "winner": null
-        }
-      ]
-    },
-    {
-      "id": "401856485",
-      "status": "15:40 - 2nd",
-      "teams": [
-        {
-          "name": "Gonzaga Bulldogs",
-          "abbrev": "GONZ",
-          "seed": 3,
-          "score": "42",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png",
-          "winner": null
-        },
-        {
-          "name": "Kennesaw State Owls",
-          "abbrev": "KENN",
-          "seed": 14,
-          "score": "33",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/338.png",
-          "winner": null
-        }
-      ]
-    },
-    {
-      "id": "401856487",
-      "status": "11:35 - 2nd",
-      "teams": [
-        {
-          "name": "Georgia Bulldogs",
-          "abbrev": "UGA",
-          "seed": 8,
-          "score": "47",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
-          "winner": null
-        },
-        {
-          "name": "Saint Louis Billikens",
-          "abbrev": "SLU",
-          "seed": 9,
-          "score": "76",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/139.png",
-          "winner": null
-        }
-      ]
-    }
-  ]
+  "active_games": [],
+  "live_games": []
 }
