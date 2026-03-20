@@ -173,7 +173,7 @@ main {
 #scoreboard tbody tr:hover { background: var(--bg-hover); }
 
 #scoreboard tbody td {
-  padding: 0.6rem 0.4rem;
+  padding: 0.35rem 0.4rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
   vertical-align: middle;
