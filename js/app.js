@@ -38,6 +38,21 @@
     'tcu': 'tcu horned frogs',
     'uconn': 'uconn huskies',
     'hawaii': "hawai'i rainbow warriors",
+    'tennessee': 'tennessee volunteers',
+    'tennessee state': 'tennessee state tigers',
+    'michigan': 'michigan wolverines',
+    'michigan state': 'michigan state spartans',
+    'north carolina': 'north carolina tar heels',
+    'north dakota state': 'north dakota state bison',
+    'miami': 'miami hurricanes',
+    'miami (oh)': 'miami (oh) redhawks',
+    'iowa': 'iowa hawkeyes',
+    'iowa state': 'iowa state cyclones',
+    'texas': 'texas longhorns',
+    'texas a&m': 'texas a&m aggies',
+    'texas tech': 'texas tech red raiders',
+    "saint mary's": "saint mary's gaels",
+    'saint louis': 'saint louis billikens',
   };
 
   function teamsMatch(pickTeam, espnTeam) {
@@ -46,13 +61,13 @@
     const et = espnTeam.toLowerCase().trim();
     pt = TEAM_ALIASES[pt] || pt;
     if (pt === et) return true;
-    // Direct mapping for tricky names
-    if (TEAM_ESPN_MAP[pt] === et) return true;
-    // Strip 1 word: "Michigan Wolverines" -> "Michigan"
+    // If we have an explicit mapping, use ONLY that (avoids Tennessee/Tennessee State conflicts)
+    if (pt in TEAM_ESPN_MAP) return TEAM_ESPN_MAP[pt] === et;
+    // Strip 1 word: "Gonzaga Bulldogs" -> "Gonzaga"
     const espnWords = et.split(' ');
     const espnSchool1 = espnWords.slice(0, -1).join(' ');
     if (pt === espnSchool1) return true;
-    // Strip 2 words: "North Carolina Tar Heels" -> "North Carolina"
+    // Strip 2 words: "Prairie View A&M Panthers" -> "Prairie View A&M"
     if (espnWords.length > 3) {
       const espnSchool2 = espnWords.slice(0, -2).join(' ');
       if (pt === espnSchool2) return true;

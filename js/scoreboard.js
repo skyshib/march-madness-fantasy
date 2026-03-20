@@ -419,7 +419,9 @@ const Scoreboard = (() => {
           const aliases = {'penn':'pennsylvania','uconn':'connecticut','liu':'long island',"hawaii":"hawai'i"};
           const mapped = aliases[pickTeam] || pickTeam;
           if (mapped === espnFull) return true;
-          const espnMap = {'duke':'duke blue devils','alabama':'alabama crimson tide','illinois':'illinois fighting illini','tcu':'tcu horned frogs','uconn':'uconn huskies','hawaii':"hawai'i rainbow warriors"};
+          const espnMap = {'duke':'duke blue devils','alabama':'alabama crimson tide','illinois':'illinois fighting illini','tcu':'tcu horned frogs','uconn':'uconn huskies','hawaii':"hawai'i rainbow warriors",'tennessee':'tennessee volunteers','tennessee state':'tennessee state tigers','michigan':'michigan wolverines','michigan state':'michigan state spartans','north carolina':'north carolina tar heels','north dakota state':'north dakota state bison','miami':'miami hurricanes','miami (oh)':'miami (oh) redhawks','iowa':'iowa hawkeyes','iowa state':'iowa state cyclones','texas':'texas longhorns','texas a&m':'texas a&m aggies','texas tech':'texas tech red raiders',"saint mary's":"saint mary's gaels",'saint louis':'saint louis billikens'};
+          const resolvedPt = aliases[pickTeam] || pickTeam;
+          if (resolvedPt in espnMap) return espnMap[resolvedPt] === espnFull;
           if (espnMap[pickTeam] === espnFull) return true;
           const words = espnFull.split(' ');
           if (mapped === words.slice(0, -1).join(' ')) return true;

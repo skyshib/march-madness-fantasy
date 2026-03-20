@@ -42,6 +42,21 @@ TEAM_ESPN_MAP = {
     "tcu": "tcu horned frogs",
     "uconn": "uconn huskies",
     "hawaii": "hawai'i rainbow warriors",
+    "tennessee": "tennessee volunteers",
+    "tennessee state": "tennessee state tigers",
+    "michigan": "michigan wolverines",
+    "michigan state": "michigan state spartans",
+    "north carolina": "north carolina tar heels",
+    "north dakota state": "north dakota state bison",
+    "miami": "miami hurricanes",
+    "miami (oh)": "miami (oh) redhawks",
+    "iowa": "iowa hawkeyes",
+    "iowa state": "iowa state cyclones",
+    "texas": "texas longhorns",
+    "texas a&m": "texas a&m aggies",
+    "texas tech": "texas tech red raiders",
+    "saint mary's": "saint mary's gaels",
+    "saint louis": "saint louis billikens",
 }
 
 
@@ -357,10 +372,9 @@ def main():
         """Check if a team name matches any eliminated team."""
         tn = team_name.lower().strip()
         tn = TEAM_ALIASES.get(tn, tn)
-        # Direct ESPN map check
+        # If we have an explicit mapping, use ONLY that
         if tn in TEAM_ESPN_MAP:
-            if TEAM_ESPN_MAP[tn] in eliminated_team_names:
-                return True, TEAM_ESPN_MAP[tn]
+            return TEAM_ESPN_MAP[tn] in eliminated_team_names, TEAM_ESPN_MAP[tn]
         for elim in eliminated_team_names:
             if elim.startswith(tn) and (len(elim) == len(tn) or elim[len(tn)] == ' '):
                 return True, elim
