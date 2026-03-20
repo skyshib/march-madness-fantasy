@@ -26,6 +26,12 @@ except ImportError:
 
 ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball"
 
+# Team name aliases: picks.json name -> ESPN name prefix
+TEAM_ALIASES = {
+    "penn": "pennsylvania",
+    "uconn": "connecticut",
+}
+
 
 def normalize_name(name):
     """Normalize a name for matching."""
@@ -320,6 +326,7 @@ def main():
     for norm_name, mapped in player_mapping.items():
         slug = mapped["slug"]
         pick_team = mapped.get("team", "").lower()
+        pick_team = TEAM_ALIASES.get(pick_team, pick_team)
         if slug not in player_stats:
             # Check if this player's team was eliminated
             for elim_team in eliminated_team_names:

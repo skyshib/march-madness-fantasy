@@ -23,10 +23,17 @@
   /**
    * Check if a picks.json team name matches an ESPN full team name.
    */
+  const TEAM_ALIASES = {
+    'penn': 'pennsylvania',
+    'uconn': 'connecticut',
+  };
+
   function teamsMatch(pickTeam, espnTeam) {
     if (!pickTeam || !espnTeam) return false;
-    const pt = pickTeam.toLowerCase().trim();
+    let pt = pickTeam.toLowerCase().trim();
     const et = espnTeam.toLowerCase().trim();
+    // Apply aliases
+    pt = TEAM_ALIASES[pt] || pt;
     if (pt === et) return true;
     const espnWords = et.split(' ');
     const espnSchool = espnWords.slice(0, -1).join(' ');
