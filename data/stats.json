@@ -1,20 +1,83 @@
 {
-  "last_updated": "2026-03-20T17:31:09.366578+00:00",
+  "last_updated": "2026-03-20T18:04:32.553602+00:00",
   "players": {
-    "tavari-johnson": {
-      "name": "Tavari Johnson",
-      "team": "Akron Zips",
-      "seed": 12,
+    "greg-gordon": {
+      "name": "Greg Gordon",
+      "team": "Long Island University Sharks",
+      "seed": 16,
       "eliminated": false,
       "stats": {
-        "pts": 2,
+        "pts": 4,
+        "reb": 1,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 4,
+          "reb": 1,
+          "ast": 0,
+          "game_id": "401856529",
+          "opponent": "Arizona Wildcats"
+        }
+      ]
+    },
+    "jamal-fuller": {
+      "name": "Jamal Fuller",
+      "team": "Long Island University Sharks",
+      "seed": 16,
+      "eliminated": false,
+      "stats": {
+        "pts": 3,
+        "reb": 2,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 3,
+          "reb": 2,
+          "ast": 1,
+          "game_id": "401856529",
+          "opponent": "Arizona Wildcats"
+        }
+      ]
+    },
+    "jaden-bradley": {
+      "name": "Jaden Bradley",
+      "team": "Arizona Wildcats",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 5,
         "reb": 1,
         "ast": 1
       },
       "games": [
         {
           "round": "R64",
-          "pts": 2,
+          "pts": 5,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856529",
+          "opponent": "Long Island University Sharks"
+        }
+      ]
+    },
+    "tavari-johnson": {
+      "name": "Tavari Johnson",
+      "team": "Akron Zips",
+      "seed": 12,
+      "eliminated": false,
+      "stats": {
+        "pts": 4,
+        "reb": 1,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 4,
           "reb": 1,
           "ast": 1,
           "game_id": "401856520",
@@ -29,15 +92,15 @@
       "eliminated": false,
       "stats": {
         "pts": 9,
-        "reb": 3,
-        "ast": 2
+        "reb": 4,
+        "ast": 3
       },
       "games": [
         {
           "round": "R64",
           "pts": 9,
-          "reb": 3,
-          "ast": 2,
+          "reb": 4,
+          "ast": 3,
           "game_id": "401856525",
           "opponent": "Kentucky Wildcats"
         }
@@ -49,18 +112,60 @@
       "seed": 7,
       "eliminated": false,
       "stats": {
-        "pts": 14,
-        "reb": 2,
-        "ast": 4
+        "pts": 23,
+        "reb": 6,
+        "ast": 6
       },
       "games": [
         {
           "round": "R64",
-          "pts": 14,
-          "reb": 2,
-          "ast": 4,
+          "pts": 23,
+          "reb": 6,
+          "ast": 6,
           "game_id": "401856525",
           "opponent": "Santa Clara Broncos"
+        }
+      ]
+    },
+    "tj-burch": {
+      "name": "TJ Burch",
+      "team": "Wright State Raiders",
+      "seed": 14,
+      "eliminated": false,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "401856526",
+          "opponent": "Virginia Cavaliers"
+        }
+      ]
+    },
+    "michael-cooper": {
+      "name": "Michael Cooper",
+      "team": "Wright State Raiders",
+      "seed": 14,
+      "eliminated": false,
+      "stats": {
+        "pts": 2,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 2,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "401856526",
+          "opponent": "Virginia Cavaliers"
         }
       ]
     },
@@ -924,19 +1029,43 @@
     }
   },
   "active_games": [
+    "401856529",
     "401856520",
-    "401856525"
+    "401856525",
+    "401856526"
   ],
   "live_games": [
     {
+      "id": "401856529",
+      "status": "9:47 - 1st",
+      "teams": [
+        {
+          "name": "Arizona Wildcats",
+          "abbrev": "ARIZ",
+          "seed": 1,
+          "score": "29",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
+          "winner": null
+        },
+        {
+          "name": "Long Island University Sharks",
+          "abbrev": "LIU",
+          "seed": 16,
+          "score": "18",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/112358.png",
+          "winner": null
+        }
+      ]
+    },
+    {
       "id": "401856520",
-      "status": "Halftime",
+      "status": "15:44 - 2nd",
       "teams": [
         {
           "name": "Texas Tech Red Raiders",
           "abbrev": "TTU",
           "seed": 5,
-          "score": "40",
+          "score": "52",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
           "winner": null
         },
@@ -944,7 +1073,7 @@
           "name": "Akron Zips",
           "abbrev": "AKR",
           "seed": 12,
-          "score": "35",
+          "score": "43",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2006.png",
           "winner": null
         }
@@ -952,13 +1081,13 @@
     },
     {
       "id": "401856525",
-      "status": "16:10 - 2nd",
+      "status": "4:47 - 2nd",
       "teams": [
         {
           "name": "Kentucky Wildcats",
           "abbrev": "UK",
           "seed": 7,
-          "score": "44",
+          "score": "65",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
           "winner": null
         },
@@ -966,8 +1095,30 @@
           "name": "Santa Clara Broncos",
           "abbrev": "SCU",
           "seed": 10,
-          "score": "42",
+          "score": "64",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png",
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "401856526",
+      "status": "15:37 - 1st",
+      "teams": [
+        {
+          "name": "Virginia Cavaliers",
+          "abbrev": "UVA",
+          "seed": 3,
+          "score": "5",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png",
+          "winner": null
+        },
+        {
+          "name": "Wright State Raiders",
+          "abbrev": "WRST",
+          "seed": 14,
+          "score": "2",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2750.png",
           "winner": null
         }
       ]
