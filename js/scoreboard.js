@@ -217,28 +217,26 @@ const Scoreboard = (() => {
       const remTd = document.createElement('td');
       remTd.className = 'col-remaining';
 
-      // Count alive players yet to play their next game
-      // Players with 0 games played who aren't eliminated = yet to play R64
-      // Players with 1 game who aren't eliminated = yet to play R32, etc.
-      let yetToPlay = 0;
-      let nextRound = '';
+      // Count alive players grouped by their next round
       const roundNames = ['R64', 'R32', 'S16', 'E8', 'F4', 'Final'];
+      const byRound = {}; // round name -> count of players yet to play
 
       for (let s = 1; s <= 16; s++) {
         const info = r.seedBreakdown[s];
-        if (info.pick && !info.eliminated) {
+        if (info.pick && !info.eliminated && !info.live) {
           const player = statsData?.players?.[info.pick.player_id];
           const numGames = player?.games?.length || 0;
-          // Player is "yet to play" if alive and not currently in a live game
-          if (!info.live) {
-            yetToPlay++;
-            if (!nextRound) nextRound = roundNames[numGames] || '';
+          const nextRound = roundNames[numGames] || '';
+          if (nextRound) {
+            byRound[nextRound] = (byRound[nextRound] || 0) + 1;
           }
         }
       }
 
-      if (!compactMode && yetToPlay > 0 && nextRound) {
-        remTd.innerHTML = `${r.remaining}/16<br><span class="remaining-round">${nextRound}: ${yetToPlay}</span>`;
+      const roundEntries = Object.entries(byRound);
+      if (!compactMode && roundEntries.length > 0) {
+        const roundText = roundEntries.map(([rd, ct]) => `${rd}:${ct}`).join(' ');
+        remTd.innerHTML = `${r.remaining}/16<br><span class="remaining-round">${roundText}</span>`;
       } else {
         remTd.textContent = `${r.remaining}/16`;
       }
