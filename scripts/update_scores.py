@@ -99,10 +99,20 @@ def get_eliminated_teams(events):
     eliminated = set()
     for event in events:
         for comp in event.get("competitions", []):
-            if comp.get("status", {}).get("type", {}).get("completed", False):
-                for team in comp.get("competitors", []):
-                    if team.get("winner") is False:
-                        eliminated.add(team.get("id"))
+            state = comp.get("status", {}).get("type", {}).get("state", "")
+            if state == "post":
+                competitors = comp.get("competitors", [])
+                if len(competitors) == 2:
+                    # Try winner field first
+                    for team in competitors:
+                        if team.get("winner") is False:
+                            eliminated.add(team.get("id"))
+                    # Fallback: lower score loses
+                    if not any(team.get("id") in eliminated for team in competitors):
+                        scores = [(int(team.get("score", 0)), team.get("id")) for team in competitors]
+                        scores.sort()
+                        if scores[0][0] < scores[1][0]:
+                            eliminated.add(scores[0][1])
     return eliminated
 
 

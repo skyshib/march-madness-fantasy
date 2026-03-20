@@ -1,171 +1,66 @@
 {
-  "last_updated": "2026-03-20T01:38:17.958866+00:00",
+  "last_updated": "2026-03-20T02:21:43.598996+00:00",
   "players": {
-    "bryce-harris": {
-      "name": "Bryce Harris",
-      "team": "Howard Bison",
-      "seed": 16,
+    "tj-power": {
+      "name": "TJ Power",
+      "team": "Pennsylvania Quakers",
+      "seed": 14,
       "eliminated": false,
       "stats": {
-        "pts": 21,
-        "reb": 2,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 21,
-          "reb": 2,
-          "ast": 2,
-          "game_id": "401856486",
-          "opponent": "Michigan Wolverines"
-        }
-      ]
-    },
-    "yaxel-lendeborg": {
-      "name": "Yaxel Lendeborg",
-      "team": "Michigan Wolverines",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 9,
-        "reb": 4,
-        "ast": 4
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 9,
-          "reb": 4,
-          "ast": 4,
-          "game_id": "401856486",
-          "opponent": "Howard Bison"
-        }
-      ]
-    },
-    "dailyn-swain": {
-      "name": "Dailyn Swain",
-      "team": "Texas Longhorns",
-      "seed": 11,
-      "eliminated": false,
-      "stats": {
-        "pts": 14,
-        "reb": 5,
-        "ast": 6
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 14,
-          "reb": 5,
-          "ast": 6,
-          "game_id": "401856484",
-          "opponent": "BYU Cougars"
-        }
-      ]
-    },
-    "aj-dybantsa": {
-      "name": "AJ Dybantsa",
-      "team": "BYU Cougars",
-      "seed": 6,
-      "eliminated": false,
-      "stats": {
-        "pts": 35,
-        "reb": 8,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 35,
-          "reb": 8,
-          "ast": 0,
-          "game_id": "401856484",
-          "opponent": "Texas Longhorns"
-        }
-      ]
-    },
-    "rashaun-agee": {
-      "name": "Rashaun Agee",
-      "team": "Texas A&M Aggies",
-      "seed": 10,
-      "eliminated": false,
-      "stats": {
-        "pts": 22,
-        "reb": 9,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 22,
-          "reb": 9,
-          "ast": 3,
-          "game_id": "401856492",
-          "opponent": "Saint Mary's Gaels"
-        }
-      ]
-    },
-    "marcus-hill": {
-      "name": "Marcus Hill",
-      "team": "Texas A&M Aggies",
-      "seed": 10,
-      "eliminated": false,
-      "stats": {
-        "pts": 4,
-        "reb": 3,
+        "pts": 3,
+        "reb": 0,
         "ast": 1
       },
       "games": [
         {
           "round": "R64",
-          "pts": 4,
-          "reb": 3,
+          "pts": 3,
+          "reb": 0,
           "ast": 1,
-          "game_id": "401856492",
-          "opponent": "Saint Mary's Gaels"
+          "game_id": "401856491",
+          "opponent": "Illinois Fighting Illini"
         }
       ]
     },
-    "mikey-lewis": {
-      "name": "Mikey Lewis",
-      "team": "Saint Mary's Gaels",
-      "seed": 7,
+    "keaton-wagler": {
+      "name": "Keaton Wagler",
+      "team": "Illinois Fighting Illini",
+      "seed": 3,
       "eliminated": false,
       "stats": {
         "pts": 5,
+        "reb": 4,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 5,
+          "reb": 4,
+          "ast": 3,
+          "game_id": "401856491",
+          "opponent": "Pennsylvania Quakers"
+        }
+      ]
+    },
+    "jeremiah-wilkinson": {
+      "name": "Jeremiah Wilkinson",
+      "team": "Georgia Bulldogs",
+      "seed": 8,
+      "eliminated": false,
+      "stats": {
+        "pts": 2,
         "reb": 0,
         "ast": 0
       },
       "games": [
         {
           "round": "R64",
-          "pts": 5,
+          "pts": 2,
           "reb": 0,
           "ast": 0,
-          "game_id": "401856492",
-          "opponent": "Texas A&M Aggies"
-        }
-      ]
-    },
-    "paulius-murauskas": {
-      "name": "Paulius Murauskas",
-      "team": "Saint Mary's Gaels",
-      "seed": 7,
-      "eliminated": false,
-      "stats": {
-        "pts": 4,
-        "reb": 3,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 4,
-          "reb": 3,
-          "ast": 0,
-          "game_id": "401856492",
-          "opponent": "Texas A&M Aggies"
+          "game_id": "401856487",
+          "opponent": "Saint Louis Billikens"
         }
       ]
     },
@@ -208,6 +103,48 @@
           "ast": 3,
           "game_id": "401856478",
           "opponent": "Siena Saints"
+        }
+      ]
+    },
+    "bryce-harris": {
+      "name": "Bryce Harris",
+      "team": "Howard Bison",
+      "seed": 16,
+      "eliminated": true,
+      "stats": {
+        "pts": 21,
+        "reb": 2,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 21,
+          "reb": 2,
+          "ast": 2,
+          "game_id": "401856486",
+          "opponent": "Michigan Wolverines"
+        }
+      ]
+    },
+    "yaxel-lendeborg": {
+      "name": "Yaxel Lendeborg",
+      "team": "Michigan Wolverines",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 9,
+        "reb": 4,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 9,
+          "reb": 4,
+          "ast": 4,
+          "game_id": "401856486",
+          "opponent": "Howard Bison"
         }
       ]
     },
@@ -589,6 +526,132 @@
         }
       ]
     },
+    "dailyn-swain": {
+      "name": "Dailyn Swain",
+      "team": "Texas Longhorns",
+      "seed": 11,
+      "eliminated": false,
+      "stats": {
+        "pts": 14,
+        "reb": 5,
+        "ast": 6
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 14,
+          "reb": 5,
+          "ast": 6,
+          "game_id": "401856484",
+          "opponent": "BYU Cougars"
+        }
+      ]
+    },
+    "aj-dybantsa": {
+      "name": "AJ Dybantsa",
+      "team": "BYU Cougars",
+      "seed": 6,
+      "eliminated": true,
+      "stats": {
+        "pts": 35,
+        "reb": 10,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 35,
+          "reb": 10,
+          "ast": 1,
+          "game_id": "401856484",
+          "opponent": "Texas Longhorns"
+        }
+      ]
+    },
+    "rashaun-agee": {
+      "name": "Rashaun Agee",
+      "team": "Texas A&M Aggies",
+      "seed": 10,
+      "eliminated": false,
+      "stats": {
+        "pts": 22,
+        "reb": 9,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 22,
+          "reb": 9,
+          "ast": 3,
+          "game_id": "401856492",
+          "opponent": "Saint Mary's Gaels"
+        }
+      ]
+    },
+    "marcus-hill": {
+      "name": "Marcus Hill",
+      "team": "Texas A&M Aggies",
+      "seed": 10,
+      "eliminated": false,
+      "stats": {
+        "pts": 4,
+        "reb": 3,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 4,
+          "reb": 3,
+          "ast": 1,
+          "game_id": "401856492",
+          "opponent": "Saint Mary's Gaels"
+        }
+      ]
+    },
+    "mikey-lewis": {
+      "name": "Mikey Lewis",
+      "team": "Saint Mary's Gaels",
+      "seed": 7,
+      "eliminated": true,
+      "stats": {
+        "pts": 5,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 5,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "401856492",
+          "opponent": "Texas A&M Aggies"
+        }
+      ]
+    },
+    "paulius-murauskas": {
+      "name": "Paulius Murauskas",
+      "team": "Saint Mary's Gaels",
+      "seed": 7,
+      "eliminated": true,
+      "stats": {
+        "pts": 4,
+        "reb": 3,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 4,
+          "reb": 3,
+          "ast": 0,
+          "game_id": "401856492",
+          "opponent": "Texas A&M Aggies"
+        }
+      ]
+    },
     "david-punch": {
       "name": "David Punch",
       "team": "TCU Horned Frogs",
@@ -631,6 +694,69 @@
         }
       ]
     },
+    "jackson-rasmussen": {
+      "name": "Jackson Rasmussen",
+      "team": "Idaho Vandals",
+      "seed": 15,
+      "eliminated": false,
+      "stats": {
+        "pts": 2,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 2,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "401856493",
+          "opponent": "Houston Cougars"
+        }
+      ]
+    },
+    "kolton-mitchell": {
+      "name": "Kolton Mitchell",
+      "team": "Idaho Vandals",
+      "seed": 15,
+      "eliminated": false,
+      "stats": {
+        "pts": 3,
+        "reb": 1,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 3,
+          "reb": 1,
+          "ast": 0,
+          "game_id": "401856493",
+          "opponent": "Houston Cougars"
+        }
+      ]
+    },
+    "kingston-flemings": {
+      "name": "Kingston Flemings",
+      "team": "Houston Cougars",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 2,
+        "reb": 3,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 2,
+          "reb": 3,
+          "ast": 0,
+          "game_id": "401856493",
+          "opponent": "Idaho Vandals"
+        }
+      ]
+    },
     "caleb-wilson": {
       "name": "Caleb Wilson",
       "team": "North Carolina Tar Heels",
@@ -642,76 +768,88 @@
         "ast": 0
       },
       "games": []
+    },
+    "boopie-miller": {
+      "name": "Boopie Miller",
+      "team": "Saint Mary'S Gaels",
+      "seed": 0,
+      "eliminated": true,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": []
     }
   },
   "active_games": [
-    "401856486",
-    "401856484",
-    "401856492"
+    "401856491",
+    "401856487",
+    "401856493"
   ],
   "live_games": [
     {
-      "id": "401856486",
-      "status": "1:09 - 2nd",
+      "id": "401856491",
+      "status": "6:17 - 1st",
       "teams": [
         {
-          "name": "Michigan Wolverines",
-          "abbrev": "MICH",
-          "seed": 1,
-          "score": "98",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
+          "name": "Illinois Fighting Illini",
+          "abbrev": "ILL",
+          "seed": 3,
+          "score": "26",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
           "winner": null
         },
         {
-          "name": "Howard Bison",
-          "abbrev": "HOW",
-          "seed": 16,
-          "score": "74",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/47.png",
+          "name": "Pennsylvania Quakers",
+          "abbrev": "PENN",
+          "seed": 14,
+          "score": "22",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/219.png",
           "winner": null
         }
       ]
     },
     {
-      "id": "401856484",
-      "status": "3:28 - 2nd",
+      "id": "401856487",
+      "status": "15:27 - 1st",
       "teams": [
         {
-          "name": "BYU Cougars",
-          "abbrev": "BYU",
-          "seed": 6,
-          "score": "64",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
+          "name": "Georgia Bulldogs",
+          "abbrev": "UGA",
+          "seed": 8,
+          "score": "2",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
           "winner": null
         },
         {
-          "name": "Texas Longhorns",
-          "abbrev": "TEX",
-          "seed": 11,
-          "score": "72",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+          "name": "Saint Louis Billikens",
+          "abbrev": "SLU",
+          "seed": 9,
+          "score": "8",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/139.png",
           "winner": null
         }
       ]
     },
     {
-      "id": "401856492",
-      "status": "3:32 - 2nd",
+      "id": "401856493",
+      "status": "16:39 - 1st",
       "teams": [
         {
-          "name": "Saint Mary's Gaels",
-          "abbrev": "SMC",
-          "seed": 7,
-          "score": "48",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png",
+          "name": "Houston Cougars",
+          "abbrev": "HOU",
+          "seed": 2,
+          "score": "7",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
           "winner": null
         },
         {
-          "name": "Texas A&M Aggies",
-          "abbrev": "TA&M",
-          "seed": 10,
-          "score": "61",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png",
+          "name": "Idaho Vandals",
+          "abbrev": "IDHO",
+          "seed": 15,
+          "score": "5",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/70.png",
           "winner": null
         }
       ]
