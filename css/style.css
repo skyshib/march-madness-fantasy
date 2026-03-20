@@ -284,9 +284,11 @@ td.col-remaining {
 }
 
 .remaining-round {
-  font-size: 0.6rem;
+  display: block;
+  font-size: 0.55rem;
   color: var(--text-muted);
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 /* === Seed cells === */

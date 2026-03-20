@@ -233,10 +233,11 @@ const Scoreboard = (() => {
         }
       }
 
-      const roundEntries = Object.entries(byRound);
+      const roundOrder = ['R64', 'R32', 'S16', 'E8', 'F4', 'Final'];
+      const roundEntries = roundOrder.filter(rd => byRound[rd]).map(rd => `${rd}: ${byRound[rd]}`);
       if (!compactMode && roundEntries.length > 0) {
-        const roundText = roundEntries.map(([rd, ct]) => `${rd}:${ct}`).join(' ');
-        remTd.innerHTML = `${r.remaining}/16<br><span class="remaining-round">${roundText}</span>`;
+        const roundText = roundEntries.map(r => `<span class="remaining-round">${r}</span>`).join('');
+        remTd.innerHTML = `${r.remaining}/16<br>${roundText}`;
       } else {
         remTd.textContent = `${r.remaining}/16`;
       }
@@ -445,13 +446,13 @@ const Scoreboard = (() => {
     }
 
     html += '<table class="detail-table"><thead><tr>';
-    html += '<th>Seed</th><th>Player</th><th>Team</th><th>Picked</th><th>PTS</th>';
+    html += '<th>Seed</th><th>Player</th><th>Team</th><th>Round</th><th>Picked</th><th>PTS</th>';
     html += '</tr></thead><tbody>';
 
     for (let seed = 1; seed <= 16; seed++) {
       const info = ranked.seedBreakdown[seed];
       if (!info.pick) {
-        html += `<tr><td>${seed}</td><td colspan="4" style="color:var(--text-muted)">No pick</td></tr>`;
+        html += `<tr><td>${seed}</td><td colspan="5" style="color:var(--text-muted)">No pick</td></tr>`;
         continue;
       }
 
@@ -487,7 +488,22 @@ const Scoreboard = (() => {
       html += `<td>${seed}</td>`;
       html += `<td ${liveClass}><span class="detail-player-cell">${hsImg}${info.pick.name}${captainBadge}</span></td>`;
       const pCount = pickCounts?.[info.pick.player_id] || 0;
+      // Round column: show current status
+      const player = statsData?.players?.[info.pick.player_id];
+      const numGames = player?.games?.length || 0;
+      const detailRoundNames = ['R64', 'R32', 'S16', 'E8', 'F4', 'Final'];
+      let roundDisplay;
+      if (info.eliminated) {
+        const lastRound = player?.games?.[numGames - 1]?.round || detailRoundNames[numGames - 1] || '';
+        roundDisplay = `<span style="color:var(--eliminated)">☠️ ${lastRound}</span>`;
+      } else if (info.live) {
+        roundDisplay = `<span style="color:var(--live-green)">● ${detailRoundNames[numGames > 0 ? numGames - 1 : 0]}</span>`;
+      } else {
+        roundDisplay = `<span style="color:var(--text-muted)">${detailRoundNames[numGames] || '—'}</span>`;
+      }
+
       html += `<td>${info.pick.team || ''}</td>`;
+      html += `<td>${roundDisplay}</td>`;
       html += `<td style="color:var(--text-muted)">${pCount}/${totalEntrants}</td>`;
       html += `<td style="font-weight:700">${ptsDisplay}</td>`;
       html += '</tr>';
