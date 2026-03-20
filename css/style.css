@@ -283,6 +283,12 @@ td.col-remaining {
   color: var(--text-secondary);
 }
 
+.remaining-round {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
 /* === Seed cells === */
 .seed-cell {
   font-size: 0.8rem;
