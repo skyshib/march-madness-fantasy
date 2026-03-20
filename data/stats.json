@@ -1,22 +1,43 @@
 {
-  "last_updated": "2026-03-20T16:51:18.740724+00:00",
+  "last_updated": "2026-03-20T17:31:09.366578+00:00",
   "players": {
+    "tavari-johnson": {
+      "name": "Tavari Johnson",
+      "team": "Akron Zips",
+      "seed": 12,
+      "eliminated": false,
+      "stats": {
+        "pts": 2,
+        "reb": 1,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 2,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856520",
+          "opponent": "Texas Tech Red Raiders"
+        }
+      ]
+    },
     "christian-hammond": {
       "name": "Christian Hammond",
       "team": "Santa Clara Broncos",
       "seed": 10,
       "eliminated": false,
       "stats": {
-        "pts": 3,
-        "reb": 2,
-        "ast": 0
+        "pts": 9,
+        "reb": 3,
+        "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 3,
-          "reb": 2,
-          "ast": 0,
+          "pts": 9,
+          "reb": 3,
+          "ast": 2,
           "game_id": "401856525",
           "opponent": "Kentucky Wildcats"
         }
@@ -28,39 +49,18 @@
       "seed": 7,
       "eliminated": false,
       "stats": {
-        "pts": 7,
+        "pts": 14,
         "reb": 2,
-        "ast": 3
+        "ast": 4
       },
       "games": [
         {
           "round": "R64",
-          "pts": 7,
+          "pts": 14,
           "reb": 2,
-          "ast": 3,
+          "ast": 4,
           "game_id": "401856525",
           "opponent": "Santa Clara Broncos"
-        }
-      ]
-    },
-    "tavari-johnson": {
-      "name": "Tavari Johnson",
-      "team": "Akron Zips",
-      "seed": 12,
-      "eliminated": false,
-      "stats": {
-        "pts": 2,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 2,
-          "reb": 0,
-          "ast": 0,
-          "game_id": "401856520",
-          "opponent": "Texas Tech Red Raiders"
         }
       ]
     },
@@ -924,41 +924,19 @@
     }
   },
   "active_games": [
-    "401856525",
-    "401856520"
+    "401856520",
+    "401856525"
   ],
   "live_games": [
     {
-      "id": "401856525",
-      "status": "6:44 - 1st",
-      "teams": [
-        {
-          "name": "Kentucky Wildcats",
-          "abbrev": "UK",
-          "seed": 7,
-          "score": "23",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
-          "winner": null
-        },
-        {
-          "name": "Santa Clara Broncos",
-          "abbrev": "SCU",
-          "seed": 10,
-          "score": "18",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png",
-          "winner": null
-        }
-      ]
-    },
-    {
       "id": "401856520",
-      "status": "15:32 - 1st",
+      "status": "Halftime",
       "teams": [
         {
           "name": "Texas Tech Red Raiders",
           "abbrev": "TTU",
           "seed": 5,
-          "score": "6",
+          "score": "40",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
           "winner": null
         },
@@ -966,8 +944,30 @@
           "name": "Akron Zips",
           "abbrev": "AKR",
           "seed": 12,
-          "score": "3",
+          "score": "35",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2006.png",
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "401856525",
+      "status": "16:10 - 2nd",
+      "teams": [
+        {
+          "name": "Kentucky Wildcats",
+          "abbrev": "UK",
+          "seed": 7,
+          "score": "44",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
+          "winner": null
+        },
+        {
+          "name": "Santa Clara Broncos",
+          "abbrev": "SCU",
+          "seed": 10,
+          "score": "42",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png",
           "winner": null
         }
       ]
