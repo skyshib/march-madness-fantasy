@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-20T22:31:55.712108+00:00",
+  "last_updated": "2026-03-20T22:35:54.982904+00:00",
   "players": {
     "brant-byers": {
       "name": "Brant Byers",
       "team": "Miami (OH) RedHawks",
       "seed": 11,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
         "pts": 9,
         "reb": 6,
@@ -1219,6 +1219,18 @@
         }
       ]
     },
+    "pete-suder": {
+      "name": "Pete Suder",
+      "team": "Miami (Oh) Redhawks",
+      "seed": 0,
+      "eliminated": true,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": []
+    },
     "ethan-roberts": {
       "name": "Ethan Roberts",
       "team": "Pennsylvania Quakers",
@@ -1280,31 +1292,6 @@
       "games": []
     }
   },
-  "active_games": [
-    "401856527"
-  ],
-  "live_games": [
-    {
-      "id": "401856527",
-      "status": "0:56 - 2nd",
-      "teams": [
-        {
-          "name": "Tennessee Volunteers",
-          "abbrev": "TENN",
-          "seed": 6,
-          "score": "78",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
-          "winner": null
-        },
-        {
-          "name": "Miami (OH) RedHawks",
-          "abbrev": "M-OH",
-          "seed": 11,
-          "score": "56",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
-          "winner": null
-        }
-      ]
-    }
-  ]
+  "active_games": [],
+  "live_games": []
 }
