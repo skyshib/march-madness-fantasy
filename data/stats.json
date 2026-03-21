@@ -1,6 +1,64 @@
 {
-  "last_updated": "2026-03-21T18:48:31.247377+00:00",
+  "last_updated": "2026-03-21T19:14:21.607207+00:00",
   "players": {
+    "ryan-conwell": {
+      "name": "Ryan Conwell",
+      "team": "Louisville Cardinals",
+      "seed": 6,
+      "eliminated": false,
+      "stats": {
+        "pts": 24,
+        "reb": 6,
+        "ast": 6
+      },
+      "games": [
+        {
+          "round": "R32",
+          "pts": 6,
+          "reb": 2,
+          "ast": 0,
+          "game_id": "401856531",
+          "opponent": "Michigan State Spartans"
+        },
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 4,
+          "ast": 6,
+          "game_id": "401856482",
+          "opponent": "South Florida Bulls"
+        }
+      ]
+    },
+    "jeremy-fears-jr": {
+      "name": "Jeremy Fears Jr.",
+      "team": "Michigan State Spartans",
+      "seed": 3,
+      "eliminated": false,
+      "stats": {
+        "pts": 9,
+        "reb": 4,
+        "ast": 15
+      },
+      "games": [
+        {
+          "round": "R32",
+          "pts": 2,
+          "reb": 2,
+          "ast": 4,
+          "game_id": "401856531",
+          "opponent": "Louisville Cardinals"
+        },
+        {
+          "round": "R64",
+          "pts": 7,
+          "reb": 2,
+          "ast": 11,
+          "game_id": "401856483",
+          "opponent": "North Dakota State Bison"
+        }
+      ]
+    },
     "yaxel-lendeborg": {
       "name": "Yaxel Lendeborg",
       "team": "Michigan Wolverines",
@@ -153,27 +211,6 @@
           "ast": 2,
           "game_id": "401856483",
           "opponent": "Michigan State Spartans"
-        }
-      ]
-    },
-    "jeremy-fears-jr": {
-      "name": "Jeremy Fears Jr.",
-      "team": "Michigan State Spartans",
-      "seed": 3,
-      "eliminated": false,
-      "stats": {
-        "pts": 7,
-        "reb": 2,
-        "ast": 11
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 7,
-          "reb": 2,
-          "ast": 11,
-          "game_id": "401856483",
-          "opponent": "North Dakota State Bison"
         }
       ]
     },
@@ -531,27 +568,6 @@
           "ast": 2,
           "game_id": "401856482",
           "opponent": "Louisville Cardinals"
-        }
-      ]
-    },
-    "ryan-conwell": {
-      "name": "Ryan Conwell",
-      "team": "Louisville Cardinals",
-      "seed": 6,
-      "eliminated": false,
-      "stats": {
-        "pts": 18,
-        "reb": 4,
-        "ast": 6
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 18,
-          "reb": 4,
-          "ast": 6,
-          "game_id": "401856482",
-          "opponent": "South Florida Bulls"
         }
       ]
     },
@@ -1672,6 +1688,31 @@
       "games": []
     }
   },
-  "active_games": [],
-  "live_games": []
+  "active_games": [
+    "401856531"
+  ],
+  "live_games": [
+    {
+      "id": "401856531",
+      "status": "7:06 - 1st",
+      "teams": [
+        {
+          "name": "Michigan State Spartans",
+          "abbrev": "MSU",
+          "seed": 3,
+          "score": "27",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
+          "winner": null
+        },
+        {
+          "name": "Louisville Cardinals",
+          "abbrev": "LOU",
+          "seed": 6,
+          "score": "19",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
+          "winner": null
+        }
+      ]
+    }
+  ]
 }
