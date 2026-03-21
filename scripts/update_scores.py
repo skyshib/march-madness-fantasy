@@ -432,6 +432,17 @@ def main():
         if slug in player_stats:
             if eliminated:
                 player_stats[slug]["eliminated"] = True
+            # Update DNP games for existing entries with fewer games than team played
+            team_games = get_team_game_count(pick_team)
+            existing_games = len(player_stats[slug].get("games", []))
+            if team_games > existing_games:
+                round_names = ["R64", "R32", "S16", "E8", "F4", "Championship"]
+                for i in range(existing_games, team_games):
+                    player_stats[slug]["games"].append({
+                        "round": round_names[i] if i < len(round_names) else f"R{i+1}",
+                        "pts": 0, "reb": 0, "ast": 0,
+                        "game_id": "", "opponent": "DNP",
+                    })
         else:
             # Create stub entry — player not in any box score
             team_games = get_team_game_count(pick_team)
