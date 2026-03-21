@@ -1,6 +1,35 @@
 {
-  "last_updated": "2026-03-21T12:56:06.386092+00:00",
+  "last_updated": "2026-03-21T16:35:32.730582+00:00",
   "players": {
+    "yaxel-lendeborg": {
+      "name": "Yaxel Lendeborg",
+      "team": "Michigan Wolverines",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 13,
+        "reb": 6,
+        "ast": 5
+      },
+      "games": [
+        {
+          "round": "R32",
+          "pts": 4,
+          "reb": 2,
+          "ast": 1,
+          "game_id": "401856532",
+          "opponent": "Saint Louis Billikens"
+        },
+        {
+          "round": "R64",
+          "pts": 9,
+          "reb": 4,
+          "ast": 4,
+          "game_id": "401856486",
+          "opponent": "Howard Bison"
+        }
+      ]
+    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
@@ -61,27 +90,6 @@
           "ast": 2,
           "game_id": "401856486",
           "opponent": "Michigan Wolverines"
-        }
-      ]
-    },
-    "yaxel-lendeborg": {
-      "name": "Yaxel Lendeborg",
-      "team": "Michigan Wolverines",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 9,
-        "reb": 4,
-        "ast": 4
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 9,
-          "reb": 4,
-          "ast": 4,
-          "game_id": "401856486",
-          "opponent": "Howard Bison"
         }
       ]
     },
@@ -1639,69 +1647,6 @@
         }
       ]
     },
-    "ethan-roberts": {
-      "name": "Ethan Roberts",
-      "team": "Pennsylvania Quakers",
-      "seed": 0,
-      "eliminated": true,
-      "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 0,
-          "reb": 0,
-          "ast": 0,
-          "game_id": "",
-          "opponent": "DNP"
-        }
-      ]
-    },
-    "simeon-cottle": {
-      "name": "Simeon Cottle",
-      "team": "Kennesaw State Owls",
-      "seed": 0,
-      "eliminated": true,
-      "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 0,
-          "reb": 0,
-          "ast": 0,
-          "game_id": "",
-          "opponent": "DNP"
-        }
-      ]
-    },
-    "kristian-gonzalez": {
-      "name": "Kristian Gonzalez",
-      "team": "Idaho Vandals",
-      "seed": 0,
-      "eliminated": true,
-      "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 0,
-          "reb": 0,
-          "ast": 0,
-          "game_id": "",
-          "opponent": "DNP"
-        }
-      ]
-    },
     "jt-toppin": {
       "name": "JT Toppin",
       "team": "Texas Tech Red Raiders",
@@ -1727,6 +1672,31 @@
       "games": []
     }
   },
-  "active_games": [],
-  "live_games": []
+  "active_games": [
+    "401856532"
+  ],
+  "live_games": [
+    {
+      "id": "401856532",
+      "status": "9:08 - 1st",
+      "teams": [
+        {
+          "name": "Michigan Wolverines",
+          "abbrev": "MICH",
+          "seed": 1,
+          "score": "28",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
+          "winner": null
+        },
+        {
+          "name": "Saint Louis Billikens",
+          "abbrev": "SLU",
+          "seed": 9,
+          "score": "27",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/139.png",
+          "winner": null
+        }
+      ]
+    }
+  ]
 }
