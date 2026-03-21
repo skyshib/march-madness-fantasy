@@ -60,12 +60,19 @@ TEAM_ESPN_MAP = {
 }
 
 
+# ESPN normalized name -> our normalized name (applied after normalization)
+NAME_OVERRIDES = {
+    "brayden burries": "brayden burris",
+    "peter suder": "pete suder",
+}
+
 def normalize_name(name):
     """Normalize a name for matching."""
     name = name.strip().lower()
     name = re.sub(r"['\.\-\u2019]", "", name)
     name = re.sub(r"\s+(jr|sr|iii|ii|iv|v)$", "", name)
     name = re.sub(r"\s+", " ", name).strip()
+    name = NAME_OVERRIDES.get(name, name)
     return name
 
 

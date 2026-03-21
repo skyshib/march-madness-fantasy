@@ -75,8 +75,14 @@
     return false;
   }
 
+  const NAME_OVERRIDES = {
+    'brayden burries': 'brayden burris',
+    'peter suder': 'pete suder',
+  };
+
   function normalizeName(name) {
-    return name.toLowerCase().replace(/['\.\-\u2019]/g, '').replace(/\s+(jr|sr|iii|ii|iv|v)$/i, '').replace(/\s+/g, ' ').trim();
+    let n = name.toLowerCase().replace(/['\.\-\u2019]/g, '').replace(/\s+(jr|sr|iii|ii|iv|v)$/i, '').replace(/\s+/g, ' ').trim();
+    return NAME_OVERRIDES[n] || n;
   }
 
   function buildPlayerMappings(picks, headshots) {
