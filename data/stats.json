@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T02:43:48.622399+00:00",
+  "last_updated": "2026-03-21T03:31:38.706987+00:00",
   "players": {
     "dontae-horne": {
       "name": "Dontae Horne",
@@ -7,15 +7,15 @@
       "seed": 16,
       "eliminated": false,
       "stats": {
-        "pts": 6,
-        "reb": 1,
+        "pts": 10,
+        "reb": 2,
         "ast": 1
       },
       "games": [
         {
           "round": "R64",
-          "pts": 6,
-          "reb": 1,
+          "pts": 10,
+          "reb": 2,
           "ast": 1,
           "game_id": "401856523",
           "opponent": "Florida Gators"
@@ -28,18 +28,60 @@
       "seed": 1,
       "eliminated": false,
       "stats": {
-        "pts": 10,
-        "reb": 3,
-        "ast": 4
+        "pts": 14,
+        "reb": 4,
+        "ast": 7
       },
       "games": [
         {
           "round": "R64",
-          "pts": 10,
-          "reb": 3,
-          "ast": 4,
+          "pts": 14,
+          "reb": 4,
+          "ast": 7,
           "game_id": "401856523",
           "opponent": "Prairie View A&M Panthers"
+        }
+      ]
+    },
+    "alex-wilkins": {
+      "name": "Alex Wilkins",
+      "team": "Furman Paladins",
+      "seed": 15,
+      "eliminated": false,
+      "stats": {
+        "pts": 15,
+        "reb": 1,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 15,
+          "reb": 1,
+          "ast": 2,
+          "game_id": "401856497",
+          "opponent": "UConn Huskies"
+        }
+      ]
+    },
+    "tarris-reed-jr": {
+      "name": "Tarris Reed Jr.",
+      "team": "UConn Huskies",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 19,
+        "reb": 16,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 19,
+          "reb": 16,
+          "ast": 1,
+          "game_id": "401856497",
+          "opponent": "Furman Paladins"
         }
       ]
     },
@@ -49,16 +91,16 @@
       "seed": 13,
       "eliminated": false,
       "stats": {
-        "pts": 3,
-        "reb": 3,
-        "ast": 0
+        "pts": 5,
+        "reb": 4,
+        "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 3,
-          "reb": 3,
-          "ast": 0,
+          "pts": 5,
+          "reb": 4,
+          "ast": 2,
           "game_id": "401856495",
           "opponent": "Kansas Jayhawks"
         }
@@ -70,16 +112,16 @@
       "seed": 4,
       "eliminated": false,
       "stats": {
-        "pts": 0,
-        "reb": 3,
-        "ast": 1
+        "pts": 4,
+        "reb": 5,
+        "ast": 4
       },
       "games": [
         {
           "round": "R64",
-          "pts": 0,
-          "reb": 3,
-          "ast": 1,
+          "pts": 4,
+          "reb": 5,
+          "ast": 4,
           "game_id": "401856495",
           "opponent": "California Baptist Lancers"
         }
@@ -91,14 +133,14 @@
       "seed": 4,
       "eliminated": false,
       "stats": {
-        "pts": 6,
+        "pts": 20,
         "reb": 1,
         "ast": 0
       },
       "games": [
         {
           "round": "R64",
-          "pts": 6,
+          "pts": 20,
           "reb": 1,
           "ast": 0,
           "game_id": "401856495",
@@ -112,16 +154,16 @@
       "seed": 10,
       "eliminated": false,
       "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 1
+        "pts": 4,
+        "reb": 3,
+        "ast": 3
       },
       "games": [
         {
           "round": "R64",
-          "pts": 0,
-          "reb": 0,
-          "ast": 1,
+          "pts": 4,
+          "reb": 3,
+          "ast": 3,
           "game_id": "401856518",
           "opponent": "Miami Hurricanes"
         }
@@ -133,15 +175,15 @@
       "seed": 7,
       "eliminated": false,
       "stats": {
-        "pts": 5,
-        "reb": 3,
+        "pts": 7,
+        "reb": 4,
         "ast": 2
       },
       "games": [
         {
           "round": "R64",
-          "pts": 5,
-          "reb": 3,
+          "pts": 7,
+          "reb": 4,
           "ast": 2,
           "game_id": "401856518",
           "opponent": "Missouri Tigers"
@@ -187,6 +229,27 @@
           "ast": 3,
           "game_id": "401856529",
           "opponent": "Arizona Wildcats"
+        }
+      ]
+    },
+    "brayden-burris": {
+      "name": "Brayden Burris",
+      "team": "Arizona Wildcats",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 18,
+        "reb": 5,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856529",
+          "opponent": "Long Island University Sharks"
         }
       ]
     },
@@ -542,6 +605,27 @@
           "pts": 9,
           "reb": 6,
           "ast": 0,
+          "game_id": "401856527",
+          "opponent": "Tennessee Volunteers"
+        }
+      ]
+    },
+    "pete-suder": {
+      "name": "Pete Suder",
+      "team": "Miami (OH) RedHawks",
+      "seed": 11,
+      "eliminated": true,
+      "stats": {
+        "pts": 27,
+        "reb": 2,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 27,
+          "reb": 2,
+          "ast": 2,
           "game_id": "401856527",
           "opponent": "Tennessee Volunteers"
         }
@@ -1555,18 +1639,6 @@
         }
       ]
     },
-    "pete-suder": {
-      "name": "Pete Suder",
-      "team": "Miami (Oh) Redhawks",
-      "seed": 0,
-      "eliminated": true,
-      "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": []
-    },
     "ethan-roberts": {
       "name": "Ethan Roberts",
       "team": "Pennsylvania Quakers",
@@ -1630,19 +1702,20 @@
   },
   "active_games": [
     "401856523",
+    "401856497",
     "401856495",
     "401856518"
   ],
   "live_games": [
     {
       "id": "401856523",
-      "status": "1:05 - 1st",
+      "status": "5:00 - 2nd",
       "teams": [
         {
           "name": "Florida Gators",
           "abbrev": "FLA",
           "seed": 1,
-          "score": "57",
+          "score": "97",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
           "winner": null
         },
@@ -1650,21 +1723,43 @@
           "name": "Prairie View A&M Panthers",
           "abbrev": "PV",
           "seed": 16,
-          "score": "21",
+          "score": "45",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2504.png",
           "winner": null
         }
       ]
     },
     {
+      "id": "401856497",
+      "status": "Halftime",
+      "teams": [
+        {
+          "name": "UConn Huskies",
+          "abbrev": "CONN",
+          "seed": 2,
+          "score": "40",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
+          "winner": null
+        },
+        {
+          "name": "Furman Paladins",
+          "abbrev": "FUR",
+          "seed": 15,
+          "score": "36",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/231.png",
+          "winner": null
+        }
+      ]
+    },
+    {
       "id": "401856495",
-      "status": "11:40 - 1st",
+      "status": "15:51 - 2nd",
       "teams": [
         {
           "name": "Kansas Jayhawks",
           "abbrev": "KU",
           "seed": 4,
-          "score": "13",
+          "score": "48",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
           "winner": null
         },
@@ -1672,7 +1767,7 @@
           "name": "California Baptist Lancers",
           "abbrev": "CBU",
           "seed": 13,
-          "score": "6",
+          "score": "22",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2856.png",
           "winner": null
         }
@@ -1680,13 +1775,13 @@
     },
     {
       "id": "401856518",
-      "status": "9:44 - 1st",
+      "status": "17:52 - 2nd",
       "teams": [
         {
           "name": "Miami Hurricanes",
           "abbrev": "MIA",
           "seed": 7,
-          "score": "18",
+          "score": "32",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
           "winner": null
         },
@@ -1694,7 +1789,7 @@
           "name": "Missouri Tigers",
           "abbrev": "MIZ",
           "seed": 10,
-          "score": "12",
+          "score": "32",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
           "winner": null
         }
