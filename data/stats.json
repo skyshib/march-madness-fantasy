@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T19:56:22.053544+00:00",
+  "last_updated": "2026-03-21T20:35:49.422344+00:00",
   "players": {
     "ryan-conwell": {
       "name": "Ryan Conwell",
@@ -7,16 +7,16 @@
       "seed": 6,
       "eliminated": false,
       "stats": {
-        "pts": 27,
+        "pts": 33,
         "reb": 8,
-        "ast": 8
+        "ast": 9
       },
       "games": [
         {
           "round": "R32",
-          "pts": 9,
+          "pts": 15,
           "reb": 4,
-          "ast": 2,
+          "ast": 3,
           "game_id": "401856531",
           "opponent": "Michigan State Spartans"
         },
@@ -36,16 +36,16 @@
       "seed": 3,
       "eliminated": false,
       "stats": {
-        "pts": 12,
-        "reb": 4,
-        "ast": 17
+        "pts": 16,
+        "reb": 5,
+        "ast": 23
       },
       "games": [
         {
           "round": "R32",
-          "pts": 5,
-          "reb": 2,
-          "ast": 6,
+          "pts": 9,
+          "reb": 3,
+          "ast": 12,
           "game_id": "401856531",
           "opponent": "Louisville Cardinals"
         },
@@ -1694,13 +1694,13 @@
   "live_games": [
     {
       "id": "401856531",
-      "status": "Halftime",
+      "status": "7:12 - 2nd",
       "teams": [
         {
           "name": "Michigan State Spartans",
           "abbrev": "MSU",
           "seed": 3,
-          "score": "36",
+          "score": "58",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
           "winner": null
         },
@@ -1708,7 +1708,7 @@
           "name": "Louisville Cardinals",
           "abbrev": "LOU",
           "seed": 6,
-          "score": "31",
+          "score": "50",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
           "winner": null
         }
