@@ -1,64 +1,6 @@
 {
-  "last_updated": "2026-03-21T20:57:14.132602+00:00",
+  "last_updated": "2026-03-21T21:33:33.988078+00:00",
   "players": {
-    "ryan-conwell": {
-      "name": "Ryan Conwell",
-      "team": "Louisville Cardinals",
-      "seed": 6,
-      "eliminated": false,
-      "stats": {
-        "pts": 36,
-        "reb": 8,
-        "ast": 9
-      },
-      "games": [
-        {
-          "round": "R32",
-          "pts": 18,
-          "reb": 4,
-          "ast": 3,
-          "game_id": "401856531",
-          "opponent": "Michigan State Spartans"
-        },
-        {
-          "round": "R64",
-          "pts": 18,
-          "reb": 4,
-          "ast": 6,
-          "game_id": "401856482",
-          "opponent": "South Florida Bulls"
-        }
-      ]
-    },
-    "jeremy-fears-jr": {
-      "name": "Jeremy Fears Jr.",
-      "team": "Michigan State Spartans",
-      "seed": 3,
-      "eliminated": false,
-      "stats": {
-        "pts": 18,
-        "reb": 5,
-        "ast": 26
-      },
-      "games": [
-        {
-          "round": "R32",
-          "pts": 11,
-          "reb": 3,
-          "ast": 15,
-          "game_id": "401856531",
-          "opponent": "Louisville Cardinals"
-        },
-        {
-          "round": "R64",
-          "pts": 7,
-          "reb": 2,
-          "ast": 11,
-          "game_id": "401856483",
-          "opponent": "North Dakota State Bison"
-        }
-      ]
-    },
     "yaxel-lendeborg": {
       "name": "Yaxel Lendeborg",
       "team": "Michigan Wolverines",
@@ -88,6 +30,122 @@
         }
       ]
     },
+    "ryan-conwell": {
+      "name": "Ryan Conwell",
+      "team": "Louisville Cardinals",
+      "seed": 6,
+      "eliminated": true,
+      "stats": {
+        "pts": 39,
+        "reb": 8,
+        "ast": 10
+      },
+      "games": [
+        {
+          "round": "R32",
+          "pts": 21,
+          "reb": 4,
+          "ast": 4,
+          "game_id": "401856531",
+          "opponent": "Michigan State Spartans"
+        },
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 4,
+          "ast": 6,
+          "game_id": "401856482",
+          "opponent": "South Florida Bulls"
+        }
+      ]
+    },
+    "jeremy-fears-jr": {
+      "name": "Jeremy Fears Jr.",
+      "team": "Michigan State Spartans",
+      "seed": 3,
+      "eliminated": false,
+      "stats": {
+        "pts": 19,
+        "reb": 5,
+        "ast": 27
+      },
+      "games": [
+        {
+          "round": "R32",
+          "pts": 12,
+          "reb": 3,
+          "ast": 16,
+          "game_id": "401856531",
+          "opponent": "Louisville Cardinals"
+        },
+        {
+          "round": "R64",
+          "pts": 7,
+          "reb": 2,
+          "ast": 11,
+          "game_id": "401856483",
+          "opponent": "North Dakota State Bison"
+        }
+      ]
+    },
+    "david-punch": {
+      "name": "David Punch",
+      "team": "TCU Horned Frogs",
+      "seed": 9,
+      "eliminated": false,
+      "stats": {
+        "pts": 18,
+        "reb": 14,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R32",
+          "pts": 2,
+          "reb": 1,
+          "ast": 0,
+          "game_id": "401856530",
+          "opponent": "Duke Blue Devils"
+        },
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 13,
+          "ast": 2,
+          "game_id": "401856479",
+          "opponent": "Ohio State Buckeyes"
+        }
+      ]
+    },
+    "cameron-boozer": {
+      "name": "Cameron Boozer",
+      "team": "Duke Blue Devils",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 22,
+        "reb": 14,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "R32",
+          "pts": 0,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856530",
+          "opponent": "TCU Horned Frogs"
+        },
+        {
+          "round": "R64",
+          "pts": 22,
+          "reb": 13,
+          "ast": 3,
+          "game_id": "401856478",
+          "opponent": "Siena Saints"
+        }
+      ]
+    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
@@ -106,27 +164,6 @@
           "ast": 2,
           "game_id": "401856478",
           "opponent": "Duke Blue Devils"
-        }
-      ]
-    },
-    "cameron-boozer": {
-      "name": "Cameron Boozer",
-      "team": "Duke Blue Devils",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 22,
-        "reb": 13,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 22,
-          "reb": 13,
-          "ast": 3,
-          "game_id": "401856478",
-          "opponent": "Siena Saints"
         }
       ]
     },
@@ -736,27 +773,6 @@
           "ast": 0,
           "game_id": "401856492",
           "opponent": "Texas A&M Aggies"
-        }
-      ]
-    },
-    "david-punch": {
-      "name": "David Punch",
-      "team": "TCU Horned Frogs",
-      "seed": 9,
-      "eliminated": false,
-      "stats": {
-        "pts": 16,
-        "reb": 13,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 16,
-          "reb": 13,
-          "ast": 2,
-          "game_id": "401856479",
-          "opponent": "Ohio State Buckeyes"
         }
       ]
     },
@@ -1689,27 +1705,27 @@
     }
   },
   "active_games": [
-    "401856531"
+    "401856530"
   ],
   "live_games": [
     {
-      "id": "401856531",
-      "status": "1:00 - 2nd",
+      "id": "401856530",
+      "status": "16:43 - 1st",
       "teams": [
         {
-          "name": "Michigan State Spartans",
-          "abbrev": "MSU",
-          "seed": 3,
-          "score": "73",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
+          "name": "Duke Blue Devils",
+          "abbrev": "DUKE",
+          "seed": 1,
+          "score": "7",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
           "winner": null
         },
         {
-          "name": "Louisville Cardinals",
-          "abbrev": "LOU",
-          "seed": 6,
-          "score": "62",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
+          "name": "TCU Horned Frogs",
+          "abbrev": "TCU",
+          "seed": 9,
+          "score": "5",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
           "winner": null
         }
       ]
