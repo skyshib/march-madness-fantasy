@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T17:36:11.806843+00:00",
+  "last_updated": "2026-03-21T17:56:38.238979+00:00",
   "players": {
     "yaxel-lendeborg": {
       "name": "Yaxel Lendeborg",
@@ -7,15 +7,15 @@
       "seed": 1,
       "eliminated": false,
       "stats": {
-        "pts": 22,
-        "reb": 7,
+        "pts": 29,
+        "reb": 8,
         "ast": 5
       },
       "games": [
         {
           "round": "R32",
-          "pts": 13,
-          "reb": 3,
+          "pts": 20,
+          "reb": 4,
           "ast": 1,
           "game_id": "401856532",
           "opponent": "Saint Louis Billikens"
@@ -1678,13 +1678,13 @@
   "live_games": [
     {
       "id": "401856532",
-      "status": "14:17 - 2nd",
+      "status": "8:32 - 2nd",
       "teams": [
         {
           "name": "Michigan Wolverines",
           "abbrev": "MICH",
           "seed": 1,
-          "score": "61",
+          "score": "77",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
           "winner": null
         },
@@ -1692,7 +1692,7 @@
           "name": "Saint Louis Billikens",
           "abbrev": "SLU",
           "seed": 9,
-          "score": "55",
+          "score": "61",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/139.png",
           "winner": null
         }
