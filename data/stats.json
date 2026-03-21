@@ -1,48 +1,6 @@
 {
-  "last_updated": "2026-03-21T04:53:42.648818+00:00",
+  "last_updated": "2026-03-21T12:32:22.233922+00:00",
   "players": {
-    "alex-wilkins": {
-      "name": "Alex Wilkins",
-      "team": "Furman Paladins",
-      "seed": 15,
-      "eliminated": true,
-      "stats": {
-        "pts": 21,
-        "reb": 1,
-        "ast": 4
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 21,
-          "reb": 1,
-          "ast": 4,
-          "game_id": "401856497",
-          "opponent": "UConn Huskies"
-        }
-      ]
-    },
-    "tarris-reed-jr": {
-      "name": "Tarris Reed Jr.",
-      "team": "UConn Huskies",
-      "seed": 2,
-      "eliminated": false,
-      "stats": {
-        "pts": 31,
-        "reb": 27,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 31,
-          "reb": 27,
-          "ast": 3,
-          "game_id": "401856497",
-          "opponent": "Furman Paladins"
-        }
-      ]
-    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
@@ -1135,6 +1093,48 @@
         }
       ]
     },
+    "alex-wilkins": {
+      "name": "Alex Wilkins",
+      "team": "Furman Paladins",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 21,
+        "reb": 1,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 21,
+          "reb": 1,
+          "ast": 4,
+          "game_id": "401856497",
+          "opponent": "UConn Huskies"
+        }
+      ]
+    },
+    "tarris-reed-jr": {
+      "name": "Tarris Reed Jr.",
+      "team": "UConn Huskies",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 31,
+        "reb": 27,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 31,
+          "reb": 27,
+          "ast": 3,
+          "game_id": "401856497",
+          "opponent": "Furman Paladins"
+        }
+      ]
+    },
     "tj-burch": {
       "name": "TJ Burch",
       "team": "Wright State Raiders",
@@ -1639,6 +1639,27 @@
         }
       ]
     },
+    "tyler-bilodeau": {
+      "name": "Tyler Bilodeau",
+      "team": "UCLA",
+      "seed": 0,
+      "eliminated": false,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "DNP"
+        }
+      ]
+    },
     "ethan-roberts": {
       "name": "Ethan Roberts",
       "team": "Pennsylvania Quakers",
@@ -1649,7 +1670,16 @@
         "reb": 0,
         "ast": 0
       },
-      "games": []
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "DNP"
+        }
+      ]
     },
     "simeon-cottle": {
       "name": "Simeon Cottle",
@@ -1661,13 +1691,43 @@
         "reb": 0,
         "ast": 0
       },
-      "games": []
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "DNP"
+        }
+      ]
     },
     "kristian-gonzalez": {
       "name": "Kristian Gonzalez",
       "team": "Idaho Vandals",
       "seed": 0,
       "eliminated": true,
+      "stats": {
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "DNP"
+        }
+      ]
+    },
+    "jt-toppin": {
+      "name": "JT Toppin",
+      "team": "Texas Tech Red Raiders",
+      "seed": 0,
+      "eliminated": false,
       "stats": {
         "pts": 0,
         "reb": 0,
@@ -1697,7 +1757,16 @@
         "reb": 0,
         "ast": 0
       },
-      "games": []
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "DNP"
+        }
+      ]
     }
   },
   "active_games": [],
