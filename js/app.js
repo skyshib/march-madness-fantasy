@@ -685,6 +685,60 @@
     btn.textContent = isCompact ? 'Full Mode' : 'Compact Mode';
   });
 
+  // --- Bug Report ---
+  const bugModal = document.getElementById('bug-modal');
+  const bugForm = document.getElementById('bug-form');
+  const bugList = document.getElementById('bug-list');
+
+  function loadBugReports() {
+    const bugs = JSON.parse(localStorage.getItem('bugReports') || '[]');
+    if (bugList) {
+      bugList.innerHTML = bugs.length === 0
+        ? '<div style="color:var(--text-muted);font-size:0.75rem">No reports yet</div>'
+        : bugs.slice(-20).reverse().map(b =>
+          `<div class="bug-entry"><span class="bug-entry-name">${b.name}</span> <span class="bug-entry-time">${new Date(b.time).toLocaleString()}</span><br>${b.desc}</div>`
+        ).join('');
+    }
+  }
+
+  document.getElementById('bug-report-btn')?.addEventListener('click', () => {
+    bugModal?.classList.remove('hidden');
+    loadBugReports();
+  });
+
+  document.getElementById('bug-close')?.addEventListener('click', () => {
+    bugModal?.classList.add('hidden');
+  });
+
+  bugModal?.addEventListener('click', (e) => {
+    if (e.target === bugModal) bugModal.classList.add('hidden');
+  });
+
+  bugForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('bug-name').value.trim();
+    const desc = document.getElementById('bug-desc').value.trim();
+    if (!name || !desc) return;
+
+    const report = { name, desc, time: Date.now() };
+    const bugs = JSON.parse(localStorage.getItem('bugReports') || '[]');
+    bugs.push(report);
+    localStorage.setItem('bugReports', JSON.stringify(bugs));
+
+    // Also open a GitHub issue as a backup
+    const issueTitle = encodeURIComponent(`[Bug] ${desc.slice(0, 60)}`);
+    const issueBody = encodeURIComponent(`Reported by: ${name}\n\n${desc}\n\nTimestamp: ${new Date().toISOString()}`);
+    window.open(`https://github.com/skyshib/march-madness-fantasy/issues/new?title=${issueTitle}&body=${issueBody}`, '_blank');
+
+    document.getElementById('bug-status').textContent = '✓ Submitted!';
+    bugForm.reset();
+    loadBugReports();
+
+    setTimeout(() => {
+      document.getElementById('bug-status').textContent = '';
+    }, 3000);
+  });
+
   // --- Detail panel close ---
   document.getElementById('close-detail')?.addEventListener('click', () => {
     Scoreboard.hideDetail();

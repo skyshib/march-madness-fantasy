@@ -977,6 +977,107 @@ footer {
   vertical-align: middle;
 }
 
+/* === Bug Report Modal === */
+.bug-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bug-modal.hidden { display: none; }
+
+.bug-modal-content {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  width: 400px;
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.bug-modal-content h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.bug-modal-content label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.bug-modal-content input,
+.bug-modal-content textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.85rem;
+  resize: vertical;
+}
+
+.bug-submit {
+  background: var(--accent-orange);
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.bug-submit:hover { opacity: 0.9; }
+
+#bug-status {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: var(--live-green);
+}
+
+.bug-history {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.bug-history h3 {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.bug-entry {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.bug-entry .bug-entry-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.bug-entry .bug-entry-time {
+  color: var(--text-muted);
+  font-size: 0.65rem;
+}
+
 /* === Responsive === */
 @media (max-width: 900px) {
   h1 { font-size: 1.1rem; }

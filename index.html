@@ -16,6 +16,7 @@
         <h1>March Madness Fantasy</h1>
       </div>
       <div class="controls">
+        <button id="bug-report-btn" class="view-toggle" title="Report a bug">🐛 Bug</button>
         <button id="view-toggle" class="view-toggle" title="Toggle compact view">Compact Mode</button>
         <select id="year-select" aria-label="Select year"></select>
         <span id="update-indicator" class="update-indicator">Loading...</span>
@@ -47,8 +48,26 @@
     </div>
   </main>
 
+  <!-- Bug Report Modal -->
+  <div id="bug-modal" class="bug-modal hidden">
+    <div class="bug-modal-content">
+      <button id="bug-close" class="close-btn">&times;</button>
+      <h2>🐛 Report a Bug</h2>
+      <form id="bug-form">
+        <label>Your Name<input type="text" id="bug-name" required></label>
+        <label>What's wrong?<textarea id="bug-desc" rows="4" required placeholder="e.g. Player X score is wrong, team Y not showing up..."></textarea></label>
+        <button type="submit" class="bug-submit">Submit</button>
+        <div id="bug-status"></div>
+      </form>
+      <div class="bug-history">
+        <h3>Previous Reports</h3>
+        <div id="bug-list"></div>
+      </div>
+    </div>
+  </div>
+
   <footer>
-    <p>Data from ESPN. Auto-refreshes every 2 min.</p>
+    <p>Data from ESPN. Auto-refreshes every 1 min.</p>
   </footer>
 
   <script src="js/espn.js?v=3"></script>
