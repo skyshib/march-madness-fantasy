@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T12:32:22.233922+00:00",
+  "last_updated": "2026-03-21T12:56:06.386092+00:00",
   "players": {
     "gavin-doty": {
       "name": "Gavin Doty",
@@ -82,27 +82,6 @@
           "ast": 4,
           "game_id": "401856486",
           "opponent": "Howard Bison"
-        }
-      ]
-    },
-    "jackson-rasmussen": {
-      "name": "Jackson Rasmussen",
-      "team": "Idaho Vandals",
-      "seed": 15,
-      "eliminated": true,
-      "stats": {
-        "pts": 5,
-        "reb": 4,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 5,
-          "reb": 4,
-          "ast": 1,
-          "game_id": "401856493",
-          "opponent": "Houston Cougars"
         }
       ]
     },
@@ -1746,27 +1725,6 @@
         "ast": 0
       },
       "games": []
-    },
-    "boopie-miller": {
-      "name": "Boopie Miller",
-      "team": "Saint Mary'S Gaels",
-      "seed": 0,
-      "eliminated": true,
-      "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 0,
-          "reb": 0,
-          "ast": 0,
-          "game_id": "",
-          "opponent": "DNP"
-        }
-      ]
     }
   },
   "active_games": [],
