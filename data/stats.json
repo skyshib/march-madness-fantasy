@@ -1,64 +1,22 @@
 {
-  "last_updated": "2026-03-21T03:31:38.706987+00:00",
+  "last_updated": "2026-03-21T04:53:42.648818+00:00",
   "players": {
-    "dontae-horne": {
-      "name": "Dontae Horne",
-      "team": "Prairie View A&M Panthers",
-      "seed": 16,
-      "eliminated": false,
-      "stats": {
-        "pts": 10,
-        "reb": 2,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 10,
-          "reb": 2,
-          "ast": 1,
-          "game_id": "401856523",
-          "opponent": "Florida Gators"
-        }
-      ]
-    },
-    "thomas-haugh": {
-      "name": "Thomas Haugh",
-      "team": "Florida Gators",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 14,
-        "reb": 4,
-        "ast": 7
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 14,
-          "reb": 4,
-          "ast": 7,
-          "game_id": "401856523",
-          "opponent": "Prairie View A&M Panthers"
-        }
-      ]
-    },
     "alex-wilkins": {
       "name": "Alex Wilkins",
       "team": "Furman Paladins",
       "seed": 15,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
-        "pts": 15,
+        "pts": 21,
         "reb": 1,
-        "ast": 2
+        "ast": 4
       },
       "games": [
         {
           "round": "R64",
-          "pts": 15,
+          "pts": 21,
           "reb": 1,
-          "ast": 2,
+          "ast": 4,
           "game_id": "401856497",
           "opponent": "UConn Huskies"
         }
@@ -70,774 +28,18 @@
       "seed": 2,
       "eliminated": false,
       "stats": {
-        "pts": 19,
-        "reb": 16,
-        "ast": 1
+        "pts": 31,
+        "reb": 27,
+        "ast": 3
       },
       "games": [
         {
           "round": "R64",
-          "pts": 19,
-          "reb": 16,
-          "ast": 1,
+          "pts": 31,
+          "reb": 27,
+          "ast": 3,
           "game_id": "401856497",
           "opponent": "Furman Paladins"
-        }
-      ]
-    },
-    "dominique-daniels-jr": {
-      "name": "Dominique Daniels Jr.",
-      "team": "California Baptist Lancers",
-      "seed": 13,
-      "eliminated": false,
-      "stats": {
-        "pts": 5,
-        "reb": 4,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 5,
-          "reb": 4,
-          "ast": 2,
-          "game_id": "401856495",
-          "opponent": "Kansas Jayhawks"
-        }
-      ]
-    },
-    "melvin-council-jr": {
-      "name": "Melvin Council Jr.",
-      "team": "Kansas Jayhawks",
-      "seed": 4,
-      "eliminated": false,
-      "stats": {
-        "pts": 4,
-        "reb": 5,
-        "ast": 4
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 4,
-          "reb": 5,
-          "ast": 4,
-          "game_id": "401856495",
-          "opponent": "California Baptist Lancers"
-        }
-      ]
-    },
-    "darryn-peterson": {
-      "name": "Darryn Peterson",
-      "team": "Kansas Jayhawks",
-      "seed": 4,
-      "eliminated": false,
-      "stats": {
-        "pts": 20,
-        "reb": 1,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 20,
-          "reb": 1,
-          "ast": 0,
-          "game_id": "401856495",
-          "opponent": "California Baptist Lancers"
-        }
-      ]
-    },
-    "mark-mitchell": {
-      "name": "Mark Mitchell",
-      "team": "Missouri Tigers",
-      "seed": 10,
-      "eliminated": false,
-      "stats": {
-        "pts": 4,
-        "reb": 3,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 4,
-          "reb": 3,
-          "ast": 3,
-          "game_id": "401856518",
-          "opponent": "Miami Hurricanes"
-        }
-      ]
-    },
-    "malik-reneau": {
-      "name": "Malik Reneau",
-      "team": "Miami Hurricanes",
-      "seed": 7,
-      "eliminated": false,
-      "stats": {
-        "pts": 7,
-        "reb": 4,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 7,
-          "reb": 4,
-          "ast": 2,
-          "game_id": "401856518",
-          "opponent": "Missouri Tigers"
-        }
-      ]
-    },
-    "greg-gordon": {
-      "name": "Greg Gordon",
-      "team": "Long Island University Sharks",
-      "seed": 16,
-      "eliminated": true,
-      "stats": {
-        "pts": 12,
-        "reb": 3,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 12,
-          "reb": 3,
-          "ast": 3,
-          "game_id": "401856529",
-          "opponent": "Arizona Wildcats"
-        }
-      ]
-    },
-    "jamal-fuller": {
-      "name": "Jamal Fuller",
-      "team": "Long Island University Sharks",
-      "seed": 16,
-      "eliminated": true,
-      "stats": {
-        "pts": 11,
-        "reb": 5,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 11,
-          "reb": 5,
-          "ast": 3,
-          "game_id": "401856529",
-          "opponent": "Arizona Wildcats"
-        }
-      ]
-    },
-    "brayden-burris": {
-      "name": "Brayden Burris",
-      "team": "Arizona Wildcats",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 18,
-        "reb": 5,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 18,
-          "reb": 5,
-          "ast": 2,
-          "game_id": "401856529",
-          "opponent": "Long Island University Sharks"
-        }
-      ]
-    },
-    "jaden-bradley": {
-      "name": "Jaden Bradley",
-      "team": "Arizona Wildcats",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 7,
-        "reb": 5,
-        "ast": 4
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 7,
-          "reb": 5,
-          "ast": 4,
-          "game_id": "401856529",
-          "opponent": "Long Island University Sharks"
-        }
-      ]
-    },
-    "travis-harper-ii": {
-      "name": "Travis Harper II",
-      "team": "Tennessee State Tigers",
-      "seed": 15,
-      "eliminated": true,
-      "stats": {
-        "pts": 13,
-        "reb": 0,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 13,
-          "reb": 0,
-          "ast": 3,
-          "game_id": "401856524",
-          "opponent": "Iowa State Cyclones"
-        }
-      ]
-    },
-    "aaron-nkrumah": {
-      "name": "Aaron Nkrumah",
-      "team": "Tennessee State Tigers",
-      "seed": 15,
-      "eliminated": true,
-      "stats": {
-        "pts": 21,
-        "reb": 6,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 21,
-          "reb": 6,
-          "ast": 3,
-          "game_id": "401856524",
-          "opponent": "Iowa State Cyclones"
-        }
-      ]
-    },
-    "joshua-jefferson": {
-      "name": "Joshua Jefferson",
-      "team": "Iowa State Cyclones",
-      "seed": 2,
-      "eliminated": false,
-      "stats": {
-        "pts": 2,
-        "reb": 1,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 2,
-          "reb": 1,
-          "ast": 0,
-          "game_id": "401856524",
-          "opponent": "Tennessee State Tigers"
-        }
-      ]
-    },
-    "milan-momcilovic": {
-      "name": "Milan Momcilovic",
-      "team": "Iowa State Cyclones",
-      "seed": 2,
-      "eliminated": false,
-      "stats": {
-        "pts": 17,
-        "reb": 4,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 17,
-          "reb": 4,
-          "ast": 2,
-          "game_id": "401856524",
-          "opponent": "Tennessee State Tigers"
-        }
-      ]
-    },
-    "yoav-berman": {
-      "name": "Yoav Berman",
-      "team": "Queens University Royals",
-      "seed": 15,
-      "eliminated": true,
-      "stats": {
-        "pts": 5,
-        "reb": 2,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 5,
-          "reb": 2,
-          "ast": 1,
-          "game_id": "401856519",
-          "opponent": "Purdue Boilermakers"
-        }
-      ]
-    },
-    "nasir-mann": {
-      "name": "Nasir Mann",
-      "team": "Queens University Royals",
-      "seed": 15,
-      "eliminated": true,
-      "stats": {
-        "pts": 10,
-        "reb": 2,
-        "ast": 5
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 10,
-          "reb": 2,
-          "ast": 5,
-          "game_id": "401856519",
-          "opponent": "Purdue Boilermakers"
-        }
-      ]
-    },
-    "trey-kaufman-renn": {
-      "name": "Trey Kaufman-Renn",
-      "team": "Purdue Boilermakers",
-      "seed": 2,
-      "eliminated": false,
-      "stats": {
-        "pts": 25,
-        "reb": 9,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 25,
-          "reb": 9,
-          "ast": 3,
-          "game_id": "401856519",
-          "opponent": "Queens University Royals"
-        }
-      ]
-    },
-    "braden-smith": {
-      "name": "Braden Smith",
-      "team": "Purdue Boilermakers",
-      "seed": 2,
-      "eliminated": false,
-      "stats": {
-        "pts": 26,
-        "reb": 3,
-        "ast": 8
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 26,
-          "reb": 3,
-          "ast": 8,
-          "game_id": "401856519",
-          "opponent": "Queens University Royals"
-        }
-      ]
-    },
-    "tj-burch": {
-      "name": "TJ Burch",
-      "team": "Wright State Raiders",
-      "seed": 14,
-      "eliminated": true,
-      "stats": {
-        "pts": 15,
-        "reb": 2,
-        "ast": 6
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 15,
-          "reb": 2,
-          "ast": 6,
-          "game_id": "401856526",
-          "opponent": "Virginia Cavaliers"
-        }
-      ]
-    },
-    "michael-cooper": {
-      "name": "Michael Cooper",
-      "team": "Wright State Raiders",
-      "seed": 14,
-      "eliminated": true,
-      "stats": {
-        "pts": 13,
-        "reb": 0,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 13,
-          "reb": 0,
-          "ast": 1,
-          "game_id": "401856526",
-          "opponent": "Virginia Cavaliers"
-        }
-      ]
-    },
-    "cruz-davis": {
-      "name": "Cruz Davis",
-      "team": "Hofstra Pride",
-      "seed": 13,
-      "eliminated": true,
-      "stats": {
-        "pts": 14,
-        "reb": 2,
-        "ast": 6
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 14,
-          "reb": 2,
-          "ast": 6,
-          "game_id": "401856521",
-          "opponent": "Alabama Crimson Tide"
-        }
-      ]
-    },
-    "labaron-philon-jr": {
-      "name": "Labaron Philon Jr.",
-      "team": "Alabama Crimson Tide",
-      "seed": 4,
-      "eliminated": false,
-      "stats": {
-        "pts": 29,
-        "reb": 8,
-        "ast": 7
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 29,
-          "reb": 8,
-          "ast": 7,
-          "game_id": "401856521",
-          "opponent": "Hofstra Pride"
-        }
-      ]
-    },
-    "tavari-johnson": {
-      "name": "Tavari Johnson",
-      "team": "Akron Zips",
-      "seed": 12,
-      "eliminated": true,
-      "stats": {
-        "pts": 4,
-        "reb": 1,
-        "ast": 6
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 4,
-          "reb": 1,
-          "ast": 6,
-          "game_id": "401856520",
-          "opponent": "Texas Tech Red Raiders"
-        }
-      ]
-    },
-    "trey-campbell": {
-      "name": "Trey Campbell",
-      "team": "Northern Iowa Panthers",
-      "seed": 12,
-      "eliminated": true,
-      "stats": {
-        "pts": 14,
-        "reb": 3,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 14,
-          "reb": 3,
-          "ast": 1,
-          "game_id": "401856494",
-          "opponent": "St. John's Red Storm"
-        }
-      ]
-    },
-    "zuby-ejiofor": {
-      "name": "Zuby Ejiofor",
-      "team": "St. John's Red Storm",
-      "seed": 5,
-      "eliminated": false,
-      "stats": {
-        "pts": 14,
-        "reb": 11,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 14,
-          "reb": 11,
-          "ast": 2,
-          "game_id": "401856494",
-          "opponent": "Northern Iowa Panthers"
-        }
-      ]
-    },
-    "brant-byers": {
-      "name": "Brant Byers",
-      "team": "Miami (OH) RedHawks",
-      "seed": 11,
-      "eliminated": true,
-      "stats": {
-        "pts": 9,
-        "reb": 6,
-        "ast": 0
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 9,
-          "reb": 6,
-          "ast": 0,
-          "game_id": "401856527",
-          "opponent": "Tennessee Volunteers"
-        }
-      ]
-    },
-    "pete-suder": {
-      "name": "Pete Suder",
-      "team": "Miami (OH) RedHawks",
-      "seed": 11,
-      "eliminated": true,
-      "stats": {
-        "pts": 27,
-        "reb": 2,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 27,
-          "reb": 2,
-          "ast": 2,
-          "game_id": "401856527",
-          "opponent": "Tennessee Volunteers"
-        }
-      ]
-    },
-    "nate-ament": {
-      "name": "Nate Ament",
-      "team": "Tennessee Volunteers",
-      "seed": 6,
-      "eliminated": false,
-      "stats": {
-        "pts": 0,
-        "reb": 3,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 0,
-          "reb": 3,
-          "ast": 1,
-          "game_id": "401856527",
-          "opponent": "Miami (OH) RedHawks"
-        }
-      ]
-    },
-    "jakobi-gillespie": {
-      "name": "Ja'Kobi Gillespie",
-      "team": "Tennessee Volunteers",
-      "seed": 6,
-      "eliminated": false,
-      "stats": {
-        "pts": 29,
-        "reb": 3,
-        "ast": 9
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 29,
-          "reb": 3,
-          "ast": 9,
-          "game_id": "401856527",
-          "opponent": "Miami (OH) RedHawks"
-        }
-      ]
-    },
-    "christian-hammond": {
-      "name": "Christian Hammond",
-      "team": "Santa Clara Broncos",
-      "seed": 10,
-      "eliminated": true,
-      "stats": {
-        "pts": 9,
-        "reb": 5,
-        "ast": 4
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 9,
-          "reb": 5,
-          "ast": 4,
-          "game_id": "401856525",
-          "opponent": "Kentucky Wildcats"
-        }
-      ]
-    },
-    "otega-oweh": {
-      "name": "Otega Oweh",
-      "team": "Kentucky Wildcats",
-      "seed": 7,
-      "eliminated": false,
-      "stats": {
-        "pts": 35,
-        "reb": 8,
-        "ast": 7
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 35,
-          "reb": 8,
-          "ast": 7,
-          "game_id": "401856525",
-          "opponent": "Santa Clara Broncos"
-        }
-      ]
-    },
-    "riley-kugel": {
-      "name": "Riley Kugel",
-      "team": "UCF Knights",
-      "seed": 10,
-      "eliminated": true,
-      "stats": {
-        "pts": 13,
-        "reb": 5,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 13,
-          "reb": 5,
-          "ast": 2,
-          "game_id": "401856496",
-          "opponent": "UCLA Bruins"
-        }
-      ]
-    },
-    "donovan-dent": {
-      "name": "Donovan Dent",
-      "team": "UCLA Bruins",
-      "seed": 7,
-      "eliminated": false,
-      "stats": {
-        "pts": 10,
-        "reb": 5,
-        "ast": 5
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 10,
-          "reb": 5,
-          "ast": 5,
-          "game_id": "401856496",
-          "opponent": "UCF Knights"
-        }
-      ]
-    },
-    "mason-falslev": {
-      "name": "Mason Falslev",
-      "team": "Utah State Aggies",
-      "seed": 9,
-      "eliminated": false,
-      "stats": {
-        "pts": 22,
-        "reb": 7,
-        "ast": 4
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 22,
-          "reb": 7,
-          "ast": 4,
-          "game_id": "401856528",
-          "opponent": "Villanova Wildcats"
-        }
-      ]
-    },
-    "mj-collins-jr": {
-      "name": "MJ Collins Jr.",
-      "team": "Utah State Aggies",
-      "seed": 9,
-      "eliminated": false,
-      "stats": {
-        "pts": 20,
-        "reb": 4,
-        "ast": 1
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 20,
-          "reb": 4,
-          "ast": 1,
-          "game_id": "401856528",
-          "opponent": "Villanova Wildcats"
-        }
-      ]
-    },
-    "tyler-perkins": {
-      "name": "Tyler Perkins",
-      "team": "Villanova Wildcats",
-      "seed": 8,
-      "eliminated": true,
-      "stats": {
-        "pts": 15,
-        "reb": 5,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 15,
-          "reb": 5,
-          "ast": 2,
-          "game_id": "401856528",
-          "opponent": "Utah State Aggies"
-        }
-      ]
-    },
-    "bennett-stirtz": {
-      "name": "Bennett Stirtz",
-      "team": "Iowa Hawkeyes",
-      "seed": 9,
-      "eliminated": false,
-      "stats": {
-        "pts": 16,
-        "reb": 5,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 16,
-          "reb": 5,
-          "ast": 2,
-          "game_id": "401856522",
-          "opponent": "Clemson Tigers"
         }
       ]
     },
@@ -1639,6 +841,804 @@
         }
       ]
     },
+    "greg-gordon": {
+      "name": "Greg Gordon",
+      "team": "Long Island University Sharks",
+      "seed": 16,
+      "eliminated": true,
+      "stats": {
+        "pts": 12,
+        "reb": 3,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 12,
+          "reb": 3,
+          "ast": 3,
+          "game_id": "401856529",
+          "opponent": "Arizona Wildcats"
+        }
+      ]
+    },
+    "jamal-fuller": {
+      "name": "Jamal Fuller",
+      "team": "Long Island University Sharks",
+      "seed": 16,
+      "eliminated": true,
+      "stats": {
+        "pts": 11,
+        "reb": 5,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 11,
+          "reb": 5,
+          "ast": 3,
+          "game_id": "401856529",
+          "opponent": "Arizona Wildcats"
+        }
+      ]
+    },
+    "brayden-burris": {
+      "name": "Brayden Burris",
+      "team": "Arizona Wildcats",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 18,
+        "reb": 5,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856529",
+          "opponent": "Long Island University Sharks"
+        }
+      ]
+    },
+    "jaden-bradley": {
+      "name": "Jaden Bradley",
+      "team": "Arizona Wildcats",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 7,
+        "reb": 5,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 7,
+          "reb": 5,
+          "ast": 4,
+          "game_id": "401856529",
+          "opponent": "Long Island University Sharks"
+        }
+      ]
+    },
+    "dontae-horne": {
+      "name": "Dontae Horne",
+      "team": "Prairie View A&M Panthers",
+      "seed": 16,
+      "eliminated": true,
+      "stats": {
+        "pts": 12,
+        "reb": 2,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 12,
+          "reb": 2,
+          "ast": 1,
+          "game_id": "401856523",
+          "opponent": "Florida Gators"
+        }
+      ]
+    },
+    "thomas-haugh": {
+      "name": "Thomas Haugh",
+      "team": "Florida Gators",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 14,
+        "reb": 4,
+        "ast": 7
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 14,
+          "reb": 4,
+          "ast": 7,
+          "game_id": "401856523",
+          "opponent": "Prairie View A&M Panthers"
+        }
+      ]
+    },
+    "travis-harper-ii": {
+      "name": "Travis Harper II",
+      "team": "Tennessee State Tigers",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 13,
+        "reb": 0,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 13,
+          "reb": 0,
+          "ast": 3,
+          "game_id": "401856524",
+          "opponent": "Iowa State Cyclones"
+        }
+      ]
+    },
+    "aaron-nkrumah": {
+      "name": "Aaron Nkrumah",
+      "team": "Tennessee State Tigers",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 21,
+        "reb": 6,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 21,
+          "reb": 6,
+          "ast": 3,
+          "game_id": "401856524",
+          "opponent": "Iowa State Cyclones"
+        }
+      ]
+    },
+    "joshua-jefferson": {
+      "name": "Joshua Jefferson",
+      "team": "Iowa State Cyclones",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 2,
+        "reb": 1,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 2,
+          "reb": 1,
+          "ast": 0,
+          "game_id": "401856524",
+          "opponent": "Tennessee State Tigers"
+        }
+      ]
+    },
+    "milan-momcilovic": {
+      "name": "Milan Momcilovic",
+      "team": "Iowa State Cyclones",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 17,
+        "reb": 4,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 17,
+          "reb": 4,
+          "ast": 2,
+          "game_id": "401856524",
+          "opponent": "Tennessee State Tigers"
+        }
+      ]
+    },
+    "yoav-berman": {
+      "name": "Yoav Berman",
+      "team": "Queens University Royals",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 5,
+        "reb": 2,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 5,
+          "reb": 2,
+          "ast": 1,
+          "game_id": "401856519",
+          "opponent": "Purdue Boilermakers"
+        }
+      ]
+    },
+    "nasir-mann": {
+      "name": "Nasir Mann",
+      "team": "Queens University Royals",
+      "seed": 15,
+      "eliminated": true,
+      "stats": {
+        "pts": 10,
+        "reb": 2,
+        "ast": 5
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 10,
+          "reb": 2,
+          "ast": 5,
+          "game_id": "401856519",
+          "opponent": "Purdue Boilermakers"
+        }
+      ]
+    },
+    "trey-kaufman-renn": {
+      "name": "Trey Kaufman-Renn",
+      "team": "Purdue Boilermakers",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 25,
+        "reb": 9,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 25,
+          "reb": 9,
+          "ast": 3,
+          "game_id": "401856519",
+          "opponent": "Queens University Royals"
+        }
+      ]
+    },
+    "braden-smith": {
+      "name": "Braden Smith",
+      "team": "Purdue Boilermakers",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 26,
+        "reb": 3,
+        "ast": 8
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 26,
+          "reb": 3,
+          "ast": 8,
+          "game_id": "401856519",
+          "opponent": "Queens University Royals"
+        }
+      ]
+    },
+    "tj-burch": {
+      "name": "TJ Burch",
+      "team": "Wright State Raiders",
+      "seed": 14,
+      "eliminated": true,
+      "stats": {
+        "pts": 15,
+        "reb": 2,
+        "ast": 6
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 15,
+          "reb": 2,
+          "ast": 6,
+          "game_id": "401856526",
+          "opponent": "Virginia Cavaliers"
+        }
+      ]
+    },
+    "michael-cooper": {
+      "name": "Michael Cooper",
+      "team": "Wright State Raiders",
+      "seed": 14,
+      "eliminated": true,
+      "stats": {
+        "pts": 13,
+        "reb": 0,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 13,
+          "reb": 0,
+          "ast": 1,
+          "game_id": "401856526",
+          "opponent": "Virginia Cavaliers"
+        }
+      ]
+    },
+    "cruz-davis": {
+      "name": "Cruz Davis",
+      "team": "Hofstra Pride",
+      "seed": 13,
+      "eliminated": true,
+      "stats": {
+        "pts": 14,
+        "reb": 2,
+        "ast": 6
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 14,
+          "reb": 2,
+          "ast": 6,
+          "game_id": "401856521",
+          "opponent": "Alabama Crimson Tide"
+        }
+      ]
+    },
+    "labaron-philon-jr": {
+      "name": "Labaron Philon Jr.",
+      "team": "Alabama Crimson Tide",
+      "seed": 4,
+      "eliminated": false,
+      "stats": {
+        "pts": 29,
+        "reb": 8,
+        "ast": 7
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 29,
+          "reb": 8,
+          "ast": 7,
+          "game_id": "401856521",
+          "opponent": "Hofstra Pride"
+        }
+      ]
+    },
+    "dominique-daniels-jr": {
+      "name": "Dominique Daniels Jr.",
+      "team": "California Baptist Lancers",
+      "seed": 13,
+      "eliminated": true,
+      "stats": {
+        "pts": 25,
+        "reb": 7,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 25,
+          "reb": 7,
+          "ast": 3,
+          "game_id": "401856495",
+          "opponent": "Kansas Jayhawks"
+        }
+      ]
+    },
+    "melvin-council-jr": {
+      "name": "Melvin Council Jr.",
+      "team": "Kansas Jayhawks",
+      "seed": 4,
+      "eliminated": false,
+      "stats": {
+        "pts": 4,
+        "reb": 6,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 4,
+          "reb": 6,
+          "ast": 4,
+          "game_id": "401856495",
+          "opponent": "California Baptist Lancers"
+        }
+      ]
+    },
+    "darryn-peterson": {
+      "name": "Darryn Peterson",
+      "team": "Kansas Jayhawks",
+      "seed": 4,
+      "eliminated": false,
+      "stats": {
+        "pts": 28,
+        "reb": 1,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 28,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856495",
+          "opponent": "California Baptist Lancers"
+        }
+      ]
+    },
+    "tavari-johnson": {
+      "name": "Tavari Johnson",
+      "team": "Akron Zips",
+      "seed": 12,
+      "eliminated": true,
+      "stats": {
+        "pts": 4,
+        "reb": 1,
+        "ast": 6
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 4,
+          "reb": 1,
+          "ast": 6,
+          "game_id": "401856520",
+          "opponent": "Texas Tech Red Raiders"
+        }
+      ]
+    },
+    "trey-campbell": {
+      "name": "Trey Campbell",
+      "team": "Northern Iowa Panthers",
+      "seed": 12,
+      "eliminated": true,
+      "stats": {
+        "pts": 14,
+        "reb": 3,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 14,
+          "reb": 3,
+          "ast": 1,
+          "game_id": "401856494",
+          "opponent": "St. John's Red Storm"
+        }
+      ]
+    },
+    "zuby-ejiofor": {
+      "name": "Zuby Ejiofor",
+      "team": "St. John's Red Storm",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 14,
+        "reb": 11,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 14,
+          "reb": 11,
+          "ast": 2,
+          "game_id": "401856494",
+          "opponent": "Northern Iowa Panthers"
+        }
+      ]
+    },
+    "brant-byers": {
+      "name": "Brant Byers",
+      "team": "Miami (OH) RedHawks",
+      "seed": 11,
+      "eliminated": true,
+      "stats": {
+        "pts": 9,
+        "reb": 6,
+        "ast": 0
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 9,
+          "reb": 6,
+          "ast": 0,
+          "game_id": "401856527",
+          "opponent": "Tennessee Volunteers"
+        }
+      ]
+    },
+    "pete-suder": {
+      "name": "Pete Suder",
+      "team": "Miami (OH) RedHawks",
+      "seed": 11,
+      "eliminated": true,
+      "stats": {
+        "pts": 27,
+        "reb": 2,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 27,
+          "reb": 2,
+          "ast": 2,
+          "game_id": "401856527",
+          "opponent": "Tennessee Volunteers"
+        }
+      ]
+    },
+    "nate-ament": {
+      "name": "Nate Ament",
+      "team": "Tennessee Volunteers",
+      "seed": 6,
+      "eliminated": false,
+      "stats": {
+        "pts": 0,
+        "reb": 3,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 3,
+          "ast": 1,
+          "game_id": "401856527",
+          "opponent": "Miami (OH) RedHawks"
+        }
+      ]
+    },
+    "jakobi-gillespie": {
+      "name": "Ja'Kobi Gillespie",
+      "team": "Tennessee Volunteers",
+      "seed": 6,
+      "eliminated": false,
+      "stats": {
+        "pts": 29,
+        "reb": 3,
+        "ast": 9
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 29,
+          "reb": 3,
+          "ast": 9,
+          "game_id": "401856527",
+          "opponent": "Miami (OH) RedHawks"
+        }
+      ]
+    },
+    "christian-hammond": {
+      "name": "Christian Hammond",
+      "team": "Santa Clara Broncos",
+      "seed": 10,
+      "eliminated": true,
+      "stats": {
+        "pts": 9,
+        "reb": 5,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 9,
+          "reb": 5,
+          "ast": 4,
+          "game_id": "401856525",
+          "opponent": "Kentucky Wildcats"
+        }
+      ]
+    },
+    "otega-oweh": {
+      "name": "Otega Oweh",
+      "team": "Kentucky Wildcats",
+      "seed": 7,
+      "eliminated": false,
+      "stats": {
+        "pts": 35,
+        "reb": 8,
+        "ast": 7
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 35,
+          "reb": 8,
+          "ast": 7,
+          "game_id": "401856525",
+          "opponent": "Santa Clara Broncos"
+        }
+      ]
+    },
+    "riley-kugel": {
+      "name": "Riley Kugel",
+      "team": "UCF Knights",
+      "seed": 10,
+      "eliminated": true,
+      "stats": {
+        "pts": 13,
+        "reb": 5,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 13,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856496",
+          "opponent": "UCLA Bruins"
+        }
+      ]
+    },
+    "donovan-dent": {
+      "name": "Donovan Dent",
+      "team": "UCLA Bruins",
+      "seed": 7,
+      "eliminated": false,
+      "stats": {
+        "pts": 10,
+        "reb": 5,
+        "ast": 5
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 10,
+          "reb": 5,
+          "ast": 5,
+          "game_id": "401856496",
+          "opponent": "UCF Knights"
+        }
+      ]
+    },
+    "mark-mitchell": {
+      "name": "Mark Mitchell",
+      "team": "Missouri Tigers",
+      "seed": 10,
+      "eliminated": true,
+      "stats": {
+        "pts": 19,
+        "reb": 3,
+        "ast": 5
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 19,
+          "reb": 3,
+          "ast": 5,
+          "game_id": "401856518",
+          "opponent": "Miami Hurricanes"
+        }
+      ]
+    },
+    "malik-reneau": {
+      "name": "Malik Reneau",
+      "team": "Miami Hurricanes",
+      "seed": 7,
+      "eliminated": false,
+      "stats": {
+        "pts": 24,
+        "reb": 6,
+        "ast": 3
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 24,
+          "reb": 6,
+          "ast": 3,
+          "game_id": "401856518",
+          "opponent": "Missouri Tigers"
+        }
+      ]
+    },
+    "mason-falslev": {
+      "name": "Mason Falslev",
+      "team": "Utah State Aggies",
+      "seed": 9,
+      "eliminated": false,
+      "stats": {
+        "pts": 22,
+        "reb": 7,
+        "ast": 4
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 22,
+          "reb": 7,
+          "ast": 4,
+          "game_id": "401856528",
+          "opponent": "Villanova Wildcats"
+        }
+      ]
+    },
+    "mj-collins-jr": {
+      "name": "MJ Collins Jr.",
+      "team": "Utah State Aggies",
+      "seed": 9,
+      "eliminated": false,
+      "stats": {
+        "pts": 20,
+        "reb": 4,
+        "ast": 1
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 20,
+          "reb": 4,
+          "ast": 1,
+          "game_id": "401856528",
+          "opponent": "Villanova Wildcats"
+        }
+      ]
+    },
+    "tyler-perkins": {
+      "name": "Tyler Perkins",
+      "team": "Villanova Wildcats",
+      "seed": 8,
+      "eliminated": true,
+      "stats": {
+        "pts": 15,
+        "reb": 5,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 15,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856528",
+          "opponent": "Utah State Aggies"
+        }
+      ]
+    },
+    "bennett-stirtz": {
+      "name": "Bennett Stirtz",
+      "team": "Iowa Hawkeyes",
+      "seed": 9,
+      "eliminated": false,
+      "stats": {
+        "pts": 16,
+        "reb": 5,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856522",
+          "opponent": "Clemson Tigers"
+        }
+      ]
+    },
     "ethan-roberts": {
       "name": "Ethan Roberts",
       "team": "Pennsylvania Quakers",
@@ -1700,100 +1700,6 @@
       "games": []
     }
   },
-  "active_games": [
-    "401856523",
-    "401856497",
-    "401856495",
-    "401856518"
-  ],
-  "live_games": [
-    {
-      "id": "401856523",
-      "status": "5:00 - 2nd",
-      "teams": [
-        {
-          "name": "Florida Gators",
-          "abbrev": "FLA",
-          "seed": 1,
-          "score": "97",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
-          "winner": null
-        },
-        {
-          "name": "Prairie View A&M Panthers",
-          "abbrev": "PV",
-          "seed": 16,
-          "score": "45",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2504.png",
-          "winner": null
-        }
-      ]
-    },
-    {
-      "id": "401856497",
-      "status": "Halftime",
-      "teams": [
-        {
-          "name": "UConn Huskies",
-          "abbrev": "CONN",
-          "seed": 2,
-          "score": "40",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
-          "winner": null
-        },
-        {
-          "name": "Furman Paladins",
-          "abbrev": "FUR",
-          "seed": 15,
-          "score": "36",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/231.png",
-          "winner": null
-        }
-      ]
-    },
-    {
-      "id": "401856495",
-      "status": "15:51 - 2nd",
-      "teams": [
-        {
-          "name": "Kansas Jayhawks",
-          "abbrev": "KU",
-          "seed": 4,
-          "score": "48",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
-          "winner": null
-        },
-        {
-          "name": "California Baptist Lancers",
-          "abbrev": "CBU",
-          "seed": 13,
-          "score": "22",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2856.png",
-          "winner": null
-        }
-      ]
-    },
-    {
-      "id": "401856518",
-      "status": "17:52 - 2nd",
-      "teams": [
-        {
-          "name": "Miami Hurricanes",
-          "abbrev": "MIA",
-          "seed": 7,
-          "score": "32",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
-          "winner": null
-        },
-        {
-          "name": "Missouri Tigers",
-          "abbrev": "MIZ",
-          "seed": 10,
-          "score": "32",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
-          "winner": null
-        }
-      ]
-    }
-  ]
+  "active_games": [],
+  "live_games": []
 }
