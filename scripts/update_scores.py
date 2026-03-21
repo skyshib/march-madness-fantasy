@@ -387,25 +387,79 @@ def main():
                 return True, elim
         return False, None
 
-    # Mark ALL picked players — create entries for 0-stat players, update existing
+    # Build set of teams that have played at least one game
+    # Use the team names from player_stats (which came from box scores)
+    teams_that_played = set()
+    for slug, pdata in player_stats.items():
+        if pdata.get("games"):
+            teams_that_played.add(pdata["team"].lower())
+
+    def has_team_played(team_name):
+        """Check if a team already played using ESPN full name matching."""
+        tn = team_name.lower().strip()
+        tn = TEAM_ALIASES.get(tn, tn)
+        if tn in TEAM_ESPN_MAP:
+            return TEAM_ESPN_MAP[tn] in teams_that_played
+        for played in teams_that_played:
+            if played.startswith(tn) and (len(played) == len(tn) or played[len(tn)] == ' '):
+                return True
+        return False
+
+    # Find how many games each team's players have played (for round tracking)
+    team_game_counts = {}
+    for slug, pdata in player_stats.items():
+        team_lower = pdata["team"].lower()
+        num_games = len(pdata.get("games", []))
+        if num_games > team_game_counts.get(team_lower, 0):
+            team_game_counts[team_lower] = num_games
+
+    def get_team_game_count(team_name):
+        tn = team_name.lower().strip()
+        tn = TEAM_ALIASES.get(tn, tn)
+        if tn in TEAM_ESPN_MAP:
+            return team_game_counts.get(TEAM_ESPN_MAP[tn], 0)
+        for t, c in team_game_counts.items():
+            if t.startswith(tn) and (len(t) == len(tn) or t[len(tn)] == ' '):
+                return c
+        return 0
+
+    # Mark ALL picked players — create entries for 0-stat/DNP players
     for norm_name, mapped in player_mapping.items():
         slug = mapped["slug"]
         pick_team = mapped.get("team", "")
         eliminated, elim_full = is_team_eliminated(pick_team)
 
         if slug in player_stats:
-            # Update elimination status
             if eliminated:
                 player_stats[slug]["eliminated"] = True
-        elif eliminated:
-            # Create entry for 0-stat eliminated player
+        else:
+            # Create stub entry — player not in any box score
+            team_games = get_team_game_count(pick_team)
+            # Build placeholder games for DNP rounds
+            placeholder_games = []
+            round_names = ["R64", "R32", "S16", "E8", "F4", "Championship"]
+            for i in range(team_games):
+                placeholder_games.append({
+                    "round": round_names[i] if i < len(round_names) else f"R{i+1}",
+                    "pts": 0, "reb": 0, "ast": 0,
+                    "game_id": "", "opponent": "DNP",
+                })
+
+            espn_team = ""
+            if eliminated and elim_full:
+                espn_team = elim_full.title()
+            elif pick_team.lower() in TEAM_ESPN_MAP:
+                espn_team = TEAM_ESPN_MAP[pick_team.lower()].title()
+            else:
+                espn_team = pick_team
+
             player_stats[slug] = {
                 "name": mapped["name"],
-                "team": elim_full.title() if elim_full else pick_team,
+                "team": espn_team,
                 "seed": 0,
-                "eliminated": True,
+                "eliminated": eliminated,
                 "stats": {"pts": 0, "reb": 0, "ast": 0},
-                "games": [],
+                "games": placeholder_games,
             }
 
     print(f"\nStats built for {len(player_stats)} players")
