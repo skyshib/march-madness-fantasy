@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T19:44:12.955040+00:00",
+  "last_updated": "2026-03-22T19:58:52.325026+00:00",
   "players": {
     "otega-oweh": {
       "name": "Otega Oweh",
@@ -1862,13 +1862,13 @@
   "live_games": [
     {
       "id": "401856561",
-      "status": "0:38 - 1st",
+      "status": "Halftime",
       "teams": [
         {
           "name": "Iowa State Cyclones",
           "abbrev": "ISU",
           "seed": 2,
-          "score": "28",
+          "score": "31",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
           "winner": null
         },
