@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T17:36:28.391208+00:00",
+  "last_updated": "2026-03-22T17:57:32.264974+00:00",
   "players": {
     "malik-reneau": {
       "name": "Malik Reneau",
@@ -7,15 +7,15 @@
       "seed": 7,
       "eliminated": false,
       "stats": {
-        "pts": 32,
-        "reb": 9,
+        "pts": 34,
+        "reb": 10,
         "ast": 6
       },
       "games": [
         {
           "round": "R32",
-          "pts": 8,
-          "reb": 3,
+          "pts": 10,
+          "reb": 4,
           "ast": 3,
           "game_id": "401856564",
           "opponent": "Purdue Boilermakers"
@@ -36,14 +36,14 @@
       "seed": 2,
       "eliminated": false,
       "stats": {
-        "pts": 39,
+        "pts": 42,
         "reb": 15,
         "ast": 5
       },
       "games": [
         {
           "round": "R32",
-          "pts": 14,
+          "pts": 17,
           "reb": 6,
           "ast": 2,
           "game_id": "401856564",
@@ -65,16 +65,16 @@
       "seed": 2,
       "eliminated": false,
       "stats": {
-        "pts": 28,
+        "pts": 32,
         "reb": 5,
-        "ast": 12
+        "ast": 15
       },
       "games": [
         {
           "round": "R32",
-          "pts": 2,
+          "pts": 6,
           "reb": 2,
-          "ast": 4,
+          "ast": 7,
           "game_id": "401856564",
           "opponent": "Miami Hurricanes"
         },
@@ -1838,13 +1838,13 @@
   "live_games": [
     {
       "id": "401856564",
-      "status": "13:35 - 2nd",
+      "status": "7:38 - 2nd",
       "teams": [
         {
           "name": "Purdue Boilermakers",
           "abbrev": "PUR",
           "seed": 2,
-          "score": "50",
+          "score": "62",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
           "winner": null
         },
@@ -1852,7 +1852,7 @@
           "name": "Miami Hurricanes",
           "abbrev": "MIA",
           "seed": 7,
-          "score": "45",
+          "score": "55",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
           "winner": null
         }
