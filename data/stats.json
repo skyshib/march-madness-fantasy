@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-03-22T20:39:44.677503+00:00",
+  "last_updated": "2026-03-22T21:01:01.532882+00:00",
   "players": {
     "otega-oweh": {
       "name": "Otega Oweh",
       "team": "Kentucky Wildcats",
       "seed": 7,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
-        "pts": 48,
-        "reb": 14,
+        "pts": 53,
+        "reb": 16,
         "ast": 7
       },
       "games": [
         {
           "round": "R32",
-          "pts": 13,
-          "reb": 6,
+          "pts": 18,
+          "reb": 8,
           "ast": 0,
           "game_id": "401856561",
           "opponent": "Iowa State Cyclones"
@@ -36,15 +36,15 @@
       "seed": 2,
       "eliminated": false,
       "stats": {
-        "pts": 34,
-        "reb": 7,
+        "pts": 37,
+        "reb": 9,
         "ast": 3
       },
       "games": [
         {
           "round": "R32",
-          "pts": 17,
-          "reb": 3,
+          "pts": 20,
+          "reb": 5,
           "ast": 1,
           "game_id": "401856561",
           "opponent": "Kentucky Wildcats"
@@ -1856,31 +1856,6 @@
       "games": []
     }
   },
-  "active_games": [
-    "401856561"
-  ],
-  "live_games": [
-    {
-      "id": "401856561",
-      "status": "9:01 - 2nd",
-      "teams": [
-        {
-          "name": "Iowa State Cyclones",
-          "abbrev": "ISU",
-          "seed": 2,
-          "score": "61",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
-          "winner": null
-        },
-        {
-          "name": "Kentucky Wildcats",
-          "abbrev": "UK",
-          "seed": 7,
-          "score": "45",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
-          "winner": null
-        }
-      ]
-    }
-  ]
+  "active_games": [],
+  "live_games": []
 }
