@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-03-22T17:57:32.264974+00:00",
+  "last_updated": "2026-03-22T18:51:00.070323+00:00",
   "players": {
     "malik-reneau": {
       "name": "Malik Reneau",
       "team": "Miami Hurricanes",
       "seed": 7,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
-        "pts": 34,
-        "reb": 10,
+        "pts": 40,
+        "reb": 11,
         "ast": 6
       },
       "games": [
         {
           "round": "R32",
-          "pts": 10,
-          "reb": 4,
+          "pts": 16,
+          "reb": 5,
           "ast": 3,
           "game_id": "401856564",
           "opponent": "Purdue Boilermakers"
@@ -36,15 +36,15 @@
       "seed": 2,
       "eliminated": false,
       "stats": {
-        "pts": 42,
-        "reb": 15,
+        "pts": 44,
+        "reb": 18,
         "ast": 5
       },
       "games": [
         {
           "round": "R32",
-          "pts": 17,
-          "reb": 6,
+          "pts": 19,
+          "reb": 9,
           "ast": 2,
           "game_id": "401856564",
           "opponent": "Miami Hurricanes"
@@ -65,16 +65,16 @@
       "seed": 2,
       "eliminated": false,
       "stats": {
-        "pts": 32,
+        "pts": 38,
         "reb": 5,
-        "ast": 15
+        "ast": 16
       },
       "games": [
         {
           "round": "R32",
-          "pts": 6,
+          "pts": 12,
           "reb": 2,
-          "ast": 7,
+          "ast": 8,
           "game_id": "401856564",
           "opponent": "Miami Hurricanes"
         },
@@ -1832,31 +1832,6 @@
       "games": []
     }
   },
-  "active_games": [
-    "401856564"
-  ],
-  "live_games": [
-    {
-      "id": "401856564",
-      "status": "7:38 - 2nd",
-      "teams": [
-        {
-          "name": "Purdue Boilermakers",
-          "abbrev": "PUR",
-          "seed": 2,
-          "score": "62",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
-          "winner": null
-        },
-        {
-          "name": "Miami Hurricanes",
-          "abbrev": "MIA",
-          "seed": 7,
-          "score": "55",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
-          "winner": null
-        }
-      ]
-    }
-  ]
+  "active_games": [],
+  "live_games": []
 }
