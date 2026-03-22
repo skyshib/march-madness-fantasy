@@ -1,64 +1,6 @@
 {
-  "last_updated": "2026-03-21T23:45:39.680307+00:00",
+  "last_updated": "2026-03-22T00:01:19.783280+00:00",
   "players": {
-    "david-punch": {
-      "name": "David Punch",
-      "team": "TCU Horned Frogs",
-      "seed": 9,
-      "eliminated": true,
-      "stats": {
-        "pts": 20,
-        "reb": 15,
-        "ast": 2
-      },
-      "games": [
-        {
-          "round": "R32",
-          "pts": 4,
-          "reb": 2,
-          "ast": 0,
-          "game_id": "401856530",
-          "opponent": "Duke Blue Devils"
-        },
-        {
-          "round": "R64",
-          "pts": 16,
-          "reb": 13,
-          "ast": 2,
-          "game_id": "401856479",
-          "opponent": "Ohio State Buckeyes"
-        }
-      ]
-    },
-    "cameron-boozer": {
-      "name": "Cameron Boozer",
-      "team": "Duke Blue Devils",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 41,
-        "reb": 24,
-        "ast": 7
-      },
-      "games": [
-        {
-          "round": "R32",
-          "pts": 19,
-          "reb": 11,
-          "ast": 4,
-          "game_id": "401856530",
-          "opponent": "TCU Horned Frogs"
-        },
-        {
-          "round": "R64",
-          "pts": 22,
-          "reb": 13,
-          "ast": 3,
-          "game_id": "401856478",
-          "opponent": "Siena Saints"
-        }
-      ]
-    },
     "rashaun-agee": {
       "name": "Rashaun Agee",
       "team": "Texas A&M Aggies",
@@ -125,14 +67,14 @@
       "stats": {
         "pts": 27,
         "reb": 11,
-        "ast": 6
+        "ast": 8
       },
       "games": [
         {
           "round": "R32",
           "pts": 9,
           "reb": 5,
-          "ast": 2,
+          "ast": 4,
           "game_id": "401856535",
           "opponent": "Texas A&M Aggies"
         },
@@ -154,14 +96,14 @@
       "stats": {
         "pts": 19,
         "reb": 7,
-        "ast": 8
+        "ast": 9
       },
       "games": [
         {
           "round": "R32",
           "pts": 5,
           "reb": 2,
-          "ast": 2,
+          "ast": 3,
           "game_id": "401856537",
           "opponent": "Gonzaga Bulldogs"
         },
@@ -183,14 +125,14 @@
       "stats": {
         "pts": 30,
         "reb": 9,
-        "ast": 2
+        "ast": 3
       },
       "games": [
         {
           "round": "R32",
           "pts": 11,
           "reb": 1,
-          "ast": 2,
+          "ast": 3,
           "game_id": "401856537",
           "opponent": "Texas Longhorns"
         },
@@ -230,6 +172,64 @@
           "ast": 4,
           "game_id": "401856486",
           "opponent": "Howard Bison"
+        }
+      ]
+    },
+    "david-punch": {
+      "name": "David Punch",
+      "team": "TCU Horned Frogs",
+      "seed": 9,
+      "eliminated": true,
+      "stats": {
+        "pts": 20,
+        "reb": 15,
+        "ast": 2
+      },
+      "games": [
+        {
+          "round": "R32",
+          "pts": 4,
+          "reb": 2,
+          "ast": 0,
+          "game_id": "401856530",
+          "opponent": "Duke Blue Devils"
+        },
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 13,
+          "ast": 2,
+          "game_id": "401856479",
+          "opponent": "Ohio State Buckeyes"
+        }
+      ]
+    },
+    "cameron-boozer": {
+      "name": "Cameron Boozer",
+      "team": "Duke Blue Devils",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 41,
+        "reb": 24,
+        "ast": 7
+      },
+      "games": [
+        {
+          "round": "R32",
+          "pts": 19,
+          "reb": 11,
+          "ast": 4,
+          "game_id": "401856530",
+          "opponent": "TCU Horned Frogs"
+        },
+        {
+          "round": "R64",
+          "pts": 22,
+          "reb": 13,
+          "ast": 3,
+          "game_id": "401856478",
+          "opponent": "Siena Saints"
         }
       ]
     },
@@ -1751,13 +1751,13 @@
   "live_games": [
     {
       "id": "401856535",
-      "status": "14:08 - 2nd",
+      "status": "9:27 - 2nd",
       "teams": [
         {
           "name": "Houston Cougars",
           "abbrev": "HOU",
           "seed": 2,
-          "score": "61",
+          "score": "71",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
           "winner": null
         },
@@ -1765,7 +1765,7 @@
           "name": "Texas A&M Aggies",
           "abbrev": "TA&M",
           "seed": 10,
-          "score": "37",
+          "score": "43",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png",
           "winner": null
         }
@@ -1773,13 +1773,13 @@
     },
     {
       "id": "401856537",
-      "status": "4:10 - 1st",
+      "status": "Halftime",
       "teams": [
         {
           "name": "Gonzaga Bulldogs",
           "abbrev": "GONZ",
           "seed": 3,
-          "score": "28",
+          "score": "33",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png",
           "winner": null
         },
@@ -1787,7 +1787,7 @@
           "name": "Texas Longhorns",
           "abbrev": "TEX",
           "seed": 11,
-          "score": "22",
+          "score": "35",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
           "winner": null
         }
