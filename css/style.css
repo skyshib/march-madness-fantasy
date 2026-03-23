@@ -246,6 +246,10 @@ main {
   text-decoration: line-through;
 }
 
+.compact-mode .seed-cell.eliminated::after {
+  display: none;
+}
+
 .compact-mode .seed-cell.live .compact-pts {
   color: var(--live-green);
 }
