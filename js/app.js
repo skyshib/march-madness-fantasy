@@ -435,6 +435,11 @@
       }
 
       // Merge live player stats
+      // Update active_games in statsData with fresh ESPN data
+      if (currentStats) {
+        currentStats.active_games = activeIds;
+      }
+
       let translatedLive = {};
       if (activeIds.length > 0) {
         const espnLive = await ESPN.getLivePlayerStats(activeIds);
