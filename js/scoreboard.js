@@ -189,16 +189,29 @@ const Scoreboard = (() => {
     if (!isFinite(minPts)) minPts = 0;
     if (!isFinite(maxPts)) maxPts = 0;
 
+    // Compute ranks with ties
+    const ranks = [];
+    for (let i = 0; i < ranked.length; i++) {
+      if (i === 0 || ranked[i].total < ranked[i - 1].total) {
+        ranks.push(i + 1);
+      } else {
+        ranks.push(ranks[i - 1]); // same rank as previous (tie)
+      }
+    }
+
     for (let i = 0; i < ranked.length; i++) {
       const r = ranked[i];
       const tr = document.createElement('tr');
       tr.dataset.entrant = r.name;
 
       // Rank
+      const rank = ranks[i];
+      const isTied = ranks.filter(r => r === rank).length > 1;
       const rankTd = document.createElement('td');
       rankTd.className = 'col-rank';
       const badges = ['🥇', '🥈', '🥉', '💲', '💲'];
-      rankTd.textContent = i < 5 ? `${i + 1} ${badges[i]}` : i + 1;
+      const prefix = isTied ? 'T-' : '';
+      rankTd.textContent = rank <= 5 ? `${prefix}${rank} ${badges[rank - 1]}` : `${prefix}${rank}`;
       tr.appendChild(rankTd);
 
       // Name
