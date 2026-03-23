@@ -32,6 +32,7 @@ TEAM_ALIASES = {
     "uconn": "connecticut",
     "liu": "long island",
     "hawaii": "hawai'i",
+    "cal baptist": "california baptist",
 }
 
 # Teams where school name is 1 word but mascot is 2+ words

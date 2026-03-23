@@ -28,6 +28,7 @@
     'uconn': 'connecticut',
     'liu': 'long island',
     'hawaii': "hawai'i",
+    'cal baptist': 'california baptist',
   };
 
   // Teams where simple word-stripping fails (1-word school + 2-word mascot)
