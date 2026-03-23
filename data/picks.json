@@ -1660,9 +1660,9 @@
       },
       "playmaker_captain": {
         "seed": 5,
-        "player_id": "jt-toppin",
-        "name": "JT Toppin",
-        "team": "Texas Tech"
+        "player_id": "duke-miles",
+        "name": "Duke Miles",
+        "team": "Vanderbilt"
       },
       "picks": {
         "1": {
@@ -1686,9 +1686,9 @@
           "team": "Alabama"
         },
         "5": {
-          "player_id": "jt-toppin",
-          "name": "JT Toppin",
-          "team": "Texas Tech"
+          "player_id": "duke-miles",
+          "name": "Duke Miles",
+          "team": "Vanderbilt"
         },
         "6": {
           "player_id": "aj-dybantsa",
