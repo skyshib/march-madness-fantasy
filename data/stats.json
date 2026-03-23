@@ -1,35 +1,6 @@
 {
-  "last_updated": "2026-03-23T04:27:43.296439+00:00",
+  "last_updated": "2026-03-23T05:53:46.939246+00:00",
   "players": {
-    "labaron-philon-jr": {
-      "name": "Labaron Philon Jr.",
-      "team": "Alabama Crimson Tide",
-      "seed": 4,
-      "eliminated": false,
-      "stats": {
-        "pts": 38,
-        "reb": 14,
-        "ast": 19
-      },
-      "games": [
-        {
-          "round": "R32",
-          "pts": 9,
-          "reb": 6,
-          "ast": 12,
-          "game_id": "401856560",
-          "opponent": "Texas Tech Red Raiders"
-        },
-        {
-          "round": "R64",
-          "pts": 29,
-          "reb": 8,
-          "ast": 7,
-          "game_id": "401856521",
-          "opponent": "Hofstra Pride"
-        }
-      ]
-    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
@@ -1411,6 +1382,35 @@
           "ast": 6,
           "game_id": "401856521",
           "opponent": "Alabama Crimson Tide"
+        }
+      ]
+    },
+    "labaron-philon-jr": {
+      "name": "Labaron Philon Jr.",
+      "team": "Alabama Crimson Tide",
+      "seed": 4,
+      "eliminated": false,
+      "stats": {
+        "pts": 38,
+        "reb": 14,
+        "ast": 19
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 29,
+          "reb": 8,
+          "ast": 7,
+          "game_id": "401856521",
+          "opponent": "Hofstra Pride"
+        },
+        {
+          "round": "R32",
+          "pts": 9,
+          "reb": 6,
+          "ast": 12,
+          "game_id": "401856560",
+          "opponent": "Texas Tech Red Raiders"
         }
       ]
     },
