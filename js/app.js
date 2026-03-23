@@ -185,7 +185,7 @@
     // Render live games tracker from cron data
     renderLiveGames(stats);
 
-    // Seed knownCompletedGames from ESPN before first poll
+    // Seed knownCompletedGames and bannerShownForSlugs from ESPN
     // so we don't treat existing completed games as new eliminations
     if (isCurrentYear) {
       try {
@@ -194,6 +194,19 @@
           const comp = event.competitions?.[0];
           if (comp?.status?.type?.state === 'post') {
             knownCompletedGames.add(event.id);
+            // Also mark losing team's players as already shown
+            for (const team of comp.competitors || []) {
+              if (team.winner === false) {
+                const losingTeam = team.team?.displayName || '';
+                for (const ent of currentPicks.entrants || []) {
+                  for (const [seed, pick] of Object.entries(ent.picks || {})) {
+                    if (teamsMatch(pick.team, losingTeam)) {
+                      bannerShownForSlugs.add(pick.player_id);
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       } catch (e) {}
@@ -481,9 +494,13 @@
       }
     }
 
-    // Add all currently eliminated to known set
+    // Add all currently eliminated to known set AND bannerShownForSlugs
+    // so we don't replay sounds/banners for old eliminations
     for (const [slug, player] of Object.entries(stats.players || {})) {
-      if (player.eliminated) knownEliminated.add(slug);
+      if (player.eliminated) {
+        knownEliminated.add(slug);
+        bannerShownForSlugs.add(slug);
+      }
     }
 
     // On page load, show banner only if localStorage has a recent elimination (within 2 minutes)
