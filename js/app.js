@@ -503,29 +503,9 @@
       }
     }
 
-    // On page load, show banner only if localStorage has a recent elimination (within 2 minutes)
-    try {
-      const stored = JSON.parse(localStorage.getItem('lastElimination') || 'null');
-      if (stored && (Date.now() - stored.time) < 120000 && stored.data?.length > 0) {
-        showEliminationBanner(stored.data);
-        localStorage.removeItem('lastElimination');
-        return;
-      }
-    } catch (e) {}
+    // Clear stale localStorage
+    localStorage.removeItem('lastElimination');
 
-    // Show banner for new eliminations — but not on first page load
-    // (first load sees all historical eliminations as "new")
-    if (newlyEliminated.length > 0 && !isFirstLoad) {
-      localStorage.setItem('lastElimination', JSON.stringify({
-        time: Date.now(),
-        data: newlyEliminated,
-      }));
-      try {
-        showEliminationBanner(newlyEliminated);
-      } catch (e) {
-        console.warn('Elimination banner failed:', e);
-      }
-    }
     isFirstLoad = false;
   }
 
