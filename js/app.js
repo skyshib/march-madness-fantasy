@@ -427,14 +427,35 @@
         }
       }
 
-      // Mark eliminations
+      // Mark ALL eliminated players from ALL completed games (not just new ones)
+      const allEliminatedSlugs = [];
+      for (const event of data.events || []) {
+        const comp2 = event.competitions?.[0];
+        if (comp2?.status?.type?.state === 'post') {
+          for (const team of comp2.competitors || []) {
+            if (team.winner === false) {
+              const losingTeam = team.team?.displayName || '';
+              for (const ent of currentPicks.entrants || []) {
+                for (const [seed, pick] of Object.entries(ent.picks || {})) {
+                  if (teamsMatch(pick.team, losingTeam)) {
+                    allEliminatedSlugs.push(pick.player_id);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      if (allEliminatedSlugs.length > 0) {
+        Scoreboard.markEliminated([...new Set(allEliminatedSlugs)]);
+      }
+
+      // Show banner only for NEW eliminations
       if (newEliminations.length > 0) {
-        Scoreboard.markEliminated(newEliminations.map(e => e.slug));
         localStorage.setItem('lastElimination', JSON.stringify({ time: Date.now(), data: newEliminations }));
         try { showEliminationBanner(newEliminations); } catch (e) {}
       }
 
-      // Merge live player stats
       // Update active_games in statsData with fresh ESPN data
       if (currentStats) {
         currentStats.active_games = activeIds;
