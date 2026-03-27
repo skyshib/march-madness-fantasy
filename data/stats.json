@@ -1,6 +1,80 @@
 {
-  "last_updated": "2026-03-27T23:00:57.529942+00:00",
+  "last_updated": "2026-03-27T23:43:25.835876+00:00",
   "players": {
+    "zuby-ejiofor": {
+      "name": "Zuby Ejiofor",
+      "team": "St. John's Red Storm",
+      "seed": 5,
+      "eliminated": false,
+      "stats": {
+        "pts": 34,
+        "reb": 21,
+        "ast": 9
+      },
+      "games": [
+        {
+          "round": "S16",
+          "pts": 2,
+          "reb": 1,
+          "ast": 3,
+          "game_id": "401856570",
+          "opponent": "Duke Blue Devils"
+        },
+        {
+          "round": "R64",
+          "pts": 14,
+          "reb": 11,
+          "ast": 2,
+          "game_id": "401856494",
+          "opponent": "Northern Iowa Panthers"
+        },
+        {
+          "round": "R32",
+          "pts": 18,
+          "reb": 9,
+          "ast": 4,
+          "game_id": "401856558",
+          "opponent": "Kansas Jayhawks"
+        }
+      ]
+    },
+    "cameron-boozer": {
+      "name": "Cameron Boozer",
+      "team": "Duke Blue Devils",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 43,
+        "reb": 25,
+        "ast": 8
+      },
+      "games": [
+        {
+          "round": "S16",
+          "pts": 2,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856570",
+          "opponent": "St. John's Red Storm"
+        },
+        {
+          "round": "R64",
+          "pts": 22,
+          "reb": 13,
+          "ast": 3,
+          "game_id": "401856478",
+          "opponent": "Siena Saints"
+        },
+        {
+          "round": "R32",
+          "pts": 19,
+          "reb": 11,
+          "ast": 4,
+          "game_id": "401856530",
+          "opponent": "TCU Horned Frogs"
+        }
+      ]
+    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
@@ -19,35 +93,6 @@
           "ast": 2,
           "game_id": "401856478",
           "opponent": "Duke Blue Devils"
-        }
-      ]
-    },
-    "cameron-boozer": {
-      "name": "Cameron Boozer",
-      "team": "Duke Blue Devils",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 41,
-        "reb": 24,
-        "ast": 7
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 22,
-          "reb": 13,
-          "ast": 3,
-          "game_id": "401856478",
-          "opponent": "Siena Saints"
-        },
-        {
-          "round": "R32",
-          "pts": 19,
-          "reb": 11,
-          "ast": 4,
-          "game_id": "401856530",
-          "opponent": "TCU Horned Frogs"
         }
       ]
     },
@@ -1607,35 +1652,6 @@
         }
       ]
     },
-    "zuby-ejiofor": {
-      "name": "Zuby Ejiofor",
-      "team": "St. John's Red Storm",
-      "seed": 5,
-      "eliminated": false,
-      "stats": {
-        "pts": 32,
-        "reb": 20,
-        "ast": 6
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 14,
-          "reb": 11,
-          "ast": 2,
-          "game_id": "401856494",
-          "opponent": "Northern Iowa Panthers"
-        },
-        {
-          "round": "R32",
-          "pts": 18,
-          "reb": 9,
-          "ast": 4,
-          "game_id": "401856558",
-          "opponent": "Kansas Jayhawks"
-        }
-      ]
-    },
     "brant-byers": {
       "name": "Brant Byers",
       "team": "Miami (OH) RedHawks",
@@ -2044,6 +2060,31 @@
       "games": []
     }
   },
-  "active_games": [],
-  "live_games": []
+  "active_games": [
+    "401856570"
+  ],
+  "live_games": [
+    {
+      "id": "401856570",
+      "status": "6:56 - 1st",
+      "teams": [
+        {
+          "name": "Duke Blue Devils",
+          "abbrev": "DUKE",
+          "seed": 1,
+          "score": "25",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
+          "winner": null
+        },
+        {
+          "name": "St. John's Red Storm",
+          "abbrev": "SJU",
+          "seed": 5,
+          "score": "26",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2599.png",
+          "winner": null
+        }
+      ]
+    }
+  ]
 }
