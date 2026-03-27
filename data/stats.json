@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-27T00:03:22.672837+00:00",
+  "last_updated": "2026-03-27T01:18:13.305803+00:00",
   "players": {
     "dailyn-swain": {
       "name": "Dailyn Swain",
@@ -7,16 +7,16 @@
       "seed": 11,
       "eliminated": false,
       "stats": {
-        "pts": 29,
-        "reb": 15,
-        "ast": 13
+        "pts": 37,
+        "reb": 18,
+        "ast": 17
       },
       "games": [
         {
           "round": "S16",
-          "pts": 4,
-          "reb": 4,
-          "ast": 1,
+          "pts": 12,
+          "reb": 7,
+          "ast": 5,
           "game_id": "401856568",
           "opponent": "Purdue Boilermakers"
         },
@@ -44,15 +44,15 @@
       "seed": 2,
       "eliminated": false,
       "stats": {
-        "pts": 56,
-        "reb": 23,
+        "pts": 62,
+        "reb": 25,
         "ast": 5
       },
       "games": [
         {
           "round": "S16",
-          "pts": 12,
-          "reb": 5,
+          "pts": 18,
+          "reb": 7,
           "ast": 0,
           "game_id": "401856568",
           "opponent": "Texas Longhorns"
@@ -81,16 +81,16 @@
       "seed": 2,
       "eliminated": false,
       "stats": {
-        "pts": 42,
+        "pts": 51,
         "reb": 7,
-        "ast": 20
+        "ast": 21
       },
       "games": [
         {
           "round": "S16",
-          "pts": 4,
+          "pts": 13,
           "reb": 2,
-          "ast": 4,
+          "ast": 5,
           "game_id": "401856568",
           "opponent": "Texas Longhorns"
         },
@@ -118,16 +118,16 @@
       "seed": 9,
       "eliminated": false,
       "stats": {
-        "pts": 36,
-        "reb": 11,
-        "ast": 8
+        "pts": 46,
+        "reb": 12,
+        "ast": 11
       },
       "games": [
         {
           "round": "S16",
-          "pts": 7,
-          "reb": 1,
-          "ast": 1,
+          "pts": 17,
+          "reb": 2,
+          "ast": 4,
           "game_id": "401856567",
           "opponent": "Nebraska Cornhuskers"
         },
@@ -155,16 +155,16 @@
       "seed": 4,
       "eliminated": false,
       "stats": {
-        "pts": 47,
-        "reb": 10,
-        "ast": 4
+        "pts": 60,
+        "reb": 15,
+        "ast": 6
       },
       "games": [
         {
           "round": "S16",
-          "pts": 9,
-          "reb": 0,
-          "ast": 0,
+          "pts": 22,
+          "reb": 5,
+          "ast": 2,
           "game_id": "401856567",
           "opponent": "Iowa Hawkeyes"
         },
@@ -2011,13 +2011,13 @@
   "live_games": [
     {
       "id": "401856568",
-      "status": "Halftime",
+      "status": "2:09 - 2nd",
       "teams": [
         {
           "name": "Purdue Boilermakers",
           "abbrev": "PUR",
           "seed": 2,
-          "score": "39",
+          "score": "72",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
           "winner": null
         },
@@ -2025,7 +2025,7 @@
           "name": "Texas Longhorns",
           "abbrev": "TEX",
           "seed": 11,
-          "score": "35",
+          "score": "70",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
           "winner": null
         }
@@ -2033,13 +2033,13 @@
     },
     {
       "id": "401856567",
-      "status": "8:26 - 1st",
+      "status": "3:11 - 2nd",
       "teams": [
         {
           "name": "Nebraska Cornhuskers",
           "abbrev": "NEB",
           "seed": 4,
-          "score": "32",
+          "score": "65",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
           "winner": null
         },
@@ -2047,7 +2047,7 @@
           "name": "Iowa Hawkeyes",
           "abbrev": "IOWA",
           "seed": 9,
-          "score": "24",
+          "score": "65",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
           "winner": null
         }
