@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-28T22:50:54.997975+00:00",
+  "last_updated": "2026-03-28T23:23:05.060055+00:00",
   "players": {
     "bennett-stirtz": {
       "name": "Bennett Stirtz",
@@ -8,15 +8,15 @@
       "eliminated": false,
       "stats": {
         "pts": 64,
-        "reb": 13,
-        "ast": 12
+        "reb": 14,
+        "ast": 13
       },
       "games": [
         {
           "round": "E8",
           "pts": 15,
-          "reb": 1,
-          "ast": 1,
+          "reb": 2,
+          "ast": 2,
           "game_id": "401856574",
           "opponent": "Illinois Fighting Illini"
         },
@@ -52,14 +52,14 @@
       "seed": 3,
       "eliminated": false,
       "stats": {
-        "pts": 52,
+        "pts": 56,
         "reb": 24,
         "ast": 12
       },
       "games": [
         {
           "round": "E8",
-          "pts": 7,
+          "pts": 11,
           "reb": 0,
           "ast": 0,
           "game_id": "401856574",
@@ -2146,13 +2146,13 @@
   "live_games": [
     {
       "id": "401856574",
-      "status": "7:07 - 1st",
+      "status": "Halftime",
       "teams": [
         {
           "name": "Illinois Fighting Illini",
           "abbrev": "ILL",
           "seed": 3,
-          "score": "20",
+          "score": "28",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
           "winner": null
         },
@@ -2160,7 +2160,7 @@
           "name": "Iowa Hawkeyes",
           "abbrev": "IOWA",
           "seed": 9,
-          "score": "24",
+          "score": "32",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
           "winner": null
         }
