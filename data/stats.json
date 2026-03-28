@@ -1,6 +1,96 @@
 {
-  "last_updated": "2026-03-28T21:49:08.293712+00:00",
+  "last_updated": "2026-03-28T22:15:06.500899+00:00",
   "players": {
+    "bennett-stirtz": {
+      "name": "Bennett Stirtz",
+      "team": "Iowa Hawkeyes",
+      "seed": 9,
+      "eliminated": false,
+      "stats": {
+        "pts": 51,
+        "reb": 13,
+        "ast": 12
+      },
+      "games": [
+        {
+          "round": "E8",
+          "pts": 2,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856574",
+          "opponent": "Illinois Fighting Illini"
+        },
+        {
+          "round": "R64",
+          "pts": 16,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856522",
+          "opponent": "Clemson Tigers"
+        },
+        {
+          "round": "R32",
+          "pts": 13,
+          "reb": 5,
+          "ast": 5,
+          "game_id": "401856563",
+          "opponent": "Florida Gators"
+        },
+        {
+          "round": "S16",
+          "pts": 20,
+          "reb": 2,
+          "ast": 4,
+          "game_id": "401856567",
+          "opponent": "Nebraska Cornhuskers"
+        }
+      ]
+    },
+    "keaton-wagler": {
+      "name": "Keaton Wagler",
+      "team": "Illinois Fighting Illini",
+      "seed": 3,
+      "eliminated": false,
+      "stats": {
+        "pts": 45,
+        "reb": 24,
+        "ast": 12
+      },
+      "games": [
+        {
+          "round": "E8",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "401856574",
+          "opponent": "Iowa Hawkeyes"
+        },
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 7,
+          "ast": 7,
+          "game_id": "401856491",
+          "opponent": "Pennsylvania Quakers"
+        },
+        {
+          "round": "R32",
+          "pts": 14,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856533",
+          "opponent": "VCU Rams"
+        },
+        {
+          "round": "S16",
+          "pts": 13,
+          "reb": 12,
+          "ast": 3,
+          "game_id": "401856566",
+          "opponent": "Houston Cougars"
+        }
+      ]
+    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
@@ -251,43 +341,6 @@
           "ast": 2,
           "game_id": "401856491",
           "opponent": "Illinois Fighting Illini"
-        }
-      ]
-    },
-    "keaton-wagler": {
-      "name": "Keaton Wagler",
-      "team": "Illinois Fighting Illini",
-      "seed": 3,
-      "eliminated": false,
-      "stats": {
-        "pts": 45,
-        "reb": 24,
-        "ast": 12
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 18,
-          "reb": 7,
-          "ast": 7,
-          "game_id": "401856491",
-          "opponent": "Pennsylvania Quakers"
-        },
-        {
-          "round": "R32",
-          "pts": 14,
-          "reb": 5,
-          "ast": 2,
-          "game_id": "401856533",
-          "opponent": "VCU Rams"
-        },
-        {
-          "round": "S16",
-          "pts": 13,
-          "reb": 12,
-          "ast": 3,
-          "game_id": "401856566",
-          "opponent": "Houston Cougars"
         }
       ]
     },
@@ -2045,43 +2098,6 @@
         }
       ]
     },
-    "bennett-stirtz": {
-      "name": "Bennett Stirtz",
-      "team": "Iowa Hawkeyes",
-      "seed": 9,
-      "eliminated": false,
-      "stats": {
-        "pts": 49,
-        "reb": 12,
-        "ast": 11
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 16,
-          "reb": 5,
-          "ast": 2,
-          "game_id": "401856522",
-          "opponent": "Clemson Tigers"
-        },
-        {
-          "round": "R32",
-          "pts": 13,
-          "reb": 5,
-          "ast": 5,
-          "game_id": "401856563",
-          "opponent": "Florida Gators"
-        },
-        {
-          "round": "S16",
-          "pts": 20,
-          "reb": 2,
-          "ast": 4,
-          "game_id": "401856567",
-          "opponent": "Nebraska Cornhuskers"
-        }
-      ]
-    },
     "tyler-bilodeau": {
       "name": "Tyler Bilodeau",
       "team": "Ucla Bruins",
@@ -2124,6 +2140,31 @@
       "games": []
     }
   },
-  "active_games": [],
-  "live_games": []
+  "active_games": [
+    "401856574"
+  ],
+  "live_games": [
+    {
+      "id": "401856574",
+      "status": "18:19 - 1st",
+      "teams": [
+        {
+          "name": "Illinois Fighting Illini",
+          "abbrev": "ILL",
+          "seed": 3,
+          "score": "0",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
+          "winner": null
+        },
+        {
+          "name": "Iowa Hawkeyes",
+          "abbrev": "IOWA",
+          "seed": 9,
+          "score": "4",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
+          "winner": null
+        }
+      ]
+    }
+  ]
 }
