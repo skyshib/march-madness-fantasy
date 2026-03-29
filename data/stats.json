@@ -1,96 +1,6 @@
 {
-  "last_updated": "2026-03-29T23:19:50.489495+00:00",
+  "last_updated": "2026-03-29T23:54:02.511941+00:00",
   "players": {
-    "tarris-reed-jr": {
-      "name": "Tarris Reed Jr.",
-      "team": "UConn Huskies",
-      "seed": 2,
-      "eliminated": false,
-      "stats": {
-        "pts": 87,
-        "reb": 54,
-        "ast": 12
-      },
-      "games": [
-        {
-          "round": "E8",
-          "pts": 26,
-          "reb": 9,
-          "ast": 3,
-          "game_id": "401856577",
-          "opponent": "Duke Blue Devils"
-        },
-        {
-          "round": "R64",
-          "pts": 31,
-          "reb": 27,
-          "ast": 3,
-          "game_id": "401856497",
-          "opponent": "Furman Paladins"
-        },
-        {
-          "round": "R32",
-          "pts": 10,
-          "reb": 13,
-          "ast": 2,
-          "game_id": "401856559",
-          "opponent": "UCLA Bruins"
-        },
-        {
-          "round": "S16",
-          "pts": 20,
-          "reb": 5,
-          "ast": 4,
-          "game_id": "401856571",
-          "opponent": "Michigan State Spartans"
-        }
-      ]
-    },
-    "cameron-boozer": {
-      "name": "Cameron Boozer",
-      "team": "Duke Blue Devils",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 90,
-        "reb": 42,
-        "ast": 14
-      },
-      "games": [
-        {
-          "round": "E8",
-          "pts": 27,
-          "reb": 8,
-          "ast": 4,
-          "game_id": "401856577",
-          "opponent": "UConn Huskies"
-        },
-        {
-          "round": "R64",
-          "pts": 22,
-          "reb": 13,
-          "ast": 3,
-          "game_id": "401856478",
-          "opponent": "Siena Saints"
-        },
-        {
-          "round": "R32",
-          "pts": 19,
-          "reb": 11,
-          "ast": 4,
-          "game_id": "401856530",
-          "opponent": "TCU Horned Frogs"
-        },
-        {
-          "round": "S16",
-          "pts": 22,
-          "reb": 10,
-          "ast": 3,
-          "game_id": "401856570",
-          "opponent": "St. John's Red Storm"
-        }
-      ]
-    },
     "nate-ament": {
       "name": "Nate Ament",
       "team": "Tennessee Volunteers",
@@ -223,6 +133,96 @@
           "ast": 7,
           "game_id": "401856572",
           "opponent": "Alabama Crimson Tide"
+        }
+      ]
+    },
+    "tarris-reed-jr": {
+      "name": "Tarris Reed Jr.",
+      "team": "UConn Huskies",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 87,
+        "reb": 54,
+        "ast": 12
+      },
+      "games": [
+        {
+          "round": "E8",
+          "pts": 26,
+          "reb": 9,
+          "ast": 3,
+          "game_id": "401856577",
+          "opponent": "Duke Blue Devils"
+        },
+        {
+          "round": "R64",
+          "pts": 31,
+          "reb": 27,
+          "ast": 3,
+          "game_id": "401856497",
+          "opponent": "Furman Paladins"
+        },
+        {
+          "round": "R32",
+          "pts": 10,
+          "reb": 13,
+          "ast": 2,
+          "game_id": "401856559",
+          "opponent": "UCLA Bruins"
+        },
+        {
+          "round": "S16",
+          "pts": 20,
+          "reb": 5,
+          "ast": 4,
+          "game_id": "401856571",
+          "opponent": "Michigan State Spartans"
+        }
+      ]
+    },
+    "cameron-boozer": {
+      "name": "Cameron Boozer",
+      "team": "Duke Blue Devils",
+      "seed": 1,
+      "eliminated": true,
+      "stats": {
+        "pts": 90,
+        "reb": 42,
+        "ast": 14
+      },
+      "games": [
+        {
+          "round": "E8",
+          "pts": 27,
+          "reb": 8,
+          "ast": 4,
+          "game_id": "401856577",
+          "opponent": "UConn Huskies"
+        },
+        {
+          "round": "R64",
+          "pts": 22,
+          "reb": 13,
+          "ast": 3,
+          "game_id": "401856478",
+          "opponent": "Siena Saints"
+        },
+        {
+          "round": "R32",
+          "pts": 19,
+          "reb": 11,
+          "ast": 4,
+          "game_id": "401856530",
+          "opponent": "TCU Horned Frogs"
+        },
+        {
+          "round": "S16",
+          "pts": 22,
+          "reb": 10,
+          "ast": 3,
+          "game_id": "401856570",
+          "opponent": "St. John's Red Storm"
         }
       ]
     },
@@ -2212,31 +2212,6 @@
       "games": []
     }
   },
-  "active_games": [
-    "401856577"
-  ],
-  "live_games": [
-    {
-      "id": "401856577",
-      "status": "0:26 - 2nd",
-      "teams": [
-        {
-          "name": "Duke Blue Devils",
-          "abbrev": "DUKE",
-          "seed": 1,
-          "score": "72",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
-          "winner": null
-        },
-        {
-          "name": "UConn Huskies",
-          "abbrev": "CONN",
-          "seed": 2,
-          "score": "69",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
-          "winner": null
-        }
-      ]
-    }
-  ]
+  "active_games": [],
+  "live_games": []
 }
