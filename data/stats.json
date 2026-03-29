@@ -1,22 +1,22 @@
 {
-  "last_updated": "2026-03-29T20:24:48.773189+00:00",
+  "last_updated": "2026-03-29T20:58:32.546821+00:00",
   "players": {
     "nate-ament": {
       "name": "Nate Ament",
       "team": "Tennessee Volunteers",
       "seed": 6,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
         "pts": 41,
         "reb": 17,
-        "ast": 5
+        "ast": 6
       },
       "games": [
         {
           "round": "E8",
           "pts": 7,
           "reb": 6,
-          "ast": 1,
+          "ast": 2,
           "game_id": "401856576",
           "opponent": "Michigan Wolverines"
         },
@@ -50,17 +50,17 @@
       "name": "Ja'Kobi Gillespie",
       "team": "Tennessee Volunteers",
       "seed": 6,
-      "eliminated": false,
+      "eliminated": true,
       "stats": {
-        "pts": 85,
-        "reb": 11,
+        "pts": 87,
+        "reb": 12,
         "ast": 21
       },
       "games": [
         {
           "round": "E8",
-          "pts": 19,
-          "reb": 3,
+          "pts": 21,
+          "reb": 4,
           "ast": 4,
           "game_id": "401856576",
           "opponent": "Michigan Wolverines"
@@ -2196,31 +2196,6 @@
       "games": []
     }
   },
-  "active_games": [
-    "401856576"
-  ],
-  "live_games": [
-    {
-      "id": "401856576",
-      "status": "7:16 - 2nd",
-      "teams": [
-        {
-          "name": "Michigan Wolverines",
-          "abbrev": "MICH",
-          "seed": 1,
-          "score": "78",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
-          "winner": null
-        },
-        {
-          "name": "Tennessee Volunteers",
-          "abbrev": "TENN",
-          "seed": 6,
-          "score": "52",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
-          "winner": null
-        }
-      ]
-    }
-  ]
+  "active_games": [],
+  "live_games": []
 }
