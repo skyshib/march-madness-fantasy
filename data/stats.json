@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-29T18:35:46.923673+00:00",
+  "last_updated": "2026-03-29T19:20:22.720776+00:00",
   "players": {
     "nate-ament": {
       "name": "Nate Ament",
@@ -8,15 +8,15 @@
       "eliminated": false,
       "stats": {
         "pts": 38,
-        "reb": 13,
-        "ast": 4
+        "reb": 16,
+        "ast": 5
       },
       "games": [
         {
           "round": "E8",
           "pts": 4,
-          "reb": 2,
-          "ast": 0,
+          "reb": 5,
+          "ast": 1,
           "game_id": "401856576",
           "opponent": "Michigan Wolverines"
         },
@@ -52,14 +52,14 @@
       "seed": 6,
       "eliminated": false,
       "stats": {
-        "pts": 66,
+        "pts": 72,
         "reb": 10,
         "ast": 19
       },
       "games": [
         {
           "round": "E8",
-          "pts": 0,
+          "pts": 6,
           "reb": 2,
           "ast": 2,
           "game_id": "401856576",
@@ -97,16 +97,16 @@
       "seed": 1,
       "eliminated": false,
       "stats": {
-        "pts": 59,
-        "reb": 23,
-        "ast": 14
+        "pts": 72,
+        "reb": 25,
+        "ast": 16
       },
       "games": [
         {
           "round": "E8",
-          "pts": 2,
-          "reb": 1,
-          "ast": 1,
+          "pts": 15,
+          "reb": 3,
+          "ast": 3,
           "game_id": "401856576",
           "opponent": "Tennessee Volunteers"
         },
@@ -2202,13 +2202,13 @@
   "live_games": [
     {
       "id": "401856576",
-      "status": "12:03 - 1st",
+      "status": "0:33 - 1st",
       "teams": [
         {
           "name": "Michigan Wolverines",
           "abbrev": "MICH",
           "seed": 1,
-          "score": "12",
+          "score": "45",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
           "winner": null
         },
@@ -2216,7 +2216,7 @@
           "name": "Tennessee Volunteers",
           "abbrev": "TENN",
           "seed": 6,
-          "score": "11",
+          "score": "26",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
           "winner": null
         }
