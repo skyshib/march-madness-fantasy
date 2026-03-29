@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-29T22:48:59.603286+00:00",
+  "last_updated": "2026-03-29T23:19:50.489495+00:00",
   "players": {
     "tarris-reed-jr": {
       "name": "Tarris Reed Jr.",
@@ -7,16 +7,16 @@
       "seed": 2,
       "eliminated": false,
       "stats": {
-        "pts": 84,
-        "reb": 51,
-        "ast": 10
+        "pts": 87,
+        "reb": 54,
+        "ast": 12
       },
       "games": [
         {
           "round": "E8",
-          "pts": 23,
-          "reb": 6,
-          "ast": 1,
+          "pts": 26,
+          "reb": 9,
+          "ast": 3,
           "game_id": "401856577",
           "opponent": "Duke Blue Devils"
         },
@@ -52,16 +52,16 @@
       "seed": 1,
       "eliminated": false,
       "stats": {
-        "pts": 84,
-        "reb": 40,
-        "ast": 13
+        "pts": 90,
+        "reb": 42,
+        "ast": 14
       },
       "games": [
         {
           "round": "E8",
-          "pts": 21,
-          "reb": 6,
-          "ast": 3,
+          "pts": 27,
+          "reb": 8,
+          "ast": 4,
           "game_id": "401856577",
           "opponent": "UConn Huskies"
         },
@@ -2218,13 +2218,13 @@
   "live_games": [
     {
       "id": "401856577",
-      "status": "10:37 - 2nd",
+      "status": "0:26 - 2nd",
       "teams": [
         {
           "name": "Duke Blue Devils",
           "abbrev": "DUKE",
           "seed": 1,
-          "score": "58",
+          "score": "72",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
           "winner": null
         },
@@ -2232,7 +2232,7 @@
           "name": "UConn Huskies",
           "abbrev": "CONN",
           "seed": 2,
-          "score": "49",
+          "score": "69",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
           "winner": null
         }
