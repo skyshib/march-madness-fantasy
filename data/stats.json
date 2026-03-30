@@ -1,183 +1,24 @@
 {
-  "last_updated": "2026-03-30T02:33:55.297924+00:00",
+  "last_updated": "2026-03-30T04:19:32.231886+00:00",
   "players": {
-    "nate-ament": {
-      "name": "Nate Ament",
-      "team": "Tennessee Volunteers",
-      "seed": 6,
+    "gavin-doty": {
+      "name": "Gavin Doty",
+      "team": "Siena Saints",
+      "seed": 16,
       "eliminated": true,
       "stats": {
-        "pts": 41,
-        "reb": 17,
-        "ast": 6
+        "pts": 21,
+        "reb": 4,
+        "ast": 2
       },
       "games": [
-        {
-          "round": "E8",
-          "pts": 7,
-          "reb": 6,
-          "ast": 2,
-          "game_id": "401856576",
-          "opponent": "Michigan Wolverines"
-        },
         {
           "round": "R64",
-          "pts": 0,
-          "reb": 3,
-          "ast": 1,
-          "game_id": "401856527",
-          "opponent": "Miami (OH) RedHawks"
-        },
-        {
-          "round": "R32",
-          "pts": 16,
-          "reb": 4,
-          "ast": 0,
-          "game_id": "401856562",
-          "opponent": "Virginia Cavaliers"
-        },
-        {
-          "round": "S16",
-          "pts": 18,
-          "reb": 4,
-          "ast": 3,
-          "game_id": "401856573",
-          "opponent": "Iowa State Cyclones"
-        }
-      ]
-    },
-    "jakobi-gillespie": {
-      "name": "Ja'Kobi Gillespie",
-      "team": "Tennessee Volunteers",
-      "seed": 6,
-      "eliminated": true,
-      "stats": {
-        "pts": 87,
-        "reb": 12,
-        "ast": 21
-      },
-      "games": [
-        {
-          "round": "E8",
           "pts": 21,
           "reb": 4,
-          "ast": 4,
-          "game_id": "401856576",
-          "opponent": "Michigan Wolverines"
-        },
-        {
-          "round": "R64",
-          "pts": 29,
-          "reb": 3,
-          "ast": 9,
-          "game_id": "401856527",
-          "opponent": "Miami (OH) RedHawks"
-        },
-        {
-          "round": "R32",
-          "pts": 21,
-          "reb": 3,
-          "ast": 6,
-          "game_id": "401856562",
-          "opponent": "Virginia Cavaliers"
-        },
-        {
-          "round": "S16",
-          "pts": 16,
-          "reb": 2,
           "ast": 2,
-          "game_id": "401856573",
-          "opponent": "Iowa State Cyclones"
-        }
-      ]
-    },
-    "yaxel-lendeborg": {
-      "name": "Yaxel Lendeborg",
-      "team": "Michigan Wolverines",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 84,
-        "reb": 29,
-        "ast": 17
-      },
-      "games": [
-        {
-          "round": "E8",
-          "pts": 27,
-          "reb": 7,
-          "ast": 4,
-          "game_id": "401856576",
-          "opponent": "Tennessee Volunteers"
-        },
-        {
-          "round": "R64",
-          "pts": 9,
-          "reb": 4,
-          "ast": 4,
-          "game_id": "401856486",
-          "opponent": "Howard Bison"
-        },
-        {
-          "round": "R32",
-          "pts": 25,
-          "reb": 6,
-          "ast": 2,
-          "game_id": "401856532",
-          "opponent": "Saint Louis Billikens"
-        },
-        {
-          "round": "S16",
-          "pts": 23,
-          "reb": 12,
-          "ast": 7,
-          "game_id": "401856572",
-          "opponent": "Alabama Crimson Tide"
-        }
-      ]
-    },
-    "tarris-reed-jr": {
-      "name": "Tarris Reed Jr.",
-      "team": "UConn Huskies",
-      "seed": 2,
-      "eliminated": false,
-      "stats": {
-        "pts": 87,
-        "reb": 54,
-        "ast": 12
-      },
-      "games": [
-        {
-          "round": "E8",
-          "pts": 26,
-          "reb": 9,
-          "ast": 3,
-          "game_id": "401856577",
+          "game_id": "401856478",
           "opponent": "Duke Blue Devils"
-        },
-        {
-          "round": "R64",
-          "pts": 31,
-          "reb": 27,
-          "ast": 3,
-          "game_id": "401856497",
-          "opponent": "Furman Paladins"
-        },
-        {
-          "round": "R32",
-          "pts": 10,
-          "reb": 13,
-          "ast": 2,
-          "game_id": "401856559",
-          "opponent": "UCLA Bruins"
-        },
-        {
-          "round": "S16",
-          "pts": 20,
-          "reb": 5,
-          "ast": 4,
-          "game_id": "401856571",
-          "opponent": "Michigan State Spartans"
         }
       ]
     },
@@ -192,14 +33,6 @@
         "ast": 14
       },
       "games": [
-        {
-          "round": "E8",
-          "pts": 27,
-          "reb": 8,
-          "ast": 4,
-          "game_id": "401856577",
-          "opponent": "UConn Huskies"
-        },
         {
           "round": "R64",
           "pts": 22,
@@ -223,27 +56,14 @@
           "ast": 3,
           "game_id": "401856570",
           "opponent": "St. John's Red Storm"
-        }
-      ]
-    },
-    "gavin-doty": {
-      "name": "Gavin Doty",
-      "team": "Siena Saints",
-      "seed": 16,
-      "eliminated": true,
-      "stats": {
-        "pts": 21,
-        "reb": 4,
-        "ast": 2
-      },
-      "games": [
+        },
         {
-          "round": "R64",
-          "pts": 21,
-          "reb": 4,
-          "ast": 2,
-          "game_id": "401856478",
-          "opponent": "Duke Blue Devils"
+          "round": "E8",
+          "pts": 27,
+          "reb": 8,
+          "ast": 4,
+          "game_id": "401856577",
+          "opponent": "UConn Huskies"
         }
       ]
     },
@@ -265,6 +85,51 @@
           "ast": 2,
           "game_id": "401856486",
           "opponent": "Michigan Wolverines"
+        }
+      ]
+    },
+    "yaxel-lendeborg": {
+      "name": "Yaxel Lendeborg",
+      "team": "Michigan Wolverines",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 84,
+        "reb": 29,
+        "ast": 17
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 9,
+          "reb": 4,
+          "ast": 4,
+          "game_id": "401856486",
+          "opponent": "Howard Bison"
+        },
+        {
+          "round": "R32",
+          "pts": 25,
+          "reb": 6,
+          "ast": 2,
+          "game_id": "401856532",
+          "opponent": "Saint Louis Billikens"
+        },
+        {
+          "round": "S16",
+          "pts": 23,
+          "reb": 12,
+          "ast": 7,
+          "game_id": "401856572",
+          "opponent": "Alabama Crimson Tide"
+        },
+        {
+          "round": "E8",
+          "pts": 27,
+          "reb": 7,
+          "ast": 4,
+          "game_id": "401856576",
+          "opponent": "Tennessee Volunteers"
         }
       ]
     },
@@ -1596,6 +1461,51 @@
         }
       ]
     },
+    "tarris-reed-jr": {
+      "name": "Tarris Reed Jr.",
+      "team": "UConn Huskies",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 87,
+        "reb": 54,
+        "ast": 12
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 31,
+          "reb": 27,
+          "ast": 3,
+          "game_id": "401856497",
+          "opponent": "Furman Paladins"
+        },
+        {
+          "round": "R32",
+          "pts": 10,
+          "reb": 13,
+          "ast": 2,
+          "game_id": "401856559",
+          "opponent": "UCLA Bruins"
+        },
+        {
+          "round": "S16",
+          "pts": 20,
+          "reb": 5,
+          "ast": 4,
+          "game_id": "401856571",
+          "opponent": "Michigan State Spartans"
+        },
+        {
+          "round": "E8",
+          "pts": 26,
+          "reb": 9,
+          "ast": 3,
+          "game_id": "401856577",
+          "opponent": "Duke Blue Devils"
+        }
+      ]
+    },
     "tj-burch": {
       "name": "TJ Burch",
       "team": "Wright State Raiders",
@@ -1893,6 +1803,96 @@
           "ast": 2,
           "game_id": "401856527",
           "opponent": "Tennessee Volunteers"
+        }
+      ]
+    },
+    "nate-ament": {
+      "name": "Nate Ament",
+      "team": "Tennessee Volunteers",
+      "seed": 6,
+      "eliminated": true,
+      "stats": {
+        "pts": 41,
+        "reb": 17,
+        "ast": 6
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 0,
+          "reb": 3,
+          "ast": 1,
+          "game_id": "401856527",
+          "opponent": "Miami (OH) RedHawks"
+        },
+        {
+          "round": "R32",
+          "pts": 16,
+          "reb": 4,
+          "ast": 0,
+          "game_id": "401856562",
+          "opponent": "Virginia Cavaliers"
+        },
+        {
+          "round": "S16",
+          "pts": 18,
+          "reb": 4,
+          "ast": 3,
+          "game_id": "401856573",
+          "opponent": "Iowa State Cyclones"
+        },
+        {
+          "round": "E8",
+          "pts": 7,
+          "reb": 6,
+          "ast": 2,
+          "game_id": "401856576",
+          "opponent": "Michigan Wolverines"
+        }
+      ]
+    },
+    "jakobi-gillespie": {
+      "name": "Ja'Kobi Gillespie",
+      "team": "Tennessee Volunteers",
+      "seed": 6,
+      "eliminated": true,
+      "stats": {
+        "pts": 87,
+        "reb": 12,
+        "ast": 21
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 29,
+          "reb": 3,
+          "ast": 9,
+          "game_id": "401856527",
+          "opponent": "Miami (OH) RedHawks"
+        },
+        {
+          "round": "R32",
+          "pts": 21,
+          "reb": 3,
+          "ast": 6,
+          "game_id": "401856562",
+          "opponent": "Virginia Cavaliers"
+        },
+        {
+          "round": "S16",
+          "pts": 16,
+          "reb": 2,
+          "ast": 2,
+          "game_id": "401856573",
+          "opponent": "Iowa State Cyclones"
+        },
+        {
+          "round": "E8",
+          "pts": 21,
+          "reb": 4,
+          "ast": 4,
+          "game_id": "401856576",
+          "opponent": "Michigan Wolverines"
         }
       ]
     },
