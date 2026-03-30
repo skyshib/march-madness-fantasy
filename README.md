@@ -1,6 +1,6 @@
 # March Madness Fantasy
 
-A live scoreboard for a friends-and-family March Madness fantasy game, hosted on GitHub Pages.
+A live scoreboard for a March Madness fantasy game devised by Ian Golembeski, hosted on GitHub Pages.
 
 **Live site:** [skyshib.github.io/march-madness-fantasy](https://skyshib.github.io/march-madness-fantasy/)
 
@@ -90,7 +90,7 @@ scripts/
 5. Push to GitHub — Pages deploys automatically
 
 ## Payouts
-
+(from 2026 with 23 entrants)
 | Place | Prize |
 |-------|-------|
 | 1st   | $500  |
