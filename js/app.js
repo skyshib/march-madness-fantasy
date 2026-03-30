@@ -457,14 +457,30 @@
         try { showEliminationBanner(newEliminations); } catch (e) {}
       }
 
-      // Update active_games in statsData with fresh ESPN data
+      // Update active_games in statsData — include recently completed games
+      // whose stats aren't in stats.json yet, so overlap subtraction works
       if (currentStats) {
-        currentStats.active_games = activeIds;
+        currentStats.active_games = [...activeIds, ...recentlyCompleted];
+      }
+
+      // Also fetch final stats for recently completed games that stats.json
+      // may not have yet (covers the gap between game end and next cron run)
+      const recentlyCompleted = [];
+      for (const event of data.events || []) {
+        const comp3 = event.competitions?.[0];
+        if (comp3?.status?.type?.state === 'post') {
+          // Check if stats.json has this game already
+          const hasInStats = Object.values(currentStats?.players || {}).some(p =>
+            (p.games || []).some(g => g.game_id === event.id)
+          );
+          if (!hasInStats) recentlyCompleted.push(event.id);
+        }
       }
 
       let translatedLive = {};
-      if (activeIds.length > 0) {
-        const espnLive = await ESPN.getLivePlayerStats(activeIds);
+      const fetchIds = [...activeIds, ...recentlyCompleted];
+      if (fetchIds.length > 0) {
+        const espnLive = await ESPN.getLivePlayerStats(fetchIds);
         if (Object.keys(espnLive).length > 0) {
           translatedLive = translateLiveStats(espnLive);
           Scoreboard.setLiveOverrides(translatedLive);
