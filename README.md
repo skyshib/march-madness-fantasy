@@ -16,8 +16,8 @@ Players accumulate stats across all tournament games their team plays. The entra
 
 Static HTML/CSS/JS site with automated score updates:
 
-- **Frontend** (`index.html`, `js/`, `css/`): Renders the scoreboard, auto-refreshes every 2 minutes, and polls ESPN client-side for live game data
-- **GitHub Actions cron** (`.github/workflows/update-scores.yml`): Runs every hour during the tournament, fetches box scores from the ESPN API, computes player stat totals, and commits updated `stats.json`
+- **Frontend** (`index.html`, `js/`, `css/`): Renders the scoreboard, re-fetches committed stats every 5 minutes, and polls ESPN client-side every 60 seconds for live game data
+- **GitHub Actions cron** (`.github/workflows/update-scores.yml`): Runs every 15 minutes during the tournament, fetches box scores from the ESPN API, computes player stat totals, and commits updated `stats.json`
 - **Data** (`data/`): Picks and stats stored as JSON, with historical data for 2022-2025
 
 ## Features
