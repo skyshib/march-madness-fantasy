@@ -2,10 +2,11 @@ name: Update Tournament Scores
 
 on:
   schedule:
-    # Every minute, noon-2am ET (UTC-4 during March), March-April
+    # Every 15 minutes, noon-2am ET (UTC-4 during March), March-April
     # 16:00-06:00 UTC covers noon-2am ET
-    - cron: '* 16-23 * 3-4 *'
-    - cron: '* 0-6 * 3-4 *'
+    # Client-side JS polls ESPN every 60s for live games between cron runs
+    - cron: '*/15 16-23 * 3-4 *'
+    - cron: '*/15 0-6 * 3-4 *'
   workflow_dispatch: {}  # Manual trigger
 
 permissions:
