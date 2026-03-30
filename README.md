@@ -90,7 +90,7 @@ scripts/
 5. Push to GitHub — Pages deploys automatically
 
 ## Payouts
-(from 2026 with 23 entrants)
+(from 2026 with 27 entrants)
 | Place | Prize |
 |-------|-------|
 | 1st   | $500  |
