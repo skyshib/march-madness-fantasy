@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-04T22:54:23.294995+00:00",
+  "last_updated": "2026-04-04T23:22:26.710213+00:00",
   "players": {
     "keaton-wagler": {
       "name": "Keaton Wagler",
@@ -7,16 +7,16 @@
       "seed": 3,
       "eliminated": false,
       "stats": {
-        "pts": 78,
+        "pts": 80,
         "reb": 32,
-        "ast": 15
+        "ast": 16
       },
       "games": [
         {
           "round": "F4",
-          "pts": 8,
+          "pts": 10,
           "reb": 6,
-          "ast": 0,
+          "ast": 1,
           "game_id": "401856598",
           "opponent": "UConn Huskies"
         },
@@ -2234,13 +2234,13 @@
   "live_games": [
     {
       "id": "401856598",
-      "status": "4:13 - 1st",
+      "status": "Halftime",
       "teams": [
         {
           "name": "UConn Huskies",
           "abbrev": "CONN",
           "seed": 2,
-          "score": "26",
+          "score": "37",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
           "winner": null
         },
@@ -2248,7 +2248,7 @@
           "name": "Illinois Fighting Illini",
           "abbrev": "ILL",
           "seed": 3,
-          "score": "22",
+          "score": "29",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
           "winner": null
         }
