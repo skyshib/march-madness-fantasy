@@ -1,6 +1,112 @@
 {
-  "last_updated": "2026-04-04T21:53:02.131695+00:00",
+  "last_updated": "2026-04-04T22:21:16.318205+00:00",
   "players": {
+    "keaton-wagler": {
+      "name": "Keaton Wagler",
+      "team": "Illinois Fighting Illini",
+      "seed": 3,
+      "eliminated": false,
+      "stats": {
+        "pts": 73,
+        "reb": 28,
+        "ast": 15
+      },
+      "games": [
+        {
+          "round": "F4",
+          "pts": 3,
+          "reb": 2,
+          "ast": 0,
+          "game_id": "401856598",
+          "opponent": "UConn Huskies"
+        },
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 7,
+          "ast": 7,
+          "game_id": "401856491",
+          "opponent": "Pennsylvania Quakers"
+        },
+        {
+          "round": "R32",
+          "pts": 14,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856533",
+          "opponent": "VCU Rams"
+        },
+        {
+          "round": "S16",
+          "pts": 13,
+          "reb": 12,
+          "ast": 3,
+          "game_id": "401856566",
+          "opponent": "Houston Cougars"
+        },
+        {
+          "round": "E8",
+          "pts": 25,
+          "reb": 2,
+          "ast": 3,
+          "game_id": "401856574",
+          "opponent": "Iowa Hawkeyes"
+        }
+      ]
+    },
+    "tarris-reed-jr": {
+      "name": "Tarris Reed Jr.",
+      "team": "UConn Huskies",
+      "seed": 2,
+      "eliminated": false,
+      "stats": {
+        "pts": 91,
+        "reb": 57,
+        "ast": 12
+      },
+      "games": [
+        {
+          "round": "F4",
+          "pts": 4,
+          "reb": 3,
+          "ast": 0,
+          "game_id": "401856598",
+          "opponent": "Illinois Fighting Illini"
+        },
+        {
+          "round": "R64",
+          "pts": 31,
+          "reb": 27,
+          "ast": 3,
+          "game_id": "401856497",
+          "opponent": "Furman Paladins"
+        },
+        {
+          "round": "R32",
+          "pts": 10,
+          "reb": 13,
+          "ast": 2,
+          "game_id": "401856559",
+          "opponent": "UCLA Bruins"
+        },
+        {
+          "round": "S16",
+          "pts": 20,
+          "reb": 5,
+          "ast": 4,
+          "game_id": "401856571",
+          "opponent": "Michigan State Spartans"
+        },
+        {
+          "round": "E8",
+          "pts": 26,
+          "reb": 9,
+          "ast": 3,
+          "game_id": "401856577",
+          "opponent": "Duke Blue Devils"
+        }
+      ]
+    },
     "gavin-doty": {
       "name": "Gavin Doty",
       "team": "Siena Saints",
@@ -267,51 +373,6 @@
           "ast": 2,
           "game_id": "401856491",
           "opponent": "Illinois Fighting Illini"
-        }
-      ]
-    },
-    "keaton-wagler": {
-      "name": "Keaton Wagler",
-      "team": "Illinois Fighting Illini",
-      "seed": 3,
-      "eliminated": false,
-      "stats": {
-        "pts": 70,
-        "reb": 26,
-        "ast": 15
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 18,
-          "reb": 7,
-          "ast": 7,
-          "game_id": "401856491",
-          "opponent": "Pennsylvania Quakers"
-        },
-        {
-          "round": "R32",
-          "pts": 14,
-          "reb": 5,
-          "ast": 2,
-          "game_id": "401856533",
-          "opponent": "VCU Rams"
-        },
-        {
-          "round": "S16",
-          "pts": 13,
-          "reb": 12,
-          "ast": 3,
-          "game_id": "401856566",
-          "opponent": "Houston Cougars"
-        },
-        {
-          "round": "E8",
-          "pts": 25,
-          "reb": 2,
-          "ast": 3,
-          "game_id": "401856574",
-          "opponent": "Iowa Hawkeyes"
         }
       ]
     },
@@ -1461,51 +1522,6 @@
         }
       ]
     },
-    "tarris-reed-jr": {
-      "name": "Tarris Reed Jr.",
-      "team": "UConn Huskies",
-      "seed": 2,
-      "eliminated": false,
-      "stats": {
-        "pts": 87,
-        "reb": 54,
-        "ast": 12
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 31,
-          "reb": 27,
-          "ast": 3,
-          "game_id": "401856497",
-          "opponent": "Furman Paladins"
-        },
-        {
-          "round": "R32",
-          "pts": 10,
-          "reb": 13,
-          "ast": 2,
-          "game_id": "401856559",
-          "opponent": "UCLA Bruins"
-        },
-        {
-          "round": "S16",
-          "pts": 20,
-          "reb": 5,
-          "ast": 4,
-          "game_id": "401856571",
-          "opponent": "Michigan State Spartans"
-        },
-        {
-          "round": "E8",
-          "pts": 26,
-          "reb": 9,
-          "ast": 3,
-          "game_id": "401856577",
-          "opponent": "Duke Blue Devils"
-        }
-      ]
-    },
     "tj-burch": {
       "name": "TJ Burch",
       "team": "Wright State Raiders",
@@ -2212,6 +2228,31 @@
       "games": []
     }
   },
-  "active_games": [],
-  "live_games": []
+  "active_games": [
+    "401856598"
+  ],
+  "live_games": [
+    {
+      "id": "401856598",
+      "status": "15:39 - 1st",
+      "teams": [
+        {
+          "name": "UConn Huskies",
+          "abbrev": "CONN",
+          "seed": 2,
+          "score": "10",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
+          "winner": null
+        },
+        {
+          "name": "Illinois Fighting Illini",
+          "abbrev": "ILL",
+          "seed": 3,
+          "score": "7",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
+          "winner": null
+        }
+      ]
+    }
+  ]
 }
