@@ -313,20 +313,8 @@
             const count = data.owners.length;
             const ownerList = data.owners.map(o => (o.captain ? o.captain + ' ' : '') + o.name).join(', ');
             const safeOwners = ownerList.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-            // Show THIS GAME's points only
-            // Subtract committed stats from prior games (exclude any active game stats)
-            const liveTotalPts = livePlayerStats?.[data.slug]?.pts;
-            const playerData = stats.players?.[data.slug];
-            let priorPts = 0;
-            if (playerData) {
-              const activeGameIds = stats.active_games || [];
-              for (const g of playerData.games || []) {
-                if (!activeGameIds.includes(g.game_id)) {
-                  priorPts += g.pts || 0;
-                }
-              }
-            }
-            const gamePts = liveTotalPts !== undefined ? liveTotalPts - priorPts : 0;
+            // Show this game's points from live ESPN data
+            const gamePts = livePlayerStats?.[data.slug]?.pts;
             const ptsHtml = gamePts > 0 ? ` <span class="live-game-pts">${gamePts}</span>` : '';
             html += `<div class="live-game-pick" data-owners="${safeOwners}">${count}x ${player}${ptsHtml}</div>`;
           }
