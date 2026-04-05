@@ -1,21 +1,180 @@
 {
-  "last_updated": "2026-04-04T23:53:04.708077+00:00",
+  "last_updated": "2026-04-05T01:48:32.454715+00:00",
   "players": {
-    "keaton-wagler": {
-      "name": "Keaton Wagler",
-      "team": "Illinois Fighting Illini",
-      "seed": 3,
+    "yaxel-lendeborg": {
+      "name": "Yaxel Lendeborg",
+      "team": "Michigan Wolverines",
+      "seed": 1,
       "eliminated": false,
       "stats": {
-        "pts": 85,
-        "reb": 32,
+        "pts": 87,
+        "reb": 30,
         "ast": 17
       },
       "games": [
         {
           "round": "F4",
-          "pts": 15,
+          "pts": 3,
+          "reb": 1,
+          "ast": 0,
+          "game_id": "401856599",
+          "opponent": "Arizona Wildcats"
+        },
+        {
+          "round": "R64",
+          "pts": 9,
+          "reb": 4,
+          "ast": 4,
+          "game_id": "401856486",
+          "opponent": "Howard Bison"
+        },
+        {
+          "round": "R32",
+          "pts": 25,
           "reb": 6,
+          "ast": 2,
+          "game_id": "401856532",
+          "opponent": "Saint Louis Billikens"
+        },
+        {
+          "round": "S16",
+          "pts": 23,
+          "reb": 12,
+          "ast": 7,
+          "game_id": "401856572",
+          "opponent": "Alabama Crimson Tide"
+        },
+        {
+          "round": "E8",
+          "pts": 27,
+          "reb": 7,
+          "ast": 4,
+          "game_id": "401856576",
+          "opponent": "Tennessee Volunteers"
+        }
+      ]
+    },
+    "brayden-burris": {
+      "name": "Brayden Burris",
+      "team": "Arizona Wildcats",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 71,
+        "reb": 26,
+        "ast": 9
+      },
+      "games": [
+        {
+          "round": "F4",
+          "pts": 0,
+          "reb": 1,
+          "ast": 1,
+          "game_id": "401856599",
+          "opponent": "Michigan Wolverines"
+        },
+        {
+          "round": "R64",
+          "pts": 18,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856529",
+          "opponent": "Long Island University Sharks"
+        },
+        {
+          "round": "R32",
+          "pts": 16,
+          "reb": 9,
+          "ast": 2,
+          "game_id": "401856565",
+          "opponent": "Utah State Aggies"
+        },
+        {
+          "round": "S16",
+          "pts": 23,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856569",
+          "opponent": "Arkansas Razorbacks"
+        },
+        {
+          "round": "E8",
+          "pts": 14,
+          "reb": 6,
+          "ast": 2,
+          "game_id": "401856575",
+          "opponent": "Purdue Boilermakers"
+        }
+      ]
+    },
+    "jaden-bradley": {
+      "name": "Jaden Bradley",
+      "team": "Arizona Wildcats",
+      "seed": 1,
+      "eliminated": false,
+      "stats": {
+        "pts": 56,
+        "reb": 11,
+        "ast": 15
+      },
+      "games": [
+        {
+          "round": "F4",
+          "pts": 3,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "401856599",
+          "opponent": "Michigan Wolverines"
+        },
+        {
+          "round": "R64",
+          "pts": 7,
+          "reb": 5,
+          "ast": 4,
+          "game_id": "401856529",
+          "opponent": "Long Island University Sharks"
+        },
+        {
+          "round": "R32",
+          "pts": 18,
+          "reb": 1,
+          "ast": 0,
+          "game_id": "401856565",
+          "opponent": "Utah State Aggies"
+        },
+        {
+          "round": "S16",
+          "pts": 14,
+          "reb": 4,
+          "ast": 5,
+          "game_id": "401856569",
+          "opponent": "Arkansas Razorbacks"
+        },
+        {
+          "round": "E8",
+          "pts": 14,
+          "reb": 1,
+          "ast": 6,
+          "game_id": "401856575",
+          "opponent": "Purdue Boilermakers"
+        }
+      ]
+    },
+    "keaton-wagler": {
+      "name": "Keaton Wagler",
+      "team": "Illinois Fighting Illini",
+      "seed": 3,
+      "eliminated": true,
+      "stats": {
+        "pts": 90,
+        "reb": 34,
+        "ast": 17
+      },
+      "games": [
+        {
+          "round": "F4",
+          "pts": 20,
+          "reb": 8,
           "ast": 2,
           "game_id": "401856598",
           "opponent": "UConn Huskies"
@@ -60,15 +219,15 @@
       "seed": 2,
       "eliminated": false,
       "stats": {
-        "pts": 98,
-        "reb": 61,
+        "pts": 104,
+        "reb": 65,
         "ast": 12
       },
       "games": [
         {
           "round": "F4",
-          "pts": 11,
-          "reb": 7,
+          "pts": 17,
+          "reb": 11,
           "ast": 0,
           "game_id": "401856598",
           "opponent": "Illinois Fighting Illini"
@@ -191,51 +350,6 @@
           "ast": 2,
           "game_id": "401856486",
           "opponent": "Michigan Wolverines"
-        }
-      ]
-    },
-    "yaxel-lendeborg": {
-      "name": "Yaxel Lendeborg",
-      "team": "Michigan Wolverines",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 84,
-        "reb": 29,
-        "ast": 17
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 9,
-          "reb": 4,
-          "ast": 4,
-          "game_id": "401856486",
-          "opponent": "Howard Bison"
-        },
-        {
-          "round": "R32",
-          "pts": 25,
-          "reb": 6,
-          "ast": 2,
-          "game_id": "401856532",
-          "opponent": "Saint Louis Billikens"
-        },
-        {
-          "round": "S16",
-          "pts": 23,
-          "reb": 12,
-          "ast": 7,
-          "game_id": "401856572",
-          "opponent": "Alabama Crimson Tide"
-        },
-        {
-          "round": "E8",
-          "pts": 27,
-          "reb": 7,
-          "ast": 4,
-          "game_id": "401856576",
-          "opponent": "Tennessee Volunteers"
         }
       ]
     },
@@ -1110,96 +1224,6 @@
           "ast": 3,
           "game_id": "401856529",
           "opponent": "Arizona Wildcats"
-        }
-      ]
-    },
-    "brayden-burris": {
-      "name": "Brayden Burris",
-      "team": "Arizona Wildcats",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 71,
-        "reb": 25,
-        "ast": 8
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 18,
-          "reb": 5,
-          "ast": 2,
-          "game_id": "401856529",
-          "opponent": "Long Island University Sharks"
-        },
-        {
-          "round": "R32",
-          "pts": 16,
-          "reb": 9,
-          "ast": 2,
-          "game_id": "401856565",
-          "opponent": "Utah State Aggies"
-        },
-        {
-          "round": "S16",
-          "pts": 23,
-          "reb": 5,
-          "ast": 2,
-          "game_id": "401856569",
-          "opponent": "Arkansas Razorbacks"
-        },
-        {
-          "round": "E8",
-          "pts": 14,
-          "reb": 6,
-          "ast": 2,
-          "game_id": "401856575",
-          "opponent": "Purdue Boilermakers"
-        }
-      ]
-    },
-    "jaden-bradley": {
-      "name": "Jaden Bradley",
-      "team": "Arizona Wildcats",
-      "seed": 1,
-      "eliminated": false,
-      "stats": {
-        "pts": 53,
-        "reb": 11,
-        "ast": 15
-      },
-      "games": [
-        {
-          "round": "R64",
-          "pts": 7,
-          "reb": 5,
-          "ast": 4,
-          "game_id": "401856529",
-          "opponent": "Long Island University Sharks"
-        },
-        {
-          "round": "R32",
-          "pts": 18,
-          "reb": 1,
-          "ast": 0,
-          "game_id": "401856565",
-          "opponent": "Utah State Aggies"
-        },
-        {
-          "round": "S16",
-          "pts": 14,
-          "reb": 4,
-          "ast": 5,
-          "game_id": "401856569",
-          "opponent": "Arkansas Razorbacks"
-        },
-        {
-          "round": "E8",
-          "pts": 14,
-          "reb": 1,
-          "ast": 6,
-          "game_id": "401856575",
-          "opponent": "Purdue Boilermakers"
         }
       ]
     },
@@ -2229,27 +2253,27 @@
     }
   },
   "active_games": [
-    "401856598"
+    "401856599"
   ],
   "live_games": [
     {
-      "id": "401856598",
-      "status": "8:00 - 2nd",
+      "id": "401856599",
+      "status": "10:35 - 1st",
       "teams": [
         {
-          "name": "UConn Huskies",
-          "abbrev": "CONN",
-          "seed": 2,
-          "score": "57",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
+          "name": "Arizona Wildcats",
+          "abbrev": "ARIZ",
+          "seed": 1,
+          "score": "10",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
           "winner": null
         },
         {
-          "name": "Illinois Fighting Illini",
-          "abbrev": "ILL",
-          "seed": 3,
-          "score": "49",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
+          "name": "Michigan Wolverines",
+          "abbrev": "MICH",
+          "seed": 1,
+          "score": "24",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
           "winner": null
         }
       ]
