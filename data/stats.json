@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-05T06:04:29.322971+00:00",
+  "last_updated": "2026-04-05T07:22:02.054694+00:00",
   "players": {
     "gavin-doty": {
       "name": "Gavin Doty",
@@ -429,9 +429,9 @@
       "seed": 4,
       "eliminated": true,
       "stats": {
-        "pts": 48,
-        "reb": 10,
-        "ast": 4
+        "pts": 63,
+        "reb": 15,
+        "ast": 6
       },
       "games": [
         {
@@ -441,6 +441,14 @@
           "ast": 2,
           "game_id": "401856489",
           "opponent": "Troy Trojans"
+        },
+        {
+          "round": "R32",
+          "pts": 15,
+          "reb": 5,
+          "ast": 2,
+          "game_id": "401856534",
+          "opponent": "Vanderbilt Commodores"
         },
         {
           "round": "S16",
@@ -608,9 +616,9 @@
       "seed": 5,
       "eliminated": true,
       "stats": {
-        "pts": 26,
-        "reb": 7,
-        "ast": 5
+        "pts": 53,
+        "reb": 9,
+        "ast": 9
       },
       "games": [
         {
@@ -620,6 +628,14 @@
           "ast": 5,
           "game_id": "401856488",
           "opponent": "McNeese Cowboys"
+        },
+        {
+          "round": "R32",
+          "pts": 27,
+          "reb": 2,
+          "ast": 4,
+          "game_id": "401856534",
+          "opponent": "Nebraska Cornhuskers"
         }
       ]
     },
@@ -629,9 +645,9 @@
       "seed": 5,
       "eliminated": true,
       "stats": {
-        "pts": 13,
+        "pts": 22,
         "reb": 1,
-        "ast": 3
+        "ast": 9
       },
       "games": [
         {
@@ -641,6 +657,14 @@
           "ast": 3,
           "game_id": "401856488",
           "opponent": "McNeese Cowboys"
+        },
+        {
+          "round": "R32",
+          "pts": 9,
+          "reb": 0,
+          "ast": 6,
+          "game_id": "401856534",
+          "opponent": "Nebraska Cornhuskers"
         }
       ]
     },
@@ -1268,6 +1292,14 @@
           "ast": 0,
           "game_id": "",
           "opponent": "DNP"
+        },
+        {
+          "round": "S16",
+          "pts": 0,
+          "reb": 0,
+          "ast": 0,
+          "game_id": "",
+          "opponent": "DNP"
         }
       ]
     },
@@ -1277,9 +1309,9 @@
       "seed": 2,
       "eliminated": true,
       "stats": {
-        "pts": 37,
+        "pts": 43,
         "reb": 9,
-        "ast": 3
+        "ast": 6
       },
       "games": [
         {
@@ -1297,6 +1329,14 @@
           "ast": 1,
           "game_id": "401856561",
           "opponent": "Kentucky Wildcats"
+        },
+        {
+          "round": "S16",
+          "pts": 6,
+          "reb": 0,
+          "ast": 3,
+          "game_id": "401856573",
+          "opponent": "Tennessee Volunteers"
         }
       ]
     },
@@ -1812,9 +1852,9 @@
       "seed": 6,
       "eliminated": true,
       "stats": {
-        "pts": 7,
-        "reb": 9,
-        "ast": 3
+        "pts": 41,
+        "reb": 17,
+        "ast": 6
       },
       "games": [
         {
@@ -1824,6 +1864,22 @@
           "ast": 1,
           "game_id": "401856527",
           "opponent": "Miami (OH) RedHawks"
+        },
+        {
+          "round": "R32",
+          "pts": 16,
+          "reb": 4,
+          "ast": 0,
+          "game_id": "401856562",
+          "opponent": "Virginia Cavaliers"
+        },
+        {
+          "round": "S16",
+          "pts": 18,
+          "reb": 4,
+          "ast": 3,
+          "game_id": "401856573",
+          "opponent": "Iowa State Cyclones"
         },
         {
           "round": "E8",
@@ -1841,9 +1897,9 @@
       "seed": 6,
       "eliminated": true,
       "stats": {
-        "pts": 50,
-        "reb": 7,
-        "ast": 13
+        "pts": 87,
+        "reb": 12,
+        "ast": 21
       },
       "games": [
         {
@@ -1853,6 +1909,22 @@
           "ast": 9,
           "game_id": "401856527",
           "opponent": "Miami (OH) RedHawks"
+        },
+        {
+          "round": "R32",
+          "pts": 21,
+          "reb": 3,
+          "ast": 6,
+          "game_id": "401856562",
+          "opponent": "Virginia Cavaliers"
+        },
+        {
+          "round": "S16",
+          "pts": 16,
+          "reb": 2,
+          "ast": 2,
+          "game_id": "401856573",
+          "opponent": "Iowa State Cyclones"
         },
         {
           "round": "E8",
@@ -1961,6 +2033,56 @@
           "ast": 10,
           "game_id": "401856559",
           "opponent": "UConn Huskies"
+        }
+      ]
+    },
+    "mark-mitchell": {
+      "name": "Mark Mitchell",
+      "team": "Missouri Tigers",
+      "seed": 10,
+      "eliminated": true,
+      "stats": {
+        "pts": 19,
+        "reb": 3,
+        "ast": 5
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 19,
+          "reb": 3,
+          "ast": 5,
+          "game_id": "401856518",
+          "opponent": "Miami Hurricanes"
+        }
+      ]
+    },
+    "malik-reneau": {
+      "name": "Malik Reneau",
+      "team": "Miami Hurricanes",
+      "seed": 7,
+      "eliminated": true,
+      "stats": {
+        "pts": 40,
+        "reb": 11,
+        "ast": 6
+      },
+      "games": [
+        {
+          "round": "R64",
+          "pts": 24,
+          "reb": 6,
+          "ast": 3,
+          "game_id": "401856518",
+          "opponent": "Missouri Tigers"
+        },
+        {
+          "round": "R32",
+          "pts": 16,
+          "reb": 5,
+          "ast": 3,
+          "game_id": "401856564",
+          "opponent": "Purdue Boilermakers"
         }
       ]
     },
@@ -2088,27 +2210,6 @@
         }
       ]
     },
-    "malik-reneau": {
-      "name": "Malik Reneau",
-      "team": "Miami Hurricanes",
-      "seed": 7,
-      "eliminated": true,
-      "stats": {
-        "pts": 16,
-        "reb": 5,
-        "ast": 3
-      },
-      "games": [
-        {
-          "round": "R32",
-          "pts": 16,
-          "reb": 5,
-          "ast": 3,
-          "game_id": "401856564",
-          "opponent": "Purdue Boilermakers"
-        }
-      ]
-    },
     "tyler-bilodeau": {
       "name": "Tyler Bilodeau",
       "team": "Ucla Bruins",
@@ -2137,18 +2238,6 @@
           "opponent": "DNP"
         }
       ]
-    },
-    "mark-mitchell": {
-      "name": "Mark Mitchell",
-      "team": "Missouri Tigers",
-      "seed": 0,
-      "eliminated": true,
-      "stats": {
-        "pts": 0,
-        "reb": 0,
-        "ast": 0
-      },
-      "games": []
     },
     "caleb-wilson": {
       "name": "Caleb Wilson",
