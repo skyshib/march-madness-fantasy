@@ -455,13 +455,7 @@
         try { showEliminationBanner(newEliminations); } catch (e) {}
       }
 
-      // Update active_games in statsData — include recently completed games
-      // whose stats aren't in stats.json yet, so overlap subtraction works
-      if (currentStats) {
-        currentStats.active_games = [...activeIds, ...recentlyCompleted];
-      }
-
-      // Also fetch final stats for recently completed games that stats.json
+      // Fetch final stats for recently completed games that stats.json
       // may not have yet (covers the gap between game end and next cron run)
       const recentlyCompleted = [];
       for (const event of data.events || []) {
@@ -473,6 +467,11 @@
           );
           if (!hasInStats) recentlyCompleted.push(event.id);
         }
+      }
+
+      // Update active_games — include recently completed games not yet in stats.json
+      if (currentStats) {
+        currentStats.active_games = [...activeIds, ...recentlyCompleted];
       }
 
       let translatedLive = {};
