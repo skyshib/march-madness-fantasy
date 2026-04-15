@@ -9,6 +9,7 @@ const Scoreboard = (() => {
   let liveOverrides = {};  // athleteId -> { pts, reb, ast } from live ESPN fetch
   let liveGamesInfo = [];  // [{ teams: [{name, seed, score}], status }] from ESPN
   let compactMode = false;
+  let bprExpanded = false;
 
   function setData(picks, stats, headshots, teamLogos) {
     picksData = picks;
@@ -283,7 +284,26 @@ const Scoreboard = (() => {
       }
     }
 
-    const displayRows = [...syntheticRanked, ...ranked];
+    // BPR toggle row (always rendered; BPR row itself is hidden unless expanded)
+    if (syntheticRanked.length > 0) {
+      const toggleTr = document.createElement('tr');
+      toggleTr.className = 'bpr-toggle-row';
+      const toggleTd = document.createElement('td');
+      toggleTd.colSpan = 20;
+      toggleTd.className = 'bpr-toggle-cell';
+      const caret = bprExpanded ? '▼' : '▶';
+      const label = bprExpanded ? 'Hide Best Possible Roster' : 'Show Best Possible Roster';
+      toggleTd.textContent = `${caret} ⭐ ${label}`;
+      toggleTr.appendChild(toggleTd);
+      toggleTr.addEventListener('click', () => toggleBPR());
+      tbody.appendChild(toggleTr);
+    }
+
+    const displayRows = [
+      ...(bprExpanded ? syntheticRanked : []),
+      ...ranked,
+    ];
+    const syntheticCount = bprExpanded ? syntheticRanked.length : 0;
     for (let i = 0; i < displayRows.length; i++) {
       const r = displayRows[i];
       const tr = document.createElement('tr');
@@ -296,7 +316,7 @@ const Scoreboard = (() => {
       if (r._synthetic) {
         rankTd.textContent = '⭐';
       } else {
-        const realIdx = i - syntheticRanked.length;
+        const realIdx = i - syntheticCount;
         const rank = ranks[realIdx];
         const isTied = ranks.filter(x => x === rank).length > 1;
         const badges = ['🥇', '🥈', '🥉', '💲', '💲'];
@@ -748,6 +768,12 @@ const Scoreboard = (() => {
     return compactMode;
   }
 
+  function toggleBPR() {
+    bprExpanded = !bprExpanded;
+    render();
+    return bprExpanded;
+  }
+
   function getLiveOverride(slug) {
     return liveOverrides[slug] || null;
   }
@@ -769,5 +795,5 @@ const Scoreboard = (() => {
     render();
   }
 
-  return { setData, setLiveGames, setLiveOverrides, getLiveOverride, markEliminated, render, rankAll, hideDetail, scoreEntrant, toggleCompact };
+  return { setData, setLiveGames, setLiveOverrides, getLiveOverride, markEliminated, render, rankAll, hideDetail, scoreEntrant, toggleCompact, toggleBPR };
 })();

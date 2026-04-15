@@ -283,6 +283,20 @@ main {
   border-bottom: 1px solid var(--accent-gold);
   font-style: italic;
 }
+#scoreboard tbody tr.bpr-toggle-row td.bpr-toggle-cell {
+  cursor: pointer;
+  text-align: center;
+  padding: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--accent-gold);
+  background: rgba(255, 215, 0, 0.04);
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+  user-select: none;
+}
+#scoreboard tbody tr.bpr-toggle-row:hover td.bpr-toggle-cell {
+  background: rgba(255, 215, 0, 0.1);
+}
 #scoreboard tbody tr.synthetic-row td.col-rank,
 #scoreboard tbody tr.synthetic-row td.col-name {
   color: var(--accent-gold);
