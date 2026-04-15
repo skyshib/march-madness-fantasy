@@ -122,15 +122,97 @@ const Scoreboard = (() => {
   }
 
   /**
+   * Compute the Best Possible Roster given current stats.
+   * No budget cap — just pick max-value player per seed, then optimize captain assignment.
+   * Scorer captain must be seed 5-16; playmaker must be in opposite half (5-10 vs 11-16).
+   */
+  function computeBestRoster() {
+    if (!statsData?.players) return null;
+
+    const bySeed = {};
+    for (let s = 1; s <= 16; s++) bySeed[s] = [];
+    for (const [pid, p] of Object.entries(statsData.players)) {
+      const seed = p.seed;
+      if (!seed || seed < 1 || seed > 16) continue;
+      const s = getPlayerStats(pid);
+      bySeed[seed].push({
+        player_id: pid,
+        name: p.name,
+        team: p.team,
+        pts: s.pts,
+        pra: s.pts + s.reb + s.ast,
+      });
+    }
+
+    // Best by pts (also best as scorer captain, since 1.5x is monotonic) and best by P+R+A.
+    const bestPts = {}, bestPRA = {};
+    for (let s = 1; s <= 16; s++) {
+      const arr = bySeed[s];
+      if (!arr.length) continue;
+      bestPts[s] = arr.reduce((a, b) => (a.pts >= b.pts ? a : b));
+      bestPRA[s] = arr.reduce((a, b) => (a.pra >= b.pra ? a : b));
+    }
+
+    function buildRoster(scorerSeed, playmakerSeed) {
+      let total = 0;
+      const picks = {};
+      let scorerCap = null, playmakerCap = null;
+      for (let s = 1; s <= 16; s++) {
+        if (!bestPts[s]) continue;
+        let player, pts;
+        if (s === scorerSeed) {
+          player = bestPts[s];
+          pts = Math.round(player.pts * 1.5 * 10) / 10;
+          scorerCap = { seed: s, player_id: player.player_id, name: player.name, team: player.team };
+        } else if (s === playmakerSeed) {
+          player = bestPRA[s];
+          pts = player.pra;
+          playmakerCap = { seed: s, player_id: player.player_id, name: player.name, team: player.team };
+        } else {
+          player = bestPts[s];
+          pts = player.pts;
+        }
+        picks[String(s)] = { player_id: player.player_id, name: player.name, team: player.team };
+        total += pts;
+      }
+      return { total, picks, scorerCap, playmakerCap };
+    }
+
+    let best = null;
+    for (let ss = 5; ss <= 16; ss++) {
+      const pmRange = ss <= 10 ? [11, 12, 13, 14, 15, 16] : [5, 6, 7, 8, 9, 10];
+      for (const pm of pmRange) {
+        if (!bestPts[ss] || !bestPRA[pm]) continue;
+        const cfg = buildRoster(ss, pm);
+        if (!best || cfg.total > best.total) best = cfg;
+      }
+    }
+    if (!best) return null;
+
+    return {
+      name: '⭐ Best Possible Roster',
+      _synthetic: true,
+      scorer_captain: best.scorerCap,
+      playmaker_captain: best.playmakerCap,
+      picks: best.picks,
+    };
+  }
+
+  /**
    * Score all entrants and sort by total descending.
    */
   function rankAll() {
     if (!picksData?.entrants) return [];
 
-    return picksData.entrants
+    const entrants = [...picksData.entrants];
+    const bpr = computeBestRoster();
+    if (bpr) entrants.push(bpr);
+
+    return entrants
       .map(entrant => ({
         name: entrant.name,
         entrant,
+        _synthetic: !!entrant._synthetic,
         ...scoreEntrant(entrant),
       }))
       .sort((a, b) => b.total - a.total);
@@ -143,7 +225,9 @@ const Scoreboard = (() => {
     const tbody = document.getElementById('scoreboard-body');
     if (!tbody) return;
 
-    const ranked = rankAll();
+    const rankedAll = rankAll();
+    const syntheticRanked = rankedAll.filter(r => r._synthetic);
+    const ranked = rankedAll.filter(r => !r._synthetic);
     tbody.innerHTML = '';
 
     // Count how many entrants picked each player
@@ -199,19 +283,29 @@ const Scoreboard = (() => {
       }
     }
 
-    for (let i = 0; i < ranked.length; i++) {
-      const r = ranked[i];
+    const displayRows = [...syntheticRanked, ...ranked];
+    for (let i = 0; i < displayRows.length; i++) {
+      const r = displayRows[i];
       const tr = document.createElement('tr');
       tr.dataset.entrant = r.name;
+      if (r._synthetic) tr.classList.add('synthetic-row');
 
       // Rank
-      const rank = ranks[i];
-      const isTied = ranks.filter(r => r === rank).length > 1;
       const rankTd = document.createElement('td');
       rankTd.className = 'col-rank';
-      const badges = ['🥇', '🥈', '🥉', '💲', '💲'];
-      const prefix = isTied ? 'T-' : '';
-      rankTd.textContent = rank <= 5 ? `${prefix}${rank} ${badges[rank - 1]}` : `${prefix}${rank}`;
+      if (r._synthetic) {
+        rankTd.textContent = '⭐';
+      } else {
+        const realIdx = i - syntheticRanked.length;
+        const rank = ranks[realIdx];
+        const isTied = ranks.filter(x => x === rank).length > 1;
+        const badges = ['🥇', '🥈', '🥉', '💲', '💲'];
+        const prefix = isTied ? 'T-' : '';
+        rankTd.textContent = rank <= 5 ? `${prefix}${rank} ${badges[rank - 1]}` : `${prefix}${rank}`;
+        if (rank === 1) rankTd.classList.add('rank-gold');
+        else if (rank === 2) rankTd.classList.add('rank-silver');
+        else if (rank === 3) rankTd.classList.add('rank-bronze');
+      }
       tr.appendChild(rankTd);
 
       // Name

@@ -273,9 +273,21 @@ main {
   font-size: 1rem;
 }
 
-#scoreboard tbody tr:nth-child(1) td.col-rank { color: var(--accent-gold); }
-#scoreboard tbody tr:nth-child(2) td.col-rank { color: #c0c0c0; }
-#scoreboard tbody tr:nth-child(3) td.col-rank { color: #cd7f32; }
+#scoreboard tbody td.col-rank.rank-gold { color: var(--accent-gold); }
+#scoreboard tbody td.col-rank.rank-silver { color: #c0c0c0; }
+#scoreboard tbody td.col-rank.rank-bronze { color: #cd7f32; }
+
+#scoreboard tbody tr.synthetic-row {
+  background: rgba(255, 215, 0, 0.06);
+  border-top: 1px solid var(--accent-gold);
+  border-bottom: 1px solid var(--accent-gold);
+  font-style: italic;
+}
+#scoreboard tbody tr.synthetic-row td.col-rank,
+#scoreboard tbody tr.synthetic-row td.col-name {
+  color: var(--accent-gold);
+  font-weight: 700;
+}
 
 td.col-total {
   font-weight: 700;
